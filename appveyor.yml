@@ -13,5 +13,6 @@ notifications:
   on_build_success: false
   on_build_failure: true
   on_build_status_changed: false
+  
 test_script:
-- cmd: xunit.console LamedalCore.Test.exe -appveyor
+- cmd: xunit.console tests\bin\Debug\LamedalCore.Test.exe -appveyor

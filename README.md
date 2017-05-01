@@ -3,6 +3,8 @@
 * Lamedal Nuget package: https://www.nuget.org/packages/LamedalCore/
 * PM> Install-Package LamedalCore
 
+https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true
+
 # Background
 -------------------------------------------------------------------------------------
 > <i> The best programmers in the world can deliver software before deadlines, under budget, 

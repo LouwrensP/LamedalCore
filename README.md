@@ -3,7 +3,8 @@
 * Lamedal Nuget package: https://www.nuget.org/packages/LamedalCore/
 * PM> Install-Package LamedalCore
 
-![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true)
+# State
+* Build: ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true)
 
 # Background
 -------------------------------------------------------------------------------------

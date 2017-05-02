@@ -4,7 +4,8 @@
 * PM> Install-Package LamedalCore
 
 # State
-* Build: ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true)
+* Build Results: ![alt tag](https://ci.appveyor.com/api/projects/status/s8ox68g39xc9tfne?svg=true)
+* Tests Results: ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true)
 
 # Background
 -------------------------------------------------------------------------------------

@@ -7,7 +7,7 @@
 Build | Status
 ------------ | -------------
 Debug Build | ![alt tag](https://ci.appveyor.com/api/projects/status/s8ox68g39xc9tfne?svg=true)
-Release Build |
+Release Build | ![alt tag](https://ci.appveyor.com/api/projects/status/9t93y3013de1ktwg?svg=true)
 Unit Tests | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true)
 
 # Background

@@ -1,0 +1,17 @@
+version: 1.1.{build}
+image: Visual Studio 2017
+configuration: Debug
+platform: Any CPU
+init:
+- ps: >-
+    git config --global core.autocrlf true
+environment:
+  APPVEYOR_SAVE_CACHE_ON_ERROR: true
+cache: packages -> **\packages.config
+before_build:
+- cmd: >-
+    ver
+    nuget restore LamedalCore.sln
+build:
+  project: LamedalCore.sln
+  verbosity: quiet

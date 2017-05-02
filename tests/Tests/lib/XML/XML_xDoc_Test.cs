@@ -45,7 +45,6 @@ namespace LamedalCore.Test.Tests.lib.XML
             // <remarks DefaultType="string"; IgnoreGroup="Array"></remarks>
             // ============================================
             string xml = "<Doc></Doc>";
-
             XDocument xDoc = xml.zxDoc_Document();
             XElement element = xDoc.zxDoc_Element_("code");
             element.zxDoc_Attribute_Set("DefaultType", "string");

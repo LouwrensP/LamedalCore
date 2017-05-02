@@ -7,6 +7,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
 {
     public sealed class ClassNTProperty_Test
     {
+
         [Fact]
         [Test_Method("Property_Parse()")]
         public static void Property_Parse_Test()

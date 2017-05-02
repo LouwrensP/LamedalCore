@@ -86,7 +86,6 @@ namespace LamedalCore.Test.Tests.Types.String
             Assert.Equal("²", _lamed.Types.String.SpecialChar.Math_Power2(""));
             Assert.Equal("³", _lamed.Types.String.SpecialChar.Math_Power3(""));
             Assert.Equal("¼", _lamed.Types.String.SpecialChar.Math_Quoter(""));
-
         }
 
         [Fact]

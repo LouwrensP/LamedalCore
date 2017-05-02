@@ -129,7 +129,6 @@ namespace LamedalCore.Test.Tests.lib.IO
             // Cleanup
             IO_Folder_Test.Folder_Cleanup(testFolder);
             Assert.Equal(false, _lamed.lib.IO.File.Delete(file));
-
         }
 
         [Fact]

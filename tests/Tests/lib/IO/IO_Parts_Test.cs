@@ -87,8 +87,6 @@ namespace LamedalCore.Test.Tests.lib.IO
             
             // File_Add2Name
             Assert.Equal("c:/folder1/folder2/file1222.txt", _lamed.lib.IO.Parts.File_Add2Name("c:/folder1/folder2/file1.txt", "222"));
-
-            
         }
     }
 }

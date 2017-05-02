@@ -15,7 +15,6 @@ namespace LamedalCore.Test.Tests.Types.String
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
 
-
         [Fact]
         [Test_Method("Word_LastWord_Remove()")]
         public void Word_LastWord_Remove_Test()

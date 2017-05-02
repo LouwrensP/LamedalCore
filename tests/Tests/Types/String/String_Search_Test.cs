@@ -41,7 +41,6 @@ namespace LamedalCore.Test.Tests.Types.String
             Assert.Equal(false, _lamed.Types.String.Search.Contains_Any("This is THE test", "the"));
             Assert.Equal(true, _lamed.Types.String.Search.Contains_Any("This is THE test", StringComparison.CurrentCultureIgnoreCase, "the"));
             #endregion
-
         }
 
         [Fact]

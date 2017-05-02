@@ -85,7 +85,6 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             // ===========================================
 
             #endregion
-
         }
 
         /// <summary>

@@ -57,7 +57,6 @@ namespace LamedalCore.Test.Tests.Types.String
             Assert.False(_lamed.Types.String.Regex.IsValid_IP("1200.5.4.3"));
             Assert.False(_lamed.Types.String.Regex.IsValid_IP("abc.def.ghi.jkl"));
             Assert.False(_lamed.Types.String.Regex.IsValid_IP("255.foo.bar.1"));
-
         }
 
         [Fact]

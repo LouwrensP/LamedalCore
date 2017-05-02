@@ -97,7 +97,6 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             Assert.Equal("string", MethodNTComment_Methods.Summary_FromXML("<summary>string</summary>"));
             Assert.Equal("", MethodNTComment_Methods.Summary_FromXML("<summary></summary>"));
             Assert.Equal("", MethodNTComment_Methods.Summary_FromXML(""));
-
         }
 
         [Fact]

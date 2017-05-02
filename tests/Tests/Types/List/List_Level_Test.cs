@@ -111,7 +111,5 @@ namespace LamedalCore.Test.Tests.Types.List
             var errorMsg = "Value cannot be null.".NL() + "Parameter name: strList";
             Assert.Equal(errorMsg, ex.Message);
         }
-
-
     }
 }

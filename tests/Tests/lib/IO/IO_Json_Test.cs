@@ -178,7 +178,6 @@ Value2: '    ""new value"",';
 Diff??: ------^";
             Assert.Equal(errorRestult, error);
             #endregion
-
         }
     }
 }

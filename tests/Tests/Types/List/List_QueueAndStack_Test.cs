@@ -98,7 +98,5 @@ namespace LamedalCore.Test.Tests.Types.List
 
             #endregion
         }
-
-
     }
 }

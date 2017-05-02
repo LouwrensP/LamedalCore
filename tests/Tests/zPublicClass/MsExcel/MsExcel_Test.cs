@@ -103,7 +103,6 @@ namespace LamedalCore.Test.Tests.zPublicClass.MsExcel
             Assert.Equal(16384, _excel.Adress.ColName_2Int("XFD1"));
             Assert.Equal(729, _excel.Adress.ColName_2Int("ABA1000"));
             #endregion
-
         }
 
         [Fact]

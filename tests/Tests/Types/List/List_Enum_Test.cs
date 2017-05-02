@@ -10,7 +10,6 @@ namespace LamedalCore.Test.Tests.Types.List
     public sealed class List_Enum_Test
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
-
  
     }
 }

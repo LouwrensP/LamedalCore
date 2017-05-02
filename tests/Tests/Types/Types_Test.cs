@@ -27,6 +27,5 @@ namespace LamedalCore.Test.Tests.Types
             var esc = _lamed.Types.String.SpecialChar.Function_ESC("");
             Assert.Equal(false, _lamed.Types.Test.IsValidStr(esc));
         }
-
     }
 }

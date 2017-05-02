@@ -101,7 +101,6 @@ namespace LamedalCore.Test.Tests.lib
             Assert.True(_lamed.lib.Words.IsProperty("color"));
             Assert.True(_lamed.lib.Words.IsProperty("size"));
             Assert.False(_lamed.lib.Words.IsProperty("prop"));
-
         }
 
         [Fact]

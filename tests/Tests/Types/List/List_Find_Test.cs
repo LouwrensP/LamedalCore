@@ -23,7 +23,6 @@ namespace LamedalCore.Test.Tests.Types.List
         public List_Find_Test(ITestOutputHelper debug = null) : base(debug) { }
 
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
-        
 
         [Fact]
         [Test_Method("IsNullOrEmpty()")]

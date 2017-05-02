@@ -12,5 +12,4 @@ namespace LamedalCore.Test.Tests.lib.IO
         [BlueprintData_Field(Caption = "What is your surname [{0}]? ")]
         public string Surname;
     }
-
 }

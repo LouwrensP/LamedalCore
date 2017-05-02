@@ -79,6 +79,7 @@ namespace LamedalCore.Test.Tests.lib.IO
             _lamed.lib.IO.Folder.Move(testFolder + "test1/", testFolder + "test5/");
             Assert.False(_lamed.lib.IO.Folder.Exists(testFolder + "test1/"));
             Assert.True(_lamed.lib.IO.Folder.IsFolder(testFolder + "test5/"));
+
             // Absolute path
             string relativePath = @"../bling.txt";
             string baseDirectory = @"C:/blah1/blah2/";

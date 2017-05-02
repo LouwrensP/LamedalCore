@@ -47,7 +47,6 @@ namespace LamedalCore.Test.Tests.lib.IO
                 errorMsg = $"Error: '{folderOrFile}' does not exist!";
                 return false;
             }
-
             return true;
         }
     }

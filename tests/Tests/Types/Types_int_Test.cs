@@ -22,7 +22,6 @@ namespace LamedalCore.Test.Tests.Types
             Assert.Equal("MDXXXIV", _lamed.Types.intRomanNumbers.ToRoman(1534));
             Assert.Equal(1534, _lamed.Types.intRomanNumbers.ToInt("MDXXXIV"));
             Assert.Equal(true, _lamed.Types.intRomanNumbers.IsValid("MDXXXIV"));
-
             // Exceptions
             Assert.Throws<ArgumentOutOfRangeException>(() => _lamed.Types.intRomanNumbers.ToRoman(0));
             Assert.Throws<ArgumentNullException>(() => _lamed.Types.intRomanNumbers.ToInt(null));

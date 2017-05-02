@@ -49,7 +49,6 @@ namespace LamedalCore.Test.Tests.zPublicClass.MsExcel
             result = _lamed.lib.Excel.IO_Read.CompareDataSheet(folderTestCases + dashboard, "", resultExcel, "");
             Assert.Equal(result.Count, 0);
             #endregion
-
         }
 
         [Fact]

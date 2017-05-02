@@ -197,7 +197,6 @@ namespace LamedalCore.Test.Tests.lib.XML
             _lamed.lib.XML.xDoc.Attribute_Set(element, "Heading", "");  // This will remove the attribute
             var xml2 = element.ToString(SaveOptions.DisableFormatting);
             Assert.Equal("<doc></doc>", xml2);
-
         }
     }
 }

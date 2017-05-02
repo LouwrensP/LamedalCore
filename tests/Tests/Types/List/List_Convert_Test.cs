@@ -48,6 +48,7 @@ namespace LamedalCore.Test.Tests.Types.List
         {
             IList<object> list_object = new List<object>() { "A", "B", "C" };
             IList<string> list_String = _lamed.Types.List.Convert.IListObject_2IListT<string>(list_object);
+
             Assert.Equal(new List<string> { "A", "B", "C" }, list_String);
         }
 

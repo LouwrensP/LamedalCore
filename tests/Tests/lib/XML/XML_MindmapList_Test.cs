@@ -399,7 +399,6 @@ trunk:LaMedal:LaMedal.Core.csproj:zz:z:zTypes_Extender.cs";
             var nodeList = _lamed.lib.XML.Mindmap.TreeStrList_FromXML(xml);
             var nodeStr = nodeList.zTo_Str("".NL());
             Assert.Equal(treeResult, nodeStr);
-
         }
 
         [Fact]
@@ -482,7 +481,6 @@ trunk:LaMedal:LaMedal.Access2System.csproj:domain:Enumerals:enClassNetworkType.c
 
             Assert.Equal(xml1Result, XML1);
             Assert.Equal(xml1Result, XML2);
-
         }
 
         [Fact]

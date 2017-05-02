@@ -13,7 +13,6 @@ namespace LamedalCore.Test.Tests.Types.List
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
 
-
         [Fact]
         [Test_Method("AddRange()")]
         [Test_Method("Shuffle()")]

@@ -112,7 +112,6 @@ namespace LamedalCore.Test.Tests.Types.Class
             var time3 = sw.ElapsedTicks;
             DebugLog("Assignment checks = " + time3);
             #endregion
-
         }
 
         private void GarbageCollectAll()

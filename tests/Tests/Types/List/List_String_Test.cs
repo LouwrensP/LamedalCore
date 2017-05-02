@@ -66,7 +66,6 @@ namespace LamedalCore.Test.Tests.Types.List
             // Null
             List<string> n1 = null;
             Assert.True(_lamed.Types.List.String.ToString(n1) == "");
-
             Assert.Equal(",,test", _lamed.Types.List.String.ToString(new[] { "", "", "test" }, ","));
             Assert.Equal("Item3~Item2~Duplicate~Item1~Duplicate", _lamed.Types.List.String.ToString(new[] { "Item3", "Item2", "Duplicate", "Item1", "Duplicate" }, "~"));
 

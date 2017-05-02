@@ -255,9 +255,6 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             Assert.Equal("Types", header.ClassName1);
             Assert.Equal("Money", header.ClassName2);
             #endregion
-
         }
-
-
     }
 }

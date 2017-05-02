@@ -74,7 +74,6 @@ namespace LamedalCore.Test.Tests.lib
             // WriteLine_HighLight
             _lamed.lib.Console.IO.WriteLine_HighLight("Line1");
             _lamed.lib.Console.IO.WriteLine_HighLight("Line2", true);
-
         }
 
         [Fact]

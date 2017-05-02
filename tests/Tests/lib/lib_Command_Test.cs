@@ -42,6 +42,7 @@ namespace LamedalCore.Test.Tests.lib
 
             if (Program.ShowConfigFiles) _lamed.lib.Command.Execute_Notepad(configFile);   // Hide / show config files
 
+            // Todo
             // Test if notepad is running
             // Kill notepad
             // Test if notepad is running

@@ -106,7 +106,6 @@ namespace LamedalCore.Test.Tests.zPublicClass.MsExcel
             macro = "|A1";
             Assert.Equal(false, _excel.Macro.MacroItem._IsValidMacroValue(ref macro, out errorMsg));
             Assert.Equal($"Error! '{macro}' is not a macro setting.", errorMsg);
-
         }
 
         [Fact]

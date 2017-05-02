@@ -61,7 +61,6 @@ namespace LamedalCore.Test.Tests.Types.String
 
             // cQ
             Assert.Equal(",'test'", _lamed.Types.String.Quote.cQ("test"));
-
         }
 
         [Fact]

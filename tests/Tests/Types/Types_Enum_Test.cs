@@ -143,6 +143,7 @@ namespace LamedalCore.Test.Tests.Types
         {
             var man1 = Types_Enum_Data.Man;
             var man2 = Types_Enum_Data.Spirit | Types_Enum_Data.Soul | Types_Enum_Data.Body;
+
             Assert.Equal(man1, man2);
             Assert.Equal(Types_Enum_Data.Spirit | Types_Enum_Data.Soul | Types_Enum_Data.Body, man1);
             Assert.Equal(7, (int)man1);
@@ -156,6 +157,7 @@ namespace LamedalCore.Test.Tests.Types
             var enumResults = new[] { "Spirit", "Soul", "Body", "Man", "Marriage", "Family_Original",
                                       "Family_SingleParent", "Family_Rejoined", "All" };
             var enumValues = _lamed.Types.Enum.enum_2ArrayStr(typeof(Types_Enum_Data));
+
             Assert.Equal(enumResults, enumValues);
         }
     }

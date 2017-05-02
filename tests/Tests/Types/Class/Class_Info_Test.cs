@@ -16,7 +16,6 @@ namespace LamedalCore.Test.Tests.Types.Class
         [Test_Method("Property_Get()")]
         public void Property_Set()
         {
-            
             // Age test ]=======================================================//
             var lassie = new Types_ClassInfo_Dog_Bulldog(1);
             Assert.Equal(1, lassie.Age);

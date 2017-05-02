@@ -53,7 +53,6 @@ Link->MindMapEdit:Heading3|->MindMapEdit:Heading1";
             #endregion
 
             MindMap_Create(input.zConvert_Str_ToListStr("".NL()));
-
         }
 
         public string MindMap_Create(List<string> treeDefinitionList)

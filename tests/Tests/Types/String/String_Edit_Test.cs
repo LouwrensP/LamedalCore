@@ -58,7 +58,6 @@ namespace LamedalCore.Test.Tests.Types.String
         {
             Assert.Equal("aaa_bbb_ccc_ddd_ee_ff_gg_hh", _lamed.Types.String.Edit.Replace_All("aaa!bbb#ccc@ddd$ee%ff^gg&hh", "_", "!","@","#","$", "%", "^", "&"));
             Assert.Equal("----------", _lamed.Types.String.Edit.Repeat("-",10));
-
         }
 
         [Fact]

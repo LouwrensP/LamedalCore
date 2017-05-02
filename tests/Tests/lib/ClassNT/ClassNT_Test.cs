@@ -91,9 +91,6 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             Assert.Equal(1, Class2.Header.Namespace_Attributes.Items.Count);
 
             #endregion
-
-           
-
         }
 
         [Fact]

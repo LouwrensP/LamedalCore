@@ -24,7 +24,6 @@ namespace LamedalCore.Test.Tests.Types
             Assert.True(_lamed.Types.Object.Between(myNumber, 3, 7));
             Assert.True(_lamed.Types.Object.Between(4, 3, 7));
             Assert.True(_lamed.Types.Object.Between(7, 3, 7));
-
             Assert.False(_lamed.Types.Object.Between(1, 3, 7));
 
             // Strings

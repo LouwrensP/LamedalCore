@@ -95,7 +95,6 @@ namespace LamedalCore.Test.Tests.zPublicClass.MsExcel
             _lamed.lib.Excel.Macro.Compile(input, out resultMsg);
             if (_lamed.lib.IO.Json.Object_IsEqual(result.Normalize(), input.Normalize(), out resultMsg) == false)
                 resultMsg.zException_Show();
-            // ============================================================
         }
 
         [Fact]

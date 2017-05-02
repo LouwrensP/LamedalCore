@@ -147,8 +147,6 @@ namespace LamedalCore.Test.Tests.Types.Class
             Assert.Equal(2,methods3.Count);
             Assert.Equal(3,methods4.Count);
             #endregion
-
-
         }
     }
 }

@@ -37,8 +37,7 @@ namespace LamedalCore.Test.Tests.zPublicClass.MsExcel
             //sheet.Cells[0, 2].Bold = true;
             //sheet.Cells[0, 2].TextColor = Color.Red;
 
-            data.WorkSheet_CellSet(3,1, "BIU Big Blue", bold:true, underline:true, italic:true, 
-                textColor:Color.Blue, fontSize:18, webLink: "https://github.com/mstum/Simplexcel", columnWidth:40);
+            data.WorkSheet_CellSet(3,1, "BIU Big Blue", bold:true, underline:true, italic:true, textColor:Color.Blue, fontSize:18, webLink: "https://github.com/mstum/Simplexcel", columnWidth:40);
             data.WorkSheet_ColumnWidth(3,40);
 
             data.WorkSheet_CellSet(4, 1, 13);

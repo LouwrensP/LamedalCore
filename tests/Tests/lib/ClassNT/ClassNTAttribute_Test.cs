@@ -252,7 +252,6 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             result = ClassNTBlueprintMethodRuleAliasDef_Methods.Attribute_AliasDefinition(attributeStr, out name, out MirrorParameter1, out MirrorClass, out MirrorMethodName);
             Assert.Equal(false, result);
             #endregion
-
         }
 
         [Fact]

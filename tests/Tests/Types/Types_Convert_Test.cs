@@ -71,7 +71,6 @@ namespace LamedalCore.Test.Tests.Types
             DateTime dateFromStr = _convert.DateTime_FromObj("2010/11/12");
             var dateResult = new DateTime(2010,11,12);
             Assert.Equal(dateResult, dateFromStr);
-
             Assert.Throws<FormatException>(() => _convert.DateTime_FromObj("20101/11/12"));
         }
 

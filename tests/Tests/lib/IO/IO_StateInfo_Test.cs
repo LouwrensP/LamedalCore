@@ -12,7 +12,6 @@ namespace LamedalCore.Test.Tests.lib.IO
         private static readonly object _Lock = new object();
         private static bool _firstTime = true;
 
-
         [Fact]
         public void IOStateInfoLevel1_SetupTest()
         {

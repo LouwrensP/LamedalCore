@@ -258,7 +258,5 @@ namespace LamedalCore.Test.Tests.Types
 
             Assert.Equal(xmlResult, XML1);
         }
-
-
     }
 }

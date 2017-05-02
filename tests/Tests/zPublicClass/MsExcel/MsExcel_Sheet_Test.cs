@@ -12,7 +12,6 @@ namespace LamedalCore.Test.Tests.zPublicClass.MsExcel
     public sealed class MsExcel_Sheet_Test: pcTest
     {
         public MsExcel_Sheet_Test(ITestOutputHelper debug = null) : base(debug) { }
-
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
 
         [Fact]

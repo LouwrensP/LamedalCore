@@ -17,7 +17,7 @@ namespace LamedalCore.Test.Tests.Types
             _lamed.lib.Command.Sleep(1000);
             var span = _lamed.Types.DateTimeSpan.Elapsed(now);
             int ticks = (int)span.TotalMilliseconds/100;
-            Assert.Equal(10,ticks);
+            Assert.True(10 == ticks | 11 == ticks);
         }
     }
 }

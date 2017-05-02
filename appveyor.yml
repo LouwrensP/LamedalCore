@@ -11,6 +11,7 @@ cache: packages -> **\packages.config
 before_build:
 - cmd: >-
     ver
+    
     nuget restore LamedalCore.sln
 build:
   project: LamedalCore.sln

@@ -14,7 +14,6 @@ namespace LamedalCore.Test.Tests.lib.IO
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
         private readonly IO_Json _json = LamedalCore_.Instance.lib.IO.Json;
-
         public IO_Json_Test(ITestOutputHelper debug = null) : base(debug) { } 
 
         [Fact]

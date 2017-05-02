@@ -1,0 +1,4 @@
+{
+  "Folder_TestCase_About": "Please specify the folder where the Excel test cases are located. Use '/' to separate folders. Path should end with '/'",
+  "Folder_TestCase": "c:/projects/lamedalcore/tests/TestData/"
+}

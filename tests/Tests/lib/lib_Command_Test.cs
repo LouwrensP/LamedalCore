@@ -40,7 +40,7 @@ namespace LamedalCore.Test.Tests.lib
             Assert.Equal(folderTest, folderTestCases);
             Assert.True(_lamed.lib.IO.File.Exists(configFile));
 
-            if (Program.ShowConfigFiles) _lamed.lib.Command.Execute_Notepad(configFile);   // Hide / show config files
+            if (Config_Info.Test_ShowConfigFiles) _lamed.lib.Command.Execute_Notepad(configFile);   // Hide / show config files
 
             // Todo
             // Test if notepad is running

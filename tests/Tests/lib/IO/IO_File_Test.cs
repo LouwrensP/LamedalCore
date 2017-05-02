@@ -224,7 +224,7 @@ namespace LamedalCore.Test.Tests.lib.IO
             Assert.True(_lamed.lib.IO.File.IsFile(testFolder + "testFile.txt"));
 
             // Drive & FileInfo
-            Assert.Equal("C:/", _lamed.lib.IO.Parts.Drive(testFolder + "testFile.txt"));
+            Assert.Equal(Config_Info.Test_Drive, _lamed.lib.IO.Parts.Drive(testFolder + "testFile.txt"));
 
 
             IO_Folder_Test.Folder_Cleanup(testFolder);

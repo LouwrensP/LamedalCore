@@ -12,7 +12,6 @@ namespace LamedalCore.Test
 {
     public sealed class Program
     {
-        public static bool ShowConfigFiles = false;
 
         [Test_IgnoreCoverage(enTestIgnore.FrontendCode)]
         static void Main(string[] args)

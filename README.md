@@ -31,12 +31,14 @@
 # Setup
 Please note that the library is still in its starting phases. Radical design changes will occur between versions.
 
-![alt tag](https://github.com/perezLamed/LamedalCore/blob/master/pics/Setup1.png)
-![alt tag](https://github.com/perezLamed/LamedalCore/blob/master/pics/Setup2.png)
+![Kiku](pics/Setup1.png)
+![Kiku](pics/Setup2.png)
 
 # Test results & Code coverage: 
-![alt tag](https://github.com/perezLamed/LamedalCore/blob/master/pics/TestCoverage.png)
+![Kiku](pics/TestCoverage.png)
 
 #License
 Apache License Version 2.0
 
+# Workflow
+* [a relative link](Workflow.md)

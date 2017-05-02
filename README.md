@@ -41,4 +41,4 @@ Please note that the library is still in its starting phases. Radical design cha
 Apache License Version 2.0
 
 # Workflow
-* [a relative link](Workflow.md)
+* [a Workflow](Workflow.md)

@@ -12,7 +12,7 @@ namespace LamedalCore.Test
 {
     public sealed class Program
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
+        public static bool ShowConfigFiles = false;
 
         [Test_IgnoreCoverage(enTestIgnore.FrontendCode)]
         static void Main(string[] args)

@@ -45,7 +45,7 @@ namespace LamedalCore.Test.Tests.Types
         {
             Assert.Equal(48, _lamed.Types.DateTime.Age(new DateTime(1968, 7, 26)));    
             Assert.Equal(49, _lamed.Types.DateTime.Age(new DateTime(1968, 1, 1)));    
-            Assert.Equal(23, _lamed.Types.DateTime.Age(new DateTime(1993,4,21)));    
+            Assert.Equal(24, _lamed.Types.DateTime.Age(new DateTime(1993,4,21)));    
         }
 
         [Fact]

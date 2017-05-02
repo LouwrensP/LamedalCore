@@ -30,6 +30,7 @@ namespace LamedalCore.Test.Tests
         [Theory]
         [InlineData(0), InlineData(1)]
         [Trait("Ticket", "723")]
+        [Trait("Category", "A")]
         public void Test_Sample(int ii)
         {
             Assert.True(ii == 0 || ii == 1);
@@ -66,7 +67,7 @@ namespace LamedalCore.Test.Tests
         [Test_Method("Execute_Explorer()")]
         public void ExploreToResult_Test()
         {
-            _lamed.lib.Command.Execute_Explorer();  // Open the output forlder
+            if (Program.ShowConfigFiles) _lamed.lib.Command.Execute_Explorer();  // Open the output forlder
         }
     }
 }

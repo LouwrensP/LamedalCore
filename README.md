@@ -31,8 +31,8 @@
 # Setup
 * [Setup](Setup.md)
 
-#License
-Apache License Version 2.0
-
 # Workflow
 * [Workflow](Workflow.md)
+
+# License
+Apache License Version 2.0

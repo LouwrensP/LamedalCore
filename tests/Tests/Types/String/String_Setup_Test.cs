@@ -34,8 +34,8 @@ namespace LamedalCore.Test.Tests.Types.String
 
             var date = new DateTime(2010, 1, 18);
             Object = date;
-            Assert.Equal("'2010-01-18 12:00:00 AM'", _lamed.Types.String.Quote.SQL_Q(date));
-            Assert.Equal("'2010-01-18 12:00:00 AM'", _lamed.Types.String.Quote.SQL_Q(Object));
+            Assert.Equal("'2010-01-18'", _lamed.Types.String.Quote.SQL_Q(date));
+            Assert.Equal("'2010-01-18'", _lamed.Types.String.Quote.SQL_Q(Object));
 
             // NL in SQL
             Assert.Equal("'testValue1\r\ntestValue2'",

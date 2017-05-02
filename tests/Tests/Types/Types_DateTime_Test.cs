@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
+using LamedalCore.zz;
 using Xunit;
 
 namespace LamedalCore.Test.Tests.Types
@@ -12,6 +13,19 @@ namespace LamedalCore.Test.Tests.Types
     public sealed class Types_DateTime_Test
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
+
+        [Fact]
+        [Test_Method("zObject().AsStr()")]
+        public void Date_2String()
+        {
+            var myDate = new DateTime(2016, 1, 22);
+            var strDate = myDate.zObject().AsStr();
+            Assert.Equal("2016-01-22", strDate);
+
+            myDate = new DateTime(2016, 1, 22, 13,14,15);
+            strDate = myDate.zObject().AsStr();
+            Assert.Equal("2016-01-22 13:14:15 PM", strDate);
+        }
 
         [Fact]
         [Test_Method("To_StrReadableTime()")]
@@ -47,30 +61,6 @@ namespace LamedalCore.Test.Tests.Types
             Assert.Equal(49, _lamed.Types.DateTime.Age(new DateTime(1968, 1, 1)));    
             Assert.Equal(24, _lamed.Types.DateTime.Age(new DateTime(1993,4,21)));    
         }
-
-        [Fact]
-        [Test_Method("DateTime_FromJavaTimeStamp()")]
-        [Test_Method("DateTime_FromUnixTimeStamp()")]
-        public void DateTime_FromJavaTimeStamp_Test()
-        {
-            double stamp = 1370437809.00;
-            var date = _lamed.Types.DateTime.DateTime_FromJavaTimeStamp(stamp);
-            Assert.Equal(date.Year, 1970);
-            Assert.Equal(date.Month, 1);
-            Assert.Equal(date.Day, 16);
-
-            var date2 = _lamed.Types.DateTime.DateTime_FromUnixTimeStamp(stamp);
-            Assert.Equal(date2.Year, 2013);
-            Assert.Equal(date2.Month, 6);
-            Assert.Equal(date2.Day, 5);
-            Assert.Equal(date2.Hour, 15);
-            Assert.Equal(date2.Minute, 10);
-            Assert.Equal(date2.Second, 9);
-
-            var date3 = new DateTime(2013, 6,5,15,10,9);
-            Assert.Equal(stamp, _lamed.Types.DateTime.DateTime_ToUnixTimestamp(date3));
-        }
-        // Day_EndOfDay
 
         [Fact]
         [Test_Method("Day_EndOfDay()")]

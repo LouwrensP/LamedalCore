@@ -33,12 +33,12 @@ namespace LamedalCore.Test.Tests.Types
 
             // Stream the object
             var dict = _lamed.Types.Dictionary.Object_ToDictionary(json);
-            var lines = dict.Select(x => $"{x.Key} = {x.Value.zObject().AsStr()}").ToList();
-            var str = lines.zTo_Str(", ");
+            List<string> lines = dict.Select(x => $"{x.Key} = {x.Value.zObject().AsStr()}").ToList();
+            string str = lines.zTo_Str(", ");
 
             // Test
-            Assert.Equal("Email = email, Active = true, CreatedDate = 2016-01-01 12:00:00 AM, Roles = [Mr,Mev,Mej], Name = json_Test_Data", str);
-            Assert.Equal("Email = email, Active = true, CreatedDate = 2016-01-01 12:00:00 AM, Roles = [Mr,Mev,Mej], Name = json_Test_Data", json.zObject().AsStr());
+            Assert.Equal("Email = email, Active = true, CreatedDate = 2016-01-01, Roles = [Mr,Mev,Mej], Name = json_Test_Data", str);
+            Assert.Equal("Email = email, Active = true, CreatedDate = 2016-01-01, Roles = [Mr,Mev,Mej], Name = json_Test_Data", json.zObject().AsStr());
         }
 
         [Fact]

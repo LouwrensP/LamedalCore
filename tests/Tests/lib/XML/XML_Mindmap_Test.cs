@@ -6,20 +6,24 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
+using LamedalCore.zPublicClass;
 using LamedalCore.zz;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace LamedalCore.Test.Tests.lib.XML
 {
-    public sealed class XML_Mindmap_Test
+    public sealed class XML_Mindmap_Test : pcTest
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
+
+        public XML_Mindmap_Test(ITestOutputHelper debug = null) : base(debug) { }
 
         [Fact]
         [Test_Method("()")]
         public void MindmapSimple_Test()
         {
-            var testFolder = @"C:/test/mm/";
+            var folderPath = Config_Info.Config_File_Test(_Debug) + @"mm/"; //@"D:\Dev\GitHub\LamedalCore\tests\TestData\Text\mm";
 
             #region input
             var input =
@@ -59,17 +63,14 @@ Link->MindMapEdit:Heading3|->MindMapEdit:Heading1";
         {
             pcMindMap map = CreateMindmap();
 
-
             return "";
         }
-
-
 
         [Fact]
         [Test_Method("CreateMindmap()")]
         public void CreateMindmap_Test()
         {
-            var testFolder = @"C:/test/mm/";
+            var folderPath = Config_Info.Config_File_Test(_Debug) + @"text/mm/"; //@"D:\Dev\GitHub\LamedalCore\tests\TestData\Text\mm";
 
             // Create the map xml doc
             var map = CreateMindmap();
@@ -95,7 +96,7 @@ Link->MindMapEdit:Heading3|->MindMapEdit:Heading1";
             var mapStr2 = map.mm.ToString();
             Assert.Equal(result2, mapStr2);
 
-            _lamed.lib.IO.RW.File_Write(testFolder + "simple1.mm", mapStr2, true);
+            _lamed.lib.IO.RW.File_Write(folderPath + "simple1.mm", mapStr2, true);
 
         }
 

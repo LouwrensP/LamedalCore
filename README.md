@@ -29,13 +29,7 @@
 * Demo's to illustrate how Blueprint tools is used to create Lamedal extensions. (Future)
 
 # Setup
-Please note that the library is still in its starting phases. Radical design changes will occur between versions.
-
-![Kiku](pics/Setup1.png)
-![Kiku](pics/Setup2.png)
-
-# Test results & Code coverage: 
-![Kiku](pics/TestCoverage.png)
+* [Setup](Setup.md)
 
 #License
 Apache License Version 2.0

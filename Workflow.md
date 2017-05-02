@@ -10,3 +10,7 @@ Definition of LamadalCore workflow.
 * If this is not a pre-release - then create 'release/x.x.x' branch. (Do not use tags)
 
 ![Kiku](pics/git_workflow_github_flow.jpg)
+
+# Test results & Code coverage: 
+![Kiku](pics/TestCoverage.png)
+

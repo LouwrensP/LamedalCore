@@ -18,7 +18,7 @@ Definition of LamadalCore workflow.
 * Fork master if you want to use the latest version of the library. This is useful to add new features.
 * Fork latest release branches for stable releases.
 
-![Kiku](src/Designs/Lamedal_Workflow.svg)
+![Kiku](src/Designs/Lamedal_Workflow.png)
 
 # Motivation of Workflow
 * The workflow is optimized to ensure fast development, delivery and enhancements on master.

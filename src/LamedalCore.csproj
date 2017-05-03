@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>The quest to solve a problem once and to use the one solution everywhere.</Description>
+    <Copyright>Apache 2.0 license. Copyright (c) 2014-2017 and present - Perez Lamed van Niekerk. https://sites.google.com/site/lamedalwiki/</Copyright>
+    <AssemblyTitle>LamedaL library.</AssemblyTitle>
+    <Authors>Perez Lamed van Niekerk</Authors>
+    <TargetFrameworks>netstandard1.6;net461</TargetFrameworks>
+    <AssemblyName>LamedalCore</AssemblyName>
+    <PackageId>LamedalCore</PackageId>
+    <PackageReleaseNotes>
+Version 1.1.4-afla04: Workaround for xunit 2.2.0 Nuget failure on VS2013
+Version 1.1.4-afla03: Remove .NET Core packages from the .NET build.
+Version 1.1.4-alfa02: Add support of creating uneven Grids.
+Version 1.1.4-alfa02: Made settings object thread safe.
+Version 1.1.4
+================
+* Add support for 3 levels grids dashboard and capturing.
+
+Version 1.1.3 : Multi level grids - no longer in use
+Version 1.1.2 : Multi level grids - no longer in use
+Version 1.1.1 : Multi level grids - no longer in use
+Version 1.1.0 
+=============
+* New release of LamedaL.
+* Removed prereleased dependencies.
+* 95% code coverage completed
+</PackageReleaseNotes>
+    <PackageIconUrl>https://sites.google.com/site/lamedalwiki/Project-News/lamedalporttonetcore10/Lamedal15.png</PackageIconUrl>
+    <PackageProjectUrl>https://sites.google.com/site/lamedalwiki/</PackageProjectUrl>
+    <PackageLicenseUrl>https://sites.google.com/site/lamedalwiki/copyright</PackageLicenseUrl>
+    <PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.6' ">$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
+    <NetStandardImplicitPackageVersion Condition=" '$(TargetFramework)' == 'netstandard1.6' ">1.6.0</NetStandardImplicitPackageVersion>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <Version>1.1.4-alfa04</Version>
+    <RepositoryType>c#</RepositoryType>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LamedalExcel" Version="1.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="JetBrains.Annotations" Version="10.4.0" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.6' ">
+    <PackageReference Include="HtmlAgilityPack.NetCore" Version="1.5.0.1" />
+    <PackageReference Include="LamedalOpenXML_Document" Version="2.5.2" />
+    <PackageReference Include="LamedaL.System.Drawing" Version="1.0.1" />
+    <PackageReference Include="System.Diagnostics.Process" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
+    <PackageReference Include="HtmlAgilityPack" Version="1.4.9.5" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.5.0" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>

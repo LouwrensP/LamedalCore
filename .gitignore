@@ -251,3 +251,5 @@ paket-files/
 .idea/
 *.sln.iml
 
+# Exceptions
+!LamedalCore.1*

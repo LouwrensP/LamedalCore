@@ -1,0 +1,2 @@
+msbuild /t:pack
+pause

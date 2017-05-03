@@ -1,0 +1,176 @@
+using System.Collections.Generic;
+
+namespace LamedalCore.lib.Words.WordsList
+{
+    public sealed class WordsList_SimpleEnglishWords
+    {
+        private static List<string> _list;
+        public static List<string> SimpleEnglishWordsList_Create()
+        {
+           if (_list != null) return _list;
+           _list = new List<string>();
+
+
+            #region a-z
+              _list.Add("a large number/part=many/most");
+              _list.Add("a number of=some");
+              _list.Add("a variety of=many, different");
+              _list.Add("absolutely essential=essential");
+              _list.Add("accede to=agree to, allow");
+              _list.Add("accentuate=stress");
+              _list.Add("accorded=given");
+              _list.Add("acquiesce=agree");
+              _list.Add("additional=added, more, other");
+              _list.Add("address=discuss");
+              _list.Add("adequate enough=enough");
+              _list.Add("adjacent to=next to");
+              _list.Add("advantageous=helpful, useful");
+              _list.Add("adversly impact on=hurt, set back");
+              _list.Add("afford an opportunity=allow, Let");
+              _list.Add("aggregate=total, sum");
+              _list.Add("alleviate=ease, reduce");
+              _list.Add("apprise=tell, inform");
+              _list.Add("as a consequence of=because");
+              _list.Add("as a means of=to");
+              _list.Add("ascertain=find out, Learn");
+              _list.Add("at present=now");
+              _list.Add("at the present time=now");
+              _list.Add("at this point in time=now");
+              _list.Add("basic fundamentals=basics");
+              _list.Add("bestow=give, award");
+              _list.Add("buy-in=commitment, agreement");
+              _list.Add("by means of=by");
+              _list.Add("capability, capable of=ability, can");
+              _list.Add("cease=stop, end, finish");
+              _list.Add("centre around=centre in, at or on");
+              _list.Add("circumvent=avoid, get around");
+              _list.Add("close proximity=close, near");
+              _list.Add("comes into conflict=conflicts");
+              _list.Add("constitutes=is, forms, makes up");
+              _list.Add("cutting edge=forefront, frontier, Leading, pioneering, progressive");
+              _list.Add("despite the fact that=although");
+              _list.Add("disburse=pay, pay out");
+              _list.Add("discontinue=stop");
+              _list.Add("disseminate=spread");
+              _list.Add("domiciled=Living");
+              _list.Add("due to the fact that=due to, since, because");
+              _list.Add("effect modifications=make changes");
+              _list.Add("elucidate=explain, make clear");
+              _list.Add("empower=allow, Let");
+              _list.Add("endeavour=try");
+              _list.Add("enumerate=count");
+              _list.Add("envisage=expect, imagine");
+              _list.Add("equitable=fair, equal, balanced");
+              _list.Add("erroneous=wrong, incorrect");
+              _list.Add("evidenced=showed, shown");
+              _list.Add("evince=show, prove");
+              _list.Add("exhibit=show");
+              _list.Add("exhibits a tendency to=tends to");
+              _list.Add("expeditiously=quickly, immediately");
+              _list.Add("fabricate=make, make up");
+              _list.Add("facilitate=ease, help, make possible");
+              _list.Add("feedback=opinion, reaction");
+              _list.Add("for the duration of=during");
+              _list.Add("for the purpose of=to");
+              _list.Add("for the reason that=because");
+              _list.Add("foreign imports=imports");
+              _list.Add("forthwith=now, immediately, straight away");
+              _list.Add("future prospects=prospects");
+              _list.Add("gainful employment=paid work, paid employment");
+              _list.Add("give consideration to=consider");
+              _list.Add("granularity=detail");
+              _list.Add("has a requirement for=needs");
+              _list.Add("have responsibility=must");
+              _list.Add("head up=head, Lead");
+              _list.Add("henceforth=from now on, from today");
+              _list.Add("hitherto=until now");
+              _list.Add("hold in abeyance=wait, postpone");
+              _list.Add("holds a belief=believes");
+              _list.Add("if at all possible=if possible");
+              _list.Add("impacted=affected, changed, hit");
+              _list.Add("in a timely manner=quickly");
+              _list.Add("in accordance with=in line with, because of");
+              _list.Add("in addition=also, besides, too");
+              _list.Add("in agreeance/in agreement=agree");
+              _list.Add("in an effort to=to");
+              _list.Add("in close proximity=close to, near");
+              _list.Add("in conjunction with=with");
+              _list.Add("in excess of=more than");
+              _list.Add("in lieu of=instead of");
+              _list.Add("in order to=to");
+              _list.Add("in regard to=about");
+              _list.Add("in relation to=about");
+              _list.Add("in respect of=about");
+              _list.Add("in the course of=during");
+              _list.Add("in the event of=if");
+              _list.Add("in the majority of=usually, most");
+              _list.Add("in the near future=soon");
+              _list.Add("in the neighbourhood of=about, around");
+              _list.Add("inception=start, beginning");
+              _list.Add("in view of the fact that=as, because, since");
+              _list.Add("initiate=start, begin");
+              _list.Add("innovative=creative, pioneering, inventive");
+              _list.Add("input=comments, advice, response");
+              _list.Add("irregardless=regardless");
+              _list.Add("irrespective of=despite");
+              _list.Add("Joint cooperation=cooperation");
+              _list.Add("Liaise with=meet with, work with, discuss with");
+              _list.Add("makes an attempt=attempts, tries");
+              _list.Add("marginal=small, slight");
+              _list.Add("methodology=method");
+              _list.Add("new innovations=innovations");
+              _list.Add("not later than=by");
+              _list.Add("notwithstanding=even though, in spite of");
+              _list.Add("occasioned by=caused by, because of");
+              _list.Add("on numerous occasions=often");
+              _list.Add("on the grounds that=because");
+              _list.Add("owing to the fact that=because");
+              _list.Add("paradigm=model, pattern, structure, formula, accepted point of view");
+              _list.Add("parameters=Limits, boundaries");
+              _list.Add("past experience=experience");
+              _list.Add("personnel=people, staff");
+              _list.Add("pertaining to=about");
+              _list.Add("peruse=read, Look");
+              _list.Add("pertaining to=about");
+              _list.Add("possibly might=might");
+              _list.Add("postpone until later=postpone");
+              _list.Add("predominant=main");
+              _list.Add("prior to=before");
+              _list.Add("provides guidance for=guides");
+              _list.Add("pursuant to=because of, in line with");
+              _list.Add("qualified expert=expert");
+              _list.Add("real-world problem=practical issue");
+              _list.Add("refer back=refer");
+              _list.Add("regarding=about");
+              _list.Add("retain=Keep");
+              _list.Add("rethink=review, reconsider");
+              _list.Add("solicit=ask for");
+              _list.Add("state-of-the-art=Latest");
+              _list.Add("subsequent to=after");
+              _list.Add("synergy=work together, co-operation");
+              _list.Add("that being the case=if so");
+              _list.Add("the following particulars=these details, this");
+              _list.Add("the majority of=most");
+              _list.Add("thereafter=then, afterwards");
+              _list.Add("until such time as=until, when");
+              _list.Add("utilise, utilisation=use");
+              _list.Add("vast majority=majority, most");
+              _list.Add("viable=practical, workable");
+              _list.Add("visualise=see, predict");
+              _list.Add("warrant=call for, permit");
+              _list.Add("whereas=since");
+              _list.Add("wide range=many, range");
+              _list.Add("wide variety=many, variety");
+              _list.Add("with a view to=to, so that");
+              _list.Add("with reference to, with regard to,=about");
+              _list.Add("with the exception of=except for");
+              _list.Add("with the minimum of delay=quickly");
+              _list.Add("without further delay=now, immediately");
+            #endregion
+
+            _list.Sort();
+            return _list;
+        }
+    }
+}
+            

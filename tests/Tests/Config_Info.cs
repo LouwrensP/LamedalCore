@@ -34,7 +34,5 @@ namespace LamedalCore.Test.Tests
             LamedalCore_.Instance.lib.IO.Folder.Create(result);
             return result;
         }
-
-        
     }
 }

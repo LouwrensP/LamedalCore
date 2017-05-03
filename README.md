@@ -26,6 +26,8 @@ Unit Tests | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqf
 # Roadmap
 * Create a simple but functional .NET Core library. (Done)
 * Create test cases with at least 95% code coverage of the library. (Done) 
+* Create workflow process to ensure library stability and usability. (In progress)
+* Integrate with Appveyor (In progress)
 * Create a simple c# code parser to evaluate code on a macro scale. (In progress)
 * Create Visual Studio Tools to support the Lamedal framework. (Future)
 * Use Lamedal tools to refactor and optimise source code. (Future)
@@ -33,10 +35,10 @@ Unit Tests | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqf
 * Demo's to illustrate how Blueprint tools is used to create Lamedal extensions. (Future)
 
 # Setup
-* [Setup](Setup.md)
+* [Setup](docs/Setup.md)
 
 # Workflow
-* [Workflow](Workflow.md)
+* [Workflow](docs/Workflow.md)
 
 # License
 Apache License Version 2.0

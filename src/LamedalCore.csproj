@@ -10,7 +10,8 @@
     <PackageId>LamedalCore</PackageId>
     <PackageReleaseNotes>
 Version 1.1.5
-================    
+================   
+Version 1.1.5: Release 
 Version 1.1.5-rc01: Full unit testing and Appveyor integration.   
 
 Version 1.1.4
@@ -28,7 +29,7 @@ Version 1.1.0
 =============
 * New release of LamedaL.
 * Removed prereleased dependencies.
-* 95% code coverage completed
+* 95% code coverage completed.
 </PackageReleaseNotes>
     <PackageIconUrl>https://sites.google.com/site/lamedalwiki/Project-News/lamedalporttonetcore10/Lamedal15.png</PackageIconUrl>
     <PackageProjectUrl>https://sites.google.com/site/lamedalwiki/</PackageProjectUrl>
@@ -44,7 +45,7 @@ Version 1.1.0
     <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-    <Version>1.1.5-rc01</Version>
+    <Version>1.1.5</Version>
     <RepositoryType>c#</RepositoryType>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>

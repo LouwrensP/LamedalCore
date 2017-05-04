@@ -50,7 +50,7 @@
       <HintPath>..\packages\JetBrains.Annotations.10.4.0\lib\net\JetBrains.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="LamedalCore, Version=1.1.4.2, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LamedalCore.1.1.5-rc01\lib\net461\LamedalCore.dll</HintPath>
+      <HintPath>..\packages\LamedalCore.1.1.5\lib\net461\LamedalCore.dll</HintPath>
     </Reference>
     <Reference Include="LamedalExcel, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\LamedalExcel.1.0.1\lib\net461\LamedalExcel.dll</HintPath>

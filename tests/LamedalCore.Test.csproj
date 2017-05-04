@@ -49,9 +49,6 @@
     <Reference Include="JetBrains.Annotations, Version=10.4.0.0, Culture=neutral, PublicKeyToken=1010a0d8d6380325, processorArchitecture=MSIL">
       <HintPath>..\packages\JetBrains.Annotations.10.4.0\lib\net\JetBrains.Annotations.dll</HintPath>
     </Reference>
-    <Reference Include="LamedalCore, Version=1.1.4.2, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\LamedalCore.1.1.5\lib\net461\LamedalCore.dll</HintPath>
-    </Reference>
     <Reference Include="LamedalExcel, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\LamedalExcel.1.0.1\lib\net461\LamedalExcel.dll</HintPath>
     </Reference>
@@ -224,6 +221,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\src\LamedalCore.csproj">
+      <Project>{dc5b8cba-fb32-4950-95ea-c7c88b54a2d3}</Project>
+      <Name>LamedalCore</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

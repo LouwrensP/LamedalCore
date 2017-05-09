@@ -192,36 +192,61 @@ namespace LamedalCore.zPublicClass.GridBlock
         /// <param name="addressDef">The address definition.</param>
         /// <param name="addressRow">The address row.</param>
         /// <param name="addressCol">The address col.</param>
-        public static void Address_ToXY(string address, out int row, out int col, 
+        public static void Address_2RowCol(string address, out int row, out int col, 
             enGrid_AddressDefOrder addressDef = enGrid_AddressDefOrder.RowCol,
             enGrid_AddressValue addressRow = enGrid_AddressValue.Numeric,
             enGrid_AddressValue addressCol = enGrid_AddressValue.Numeric)
         {
+            var _lamed = LamedalCore_.Instance;
 
-            string yStr, xStr;
+            string rowStr, colStr;
             if (addressDef == enGrid_AddressDefOrder.RowCol)  
             {
                 // YY_XX
-                yStr = address.zvar_Id("_");
-                xStr = address.zvar_Value("_");
+                rowStr = address.zvar_Id("_");
+                colStr = address.zvar_Value("_");
             }
             else
             {
                 // XX_YY
-                xStr = address.zvar_Id("_");
-                yStr = address.zvar_Value("_");
+                colStr = address.zvar_Id("_");
+                rowStr = address.zvar_Value("_");
             }
 
-            //if (addressRow == enGrid_AddressValue.Numeric)
-                row = yStr.zTo_Int();
-            //else
-            //{
-                
-            //}
-            col = xStr.zTo_Int();
+            if (addressRow == enGrid_AddressValue.Numeric)
+                 row = rowStr.zTo_Int();
+            else row = _lamed.Types.Number.Alfa_2Number(rowStr);
+
+            if (addressCol == enGrid_AddressValue.Numeric)
+                 col = colStr.zTo_Int();
+            else col = _lamed.Types.Number.Alfa_2Number(colStr);
 
         }
 
-        
+        /// <summary>Address to x and row.</summary>
+        /// <param name="row">The row.</param>
+        /// <param name="col">The x.</param>
+        /// <param name="addressDef">The address definition.</param>
+        /// <param name="addressRow">The address row.</param>
+        /// <param name="addressCol">The address col.</param>
+        public static string Address_FromRowCol(int row, int col,
+            enGrid_AddressDefOrder addressDef = enGrid_AddressDefOrder.RowCol,
+            enGrid_AddressValue addressRow = enGrid_AddressValue.Numeric,
+            enGrid_AddressValue addressCol = enGrid_AddressValue.Numeric)
+        {
+            var _lamed = LamedalCore_.Instance;
+            string rowStr, colStr;
+            if (addressRow == enGrid_AddressValue.Alfa)
+                 rowStr = _lamed.Types.Number.Alfa_FromNumber(row);
+            else rowStr = row.zTo_Str();
+
+            if (addressCol == enGrid_AddressValue.Alfa)
+                 colStr = _lamed.Types.Number.Alfa_FromNumber(col);
+            else colStr = col.zTo_Str();
+
+            if (addressDef == enGrid_AddressDefOrder.ColRow)
+                return  $"{colStr}_{rowStr}";
+            else return $"{rowStr}_{colStr}";
+        }
     }
 }

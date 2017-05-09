@@ -41,12 +41,14 @@ namespace LamedalCore.Test.Tests.Types
             Assert.Equal("AC", _lamed.Types.Number.Alfa_FromNumber(29));
 
             Assert.Equal(1, _lamed.Types.Number.Alfa_2Number("A"));
+            Assert.Equal(1, _lamed.Types.Number.Alfa_2Number("a"));
             Assert.Equal(2, _lamed.Types.Number.Alfa_2Number("B"));
             Assert.Equal(3, _lamed.Types.Number.Alfa_2Number("C"));
             Assert.Equal(26, _lamed.Types.Number.Alfa_2Number("Z"));
             Assert.Equal(27, _lamed.Types.Number.Alfa_2Number("AA"));
             Assert.Equal(28, _lamed.Types.Number.Alfa_2Number("AB"));
             Assert.Equal(29, _lamed.Types.Number.Alfa_2Number("AC"));
+            Assert.Equal(29, _lamed.Types.Number.Alfa_2Number("ac"));
         }
     }
 }

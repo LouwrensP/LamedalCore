@@ -30,7 +30,7 @@ namespace LamedalCore.Test.Tests.zPublicClass
             int microY, microX;
             GridControl_Settings.Address_ToXY(addressMicro, out microY, out microX);
 
-            var settings = new GridControl_Settings(macroRows: 5, macroCols: 1, subRows: 5, subCols: 6, microRows: 6, microCols: 6);
+            var settings = GridControl_Settings.Setup(macroRows: 5, macroCols: 1, subRows: 5, subCols: 6, microRows: 6, microCols: 6);
             var gridSetup = new GridBlock_5Setup(null, settings);
 
             #region Cuboid
@@ -128,7 +128,7 @@ namespace LamedalCore.Test.Tests.zPublicClass
         [Test_Method("Child_GridBlockMicro()")]
         public void GridBlock_4MacroSetup_Fail(string addressMacro, string addressSub, string addressMicro)
         {
-            var settings = new GridControl_Settings(macroRows: 5, macroCols: 1, subRows: 5, subCols: 6,
+            var settings = GridControl_Settings.Setup(macroRows: 5, macroCols: 1, subRows: 5, subCols: 6,
                 microRows: 6, microCols: 6);
             var gridSetup = new GridBlock_5Setup(null, settings);
             Assert.Throws<ArgumentException>(() => gridSetup.GetChild_MacroGridBlock(addressMacro) as GridBlock_3Macro);
@@ -140,7 +140,7 @@ namespace LamedalCore.Test.Tests.zPublicClass
         [Test_Method("GridBlock_4MacroSetup(1_1,1_1,1_1)")]
         public void GridBlock_Frontend_Test1()
         {
-            var settings = new GridControl_Settings(1, 1, 1, 1, 1, 1);
+            var settings = GridControl_Settings.Setup(1, 1, 1, 1, 1, 1);
             var gridCuboid2 = new GridBlock_5Setup(OnCreateGridControl1, settings);
 
             #region Result: Tree
@@ -196,7 +196,7 @@ Grid//R1cub1_1R1mac1_1R1sub1_1R1//R1cub1_1R1mac1_1R1sub1_1R1mic1_1//MicroBlock";
         [Test_Method("GridBlock_4MacroSetup(1_1,1_1,5_5)")]
         public void GridBlock_Frontend_Test2()
         {
-            var settings = new GridControl_Settings(1, 1, 1, 1, 5, 5);
+            var settings = GridControl_Settings.Setup(1, 1, 1, 1, 5, 5);
             var gridCuboid = new GridBlock_5Setup(null, settings);
             var treeStr = gridCuboid.TreeNameList().zTo_Str("".NL());
 
@@ -247,7 +247,7 @@ R1cub1_1R1mac1_1R1sub1_1R5mic5_5";
         [Test_Method("GridBlock_4MacroSetup(2_2,3_3,3_3)")]
         public void GridBlock_Frontend_Test3()
         {
-            var settings = new GridControl_Settings(2, 2, 2, 2, 2, 2);
+            var settings = GridControl_Settings.Setup(2, 2, 2, 2, 2, 2);
             var gridCuboid = new GridBlock_5Setup(null, settings);
             var treeStr = gridCuboid.TreeNameList().zTo_Str("".NL());
 

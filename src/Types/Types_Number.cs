@@ -43,5 +43,8 @@ namespace LamedalCore.Types
         {
             return _lamed.Types.List.Convert.Int_ToStrRanges(numbers);
         }
+
+
+        
     }
 }

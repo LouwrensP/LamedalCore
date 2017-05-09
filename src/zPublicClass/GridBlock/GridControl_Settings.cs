@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.zz;
@@ -184,22 +185,41 @@ namespace LamedalCore.zPublicClass.GridBlock
             Size_CuboidHeight = Size_MacroHeight * Total_MacroRows + 20;
         }
 
-        /// <summary>Address to x and y.</summary>
+        /// <summary>Address to x and row.</summary>
         /// <param name="address">The address.</param>
-        /// <param name="y">The y.</param>
-        /// <param name="x">The x.</param>
+        /// <param name="row">The row.</param>
+        /// <param name="col">The x.</param>
         /// <param name="addressDef">The address definition.</param>
-        /// <param name="addressRowType">Type of the address row.</param>
-        public static void Address_ToXY(string address, out int y, out int x, 
-            enGrid_AddressDefOrder addressDef = enGrid_AddressDefOrder.RowCol, 
-            enGrid_AddressDefType addressRowType = enGrid_AddressDefType.Numeric, 
-            enGrid_AddressDefType addressColType = enGrid_AddressDefType.Numeric)
+        /// <param name="addressRow">The address row.</param>
+        /// <param name="addressCol">The address col.</param>
+        public static void Address_ToXY(string address, out int row, out int col, 
+            enGrid_AddressDefOrder addressDef = enGrid_AddressDefOrder.RowCol,
+            enGrid_AddressValue addressRow = enGrid_AddressValue.Numeric,
+            enGrid_AddressValue addressCol = enGrid_AddressValue.Numeric)
         {
-            string yStr = address.zvar_Id("_");   // Addresses must be name friendly
-            string xStr = address.zvar_Value("_");
 
-            y = yStr.zTo_Int();
-            x = xStr.zTo_Int();
+            string yStr, xStr;
+            if (addressDef == enGrid_AddressDefOrder.RowCol)  
+            {
+                // YY_XX
+                yStr = address.zvar_Id("_");
+                xStr = address.zvar_Value("_");
+            }
+            else
+            {
+                // XX_YY
+                xStr = address.zvar_Id("_");
+                yStr = address.zvar_Value("_");
+            }
+
+            //if (addressRow == enGrid_AddressValue.Numeric)
+                row = yStr.zTo_Int();
+            //else
+            //{
+                
+            //}
+            col = xStr.zTo_Int();
+
         }
 
         

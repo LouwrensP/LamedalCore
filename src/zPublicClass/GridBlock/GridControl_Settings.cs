@@ -22,7 +22,6 @@ namespace LamedalCore.zPublicClass.GridBlock
         public enGrid_AddressValue Address_Row = enGrid_AddressValue.Numeric;
         public enGrid_AddressValue Address_Col = enGrid_AddressValue.Numeric;
         public string Address_Seperator = ".";
-
         #endregion
 
         #region Size

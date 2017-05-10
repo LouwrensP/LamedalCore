@@ -16,7 +16,7 @@ namespace LamedalCore.zPublicClass.GridBlock
         private const int constSizeMicroWidth = 32;
         private const int constSizeMicroHeight = 30;
 
-        #region Address
+        #region Address           
         // Note: Address settings will only have effect on the display of the output
         public enGrid_AddressDefOrder Address_Order = enGrid_AddressDefOrder.RowCol;
         public enGrid_AddressValue Address_Row = enGrid_AddressValue.Numeric;
@@ -26,13 +26,13 @@ namespace LamedalCore.zPublicClass.GridBlock
 
         #region Size
         public int Size_MicroWidth = constSizeMicroWidth;
-        public  int Size_MicroHeight = constSizeMicroHeight;
-        public  int Size_SubWidth;
-        public  int Size_SubHeight;
-        public  int Size_MacroWidth;
-        public  int Size_MacroHeight;
-        public  int Size_CuboidWidth;
-        public  int Size_CuboidHeight;
+        public int Size_MicroHeight = constSizeMicroHeight;
+        public int Size_SubWidth;
+        public int Size_SubHeight;
+        public int Size_MacroWidth;
+        public int Size_MacroHeight;
+        public int Size_CuboidWidth;
+        public int Size_CuboidHeight;
 
         public int Min_MacroSize = constMinMicroSize;
         public int Min_SubSize = constMinSubSize;

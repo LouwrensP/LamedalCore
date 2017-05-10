@@ -49,7 +49,9 @@ namespace LamedalCore.Test.Tests.zPublicClass
             Assert.Equal(enGrid_BlockEditState.Undefined, gridMacro.State_EditState);  // First time state is undefined
             Assert.Equal(double.NaN, gridMacro.State_ValueDouble);
             Assert.Equal(null, gridMacro.zGridControl);
-            Assert.Equal(true, gridMacro.Name_Caption.Contains("."));
+            Assert.Equal(true, gridMacro.Name_Caption(".").Contains("."));
+            Assert.Equal(false, gridMacro.Name_Caption("_").Contains("."));
+            Assert.Equal(true, gridMacro.Name_Caption("_").Contains("_"));
 
             gridMacro.State_Setup(123.55, 2, Color.Red);  // Setup method makes state ValueSet
             Assert.Equal(123.55, gridMacro.State_ValueDouble);

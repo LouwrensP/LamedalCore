@@ -16,6 +16,15 @@ namespace LamedalCore.zPublicClass.GridBlock
         private const int constSizeMicroWidth = 32;
         private const int constSizeMicroHeight = 30;
 
+        #region Address
+        // Note: Address settings will only have effect on the display of the output
+        public enGrid_AddressDefOrder Address_Order = enGrid_AddressDefOrder.RowCol;
+        public enGrid_AddressValue Address_Row = enGrid_AddressValue.Numeric;
+        public enGrid_AddressValue Address_Col = enGrid_AddressValue.Numeric;
+        public string Address_Seperator = ".";
+
+        #endregion
+
         #region Size
         public int Size_MicroWidth = constSizeMicroWidth;
         public  int Size_MicroHeight = constSizeMicroHeight;
@@ -226,10 +235,12 @@ namespace LamedalCore.zPublicClass.GridBlock
         /// <summary>Address to x and row.</summary>
         /// <param name="row">The row.</param>
         /// <param name="col">The x.</param>
+        /// <param name="seperator">The seperator.</param>
         /// <param name="addressDef">The address definition.</param>
         /// <param name="addressRow">The address row.</param>
         /// <param name="addressCol">The address col.</param>
-        public static string Address_FromRowCol(int row, int col,
+        /// <returns></returns>
+        public static string Address_FromRowCol(int row, int col, string seperator = "_",
             enGrid_AddressDefOrder addressDef = enGrid_AddressDefOrder.RowCol,
             enGrid_AddressValue addressRow = enGrid_AddressValue.Numeric,
             enGrid_AddressValue addressCol = enGrid_AddressValue.Numeric)
@@ -245,8 +256,8 @@ namespace LamedalCore.zPublicClass.GridBlock
             else colStr = col.zTo_Str();
 
             if (addressDef == enGrid_AddressDefOrder.ColRow)
-                return  $"{colStr}_{rowStr}";
-            else return $"{rowStr}_{colStr}";
+                return  $"{colStr}{seperator}{rowStr}";
+            else return $"{rowStr}{seperator}{colStr}";
         }
     }
 }

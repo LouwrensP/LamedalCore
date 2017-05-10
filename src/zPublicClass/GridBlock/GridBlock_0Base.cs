@@ -14,11 +14,22 @@ namespace LamedalCore.zPublicClass.GridBlock
     /// <seealso cref="IGridBlock_Base" />
     public class GridBlock_0Base : IGridBlock_Base
     {
+        private int _row, _col;
+        private string _code;
+
         public IGridBlock_Base _Parent { get; }
         public string Name_Control { get; }
         public string Name_ParentRow { get; }
         public string Name_ChildRow { get; protected set;}
-        public string Name_Caption { get; }
+
+        public string Name_Caption(string seperator = ".",
+            enGrid_AddressDefOrder addressDef = enGrid_AddressDefOrder.RowCol,
+            enGrid_AddressValue addressRow = enGrid_AddressValue.Numeric,
+            enGrid_AddressValue addressCol = enGrid_AddressValue.Numeric)
+        {
+            return _code + GridControl_Settings.Address_FromRowCol(_row, _col,seperator, addressDef,addressRow, addressCol);
+        }
+
         public string Name_Address { get; }
         public IGridControl zGridControl { get; set; }
 
@@ -39,9 +50,10 @@ namespace LamedalCore.zPublicClass.GridBlock
         public GridBlock_0Base(IGridBlock_Base parent, int row, int col, string gridTypeName)
         {
             Name_Address = $"{row}_{col}";
-            if (gridTypeName == "mic")
-                 Name_Caption = $"{row}.{col}";
-            else Name_Caption = gridTypeName + $"{row}.{col}";  // Show grid type in caption except for micro grids
+            _row = row;
+            _col = col;
+            if (gridTypeName == "mic") _code = "";
+            else _code = gridTypeName; // Show grid type in caption except for micro grids
 
             _Parent = parent;
             Name_ChildRow = "";

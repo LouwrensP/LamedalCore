@@ -9,27 +9,24 @@
     <AssemblyName>LamedalCore</AssemblyName>
     <PackageId>LamedalCore</PackageId>
     <PackageReleaseNotes>
-Version 1.1.6
+Lamedal v1.1.6
 ==============
-Version 1.1.6-alfa1: Added address definitions to 3 level Grids. 
+v1.1.6-alfa1: Added address definitions to 3 level Grids. 
 
-Version 1.1.5
+Lamedal v1.1.5
 ================   
 Version 1.1.5: Release 
 Version 1.1.5-rc01: Full unit testing and Appveyor integration.   
 
-Version 1.1.4
+Lamedal v1.1.4
 ================
-Version 1.1.4-afla04: Workaround for xunit 2.2.0 Nuget failure on VS2013
-Version 1.1.4-afla03: Remove .NET Core packages from the .NET build.
-Version 1.1.4-alfa02: Add support of creating uneven Grids.
-Version 1.1.4-alfa01: Made settings object thread safe.
-Version 1.1.4-alfa: Add support for 3 levels grids dashboard and capturing.
+v1.1.4-afla04: Workaround for xunit 2.2.0 Nuget failure on VS2013
+v1.1.4-afla03: Remove .NET Core packages from the .NET build.
+v1.1.4-alfa02: Add support of creating uneven Grids.
+v1.1.4-alfa01: Made settings object thread safe.
+v1.1.4-alfa: Add support for 3 levels grids dashboard and capturing.
 
-Version 1.1.3 : Multi level grids - no longer in use
-Version 1.1.2 : Multi level grids - no longer in use
-Version 1.1.1 : Multi level grids - no longer in use
-Version 1.1.0 
+Lamedal v1.1.0 
 =============
 * New release of LamedaL.
 * Removed prereleased dependencies.

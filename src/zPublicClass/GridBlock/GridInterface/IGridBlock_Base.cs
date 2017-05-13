@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Drawing;
+using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.zPublicClass.GridBlock.GridInterface
 {
@@ -20,7 +21,10 @@ namespace LamedalCore.zPublicClass.GridBlock.GridInterface
         string Name_ChildRow { get; }
 
         /// <summary>Gets the name that will be displayed to the user.</summary>
-        string Name_Caption { get; }
+        string Name_Caption(string seperator = ".",
+            enGrid_AddressDefOrder addressDef = enGrid_AddressDefOrder.RowCol,
+            enGrid_AddressValue addressRow = enGrid_AddressValue.Numeric,
+            enGrid_AddressValue addressCol = enGrid_AddressValue.Numeric);
 
         // <summary>Gets the name that will be displayed to the user.</summary>
         string Name_Address { get; }

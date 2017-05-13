@@ -9,6 +9,10 @@
     <AssemblyName>LamedalCore</AssemblyName>
     <PackageId>LamedalCore</PackageId>
     <PackageReleaseNotes>
+Version 1.1.6
+==============
+Version 1.1.6-alfa1: Added address definitions to 3 level Grids. 
+
 Version 1.1.5
 ================   
 Version 1.1.5: Release 
@@ -45,7 +49,7 @@ Version 1.1.0
     <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-    <Version>1.1.5</Version>
+    <Version>1.1.6-alfa1</Version>
     <RepositoryType>c#</RepositoryType>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>

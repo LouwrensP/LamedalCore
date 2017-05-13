@@ -43,5 +43,37 @@ namespace LamedalCore.Types
         {
             return _lamed.Types.List.Convert.Int_ToStrRanges(numbers);
         }
+
+        /// <summary>Get Alfa value from number.</summary>
+        /// <param name="value">The value.</param>
+        /// <returns></returns>
+        public string Alfa_FromNumber(int value)
+        {
+            string result = string.Empty;
+            while (--value >= 0)
+            {
+                result = (char)('A' + value % 26) + result;
+                value /= 26;
+            }
+            return result;
+        }
+
+        /// <summary>Convert Alfas to a number.</summary>
+        /// <param name="alfa">The alfa.</param>
+        /// <returns></returns>
+        public int Alfa_2Number(string alfa)
+        {
+            int retVal = 0;
+            string col = alfa.ToUpper();
+            for (int iChar = col.Length - 1; iChar >= 0; iChar--)
+            {
+                char colPiece = col[iChar];
+                int colNum = colPiece - 64;
+                retVal = retVal + colNum * (int)Math.Pow(26, col.Length - (iChar + 1));
+            }
+            return retVal;
+        }
+
+
     }
 }

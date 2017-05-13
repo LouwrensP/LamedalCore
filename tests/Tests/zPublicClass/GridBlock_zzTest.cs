@@ -24,13 +24,13 @@ namespace LamedalCore.Test.Tests.zPublicClass
         public void GridBlock_4MacroSetup_Test(string addressMacro, string addressSub, string addressMicro)
         {
             int macroY, macroX;
-            GridControl_Settings.Address_ToXY(addressMacro, out macroY, out macroX);
+            GridControl_Settings.Address_2RowCol(addressMacro, out macroY, out macroX);
             int subY, subX;
-            GridControl_Settings.Address_ToXY(addressSub, out subY, out subX);
+            GridControl_Settings.Address_2RowCol(addressSub, out subY, out subX);
             int microY, microX;
-            GridControl_Settings.Address_ToXY(addressMicro, out microY, out microX);
+            GridControl_Settings.Address_2RowCol(addressMicro, out microY, out microX);
 
-            var settings = new GridControl_Settings(macroRows: 5, macroCols: 1, subRows: 5, subCols: 6, microRows: 6, microCols: 6);
+            var settings = GridControl_Settings.Setup(macroRows: 5, macroCols: 1, subRows: 5, subCols: 6, microRows: 6, microCols: 6);
             var gridSetup = new GridBlock_5Setup(null, settings);
 
             #region Cuboid
@@ -49,7 +49,9 @@ namespace LamedalCore.Test.Tests.zPublicClass
             Assert.Equal(enGrid_BlockEditState.Undefined, gridMacro.State_EditState);  // First time state is undefined
             Assert.Equal(double.NaN, gridMacro.State_ValueDouble);
             Assert.Equal(null, gridMacro.zGridControl);
-            Assert.Equal(true, gridMacro.Name_Caption.Contains("."));
+            Assert.Equal(true, gridMacro.Name_Caption(".").Contains("."));
+            Assert.Equal(false, gridMacro.Name_Caption("_").Contains("."));
+            Assert.Equal(true, gridMacro.Name_Caption("_").Contains("_"));
 
             gridMacro.State_Setup(123.55, 2, Color.Red);  // Setup method makes state ValueSet
             Assert.Equal(123.55, gridMacro.State_ValueDouble);
@@ -128,7 +130,7 @@ namespace LamedalCore.Test.Tests.zPublicClass
         [Test_Method("Child_GridBlockMicro()")]
         public void GridBlock_4MacroSetup_Fail(string addressMacro, string addressSub, string addressMicro)
         {
-            var settings = new GridControl_Settings(macroRows: 5, macroCols: 1, subRows: 5, subCols: 6,
+            var settings = GridControl_Settings.Setup(macroRows: 5, macroCols: 1, subRows: 5, subCols: 6,
                 microRows: 6, microCols: 6);
             var gridSetup = new GridBlock_5Setup(null, settings);
             Assert.Throws<ArgumentException>(() => gridSetup.GetChild_MacroGridBlock(addressMacro) as GridBlock_3Macro);
@@ -140,7 +142,7 @@ namespace LamedalCore.Test.Tests.zPublicClass
         [Test_Method("GridBlock_4MacroSetup(1_1,1_1,1_1)")]
         public void GridBlock_Frontend_Test1()
         {
-            var settings = new GridControl_Settings(1, 1, 1, 1, 1, 1);
+            var settings = GridControl_Settings.Setup(1, 1, 1, 1, 1, 1);
             var gridCuboid2 = new GridBlock_5Setup(OnCreateGridControl1, settings);
 
             #region Result: Tree
@@ -196,7 +198,7 @@ Grid//R1cub1_1R1mac1_1R1sub1_1R1//R1cub1_1R1mac1_1R1sub1_1R1mic1_1//MicroBlock";
         [Test_Method("GridBlock_4MacroSetup(1_1,1_1,5_5)")]
         public void GridBlock_Frontend_Test2()
         {
-            var settings = new GridControl_Settings(1, 1, 1, 1, 5, 5);
+            var settings = GridControl_Settings.Setup(1, 1, 1, 1, 5, 5);
             var gridCuboid = new GridBlock_5Setup(null, settings);
             var treeStr = gridCuboid.TreeNameList().zTo_Str("".NL());
 
@@ -247,7 +249,7 @@ R1cub1_1R1mac1_1R1sub1_1R5mic5_5";
         [Test_Method("GridBlock_4MacroSetup(2_2,3_3,3_3)")]
         public void GridBlock_Frontend_Test3()
         {
-            var settings = new GridControl_Settings(2, 2, 2, 2, 2, 2);
+            var settings = GridControl_Settings.Setup(2, 2, 2, 2, 2, 2);
             var gridCuboid = new GridBlock_5Setup(null, settings);
             var treeStr = gridCuboid.TreeNameList().zTo_Str("".NL());
 
@@ -387,23 +389,38 @@ R1cub1_1R2mac2_2R2sub2_2R2mic2_2";
         }
 
         [Fact]
-        [Test_Method("Address_ToXY()")]
+        [Test_Method("Address_2RowCol()")]
+        [Test_Method("Address_FromRowCol()")]
         public void Address_ToXY_Test()
         {
-            int y, x;
-            GridControl_Settings.Address_ToXY("1_1",out y, out x);
-            Assert.Equal(1, y);
-            Assert.Equal(1, x);
+            int row, col;
+            GridControl_Settings.Address_2RowCol("1_1",out row, out col);
+            Assert.Equal(1, row);
+            Assert.Equal(1, col);
 
-            GridControl_Settings.Address_ToXY("1_3", out y, out x);
-            Assert.Equal(1, y);
-            Assert.Equal(3, x);
+            GridControl_Settings.Address_2RowCol("1_3", out row, out col);
+            Assert.Equal(1, row);
+            Assert.Equal(3, col);
 
-            GridControl_Settings.Address_ToXY("7_3", out y, out x);
-            Assert.Equal(7, y);
-            Assert.Equal(3, x);
+            GridControl_Settings.Address_2RowCol("7_3", out row, out col);
+            Assert.Equal(7, row);
+            Assert.Equal(3, col);
+            GridControl_Settings.Address_2RowCol("7_3", out row, out col, addressDef: enGrid_AddressDefOrder.ColRow);
+            Assert.Equal(3, row);
+            Assert.Equal(7, col);
+            GridControl_Settings.Address_2RowCol("G_3", out row, out col, addressDef: enGrid_AddressDefOrder.ColRow, addressCol:enGrid_AddressValue.Alfa);
+            Assert.Equal(3, row);
+            Assert.Equal(7, col);
+
+            // Reverse
+            Assert.Equal("1_1", GridControl_Settings.Address_FromRowCol(1,1));
+            Assert.Equal("1_3", GridControl_Settings.Address_FromRowCol(1,3));
+            Assert.Equal("7_3", GridControl_Settings.Address_FromRowCol(7,3));
+            Assert.Equal("3_7", GridControl_Settings.Address_FromRowCol(7,3, addressDef: enGrid_AddressDefOrder.ColRow));
+            Assert.Equal("C_7", GridControl_Settings.Address_FromRowCol(7,3, addressDef: enGrid_AddressDefOrder.ColRow, addressCol:enGrid_AddressValue.Alfa));
+            Assert.Equal("G_3", GridControl_Settings.Address_FromRowCol(3,7, addressDef: enGrid_AddressDefOrder.ColRow, addressCol:enGrid_AddressValue.Alfa));
         }
 
-     
+
     }
 }

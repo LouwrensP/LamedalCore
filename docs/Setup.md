@@ -28,12 +28,12 @@ namespace ConsoleApplication
             
             // Methods dot show more info
             // ==========================
-            _lamed.lib.About.*
+            _lamed.About_();
 
             // Console menthods
+            // _lamed.lib.Command.*
             // ================
-            _lamed.lib.Command.*
-
+            _lamed.lib.Command.Execute_Notepad("");
         }
     }
 }

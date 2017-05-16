@@ -19,7 +19,7 @@ Unit Tests | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqf
 > that do one thing and do that one thing very well. The fact of life is that there is never 
 > an opportunity to create these "perfect little snowflakes" of code. 
 >
-> The continues pressures of "crunching" out code will ... [see for more](https://sites.google.com/site/lamedalwiki/)
+> The continues pressures of "crunching" out code will ... [see more](https://sites.google.com/site/lamedalwiki/)
 --------------------------------------------------------------------------------------------
 
 ## Roadmap

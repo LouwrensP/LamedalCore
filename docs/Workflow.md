@@ -1,8 +1,10 @@
 # Workflow
 * For most applications the following workflow will work best.
+
 ![Kiku](/src/Designs/Lamedal_Usage_Workflow1.png)
 
 * If you require the source code in your project then use the following workflow:
+
 ![Kiku](/src/Designs/Lamedal_Usage_Workflow2.png)
 
 # Development of Lamedal

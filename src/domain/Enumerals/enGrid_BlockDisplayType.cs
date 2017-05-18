@@ -4,6 +4,8 @@
     {
         Address,
         Name,
-        Value
+        Value,
+        DB_Name,
+        DB_ID
     }
 }

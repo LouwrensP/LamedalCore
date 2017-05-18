@@ -10,14 +10,19 @@ namespace LamedalCore.zPublicClass.GridBlock
         /// <param name="parent">The parent.</param>
         /// <param name="onGridCreate">The on grid create.</param>
         /// <param name="onGridRowCreate">The on grid row create.</param>
-        /// <param name="macroRows">The child cols.</param>
+        /// <param name="macroName">Name of the macro.</param>
         /// <param name="macroCols">The child rows.</param>
+        /// <param name="macroRows">The macro rows.</param>
+        /// <param name="subName">Name of the sub.</param>
         /// <param name="subRows">The sub rows.</param>
         /// <param name="subCols">The sub cols.</param>
+        /// <param name="microName">Name of the micro.</param>
         /// <param name="microRows">The micro rows.</param>
         /// <param name="microCols">The micro cols.</param>
-        public GridBlock_4Cuboid(IGridBlock_Base parent, onGrid_CreateItem onGridCreate, onGrid_CreateItem onGridRowCreate, int macroRows = 5, int macroCols = 1, 
-            int subRows = 5, int subCols = 5, int microRows = 5, int microCols = 5) : base(parent, 1, 1, "cub")
+        public GridBlock_4Cuboid(IGridBlock_Base parent, onGrid_CreateItem onGridCreate, onGrid_CreateItem onGridRowCreate, string cuboidName,
+            string macroName = "Macro", int macroCols = 1, int macroRows = 1, 
+            string subName = "Sub", int subRows = 5, int subCols = 5, 
+            string microName = "Micro", int microRows = 5, int microCols = 5) : base(parent, 1, 1, cuboidName)
         {
             Child_BlockType = enGrid_BlockType.MacroBlock;
             Child_DisplayType = enGrid_BlockDisplayType.Name;
@@ -34,7 +39,10 @@ namespace LamedalCore.zPublicClass.GridBlock
 
                 for (int col = 1; col <= macroCols; col++)
                 {
-                    var grid = new GridBlock_3Macro(this, onGridCreate, onGridRowCreate, row1, col, subRows: subRows, subCols: subCols, microRows: microRows, microCols: microCols);
+                    var grid = new GridBlock_3Macro(this, onGridCreate, onGridRowCreate,
+                            macroName, row1, col, 
+                            subName, subRows, subCols, 
+                            microName, microRows, microCols);
                     _GridBlocksDictionary.Add(grid.Name_Address, grid);
                 }
             }

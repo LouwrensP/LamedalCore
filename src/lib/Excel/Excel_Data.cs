@@ -82,6 +82,7 @@ namespace LamedalCore.lib.Excel
                             case enExcel_FindReturnValue.CellAddress: result.Add(address); break;
                             case enExcel_FindReturnValue.CellValue: result.Add(valueDiff); break;
                             case enExcel_FindReturnValue.CellAddressAndValue: result.Add(address + " -> " + valueDiff); break;
+                            default: throw new Exception($"Argument '{nameof(returnValue)}' error.");
                         }
                     }
                     colNo++;

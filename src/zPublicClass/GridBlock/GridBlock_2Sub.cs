@@ -12,37 +12,38 @@ namespace LamedalCore.zPublicClass.GridBlock
         /// <param name="parent">The parent.</param>
         /// <param name="onGridCreate">The on grid create.</param>
         /// <param name="onGridRowCreate">The on grid row create.</param>
-        /// <param name="subName"></param>
+        /// <param name="settings">The settings.</param>
+        /// <param name="index">The index.</param>
         /// <param name="row">The row.</param>
         /// <param name="col">The col.</param>
-        /// <param name="microName"></param>
         /// <param name="microRows">The micro rows.</param>
         /// <param name="microCols">The micro cols.</param>
-        public GridBlock_2Sub(IGridBlock_Base parent, onGrid_CreateItem onGridCreate, onGrid_CreateItem onGridRowCreate, 
-                        string subName, int row, int col, 
-                        string microName, int microRows = 5, int microCols = 5) : base(parent, row, col, subName)
+        public GridBlock_2Sub(IGridBlock_Base parent, onGrid_CreateItem onGridCreate, onGrid_CreateItem onGridRowCreate,
+                        GridControl_Settings settings, int index, int row, int col, 
+                        int microRows = 5, int microCols = 5) : base(parent, index, row, col, settings)
         {
             Child_BlockType = enGrid_BlockType.MicroBlock;
-            Child_DisplayType = enGrid_BlockDisplayType.Name;
+            Child_DisplayType = enGrid_BlockDisplayType.Address;
             Child_Cols = microCols;
             Child_Rows = microRows;
-
+            Child_Count = 0;
             onGridCreate?.Invoke(this, enGrid_BlockType.SubBlock);
 
-            CreateMicroGrids(onGridCreate, onGridRowCreate, microName, microRows, microCols);
+            CreateMicroGrids(onGridCreate, onGridRowCreate, settings, microRows, microCols);
         }
 
         /// <summary>Creates the micro grids.</summary>
         /// <param name="onGridCreate">The on grid create.</param>
         /// <param name="onGridRowCreate">The on grid row create.</param>
-        /// <param name="microName">Name of the micro.</param>
+        /// <param name="settings">The settings.</param>
         /// <param name="microRows">The micro rows.</param>
         /// <param name="microCols">The micro cols.</param>
-        public void CreateMicroGrids(onGrid_CreateItem onGridCreate, onGrid_CreateItem onGridRowCreate, 
-            string microName, int microRows, int microCols)
+        public void CreateMicroGrids(onGrid_CreateItem onGridCreate, onGrid_CreateItem onGridRowCreate,
+            GridControl_Settings settings, int microRows, int microCols)
         {
             // Create the child objects
             // This can be optimised by only creating a child the momemnt it is neaded in Child_GridBlockGet
+            int ii = 0;
             for (int row1 = 1; row1 <= microRows; row1++)
             {
                 Name_ChildRow = GridBlock_zMethods.Name_ChildRow(this, row1);
@@ -50,10 +51,11 @@ namespace LamedalCore.zPublicClass.GridBlock
 
                 for (int col1 = 1; col1 <= microCols; col1++)
                 {
-                    if (GetChild_GridBlock($"{row1}_{col1}", false) == null)
+                    if (GetChild_GridBlock($"{row1}_{col1}", enGrid_BlockDisplayType.Address, false) == null)
                     {
                         // The childblock does not exists
-                        var grid = new GridBlock_1Micro(this, onGridCreate, microName, col1, row1);
+                        ii++;
+                        var grid = new GridBlock_1Micro(this, onGridCreate, settings, ii, col1, row1);
                         _GridBlocksDictionary.Add(grid.Name_Address, grid);
                     }
                 }

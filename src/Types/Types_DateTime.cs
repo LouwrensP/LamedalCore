@@ -296,10 +296,10 @@ namespace LamedalCore.Types
                case enDateTimeTrim.Trim2Hour: return Trim_Setup(time, TimeSpan.FromHours(1));
                case enDateTimeTrim.Trim2Minute: return Trim_Setup(time, TimeSpan.FromMinutes(1));
                case enDateTimeTrim.Trim2Second: return Trim_Setup(time, TimeSpan.FromSeconds(1));
+               case enDateTimeTrim.Trim2MilliSecond: return Trim_Setup(time, TimeSpan.FromMilliseconds(1));
+               default: throw new Exception($"Argument '{nameof(trim)}' error.");
             }
-            // case enDateTimeTrim.Trim2MilliSecond: 
-            return Trim_Setup(time, TimeSpan.FromMilliseconds(1));
-        }
+         }
 
         /// <summary>Trim the time to the specified timespan.</summary>
         /// <param name="dateTime">The date time.</param>

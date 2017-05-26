@@ -4,17 +4,26 @@ namespace LamedalCore.zPublicClass.GridBlock
 {
     public static class GridBlock_zMethods
     {
+        public static string GridPrefix(IGridBlock_Base grid, GridControl_Settings settings)
+        {
+            string prefix = "";
+            if (grid is GridBlock_1Micro) prefix = settings.GridBlock_Name1Micro;
+            else if (grid is GridBlock_2Sub) prefix = settings.GridBlock_Name2Sub;
+            else if (grid is GridBlock_3Macro) prefix = settings.GridBlock_Name3Macro;
+            return prefix;
+        }
 
         /// <summary>Calculates the grid frontend name.</summary>
         /// <param name="grid">The grid.</param>
         /// <param name="col">The col.</param>
         /// <param name="row">The row.</param>
-        /// <param name="gridTypeName">Name of the grid type.</param>
+        /// <param name="settings">The settings.</param>
         /// <returns></returns>
-        public static string Name_Frontend(IGridBlock_Base grid, int col, int row, string gridTypeName)
+        public static string Name_Frontend(IGridBlock_Base grid, int col, int row, GridControl_Settings settings)
         {
             var parentRow = grid.Name_ParentRow;   // + "/";
-            return  parentRow + gridTypeName + $"{row}_{col}";
+            string prefix = GridPrefix(grid, settings);
+            return  parentRow + prefix + $"{row}_{col}";
         }
 
         /// <summary>Calculate the current row name for the frontend.</summary>

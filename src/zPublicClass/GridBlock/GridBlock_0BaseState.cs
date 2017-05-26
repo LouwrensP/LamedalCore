@@ -16,11 +16,13 @@ namespace LamedalCore.zPublicClass.GridBlock
 
         /// <summary>Initializes a new instance of the <see cref="GridBlock_1Micro" /> class.</summary>
         /// <param name="parent">The parent.</param>
+        /// <param name="index">The index.</param>
         /// <param name="row">The row.</param>
         /// <param name="col">The col.</param>
-        /// <param name="gridTypeName">Name of the grid type.</param>
-        public GridBlock_0BaseState(IGridBlock_Base parent, int row, int col, string gridTypeName) : base(parent, row, col, gridTypeName)
+        /// <param name="settings">The settings.</param>
+        public GridBlock_0BaseState(IGridBlock_Base parent, int index, int row, int col, GridControl_Settings settings) : base(parent, row, col, settings)
         {
+            State_Index = index;
             State_Col = col;
             State_Row = row;
             State_Setup(Double.NaN, 0, Color.Black);
@@ -28,11 +30,9 @@ namespace LamedalCore.zPublicClass.GridBlock
         }
 
         public int State_Col { get; }
-
+        public int State_Row { get; }
         public enGrid_BlockEditState State_EditState { get; set; }
         public bool State_Selected { get; set; }
-        public int State_Row { get; }
-
         public Color State_Color
         {
             get { return _stateColor; }
@@ -51,6 +51,7 @@ namespace LamedalCore.zPublicClass.GridBlock
                 State_EditState = enGrid_BlockEditState.Changed;
             }
         }
+        public int State_Index { get; set; }
         public int State_Id
         {
             get { return _stateValueInt; }
@@ -60,9 +61,7 @@ namespace LamedalCore.zPublicClass.GridBlock
                 State_EditState = enGrid_BlockEditState.Changed;
             }
         }
-
         public int State_DbId { get; set; }
-
         public string State_DbName { get; set; }
     }
 }

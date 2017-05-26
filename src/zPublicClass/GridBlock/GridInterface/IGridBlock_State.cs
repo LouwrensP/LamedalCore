@@ -6,31 +6,27 @@ namespace LamedalCore.zPublicClass.GridBlock.GridInterface
     public interface IGridBlock_State
     {
         /// <summary>Gets or sets the address col.</summary>
-        /// <value>The address col.</value>
         int State_Col { get; }
 
         /// <summary>Gets or sets the address row.</summary>
-        /// <value>The address row.</value>
         int State_Row { get; }
 
         /// <summary>Gets or sets the value.</summary>
-        /// <value>The value.</value>
         double State_ValueDouble { get; set; }
 
-        /// <summary>Gets or sets the state id value. This can be used for store different states and colours of grids.</summary>
-        /// <value>The state_ value int.</value>
+        /// <summary>Gets or sets the index of the state.</summary>
+        int State_Index { get; set; }
+
+        /// <summary>Gets or sets the state id value. This can be used for store different states that can be uses for colours of the grids.</summary>
         int State_Id { get; set; }
 
-        /// <summary>Gets or sets the id value. This can be used to link the grids to a database.</summary>
-        /// <value>The state_ value int.</value>
+        /// <summary>Gets or sets the DB Id value. This can be used to link the grids to a database.</summary>
         int State_DbId { get; set; }
 
-        /// <summary>Gets or sets the name value. This can be used to search for values.</summary>
-        /// <value>The state_ value int.</value>
+        /// <summary>Gets or sets the DB name value. This can be used to search for values.</summary>
         string State_DbName { get; set; }
 
-        /// <summary>Gets or sets the state of the block.</summary>
-        /// <value>The state of the block.</value>
+        /// <summary>Gets or sets the color of the block.</summary>
         Color State_Color { get; set; }
 
         enGrid_BlockEditState State_EditState { get; set; }

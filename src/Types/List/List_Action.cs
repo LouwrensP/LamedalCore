@@ -139,6 +139,8 @@ namespace LamedalCore.Types.List
             {
                 case enSort.Ascending: return list.OrderBy(q => q).ToList();
                 case enSort.Descending: return list.OrderByDescending(q => q).ToList();
+                case enSort.NoSort: return list;
+                default: throw new Exception($"Argument '{nameof(sort)}' error.");
             }
             return list;
         }

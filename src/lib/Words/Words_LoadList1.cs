@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
@@ -31,10 +32,9 @@ namespace LamedalCore.lib.Words
                 case enWord_List.VerbModifiers : result = WordsList_VerbModifiers.VerbModifiersList_Create(); break;
                 case enWord_List.Verbs : result = WordsList_Verbs.VerbsList_Create(); break;
                 case enWord_List.WordsNotToUse : result = WordsList_WordsNotToUse.WordsNotToUseList_Create(); break;
+                default: throw new Exception($"Argument '{nameof(wordList)}' error.");
             }
             return result;
         }
-
     }
-
 }

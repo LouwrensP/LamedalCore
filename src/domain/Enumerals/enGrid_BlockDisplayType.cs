@@ -5,6 +5,8 @@
         Address,
         Name,
         Value,
+        Index,
+        StateID,
         DB_Name,
         DB_ID
     }

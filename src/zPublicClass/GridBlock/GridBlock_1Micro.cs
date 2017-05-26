@@ -11,10 +11,11 @@ namespace LamedalCore.zPublicClass.GridBlock
         /// <summary>Initializes a new instance of the <see cref="GridBlock_1Micro" /> class.</summary>
         /// <param name="parent">The parent.</param>
         /// <param name="onGridCreate">The on grid create.</param>
-        /// <param name="microName"></param>
+        /// <param name="settings">The settings.</param>
+        /// <param name="index">The index.</param>
         /// <param name="col">The col.</param>
         /// <param name="row">The row.</param>
-        public GridBlock_1Micro(IGridBlock_Base parent, onGrid_CreateItem onGridCreate, string microName, int col, int row) : base(parent, row, col, microName)
+        public GridBlock_1Micro(IGridBlock_Base parent, onGrid_CreateItem onGridCreate, GridControl_Settings settings, int index, int col, int row) : base(parent, index, row, col, settings)
         {
             onGridCreate?.Invoke(this, enGrid_BlockType.MicroBlock);
         }

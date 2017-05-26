@@ -27,7 +27,7 @@ Unit Tests | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqf
 * *Create test cases with at least 95% code coverage of the library. (Done)* 
 * *Create workflow process to ensure library stability and usability. (Done)*
 * *Integrate with Appveyor (Done)*
-* **Create a simple c# code parser to evaluate code on a macro scale. (In progress - 4 May 2017)**
+* **Create a simple c# code parser to evaluate code on a macro scale. (In progress - 4 June 2017)**
 * Create Visual Studio Tools to support the Lamedal framework. (Future)
 * Use Lamedal tools to refactor and optimise source code. (Future)
 * Publish Lamedal Blueprint rule framework methodology. (Future)

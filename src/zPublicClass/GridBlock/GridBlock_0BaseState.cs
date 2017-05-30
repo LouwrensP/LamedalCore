@@ -63,5 +63,6 @@ namespace LamedalCore.zPublicClass.GridBlock
         }
         public int State_DbId { get; set; }
         public string State_DbName { get; set; }
+        public int State_Progress { get; set; }
     }
 }

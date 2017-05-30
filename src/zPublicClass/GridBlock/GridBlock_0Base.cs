@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using JetBrains.Annotations;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.zPublicClass.GridBlock.GridInterface;
@@ -10,8 +11,9 @@ using LamedalCore.zz;
 namespace LamedalCore.zPublicClass.GridBlock
 {
     /// <summary>
-    /// The base class implements an interface to allow it to be used across platform boundaries. 
+    /// The base class implements an interface to allow it to be used across platform boundaries.
     /// </summary>
+    /// <seealso cref="LamedalCore.zPublicClass.GridBlock.GridInterface.IGridBlock_Base" />
     /// <seealso cref="IGridBlock_Base" />
     public class GridBlock_0Base : IGridBlock_Base
     {
@@ -22,7 +24,7 @@ namespace LamedalCore.zPublicClass.GridBlock
         public IGridBlock_Base _Parent { get; }
         public string Name_Control { get; }
         public string Name_ParentRow { get; }
-        public string Name_ChildRow { get; protected set;}
+        public string Name_ChildRow { get; protected set; }
 
         /// <summary>Initializes a new instance of the <see cref="GridBlock_0Base" /> class.</summary>
         /// <param name="parent">The parent.</param>
@@ -45,7 +47,7 @@ namespace LamedalCore.zPublicClass.GridBlock
         public string Name_Caption(GridControl_Settings settings)
         {
             if (settings == null) return GridControl_Settings.Address_FromRowCol(_row, _col, ".");
-            return GridControl_Settings.Address_FromRowCol(_row, _col,settings.Address_Seperator, settings.Address_Order,settings.Address_Row, settings.Address_Col);
+            return GridControl_Settings.Address_FromRowCol(_row, _col, settings.Address_Seperator, settings.Address_Order, settings.Address_Row, settings.Address_Col);
         }
 
         public string Name_Address { get; }
@@ -78,14 +80,20 @@ namespace LamedalCore.zPublicClass.GridBlock
         /// <param name="searchValue">The macro address or search value.</param>
         /// <param name="searchItem">The search item.</param>
         /// <param name="showError">if set to <c>true</c> [show error].</param>
+        /// <param name="compare">The compare.</param>
         /// <returns></returns>
+        /// <exception cref="System.ArgumentException">
+        /// Error! Search item not implemented yet! - searchItem
+        /// </exception>
         /// <exception cref="ArgumentException"></exception>
-        /// <exception cref="System.ArgumentException"></exception>
-        public IGridBlock_Base GetChild_GridBlock(string searchValue, enGrid_BlockDisplayType searchItem = enGrid_BlockDisplayType.Address, bool showError = true)
+        public IGridBlock_Base GetChild_GridBlock(string searchValue, enGrid_BlockDisplayType searchItem = enGrid_BlockDisplayType.Address, 
+                    bool showError = true, enCompare compare = enCompare.Equal)
         {
             IGridBlock_Base grid = null;
             if (searchItem == enGrid_BlockDisplayType.Address)
             {
+                if (compare != enCompare.Equal) throw new ArgumentException($"Error, '{nameof(compare)}' must be 'Equal'");
+
                 if (_GridBlocksDictionary.TryGetValue(searchValue, out grid) == false)
                 {
                     string dimensions = "";
@@ -102,21 +110,117 @@ namespace LamedalCore.zPublicClass.GridBlock
             else
             {
                 IList<IGridBlock_State> grids = _lamed.Types.List.Convert.IList_2IListT<IGridBlock_State>(_GridBlocksDictionary.Values.ToList());
-                IEnumerable<IGridBlock_State> gridsFound = null;
-                int searchId = searchValue.zTo_Int();
-                double searchDouble = searchValue.zObject().AsDouble();
-                switch (searchItem)
-                {
-                    case enGrid_BlockDisplayType.DB_Name: gridsFound = grids.Where(x => x.State_DbName == searchValue); break;
-                    case enGrid_BlockDisplayType.DB_ID: gridsFound = grids.Where(x => x.State_DbId == searchId); break;
-                    case enGrid_BlockDisplayType.Index: gridsFound = grids.Where(x => x.State_Index == searchId); break;
-                    case enGrid_BlockDisplayType.StateID: gridsFound = grids.Where(x => x.State_Id == searchId); break;
-                    case enGrid_BlockDisplayType.Value: gridsFound = grids.Where(x => x.State_ValueDouble == searchDouble); break;
-                    default: throw new ArgumentException("Error! Search item not implemented yet!", nameof(searchItem));
-                }
-                grid = gridsFound.First() as IGridBlock_Base;
+                grid = GetChild_FromGridState(searchValue, searchItem, grids, compare);
             }
             return grid;
+        }
+
+        private IGridBlock_Base GetChild_FromGridState(string searchValue, enGrid_BlockDisplayType searchItem, IList<IGridBlock_State> grids, enCompare compare)
+        {
+            int searchInt = searchValue.zTo_Int();
+            double searchDouble = searchValue.zObject().AsDouble();
+            switch (searchItem)
+            {
+                case enGrid_BlockDisplayType.DB_Name: return Find_DbName(grids, searchValue, compare);
+                case enGrid_BlockDisplayType.DB_ID: return Find_DbId(grids, searchInt, compare);
+                case enGrid_BlockDisplayType.Index: return Find_DbIndex(grids, searchInt, compare);
+                case enGrid_BlockDisplayType.StateID: return Find_StateId(grids, searchInt, compare);
+                case enGrid_BlockDisplayType.Value: return Find_Value(grids, searchDouble, compare);
+                default: throw new ArgumentException("Error! Search item not implemented yet!", nameof(searchItem));
+            }
+        }
+
+
+        /// <summary>Finds the DbName.</summary>
+        /// <param name="grids">The grids.</param>
+        /// <param name="searchValue">The search value.</param>
+        /// <param name="compare">The compare.</param>
+        /// <returns></returns>
+        /// <exception cref="System.ArgumentException">compare</exception>
+        private static IGridBlock_Base Find_DbName(IList<IGridBlock_State> grids, string searchValue, enCompare compare)
+        {
+            switch (compare)
+            {
+                case enCompare.Equal: return grids.Where(x => x.State_DbName == searchValue).First() as IGridBlock_Base;
+                case enCompare.NotEqual: return grids.Where(x => x.State_DbName != searchValue).First() as IGridBlock_Base;
+                default: throw new ArgumentException($"Error! '{nameof(compare)}' only allowed for '=' and '!='.");
+            }
+        }
+
+        /// <summary>Finds the DbId.</summary>
+        /// <param name="grids">The grids.</param>
+        /// <param name="searchInt">The search int.</param>
+        /// <param name="compare">The compare.</param>
+        /// <returns></returns>
+        /// <exception cref="System.ArgumentException">compare</exception>
+        private static IGridBlock_Base Find_DbId(IList<IGridBlock_State> grids, int searchInt, enCompare compare)
+        {
+            switch (compare)
+            {
+                case enCompare.Equal: return grids.Where(x => x.State_DbId == searchInt).First() as IGridBlock_Base;
+                case enCompare.NotEqual: return grids.Where(x => x.State_DbId != searchInt).First() as IGridBlock_Base;
+                case enCompare.Equal_AndGreater: return grids.Where(x => x.State_DbId >= searchInt).First() as IGridBlock_Base;
+                case enCompare.Equal_AndLess: return grids.Where(x => x.State_DbId <= searchInt).First() as IGridBlock_Base;
+                case enCompare.Greater: return grids.Where(x => x.State_DbId > searchInt).First() as IGridBlock_Base;
+                case enCompare.Less: return grids.Where(x => x.State_DbId > searchInt).First() as IGridBlock_Base;
+                default: throw new ArgumentException($"Error! '{nameof(compare)}' only allowed for '=' and '!='.");
+            }
+        }
+
+        /// <summary>Finds the DbId.</summary>
+        /// <param name="grids">The grids.</param>
+        /// <param name="searchInt">The search int.</param>
+        /// <param name="compare">The compare.</param>
+        /// <returns></returns>
+        /// <exception cref="System.ArgumentException">compare</exception>
+        private static IGridBlock_Base Find_DbIndex(IList<IGridBlock_State> grids, int searchInt, enCompare compare)
+        {
+            switch (compare)
+            {
+                case enCompare.Equal: return grids.Where(x => x.State_Index == searchInt).First() as IGridBlock_Base;
+                case enCompare.NotEqual: return grids.Where(x => x.State_Index != searchInt).First() as IGridBlock_Base;
+                case enCompare.Equal_AndGreater: return grids.Where(x => x.State_Index >= searchInt).First() as IGridBlock_Base;
+                case enCompare.Equal_AndLess: return grids.Where(x => x.State_Index <= searchInt).First() as IGridBlock_Base;
+                case enCompare.Greater: return grids.Where(x => x.State_Index > searchInt).First() as IGridBlock_Base;
+                case enCompare.Less: return grids.Where(x => x.State_Index > searchInt).First() as IGridBlock_Base;
+                default: throw new ArgumentException($"Error! '{nameof(compare)}' only allowed for '=' and '!='.");
+            }
+        }
+
+        /// <summary>Finds the DbName.</summary>
+        /// <param name="grids">The grids.</param>
+        /// <param name="searchInt">The search int.</param>
+        /// <param name="compare">The compare.</param>
+        /// <returns></returns>
+        /// <exception cref="System.ArgumentException">compare</exception>
+        private static IGridBlock_Base Find_StateId(IList<IGridBlock_State> grids, int searchInt, enCompare compare)
+        {
+            switch (compare)
+            {
+                case enCompare.Equal: return grids.Where(x => x.State_Id == searchInt).First() as IGridBlock_Base;
+                case enCompare.NotEqual: return grids.Where(x => x.State_Id != searchInt).First() as IGridBlock_Base;
+                default: throw new ArgumentException($"Error! '{nameof(compare)}' only allowed for '=' and '!='.");
+            }
+        }
+
+        /// <summary>Finds the DbId.</summary>
+        /// <param name="grids">The grids.</param>
+        /// <param name="searchDouble">The search double.</param>
+        /// <param name="compare">The compare.</param>
+        /// <returns></returns>
+        /// <exception cref="System.ArgumentException">compare</exception>
+        private static IGridBlock_Base Find_Value(IList<IGridBlock_State> grids, double searchDouble, enCompare compare)
+        {
+            switch (compare)
+            {
+                case enCompare.Equal: return grids.Where(x => x.State_ValueDouble == searchDouble).First() as IGridBlock_Base;
+                case enCompare.NotEqual: return grids.Where(x => x.State_ValueDouble != searchDouble).First() as IGridBlock_Base;
+                case enCompare.Equal_AndGreater: return grids.Where(x => x.State_ValueDouble >= searchDouble).First() as IGridBlock_Base;
+                case enCompare.Equal_AndLess: return grids.Where(x => x.State_ValueDouble <= searchDouble).First() as IGridBlock_Base;
+                case enCompare.Greater: return grids.Where(x => x.State_ValueDouble > searchDouble).First() as IGridBlock_Base;
+                case enCompare.Less: return grids.Where(x => x.State_ValueDouble > searchDouble).First() as IGridBlock_Base;
+                default: throw new ArgumentException($"Error! '{nameof(compare)}' only allowed for '=' and '!='.");
+            }
         }
 
         /// <summary>Set the state information.</summary>

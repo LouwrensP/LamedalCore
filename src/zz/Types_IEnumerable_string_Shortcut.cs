@@ -15,7 +15,7 @@ namespace LamedalCore.zz
         /// <param name="array">The ienumerable&lt;string&gt;</param>
         /// <param name="sortType">sortType indicator. Default value = true.</param>
         /// <returns>IEnumerable<string/></returns>
-        public static IEnumerable<string> zArray_SortByLength(this IEnumerable<string> array, enSort sortType = enSort.Ascending)
+        public static IEnumerable<string> zArray_SortByLength(this IEnumerable<string> array, enCompareSort sortType = enCompareSort.Ascending)
         {
             return LamedalCore_.Instance.Types.List.String.SortByStrLength(array, sortType);
         }

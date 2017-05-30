@@ -72,7 +72,7 @@ namespace LamedalCore.Types.String
         [Pure]
         public string Remove_Prefix(string inputStr,params string[] ignorePrefix)
         {
-            var ignorePrefixSorted = ignorePrefix.zArray_SortByLength(enSort.Descending);
+            var ignorePrefixSorted = ignorePrefix.zArray_SortByLength(enCompareSort.Descending);
             var lenInput = inputStr.Length;
             foreach (var pre in ignorePrefixSorted)
             {

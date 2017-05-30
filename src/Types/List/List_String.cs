@@ -191,16 +191,16 @@ namespace LamedalCore.Types.List
         /// <param name="array">The array</param>
         /// <param name="sortType">Acending indicator. Default value = true.</param>
         /// <returns>IEnumerable<string/></returns>
-        public IEnumerable<string> SortByStrLength(IEnumerable<string> array, enSort sortType = enSort.Ascending)
+        public IEnumerable<string> SortByStrLength(IEnumerable<string> array, enCompareSort sortType = enCompareSort.Ascending)
         {
             // Use LINQ to sortType the array received and return a copy.
 
-            if (sortType == enSort.Ascending)
+            if (sortType == enCompareSort.Ascending)
             {
                 var sorted = array.OrderBy(str => str.Length).ToArray();
                 return sorted;
             }
-            else if (sortType == enSort.Descending)
+            else if (sortType == enCompareSort.Descending)
             {
                 var sorted = array.OrderByDescending(str => str.Length).ToArray();
                 return sorted;
@@ -307,7 +307,7 @@ namespace LamedalCore.Types.List
         /// <returns></returns>
         /// <exception cref="System.ArgumentNullException">list</exception>
         [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
-        public IList<string> Unique(IList<string> list, enSort sortType = enSort.NoSort, bool ignoreCase = false)
+        public IList<string> Unique(IList<string> list, enCompareSort sortType = enCompareSort.NoSort, bool ignoreCase = false)
         {
             return _lamed.Types.List.Action.Unique(list, sortType, ignoreCase);
         }

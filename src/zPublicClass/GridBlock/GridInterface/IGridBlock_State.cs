@@ -31,10 +31,10 @@ namespace LamedalCore.zPublicClass.GridBlock.GridInterface
 
         enGrid_BlockEditState State_EditState { get; set; }
 
-        /// <summary>
-        /// Gets or sets a value indicating whether [state selected].
-        /// </summary>
+        /// <summary>Gets or sets a value indicating whether [state selected].</summary>
         bool State_Selected { get; set; }
 
+        /// <summary>Gets or sets the progress state. Value is between 0 and 100.</summary>
+        int State_Progress { get; set; }
     }
 }

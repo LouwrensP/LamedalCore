@@ -8,6 +8,7 @@
         Index,
         StateID,
         DB_Name,
-        DB_ID
+        DB_ID,
+        Proress
     }
 }

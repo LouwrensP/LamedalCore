@@ -40,8 +40,10 @@ namespace LamedalCore.zPublicClass.GridBlock.GridInterface
         /// <param name="searchValue">The macro address or search value.</param>
         /// <param name="searchItem">The search item.</param>
         /// <param name="showError">if set to <c>true</c> [show error].</param>
+        /// <param name="compare">The compare.</param>
         /// <returns></returns>
-        IGridBlock_Base GetChild_GridBlock(string searchValue, enGrid_BlockDisplayType searchItem = enGrid_BlockDisplayType.Address, bool showError = true);
+        IGridBlock_Base GetChild_GridBlock(string searchValue, enGrid_BlockDisplayType searchItem = enGrid_BlockDisplayType.Address,
+                    bool showError = true, enCompare compare = enCompare.Equal);
 
         /// <summary>Gets the child grid blocks.</summary>
         /// <returns></returns>

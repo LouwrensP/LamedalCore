@@ -118,7 +118,8 @@ namespace LamedalCore.zPublicClass.GridBlock
         private IGridBlock_Base GetChild_FromGridState(string searchValue, enGrid_BlockDisplayType searchItem, IList<IGridBlock_State> grids, enCompare compare)
         {
             int searchInt = searchValue.zTo_Int();
-            double searchDouble = searchValue.zObject().AsDouble();
+            double searchDouble = 0;
+            if (searchItem == enGrid_BlockDisplayType.Value) searchDouble = searchValue.zObject().AsDouble();
             switch (searchItem)
             {
                 case enGrid_BlockDisplayType.DB_Name: return Find_DbName(grids, searchValue, compare);
@@ -197,8 +198,8 @@ namespace LamedalCore.zPublicClass.GridBlock
         {
             switch (compare)
             {
-                case enCompare.Equal: return grids.Where(x => x.State_Id == searchInt).First() as IGridBlock_Base;
-                case enCompare.NotEqual: return grids.Where(x => x.State_Id != searchInt).First() as IGridBlock_Base;
+                case enCompare.Equal: return grids.Where(x => x.State_EnumValue == searchInt).First() as IGridBlock_Base;
+                case enCompare.NotEqual: return grids.Where(x => x.State_EnumValue != searchInt).First() as IGridBlock_Base;
                 default: throw new ArgumentException($"Error! '{nameof(compare)}' only allowed for '=' and '!='.");
             }
         }
@@ -233,7 +234,7 @@ namespace LamedalCore.zPublicClass.GridBlock
             if (state == null) return;
 
             state.State_ValueDouble = dValue;
-            state.State_Id = iValue;
+            state.State_EnumValue = iValue;
             state.State_Color = color;
             state.State_EditState = enGrid_BlockEditState.ValueSet;
         }

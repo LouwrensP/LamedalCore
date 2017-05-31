@@ -52,7 +52,8 @@ namespace LamedalCore.zPublicClass.GridBlock
             }
         }
         public int State_Index { get; set; }
-        public int State_Id
+        public Type State_Enum { get; set; }
+        public int State_EnumValue
         {
             get { return _stateValueInt; }
             set

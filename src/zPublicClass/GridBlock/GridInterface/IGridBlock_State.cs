@@ -20,7 +20,10 @@ namespace LamedalCore.zPublicClass.GridBlock.GridInterface
 
         /// <summary>Gets or sets the state enum value. This can be used for store different states that can be uses for colours of the grids.</summary>
         int State_EnumValue { get; set; }
+
+        /// <summary>Gets or sets the state enum.</summary>
         Type State_Enum { get; set; }
+
         /// <summary>Gets or sets the DB Id value. This can be used to link the grids to a database.</summary>
         int State_DbId { get; set; }
 

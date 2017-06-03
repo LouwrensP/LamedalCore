@@ -2,7 +2,8 @@ language: csharp
 solution: LamedalCore.sln
 dotnet: 1.0.4
 dist: trusty
-mono: none
+mono: 
+  - 4.6.0
 sudo: required
 script:
  - cd ./LamedalCore

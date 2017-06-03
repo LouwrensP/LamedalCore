@@ -1,6 +1,6 @@
 language: csharp
 solution: LamedalCore.sln
-dotnet: 1.0.1
+dotnet: 1.0.4
 dist: trusty
 mono: none
 sudo: required

@@ -1,12 +1,15 @@
 language: csharp
-solution: LamedalCore.sln
-dotnet: 1.0.4
-dist: trusty
 mono: none
 #mono: 
 #  - 4.6.0
-sudo: required
+#solution: LamedalCore.sln
+dotnet: 1.0.4
+dist: trusty
+#sudo: required
 script:
  - cd ./LamedalCore
- - dotnet restore
- - dotnet build -f netstandard1.6
+ - dotnet restore src/LamedalCore
+ - dotnet restore test/LamedalCore.Test
+ - dotnet build src/LamedalCore -f netstandard1.6
+ - dotnet build test/LamedalCore.Test -f netstandard1.6
+# - dotnet run -p src/NodaTime.Test/*.csproj -f netcoreapp1.0 -- --where=cat!=Slow

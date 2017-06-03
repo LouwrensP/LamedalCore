@@ -2,10 +2,11 @@ language: csharp
 solution: LamedalCore.sln
 dotnet: 1.0.4
 dist: trusty
-mono: 
-  - 4.6.0
+mono: none
+#mono: 
+#  - 4.6.0
 sudo: required
 script:
  - cd ./LamedalCore
  - dotnet restore
- - dotnet build
+ - dotnet build -f netstandard1.6

@@ -9,6 +9,10 @@ dist: trusty
 script:
  - cd
  - dir
+ - cd build
+ - dir
+ - cd ./builds
+ - dir
  - dotnet restore src/LamedalCore.csproj
  - dotnet restore test/LamedalCore.Test.csproj
  - dotnet build src/LamedalCore.csproj -f netstandard1.6

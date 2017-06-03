@@ -11,7 +11,7 @@ script:
  - cd perezLamed
  - dir
  - dotnet restore src/LamedalCore.csproj
- - dotnet restore test/LamedalCore.Test.csproj
+ - dotnet restore tests/LamedalCore.Test.csproj
  - dotnet build src/LamedalCore.csproj -f netstandard1.6
- - dotnet build test/LamedalCore.Test.csproj -f netstandard1.6
+ - dotnet build tests/LamedalCore.Test.csproj -f netstandard1.6
 # - dotnet run -p src/NodaTime.Test/*.csproj -f netcoreapp1.0 -- --where=cat!=Slow

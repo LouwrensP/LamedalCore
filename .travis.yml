@@ -7,9 +7,9 @@ dotnet: 1.0.4
 dist: trusty
 #sudo: required
 script:
- - cd ./LamedalCore
- - dotnet restore src/LamedalCore
- - dotnet restore test/LamedalCore.Test
- - dotnet build src/LamedalCore -f netstandard1.6
- - dotnet build test/LamedalCore.Test -f netstandard1.6
+ - cd
+ - dotnet restore src/LamedalCore.csproj
+ - dotnet restore test/LamedalCore.Test.csproj
+ - dotnet build src/LamedalCore.csproj -f netstandard1.6
+ - dotnet build test/LamedalCore.Test.csproj -f netstandard1.6
 # - dotnet run -p src/NodaTime.Test/*.csproj -f netcoreapp1.0 -- --where=cat!=Slow

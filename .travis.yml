@@ -7,8 +7,8 @@ dotnet: 1.0.4
 dist: trusty
 #sudo: required
 script:
- - cd build
- - cd perezLamed
+# - cd build
+# - cd perezLamed
  - dir
  - dotnet restore build/perezLamed/src/LamedalCore.csproj
  - dotnet build build/perezLamed/src/LamedalCore.csproj -f netstandard1.6

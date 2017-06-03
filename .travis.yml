@@ -10,7 +10,7 @@ script:
  - cd build
  - cd perezLamed
  - dir
- - dotnet restore src/LamedalCore.csproj
- - dotnet build src/LamedalCore.csproj -f netstandard1.6
+ - dotnet restore build/perezLamed/src/LamedalCore.csproj
+ - dotnet build build/perezLamed/src/LamedalCore.csproj -f netstandard1.6
 # - dotnet restore tests/LamedalCore.Test.csproj
 # - dotnet build tests/LamedalCore.Test.csproj -f netstandard1.6

@@ -1,15 +1,10 @@
 language: csharp
 solution: LamedalCore.sln
-install:
-  - nuget restore LamedalCore.sln
-  - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
-dotnet: 1.0.4
-mono: none
-cache:
-  directories:
-    - src/packages
-    - tools
-script:
- - dotnet restore
- - xbuild /p:Configuration=Release LamedalCore.sln
+dotnet: 1.0.1
 dist: trusty
+mono: none
+sudo: required
+script:
+ - cd ./LamedalCore
+ - dotnet restore
+ - dotnet build

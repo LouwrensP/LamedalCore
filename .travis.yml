@@ -8,6 +8,7 @@ dist: trusty
 #sudo: required
 script:
  - cd
+ - dir
  - dotnet restore src/LamedalCore.csproj
  - dotnet restore test/LamedalCore.Test.csproj
  - dotnet build src/LamedalCore.csproj -f netstandard1.6

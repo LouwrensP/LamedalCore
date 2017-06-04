@@ -4,11 +4,12 @@
 * PM> Install-Package LamedalCore
 
 ## State
-Build | Status
------------- | -------------
-Debug Build | ![alt tag](https://ci.appveyor.com/api/projects/status/s8ox68g39xc9tfne?svg=true)
-Release Build | ![alt tag](https://ci.appveyor.com/api/projects/status/9t93y3013de1ktwg?svg=true)
-Unit Tests | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true)
+Platform | Build | Library | Test Cases | Status
+---------|-------|---------|------------|---------
+Visual Studio 2017 | Debug Build   | yes | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/s8ox68g39xc9tfne?svg=true) 
+Visual Studio 2017 | Release Build | yes | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/9t93y3013de1ktwg?svg=true)
+Visual Studio 2017 | Unit Tests    | yes | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true)
+Linux ubuntu 14.04 | dotnet build  | yes | no  | ![alt tag](https://travis-ci.org/perezLamed/LamedalCore.svg?branch=master)
 
 ## Background
 -------------------------------------------------------------------------------------

@@ -4,7 +4,7 @@
 * PM> Install-Package LamedalCore
 
 ## State
-Platform           | Build      |Library|Tests|Status
+Platform           | Build      |Lamedal|Tests|Status
 -------------------|------------|-------|-----|---------
 Windows 10.0 VS2017|Debug       | yes   | -   |
 Windows 10.0 VS2017|Debug       | yes   | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/s8ox68g39xc9tfne?svg=true) 

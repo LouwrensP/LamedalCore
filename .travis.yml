@@ -1,11 +1,14 @@
 language: csharp
+#solution: LamedalCore.sln
+dotnet: 1.0.4
+os: 
+ - linux
+ - osx
+dist: trusty
+#sudo: required
 mono: none
 #mono: 
 #  - 4.6.0
-#solution: LamedalCore.sln
-dotnet: 1.0.4
-dist: trusty
-#sudo: required
 script:
 # - cd build
 # - cd perezLamed

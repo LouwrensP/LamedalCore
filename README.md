@@ -4,15 +4,15 @@
 * PM> Install-Package LamedalCore
 
 ## State
-Platform           | Build      |Lamedal|Tests|Status
--------------------|------------|-------|-----|---------
-Windows 10.0 VS2017|Debug       | yes   | -   |
-Windows 10.0 VS2017|Debug       | yes   | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/s8ox68g39xc9tfne?svg=true) 
-Windows 10.0 VS2017|Release     | yes   | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/9t93y3013de1ktwg?svg=true)
-Windows 10.0 VS2017|Unit tests  | yes   | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true)
-Linux ubuntu 14.04 |dotnet build| yes   | -   | ![alt tag](https://travis-ci.org/perezLamed/LamedalCore.svg?branch=master)
-Linux ubuntu 14.04 |dotnet build| yes   | yes | 
-osx                |dotnet build| yes   | -   | 
+Platform           | Build      |Tests|Status
+-------------------|------------|-----|---------
+Windows 10.0 VS2017|Debug       | -   |
+Windows 10.0 VS2017|Debug       | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/s8ox68g39xc9tfne?svg=true) 
+Windows 10.0 VS2017|Release     | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/9t93y3013de1ktwg?svg=true)
+Windows 10.0 VS2017|Unit tests  | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true)
+Linux ubuntu 14.04 |dotnet build| -   | ![alt tag](https://travis-ci.org/perezLamed/LamedalCore.svg?branch=master)
+Linux ubuntu 14.04 |dotnet build| yes | 
+osx                |dotnet build| -   | 
 
 ## Background
 -------------------------------------------------------------------------------------

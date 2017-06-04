@@ -6,7 +6,7 @@
 ## State
 Platform           | Build      |Tests|Status
 -------------------|------------|-----|---------
-Windows 10.0 VS2017|Debug       | -   | (todo)
+Windows 10.0 VS2017|Debug       | -   | ![alt tag](https://ci.appveyor.com/api/projects/status/5tt4c9sj7dpv5xx5?svg=true)
 Windows 10.0 VS2017|Debug       | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/s8ox68g39xc9tfne?svg=true) 
 Windows 10.0 VS2017|Release     | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/9t93y3013de1ktwg?svg=true)
 Windows 10.0 VS2017|tests run   | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true)

@@ -12,7 +12,7 @@ mono: none
 script:
 # - cd build
 # - cd perezLamed
- - dir
+# - dir
  - dotnet restore src/LamedalCore.csproj
  - dotnet build src/LamedalCore.csproj -f netstandard1.6
 # - dotnet restore tests/LamedalCore.Test.csproj

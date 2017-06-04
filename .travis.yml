@@ -17,23 +17,3 @@ script:
  - dotnet build src/LamedalCore.csproj -f netstandard1.6
 # - dotnet restore tests/LamedalCore.Test.csproj
 # - dotnet build tests/LamedalCore.Test.csproj -f netstandard1.6
-env:
-  global:
-   # The next declaration is the encrypted COVERITY_SCAN_TOKEN, created
-   #   via the "travis encrypt" command using the project repo's public key
-   - secure: "BkYUmoS8iO2ETMVImxCge/qRtQU0EBRRguDaeIABB9k925r3ATOjE7DIVxX/4hk3yjnp0nb3RhoWlhwhHaRTKeWbwmF+yhXcWiyCKK7KU480PUShfu1k7FnHBtdEmiV6M8ZFVgaW9lkP2pc8gPndeGYUOQ54z6PpO4WRVJVbH0B8pNgsG2/4fNDdGXtFLRAXCvmBy4JHxCWWK/OlNVwA4B/nJrXCZpjuSdRHWr70HNi8Qm/ClkNXWNtZy91o7L9gpuyyDTusqldGx2wGW1xA+JvL51Ki4BlgVi5I/NkrfyLtI45zjWipQhl1OHhVaZ7NqImXaJZXLIbBR9qJ4IuTg6xO7x6ToNuHx1/DP76vgRcZEf+KdUZrR26i34MM2I5PVuC3Q9QoCNgUopU4LEvr1h//L6S0PkhMV97uoIbys9Cx1Jo9bzdj54QJYn+ETAtqMc3Jvo+VtuFcYp8hlb1DWZHFsEE8/3Qjwttte1znTE9uYLr29lnzqztaAiAI2T79AANf/78myaGLS5OORhW4Mm71SfE0wkQCzvJSicGMOYUaguzzrTPvIcAiUKHJRMAjJEoCFJ2woKOq8qBIKrKrAVepkElnxedP1kbqFPre2bAP6L87EFzJhdJxb9JQCwKc/3jq9XrJVF4LBHeN2BUctjPnf6mulgLisvKzBdG/btk="
-
-before_install:
-      - echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
-
-addons:
-  coverity_scan:
-    project:
-      name: "perezLamed/LamedalCore"
-      description: "Build submitted via Travis CI"
-    notification_email: perez.lamed.vanniekerk@gmail.com
-    #build_command_prepend: "msbuild /t:Clean"
-    build_command_prepend: "dotnet build src/LamedalCore.csproj -f netstandard1.6"
-    #build_command:   "msbuild /t:Rebuild"
-    build_command:   "dotnet build src/LamedalCore.csproj -f netstandard1.6"
-    branch_pattern: coverity_scan

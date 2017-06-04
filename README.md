@@ -11,8 +11,8 @@ Windows 10.0 VS2017|Debug       | yes | ![alt tag](https://ci.appveyor.com/api/p
 Windows 10.0 VS2017|Release     | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/9t93y3013de1ktwg?svg=true)
 Windows 10.0 VS2017|tests run   | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true)
 Linux ubuntu 14.04 |dotnet build| -   | ![alt tag](https://travis-ci.org/perezLamed/LamedalCore.svg?branch=master)
-Linux ubuntu 14.04 |dotnet build| yes | (todo)
-osx                |dotnet build| -   | (todo)
+osx                |dotnet build| -   | ![alt tag](https://travis-ci.org/perezLamed/LamedalCore.svg?branch=master)
+Linux ubuntu 14.04 |dotnet build| yes | (todo)               
 
 ## Background
 -------------------------------------------------------------------------------------

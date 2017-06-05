@@ -13,7 +13,7 @@ Windows 10.0 VS2017 |tests run   | yes | ![alt tag](https://ci.appveyor.com/api/
 Linux Ubuntu 14.04  |dotnet build| -   | ![alt tag](https://travis-ci.org/perezLamed/LamedalCore.svg?branch=master)
 OSX Darwin 10.11-x64|dotnet build| -   | ![alt tag](https://travis-ci.org/perezLamed/LamedalCore.svg?branch=master)
 Linux Ubuntu 14.04  |dotnet build| yes | (todo)               
-[Coverity Scan](https://scan.coverity.com)       |analysis    | -   | ![alt tag](https://scan.coverity.com/projects/12604/badge.svg?flat=1)
+[Coverity Scan](https://scan.coverity.com/projects/perezlamed-lamedalcore?tab=overview)       |analysis    | -   | ![alt tag](https://scan.coverity.com/projects/12604/badge.svg?flat=1)
 
 ## Background
 -------------------------------------------------------------------------------------

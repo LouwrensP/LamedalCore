@@ -18,7 +18,7 @@ namespace LamedalCore.zPublicClass.GridBlock
         public const string constGridBlock_Name1Micro = "mic";
         public const string constGridBlock_Name2Sub = "sub";
         public const string constGridBlock_Name3Maco = "macro";
-        public const string constGridBlock_Name4Cuboid = "cuboid";
+        public const string constGridBlock_Name4Cuboid = "cub";
         
         #region Names
         public string GridBlock_Name1Micro = constGridBlock_Name1Micro;

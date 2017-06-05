@@ -1,4 +1,5 @@
-﻿using LamedalCore.zPublicClass.GridBlock.GridInterface;
+﻿using System;
+using LamedalCore.zPublicClass.GridBlock.GridInterface;
 
 namespace LamedalCore.zPublicClass.GridBlock
 {
@@ -10,6 +11,8 @@ namespace LamedalCore.zPublicClass.GridBlock
             if (grid is GridBlock_1Micro) prefix = settings.GridBlock_Name1Micro;
             else if (grid is GridBlock_2Sub) prefix = settings.GridBlock_Name2Sub;
             else if (grid is GridBlock_3Macro) prefix = settings.GridBlock_Name3Macro;
+            else if (grid is GridBlock_4Cuboid) prefix = settings.GridBlock_Name4Cuboid;
+            else throw new ArgumentException($"Error! '{nameof(grid)}' is not a defined type.");
             return prefix;
         }
 

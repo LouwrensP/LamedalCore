@@ -184,7 +184,7 @@ namespace LamedalCore.Test.Tests.Types
             // bool
             Assert.Equal("true", _convert.Str_FromBool(true));
             Assert.Equal("true", _convert.Str_FromObj(true));
-            Assert.Equal("True", _convert.Str_FromObj(enBool.True));
+            Assert.Equal("True", _convert.Str_FromObj(enCompareBool.True));
 
         }
 

@@ -4,16 +4,16 @@
 * PM> Install-Package LamedalCore
 
 ## State
-Platform            | Build      |Tests| Status
---------------------|------------|-----|---------
-Windows 10.0 VS2017 |Debug       | -   | ![alt tag](https://ci.appveyor.com/api/projects/status/5tt4c9sj7dpv5xx5?svg=true)
-Windows 10.0 VS2017 |Debug       | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/s8ox68g39xc9tfne?svg=true) 
-Windows 10.0 VS2017 |Release     | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/9t93y3013de1ktwg?svg=true)
-Windows 10.0 VS2017 |tests run   | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true)
-Linux Ubuntu 14.04  |dotnet build| -   | ![alt tag](https://travis-ci.org/perezLamed/LamedalCore.svg?branch=master)
-OSX Darwin 10.11-x64|dotnet build| -   | ![alt tag](https://travis-ci.org/perezLamed/LamedalCore.svg?branch=master)
-Linux Ubuntu 14.04  |dotnet build| yes | (todo)               
-[Coverity Scan](https://scan.coverity.com/projects/perezlamed-lamedalcore?tab=overview)       |analysis    | -   | ![alt tag](https://scan.coverity.com/projects/12604/badge.svg?flat=1)
+Platform            | Build      |Tests| Status | Server
+--------------------|------------|-----|--------|---------
+Windows 10.0 VS2017 |Debug       | -   | ![alt tag](https://ci.appveyor.com/api/projects/status/5tt4c9sj7dpv5xx5?svg=true) | [AppVeyor](https://ci.appveyor.com/projects)
+Windows 10.0 VS2017 |Debug       | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/s8ox68g39xc9tfne?svg=true) | [AppVeyor](https://ci.appveyor.com/projects)
+Windows 10.0 VS2017 |Release     | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/9t93y3013de1ktwg?svg=true) | [AppVeyor](https://ci.appveyor.com/projects)
+Windows 10.0 VS2017 |tests run   | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true) | [AppVeyor](https://ci.appveyor.com/projects)
+Linux Ubuntu 14.04  |dotnet build| -   | ![alt tag](https://travis-ci.org/perezLamed/LamedalCore.svg?branch=master) | [Travis](https://travis-ci.org/perezLamed/LamedalCore)
+OSX Darwin 10.11-x64|dotnet build| -   | ![alt tag](https://travis-ci.org/perezLamed/LamedalCore.svg?branch=master)| [Travis](https://travis-ci.org/perezLamed/LamedalCore)
+Linux Ubuntu 14.04  |dotnet build| yes | (todo) | [Travis](https://travis-ci.org/perezLamed/LamedalCore)               
+Static Analysis     |analysis    | -   | ![alt tag](https://scan.coverity.com/projects/12604/badge.svg?flat=1) | [Coverity Scan](https://scan.coverity.com/projects/perezlamed-lamedalcore?tab=overview)
 
 ## Background
 -------------------------------------------------------------------------------------

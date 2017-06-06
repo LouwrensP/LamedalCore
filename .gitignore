@@ -21,6 +21,7 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+cov-int/
 
 # Visual Studio 2015 cache/options directory
 .vs/
@@ -34,11 +35,15 @@ bld/
 # NUNIT
 *.VisualState.xml
 TestResult.xml
+xUnit_Results/
+dotCover_Results/
+dotCover_Reports/
 
 # Build Results of an ATL Project
 [Dd]ebugPS/
 [Rr]eleasePS/
 dlldata.c
+cov-int.zip
 
 # DNX
 project.lock.json

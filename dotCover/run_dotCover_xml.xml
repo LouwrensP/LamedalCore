@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AnalyzeParams>
+  <TargetExecutable>..\packages\xunit.runner.console.2.2.0\tools\xunit.console.exe</TargetExecutable>
+  <TargetArguments>..\tests\bin\Debug\LamedalCore.Test.exe</TargetArguments>
+  <TargetWorkingDir>..\tests\bin\Debug</TargetWorkingDir>
+  <TempDir><!-- Directory for auxiliary files. Set to the system temp by default. --></TempDir>
+  <Output>dotCover_Results\dotCover_Results.xml</Output>
+  <ReportType>DetailedXML</ReportType>
+  
+  <Scope>
+  <ScopeEntry>LamedalCore</ScopeEntry>
+</Scope>
+
+  <AttributeFilters>
+  <AttributeFilterEntry>
+    <ClassMask>LamedalCore.domain.Attributes.Test_IgnoreCoverageAttribute</ClassMask>
+  </AttributeFilterEntry>
+</AttributeFilters>
+
+  
+</AnalyzeParams>

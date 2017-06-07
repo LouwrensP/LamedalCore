@@ -9,7 +9,7 @@ namespace LamedalCore.Test.Tests
     public static class Config_Info
     {
         public static bool Test_ShowConfigFiles = false;
-        public static string Test_Drive = "A:/";
+        public static string Test_Drive = "C:/";
 
         private static bool   _FirstTime = true;
         private static string _folderTestCases = "";

@@ -14,6 +14,7 @@ Linux Ubuntu 14.04  |dotnet build| -   | ![alt tag](https://travis-ci.org/perezL
 OSX Darwin 10.11-x64|dotnet build| -   | ![alt tag](https://travis-ci.org/perezLamed/LamedalCore.svg?branch=master)| [Travis](https://travis-ci.org/perezLamed/LamedalCore)
 Linux Ubuntu 14.04  |dotnet build| yes | (todo) | [Travis](https://travis-ci.org/perezLamed/LamedalCore)               
 Static Analysis     |analysis    | -   | ![alt tag](https://scan.coverity.com/projects/12604/badge.svg?flat=1) | [Coverity Scan](https://scan.coverity.com/projects/perezlamed-lamedalcore?tab=overview)
+Code Coverage       |dotCover    | yes | ![Result](/pics/badge.svg) | [Report Generator](https://github.com/danielpalme/ReportGenerator)
 
 ## Background
 -------------------------------------------------------------------------------------

@@ -68,6 +68,17 @@ namespace LamedalCore.lib
         private IO_ _IO;
         #endregion
 
+        #region svg
+        /// <summary>
+        /// Gets the svg library methods.
+        /// </summary>
+        public lib_svg svg
+        {
+            get { return _svg ?? (_svg = new lib_svg()); }
+        }
+        private lib_svg _svg;
+        #endregion
+
         #region Test
         /// <summary>
         /// Gets the Test library methods.

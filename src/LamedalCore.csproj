@@ -52,6 +52,7 @@ Lamedal v1.1.0
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="LamedalCore_Templates" Version="0.0.1-alfa" />
     <PackageReference Include="LamedalExcel" Version="1.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
     <PackageReference Include="JetBrains.Annotations" Version="10.4.0" />

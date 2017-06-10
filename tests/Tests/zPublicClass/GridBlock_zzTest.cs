@@ -38,7 +38,7 @@ namespace LamedalCore.Test.Tests.zPublicClass
             var gridCubiod = gridSetup.GridCuboid;
             Assert.Equal(5*6*5*6*6, gridCubiod.Child_Count);
             Assert.Equal(enGrid_BlockType.MacroBlock, gridCubiod.Child_BlockType);
-            Assert.Equal(enGrid_BlockDisplayType.Name, gridCubiod.Child_DisplayType);
+            Assert.Equal(enGrid_BlockDisplayType.Address, gridCubiod.Child_DisplayType);
             gridCubiod.State_Setup(0,0,Color.Red);  // There is not state
 
             #endregion
@@ -49,22 +49,25 @@ namespace LamedalCore.Test.Tests.zPublicClass
             Assert.Equal(enGrid_BlockEditState.Undefined, gridMacro.State_EditState);  // First time state is undefined
             Assert.Equal(double.NaN, gridMacro.State_ValueDouble);
             Assert.Equal(null, gridMacro.zGridControl);
-            Assert.Equal(true, gridMacro.Name_Caption(".").Contains("."));
-            Assert.Equal(false, gridMacro.Name_Caption("_").Contains("."));
-            Assert.Equal(true, gridMacro.Name_Caption("_").Contains("_"));
+            
+            Assert.Equal(true, gridMacro.Name_Caption(settings).Contains("."));
+            settings.Address_Seperator = "_";
+            Assert.Equal(false, gridMacro.Name_Caption(settings).Contains("."));
+            Assert.Equal(true, gridMacro.Name_Caption(settings).Contains("_"));
+            settings.Address_Seperator = ".";
 
             gridMacro.State_Setup(123.55, 2, Color.Red);  // Setup method makes state ValueSet
             Assert.Equal(123.55, gridMacro.State_ValueDouble);
-            Assert.Equal(2, gridMacro.State_Id);
+            Assert.Equal(2, gridMacro.State_EnumValue);
             Assert.Equal(Color.Red,gridMacro.State_Color);
             Assert.Equal(enGrid_BlockEditState.ValueSet, gridMacro.State_EditState);
-            gridMacro.State_Id = 1;               // Setting values makes the state Changed
+            gridMacro.State_EnumValue = 1;               // Setting values makes the state Changed
             gridMacro.State_ValueDouble = 2.5;
             Assert.Equal(enGrid_BlockEditState.Changed, gridMacro.State_EditState);
             Assert.Equal(addressMacro, gridMacro.Name_Address);
             Assert.Equal(6*5*6*6, gridMacro.Child_Count);
             Assert.Equal(enGrid_BlockType.SubBlock, gridMacro.Child_BlockType);
-            Assert.Equal(enGrid_BlockDisplayType.Name, gridMacro.Child_DisplayType);
+            Assert.Equal(enGrid_BlockDisplayType.Address, gridMacro.Child_DisplayType);
             Assert.Equal(macroY, gridMacro.State_Row);
             Assert.Equal(macroX, gridMacro.State_Col);
 
@@ -79,7 +82,7 @@ namespace LamedalCore.Test.Tests.zPublicClass
 
             gridSub.State_Setup(123.55, 2, Color.Red);  // Setup method makes state ValueSet
             Assert.Equal(123.55, gridSub.State_ValueDouble);
-            Assert.Equal(2, gridSub.State_Id);
+            Assert.Equal(2, gridSub.State_EnumValue);
             Assert.Equal(Color.Red, gridSub.State_Color);
             Assert.Equal(enGrid_BlockEditState.ValueSet, gridSub.State_EditState);
 
@@ -87,7 +90,7 @@ namespace LamedalCore.Test.Tests.zPublicClass
             Assert.Equal(6 * 6, gridSub.Child_Count);
             Assert.Equal(gridMacro, gridSub._Parent);
             Assert.Equal(enGrid_BlockType.MicroBlock, gridSub.Child_BlockType);
-            Assert.Equal(enGrid_BlockDisplayType.Name, gridSub.Child_DisplayType);
+            Assert.Equal(enGrid_BlockDisplayType.Address, gridSub.Child_DisplayType);
             Assert.Equal(subY, gridSub.State_Row);
             Assert.Equal(subX, gridSub.State_Col);
 
@@ -106,7 +109,7 @@ namespace LamedalCore.Test.Tests.zPublicClass
 
             gridMicro.State_Setup(123.55, 2, Color.Red);  // Setup method makes state ValueSet
             Assert.Equal(123.55, gridMicro.State_ValueDouble);
-            Assert.Equal(2, gridMicro.State_Id);
+            Assert.Equal(2, gridMicro.State_EnumValue);
             Assert.Equal(Color.Red, gridMicro.State_Color);
             Assert.Equal(enGrid_BlockEditState.ValueSet, gridMicro.State_EditState);
 
@@ -150,11 +153,11 @@ namespace LamedalCore.Test.Tests.zPublicClass
 @"R1
 R1cub1_1
 R1cub1_1R1
-R1cub1_1R1mac1_1
-R1cub1_1R1mac1_1R1
-R1cub1_1R1mac1_1R1sub1_1
-R1cub1_1R1mac1_1R1sub1_1R1
-R1cub1_1R1mac1_1R1sub1_1R1mic1_1";
+R1cub1_1R1macro1_1
+R1cub1_1R1macro1_1R1
+R1cub1_1R1macro1_1R1sub1_1
+R1cub1_1R1macro1_1R1sub1_1R1
+R1cub1_1R1macro1_1R1sub1_1R1mic1_1";
 
             #endregion
 
@@ -163,11 +166,11 @@ R1cub1_1R1mac1_1R1sub1_1R1mic1_1";
 @"Row//?//R1//CuboidGrid
 Grid//R1//R1cub1_1//CuboidGrid
 Row//R1cub1_1//R1cub1_1R1//MacroBlock
-Grid//R1cub1_1R1//R1cub1_1R1mac1_1//MacroBlock
-Row//R1cub1_1R1mac1_1//R1cub1_1R1mac1_1R1//SubBlock
-Grid//R1cub1_1R1mac1_1R1//R1cub1_1R1mac1_1R1sub1_1//SubBlock
-Row//R1cub1_1R1mac1_1R1sub1_1//R1cub1_1R1mac1_1R1sub1_1R1//MicroBlock
-Grid//R1cub1_1R1mac1_1R1sub1_1R1//R1cub1_1R1mac1_1R1sub1_1R1mic1_1//MicroBlock";
+Grid//R1cub1_1R1//R1cub1_1R1macro1_1//MacroBlock
+Row//R1cub1_1R1macro1_1//R1cub1_1R1macro1_1R1//SubBlock
+Grid//R1cub1_1R1macro1_1R1//R1cub1_1R1macro1_1R1sub1_1//SubBlock
+Row//R1cub1_1R1macro1_1R1sub1_1//R1cub1_1R1macro1_1R1sub1_1R1//MicroBlock
+Grid//R1cub1_1R1macro1_1R1sub1_1R1//R1cub1_1R1macro1_1R1sub1_1R1mic1_1//MicroBlock";
             #endregion
 
             var treeStr2 = gridCuboid2.TreeNameList().zTo_Str("".NL());
@@ -207,39 +210,39 @@ Grid//R1cub1_1R1mac1_1R1sub1_1R1//R1cub1_1R1mac1_1R1sub1_1R1mic1_1//MicroBlock";
 @"R1
 R1cub1_1
 R1cub1_1R1
-R1cub1_1R1mac1_1
-R1cub1_1R1mac1_1R1
-R1cub1_1R1mac1_1R1sub1_1
-R1cub1_1R1mac1_1R1sub1_1R1
-R1cub1_1R1mac1_1R1sub1_1R1mic1_1
-R1cub1_1R1mac1_1R1sub1_1R1mic1_2
-R1cub1_1R1mac1_1R1sub1_1R1mic1_3
-R1cub1_1R1mac1_1R1sub1_1R1mic1_4
-R1cub1_1R1mac1_1R1sub1_1R1mic1_5
-R1cub1_1R1mac1_1R1sub1_1R2
-R1cub1_1R1mac1_1R1sub1_1R2mic2_1
-R1cub1_1R1mac1_1R1sub1_1R2mic2_2
-R1cub1_1R1mac1_1R1sub1_1R2mic2_3
-R1cub1_1R1mac1_1R1sub1_1R2mic2_4
-R1cub1_1R1mac1_1R1sub1_1R2mic2_5
-R1cub1_1R1mac1_1R1sub1_1R3
-R1cub1_1R1mac1_1R1sub1_1R3mic3_1
-R1cub1_1R1mac1_1R1sub1_1R3mic3_2
-R1cub1_1R1mac1_1R1sub1_1R3mic3_3
-R1cub1_1R1mac1_1R1sub1_1R3mic3_4
-R1cub1_1R1mac1_1R1sub1_1R3mic3_5
-R1cub1_1R1mac1_1R1sub1_1R4
-R1cub1_1R1mac1_1R1sub1_1R4mic4_1
-R1cub1_1R1mac1_1R1sub1_1R4mic4_2
-R1cub1_1R1mac1_1R1sub1_1R4mic4_3
-R1cub1_1R1mac1_1R1sub1_1R4mic4_4
-R1cub1_1R1mac1_1R1sub1_1R4mic4_5
-R1cub1_1R1mac1_1R1sub1_1R5
-R1cub1_1R1mac1_1R1sub1_1R5mic5_1
-R1cub1_1R1mac1_1R1sub1_1R5mic5_2
-R1cub1_1R1mac1_1R1sub1_1R5mic5_3
-R1cub1_1R1mac1_1R1sub1_1R5mic5_4
-R1cub1_1R1mac1_1R1sub1_1R5mic5_5";
+R1cub1_1R1macro1_1
+R1cub1_1R1macro1_1R1
+R1cub1_1R1macro1_1R1sub1_1
+R1cub1_1R1macro1_1R1sub1_1R1
+R1cub1_1R1macro1_1R1sub1_1R1mic1_1
+R1cub1_1R1macro1_1R1sub1_1R1mic1_2
+R1cub1_1R1macro1_1R1sub1_1R1mic1_3
+R1cub1_1R1macro1_1R1sub1_1R1mic1_4
+R1cub1_1R1macro1_1R1sub1_1R1mic1_5
+R1cub1_1R1macro1_1R1sub1_1R2
+R1cub1_1R1macro1_1R1sub1_1R2mic2_1
+R1cub1_1R1macro1_1R1sub1_1R2mic2_2
+R1cub1_1R1macro1_1R1sub1_1R2mic2_3
+R1cub1_1R1macro1_1R1sub1_1R2mic2_4
+R1cub1_1R1macro1_1R1sub1_1R2mic2_5
+R1cub1_1R1macro1_1R1sub1_1R3
+R1cub1_1R1macro1_1R1sub1_1R3mic3_1
+R1cub1_1R1macro1_1R1sub1_1R3mic3_2
+R1cub1_1R1macro1_1R1sub1_1R3mic3_3
+R1cub1_1R1macro1_1R1sub1_1R3mic3_4
+R1cub1_1R1macro1_1R1sub1_1R3mic3_5
+R1cub1_1R1macro1_1R1sub1_1R4
+R1cub1_1R1macro1_1R1sub1_1R4mic4_1
+R1cub1_1R1macro1_1R1sub1_1R4mic4_2
+R1cub1_1R1macro1_1R1sub1_1R4mic4_3
+R1cub1_1R1macro1_1R1sub1_1R4mic4_4
+R1cub1_1R1macro1_1R1sub1_1R4mic4_5
+R1cub1_1R1macro1_1R1sub1_1R5
+R1cub1_1R1macro1_1R1sub1_1R5mic5_1
+R1cub1_1R1macro1_1R1sub1_1R5mic5_2
+R1cub1_1R1macro1_1R1sub1_1R5mic5_3
+R1cub1_1R1macro1_1R1sub1_1R5mic5_4
+R1cub1_1R1macro1_1R1sub1_1R5mic5_5";
             #endregion
 
             Assert.Equal(treeResult, treeStr);
@@ -258,131 +261,131 @@ R1cub1_1R1mac1_1R1sub1_1R5mic5_5";
 @"R1
 R1cub1_1
 R1cub1_1R1
-R1cub1_1R1mac1_1
-R1cub1_1R1mac1_1R1
-R1cub1_1R1mac1_1R1sub1_1
-R1cub1_1R1mac1_1R1sub1_1R1
-R1cub1_1R1mac1_1R1sub1_1R1mic1_1
-R1cub1_1R1mac1_1R1sub1_1R1mic1_2
-R1cub1_1R1mac1_1R1sub1_1R2
-R1cub1_1R1mac1_1R1sub1_1R2mic2_1
-R1cub1_1R1mac1_1R1sub1_1R2mic2_2
-R1cub1_1R1mac1_1R1sub1_2
-R1cub1_1R1mac1_1R1sub1_2R1
-R1cub1_1R1mac1_1R1sub1_2R1mic1_1
-R1cub1_1R1mac1_1R1sub1_2R1mic1_2
-R1cub1_1R1mac1_1R1sub1_2R2
-R1cub1_1R1mac1_1R1sub1_2R2mic2_1
-R1cub1_1R1mac1_1R1sub1_2R2mic2_2
-R1cub1_1R1mac1_1R2
-R1cub1_1R1mac1_1R2sub2_1
-R1cub1_1R1mac1_1R2sub2_1R1
-R1cub1_1R1mac1_1R2sub2_1R1mic1_1
-R1cub1_1R1mac1_1R2sub2_1R1mic1_2
-R1cub1_1R1mac1_1R2sub2_1R2
-R1cub1_1R1mac1_1R2sub2_1R2mic2_1
-R1cub1_1R1mac1_1R2sub2_1R2mic2_2
-R1cub1_1R1mac1_1R2sub2_2
-R1cub1_1R1mac1_1R2sub2_2R1
-R1cub1_1R1mac1_1R2sub2_2R1mic1_1
-R1cub1_1R1mac1_1R2sub2_2R1mic1_2
-R1cub1_1R1mac1_1R2sub2_2R2
-R1cub1_1R1mac1_1R2sub2_2R2mic2_1
-R1cub1_1R1mac1_1R2sub2_2R2mic2_2
-R1cub1_1R1mac1_2
-R1cub1_1R1mac1_2R1
-R1cub1_1R1mac1_2R1sub1_1
-R1cub1_1R1mac1_2R1sub1_1R1
-R1cub1_1R1mac1_2R1sub1_1R1mic1_1
-R1cub1_1R1mac1_2R1sub1_1R1mic1_2
-R1cub1_1R1mac1_2R1sub1_1R2
-R1cub1_1R1mac1_2R1sub1_1R2mic2_1
-R1cub1_1R1mac1_2R1sub1_1R2mic2_2
-R1cub1_1R1mac1_2R1sub1_2
-R1cub1_1R1mac1_2R1sub1_2R1
-R1cub1_1R1mac1_2R1sub1_2R1mic1_1
-R1cub1_1R1mac1_2R1sub1_2R1mic1_2
-R1cub1_1R1mac1_2R1sub1_2R2
-R1cub1_1R1mac1_2R1sub1_2R2mic2_1
-R1cub1_1R1mac1_2R1sub1_2R2mic2_2
-R1cub1_1R1mac1_2R2
-R1cub1_1R1mac1_2R2sub2_1
-R1cub1_1R1mac1_2R2sub2_1R1
-R1cub1_1R1mac1_2R2sub2_1R1mic1_1
-R1cub1_1R1mac1_2R2sub2_1R1mic1_2
-R1cub1_1R1mac1_2R2sub2_1R2
-R1cub1_1R1mac1_2R2sub2_1R2mic2_1
-R1cub1_1R1mac1_2R2sub2_1R2mic2_2
-R1cub1_1R1mac1_2R2sub2_2
-R1cub1_1R1mac1_2R2sub2_2R1
-R1cub1_1R1mac1_2R2sub2_2R1mic1_1
-R1cub1_1R1mac1_2R2sub2_2R1mic1_2
-R1cub1_1R1mac1_2R2sub2_2R2
-R1cub1_1R1mac1_2R2sub2_2R2mic2_1
-R1cub1_1R1mac1_2R2sub2_2R2mic2_2
+R1cub1_1R1macro1_1
+R1cub1_1R1macro1_1R1
+R1cub1_1R1macro1_1R1sub1_1
+R1cub1_1R1macro1_1R1sub1_1R1
+R1cub1_1R1macro1_1R1sub1_1R1mic1_1
+R1cub1_1R1macro1_1R1sub1_1R1mic1_2
+R1cub1_1R1macro1_1R1sub1_1R2
+R1cub1_1R1macro1_1R1sub1_1R2mic2_1
+R1cub1_1R1macro1_1R1sub1_1R2mic2_2
+R1cub1_1R1macro1_1R1sub1_2
+R1cub1_1R1macro1_1R1sub1_2R1
+R1cub1_1R1macro1_1R1sub1_2R1mic1_1
+R1cub1_1R1macro1_1R1sub1_2R1mic1_2
+R1cub1_1R1macro1_1R1sub1_2R2
+R1cub1_1R1macro1_1R1sub1_2R2mic2_1
+R1cub1_1R1macro1_1R1sub1_2R2mic2_2
+R1cub1_1R1macro1_1R2
+R1cub1_1R1macro1_1R2sub2_1
+R1cub1_1R1macro1_1R2sub2_1R1
+R1cub1_1R1macro1_1R2sub2_1R1mic1_1
+R1cub1_1R1macro1_1R2sub2_1R1mic1_2
+R1cub1_1R1macro1_1R2sub2_1R2
+R1cub1_1R1macro1_1R2sub2_1R2mic2_1
+R1cub1_1R1macro1_1R2sub2_1R2mic2_2
+R1cub1_1R1macro1_1R2sub2_2
+R1cub1_1R1macro1_1R2sub2_2R1
+R1cub1_1R1macro1_1R2sub2_2R1mic1_1
+R1cub1_1R1macro1_1R2sub2_2R1mic1_2
+R1cub1_1R1macro1_1R2sub2_2R2
+R1cub1_1R1macro1_1R2sub2_2R2mic2_1
+R1cub1_1R1macro1_1R2sub2_2R2mic2_2
+R1cub1_1R1macro1_2
+R1cub1_1R1macro1_2R1
+R1cub1_1R1macro1_2R1sub1_1
+R1cub1_1R1macro1_2R1sub1_1R1
+R1cub1_1R1macro1_2R1sub1_1R1mic1_1
+R1cub1_1R1macro1_2R1sub1_1R1mic1_2
+R1cub1_1R1macro1_2R1sub1_1R2
+R1cub1_1R1macro1_2R1sub1_1R2mic2_1
+R1cub1_1R1macro1_2R1sub1_1R2mic2_2
+R1cub1_1R1macro1_2R1sub1_2
+R1cub1_1R1macro1_2R1sub1_2R1
+R1cub1_1R1macro1_2R1sub1_2R1mic1_1
+R1cub1_1R1macro1_2R1sub1_2R1mic1_2
+R1cub1_1R1macro1_2R1sub1_2R2
+R1cub1_1R1macro1_2R1sub1_2R2mic2_1
+R1cub1_1R1macro1_2R1sub1_2R2mic2_2
+R1cub1_1R1macro1_2R2
+R1cub1_1R1macro1_2R2sub2_1
+R1cub1_1R1macro1_2R2sub2_1R1
+R1cub1_1R1macro1_2R2sub2_1R1mic1_1
+R1cub1_1R1macro1_2R2sub2_1R1mic1_2
+R1cub1_1R1macro1_2R2sub2_1R2
+R1cub1_1R1macro1_2R2sub2_1R2mic2_1
+R1cub1_1R1macro1_2R2sub2_1R2mic2_2
+R1cub1_1R1macro1_2R2sub2_2
+R1cub1_1R1macro1_2R2sub2_2R1
+R1cub1_1R1macro1_2R2sub2_2R1mic1_1
+R1cub1_1R1macro1_2R2sub2_2R1mic1_2
+R1cub1_1R1macro1_2R2sub2_2R2
+R1cub1_1R1macro1_2R2sub2_2R2mic2_1
+R1cub1_1R1macro1_2R2sub2_2R2mic2_2
 R1cub1_1R2
-R1cub1_1R2mac2_1
-R1cub1_1R2mac2_1R1
-R1cub1_1R2mac2_1R1sub1_1
-R1cub1_1R2mac2_1R1sub1_1R1
-R1cub1_1R2mac2_1R1sub1_1R1mic1_1
-R1cub1_1R2mac2_1R1sub1_1R1mic1_2
-R1cub1_1R2mac2_1R1sub1_1R2
-R1cub1_1R2mac2_1R1sub1_1R2mic2_1
-R1cub1_1R2mac2_1R1sub1_1R2mic2_2
-R1cub1_1R2mac2_1R1sub1_2
-R1cub1_1R2mac2_1R1sub1_2R1
-R1cub1_1R2mac2_1R1sub1_2R1mic1_1
-R1cub1_1R2mac2_1R1sub1_2R1mic1_2
-R1cub1_1R2mac2_1R1sub1_2R2
-R1cub1_1R2mac2_1R1sub1_2R2mic2_1
-R1cub1_1R2mac2_1R1sub1_2R2mic2_2
-R1cub1_1R2mac2_1R2
-R1cub1_1R2mac2_1R2sub2_1
-R1cub1_1R2mac2_1R2sub2_1R1
-R1cub1_1R2mac2_1R2sub2_1R1mic1_1
-R1cub1_1R2mac2_1R2sub2_1R1mic1_2
-R1cub1_1R2mac2_1R2sub2_1R2
-R1cub1_1R2mac2_1R2sub2_1R2mic2_1
-R1cub1_1R2mac2_1R2sub2_1R2mic2_2
-R1cub1_1R2mac2_1R2sub2_2
-R1cub1_1R2mac2_1R2sub2_2R1
-R1cub1_1R2mac2_1R2sub2_2R1mic1_1
-R1cub1_1R2mac2_1R2sub2_2R1mic1_2
-R1cub1_1R2mac2_1R2sub2_2R2
-R1cub1_1R2mac2_1R2sub2_2R2mic2_1
-R1cub1_1R2mac2_1R2sub2_2R2mic2_2
-R1cub1_1R2mac2_2
-R1cub1_1R2mac2_2R1
-R1cub1_1R2mac2_2R1sub1_1
-R1cub1_1R2mac2_2R1sub1_1R1
-R1cub1_1R2mac2_2R1sub1_1R1mic1_1
-R1cub1_1R2mac2_2R1sub1_1R1mic1_2
-R1cub1_1R2mac2_2R1sub1_1R2
-R1cub1_1R2mac2_2R1sub1_1R2mic2_1
-R1cub1_1R2mac2_2R1sub1_1R2mic2_2
-R1cub1_1R2mac2_2R1sub1_2
-R1cub1_1R2mac2_2R1sub1_2R1
-R1cub1_1R2mac2_2R1sub1_2R1mic1_1
-R1cub1_1R2mac2_2R1sub1_2R1mic1_2
-R1cub1_1R2mac2_2R1sub1_2R2
-R1cub1_1R2mac2_2R1sub1_2R2mic2_1
-R1cub1_1R2mac2_2R1sub1_2R2mic2_2
-R1cub1_1R2mac2_2R2
-R1cub1_1R2mac2_2R2sub2_1
-R1cub1_1R2mac2_2R2sub2_1R1
-R1cub1_1R2mac2_2R2sub2_1R1mic1_1
-R1cub1_1R2mac2_2R2sub2_1R1mic1_2
-R1cub1_1R2mac2_2R2sub2_1R2
-R1cub1_1R2mac2_2R2sub2_1R2mic2_1
-R1cub1_1R2mac2_2R2sub2_1R2mic2_2
-R1cub1_1R2mac2_2R2sub2_2
-R1cub1_1R2mac2_2R2sub2_2R1
-R1cub1_1R2mac2_2R2sub2_2R1mic1_1
-R1cub1_1R2mac2_2R2sub2_2R1mic1_2
-R1cub1_1R2mac2_2R2sub2_2R2
-R1cub1_1R2mac2_2R2sub2_2R2mic2_1
-R1cub1_1R2mac2_2R2sub2_2R2mic2_2";
+R1cub1_1R2macro2_1
+R1cub1_1R2macro2_1R1
+R1cub1_1R2macro2_1R1sub1_1
+R1cub1_1R2macro2_1R1sub1_1R1
+R1cub1_1R2macro2_1R1sub1_1R1mic1_1
+R1cub1_1R2macro2_1R1sub1_1R1mic1_2
+R1cub1_1R2macro2_1R1sub1_1R2
+R1cub1_1R2macro2_1R1sub1_1R2mic2_1
+R1cub1_1R2macro2_1R1sub1_1R2mic2_2
+R1cub1_1R2macro2_1R1sub1_2
+R1cub1_1R2macro2_1R1sub1_2R1
+R1cub1_1R2macro2_1R1sub1_2R1mic1_1
+R1cub1_1R2macro2_1R1sub1_2R1mic1_2
+R1cub1_1R2macro2_1R1sub1_2R2
+R1cub1_1R2macro2_1R1sub1_2R2mic2_1
+R1cub1_1R2macro2_1R1sub1_2R2mic2_2
+R1cub1_1R2macro2_1R2
+R1cub1_1R2macro2_1R2sub2_1
+R1cub1_1R2macro2_1R2sub2_1R1
+R1cub1_1R2macro2_1R2sub2_1R1mic1_1
+R1cub1_1R2macro2_1R2sub2_1R1mic1_2
+R1cub1_1R2macro2_1R2sub2_1R2
+R1cub1_1R2macro2_1R2sub2_1R2mic2_1
+R1cub1_1R2macro2_1R2sub2_1R2mic2_2
+R1cub1_1R2macro2_1R2sub2_2
+R1cub1_1R2macro2_1R2sub2_2R1
+R1cub1_1R2macro2_1R2sub2_2R1mic1_1
+R1cub1_1R2macro2_1R2sub2_2R1mic1_2
+R1cub1_1R2macro2_1R2sub2_2R2
+R1cub1_1R2macro2_1R2sub2_2R2mic2_1
+R1cub1_1R2macro2_1R2sub2_2R2mic2_2
+R1cub1_1R2macro2_2
+R1cub1_1R2macro2_2R1
+R1cub1_1R2macro2_2R1sub1_1
+R1cub1_1R2macro2_2R1sub1_1R1
+R1cub1_1R2macro2_2R1sub1_1R1mic1_1
+R1cub1_1R2macro2_2R1sub1_1R1mic1_2
+R1cub1_1R2macro2_2R1sub1_1R2
+R1cub1_1R2macro2_2R1sub1_1R2mic2_1
+R1cub1_1R2macro2_2R1sub1_1R2mic2_2
+R1cub1_1R2macro2_2R1sub1_2
+R1cub1_1R2macro2_2R1sub1_2R1
+R1cub1_1R2macro2_2R1sub1_2R1mic1_1
+R1cub1_1R2macro2_2R1sub1_2R1mic1_2
+R1cub1_1R2macro2_2R1sub1_2R2
+R1cub1_1R2macro2_2R1sub1_2R2mic2_1
+R1cub1_1R2macro2_2R1sub1_2R2mic2_2
+R1cub1_1R2macro2_2R2
+R1cub1_1R2macro2_2R2sub2_1
+R1cub1_1R2macro2_2R2sub2_1R1
+R1cub1_1R2macro2_2R2sub2_1R1mic1_1
+R1cub1_1R2macro2_2R2sub2_1R1mic1_2
+R1cub1_1R2macro2_2R2sub2_1R2
+R1cub1_1R2macro2_2R2sub2_1R2mic2_1
+R1cub1_1R2macro2_2R2sub2_1R2mic2_2
+R1cub1_1R2macro2_2R2sub2_2
+R1cub1_1R2macro2_2R2sub2_2R1
+R1cub1_1R2macro2_2R2sub2_2R1mic1_1
+R1cub1_1R2macro2_2R2sub2_2R1mic1_2
+R1cub1_1R2macro2_2R2sub2_2R2
+R1cub1_1R2macro2_2R2sub2_2R2mic2_1
+R1cub1_1R2macro2_2R2sub2_2R2mic2_2";
             #endregion
 
             Assert.Equal(treeResult, treeStr);
@@ -420,7 +423,5 @@ R1cub1_1R2mac2_2R2sub2_2R2mic2_2";
             Assert.Equal("C_7", GridControl_Settings.Address_FromRowCol(7,3, addressDef: enGrid_AddressDefOrder.ColRow, addressCol:enGrid_AddressValue.Alfa));
             Assert.Equal("G_3", GridControl_Settings.Address_FromRowCol(3,7, addressDef: enGrid_AddressDefOrder.ColRow, addressCol:enGrid_AddressValue.Alfa));
         }
-
-
     }
 }

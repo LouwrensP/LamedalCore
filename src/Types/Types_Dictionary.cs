@@ -56,6 +56,7 @@ namespace LamedalCore.Types
                     case enDuplicateError.Replace: dictionary[key] = newValue; return; // <============================
                     case enDuplicateError.Ignore: return;
                     case enDuplicateError.Error: throw new ArgumentException("newValue");
+                    default: throw new Exception($"Argument '{nameof(onError)}' error.");
                 }
             }
             dictionary.Add(key, newValue);

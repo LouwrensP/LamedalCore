@@ -430,6 +430,7 @@ namespace LamedalCore.lib.IO
                 case enIOFileActionTime.Creation:   result = _time.Trim(File.GetCreationTime(fileName), trim); break;
                 case enIOFileActionTime.LastAccess: result = _time.Trim(File.GetLastAccessTime(fileName), trim); break;
                 case enIOFileActionTime.LastWrite: result = _time.Trim(File.GetLastWriteTime(fileName), trim); break;
+                default: throw new Exception($"Argument '{nameof(fileTime)}' error.");
             }
             return result;
         }

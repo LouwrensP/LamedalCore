@@ -4,6 +4,11 @@
     {
         Address,
         Name,
-        Value
+        Value,
+        Index,
+        StateID,
+        DB_Name,
+        DB_ID,
+        Proress
     }
 }

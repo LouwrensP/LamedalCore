@@ -56,6 +56,7 @@ namespace LamedalCore.domain.Exceptions
             {
                 case enExceptionAction.ThrowError: throw ex;
                 case enExceptionAction.reThrowError: throw New(errMsg, ex);
+                default: throw new Exception($"Argument '{nameof(action)}' error.");
             }
         }
 

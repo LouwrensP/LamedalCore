@@ -9,12 +9,24 @@ namespace LamedalCore.zPublicClass.GridBlock
     public class GridControl_Settings
     {
         // Default values
-        private const int constMinMicroSize = 100;
-        private const int constMinSubSize = 70;
+        private const int constMinMicroSize = 20;
+        private const int constMinSubSize = 20;
         private const double constZoomSubGridFactor = 1.5;
         private const double constZoomMacroGridFactor = 1.25;
         private const int constSizeMicroWidth = 32;
         private const int constSizeMicroHeight = 30;
+        public const string constGridBlock_Name1Micro = "mic";
+        public const string constGridBlock_Name2Sub = "sub";
+        public const string constGridBlock_Name3Maco = "macro";
+        public const string constGridBlock_Name4Cuboid = "cub";
+        
+        #region Names
+        public string GridBlock_Name1Micro = constGridBlock_Name1Micro;
+        public string GridBlock_Name2Sub = constGridBlock_Name2Sub;
+        public string GridBlock_Name3Macro= constGridBlock_Name3Maco;
+        public string GridBlock_Name4Cuboid = constGridBlock_Name4Cuboid;
+
+        #endregion
 
         #region Address           
         // Note: Address settings will only have effect on the display of the output

@@ -73,9 +73,9 @@ namespace LamedalCore.Test.Tests.Types.List
             #region Unique
             var items1 = new[] { "Item3", "Item2", "Duplicate", "Item1", "Duplicate", "item1" };
             Assert.Equal(new[] { "Item3", "Item2", "Duplicate", "Item1", "item1" }, _lamed.Types.List.Action.Unique(items1).ToArray());
-            Assert.Equal(new[] { "Duplicate", "item1", "Item1", "Item2", "Item3" }, _lamed.Types.List.Action.Unique(items1, enSort.Ascending).ToArray());
-            Assert.Equal(new[] { "Item3","Item2","Item1","Duplicate"}, _lamed.Types.List.Action.Unique(items1, enSort.Descending, true).ToArray());
-            Assert.Equal(null, _lamed.Types.List.Action.Unique(null, enSort.Ascending, true));
+            Assert.Equal(new[] { "Duplicate", "item1", "Item1", "Item2", "Item3" }, _lamed.Types.List.Action.Unique(items1, enCompareSort.Ascending).ToArray());
+            Assert.Equal(new[] { "Item3","Item2","Item1","Duplicate"}, _lamed.Types.List.Action.Unique(items1, enCompareSort.Descending, true).ToArray());
+            Assert.Equal(null, _lamed.Types.List.Action.Unique(null, enCompareSort.Ascending, true));
 
             LamedalCore_[] itemsT = {_lamed, _lamed};
             Assert.Equal(new List<LamedalCore_> {_lamed}, _lamed.Types.List.Action.Unique(itemsT));

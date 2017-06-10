@@ -1,0 +1,3 @@
+set APPVEYOR_BUILD_FOLDER=A:\_dev\Github
+packages\JetBrains.dotCover.CommandLineTools.2017.1.20170428.83814\tools\dotcover analyse /TargetExecutable="c:\Program Files\dotnet\dotnet.exe" /TargetArguments="test %APPVEYOR_BUILD_FOLDER%\LamedalCore\tests\LamedalCore.Test.csproj --logger \"trx;LogFileName=%APPVEYOR_BUILD_FOLDER%\LamedalCore\dotCover\TestResults.trx" -o %APPVEYOR_BUILD_FOLDER%\LamedalCore\tests\bin\Release\netcoreapp1.1 --no-build" /Output=DotCoverTestCoverageReport.html /ReportType=HTML
+pause

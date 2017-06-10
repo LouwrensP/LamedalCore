@@ -13,7 +13,6 @@ namespace LamedalCore.lib
     [Test_IgnoreCoverage(enTestIgnore.ClassIsNodeLink)]
     public sealed class lib_
     {
-
         #region About
         /// <summary>
         /// Gets the About library methods.

@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using JetBrains.Annotations;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;

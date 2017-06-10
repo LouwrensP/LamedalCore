@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
@@ -113,6 +114,9 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader
                     case enParameterRefType.ByReference: ref1 = " ref "; break;
                     case enParameterRefType.Output: ref1 = " out "; break;
                     case enParameterRefType.ParamArray: ref1 = " params "; break;
+                    case enParameterRefType.ByValue: ref1 = ""; break;
+                    default: throw new Exception($"Argument '{nameof(parameter.ParameterRefType)}' error.");
+
                 }
                 signature += ref1 + parameter.ParameterTypeName;
                 parameterLine += ref1 + parameter.ParameterTypeName + " " + parameter.ParameterName;

@@ -1,7 +1,15 @@
 # Workflow
-Definition of LamadalCore workflow. Please see [GitHub flow](http://scottchacon.com/2011/08/31/github-flow.html). 
+* For most applications the following workflow will work best.
 
-# Development
+![Kiku](/src/Designs/Lamedal_Usage_Workflow1.png)
+
+* If you require the source code in your project then use the following workflow:
+
+![Kiku](/src/Designs/Lamedal_Usage_Workflow2.png)
+
+# Development of Lamedal
+Please see [GitHub flow](http://scottchacon.com/2011/08/31/github-flow.html) for an explantion of why a simple workflow on Git is better. The following is a definition of the LamadalCore workflow. 
+
 * Main development will occur on master branch.
 * All new features need to be on branches and merged to master 
 * Before merge to master, new feature must have 100% test coverage. (Deviation to 95%-98% unit test coverage are allowed in cases where test cases are difficult).  

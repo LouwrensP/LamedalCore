@@ -35,13 +35,12 @@ namespace LamedalCore.zPublicClass.GridBlock
                 _onCreateGridControl(root, enGrid_ControlType.Row, "?", rowName, enGrid_BlockType.CuboidGrid, ref gridRowControl); // Ask frontend to create the control
                 // Save testing information
                 _treeDebugInfo.Add(GridControl_2Str(enGrid_ControlType.Row, "?", rowName, enGrid_BlockType.CuboidGrid),null);
-
             }
 
             _treeControls.Add(rowName, gridRowControl);
-
-            GridCuboid = new GridBlock_4Cuboid(root, OnGridCreate, OnGridRowCreate, settings.Total_MacroRows, settings.Total_MacroCols,
-                                settings.Total_SubRows, settings.Total_SubCols, settings.Total_MicroRows, settings.Total_MicroCols);
+            GridCuboid = new GridBlock_4Cuboid(root, OnGridCreate, OnGridRowCreate, settings, settings.Total_MacroRows, settings.Total_MacroCols,
+                                settings.Total_SubRows, settings.Total_SubCols, 
+                                settings.Total_MicroRows, settings.Total_MicroCols);
 
             //r1
             //r1/cub1_1
@@ -107,82 +106,107 @@ namespace LamedalCore.zPublicClass.GridBlock
         /// <param name="macroAddress">The macro address.</param>
         /// <param name="subAddress">The sub address.</param>
         /// <param name="microAddress">The micro address.</param>
+        /// <param name="macroItem">The macro item.</param>
+        /// <param name="subItem">The sub item.</param>
+        /// <param name="microItem">The micro item.</param>
         /// <returns></returns>
         /// <exception cref="System.ArgumentException"></exception>
-        public IGridBlock_Base GetChild_MicroGridBlock(string macroAddress, string subAddress, string microAddress)
+        public IGridBlock_Base GetChild_MicroGridBlock(string macroAddress, string subAddress, string microAddress,
+                        enGrid_BlockDisplayType macroItem = enGrid_BlockDisplayType.Address, enGrid_BlockDisplayType subItem = enGrid_BlockDisplayType.Address,
+                        enGrid_BlockDisplayType microItem = enGrid_BlockDisplayType.Address)
         {
-            var gridSub = GetChild_SubGridBlock(macroAddress, subAddress) as IGridBlock_Base;
-            var gridMicroI = gridSub.GetChild_GridBlock(microAddress);
+            var gridSub = GetChild_SubGridBlock(macroAddress, subAddress, macroItem, subItem) as IGridBlock_Base;
+            var gridMicroI = gridSub.GetChild_GridBlock(microAddress, microItem);
             return gridMicroI;
         }
 
         /// <summary>Return the child grid blocks.</summary>
         /// <param name="macroAddress">The macro address.</param>
         /// <param name="subAddress">The sub address.</param>
+        /// <param name="macroItem">The macro item.</param>
+        /// <param name="subItem">The sub item.</param>
         /// <returns></returns>
         /// <exception cref="System.ArgumentException"></exception>
-        public IGridBlock_Base GetChild_SubGridBlock(string macroAddress, string subAddress)
+        public IGridBlock_Base GetChild_SubGridBlock(string macroAddress, string subAddress, 
+                    enGrid_BlockDisplayType macroItem = enGrid_BlockDisplayType.Address, enGrid_BlockDisplayType subItem = enGrid_BlockDisplayType.Address)
         {
-            var gridMacro = GetChild_MacroGridBlock(macroAddress);
-            var gridSubI = gridMacro.GetChild_GridBlock(subAddress);
+            var gridMacro = GetChild_MacroGridBlock(macroAddress, macroItem);
+            var gridSubI = gridMacro.GetChild_GridBlock(subAddress, subItem);
             return gridSubI;
         }
 
         /// <summary>Return the child grid blocks.</summary>
         /// <param name="macroAddress">The macro address.</param>
+        /// <param name="searchItem">The search item.</param>
         /// <returns></returns>
         /// <exception cref="System.ArgumentException"></exception>
-        public IGridBlock_Base GetChild_MacroGridBlock(string macroAddress)
+        public IGridBlock_Base GetChild_MacroGridBlock(string macroAddress, enGrid_BlockDisplayType searchItem = enGrid_BlockDisplayType.Address)
         {
-            var gridMacro = GridCuboid.GetChild_GridBlock(macroAddress);
+            var gridMacro = GridCuboid.GetChild_GridBlock(macroAddress, searchItem);
             return gridMacro;
         }
 
-        /// <summary>
-        /// Setups the sub grids.
-        /// </summary>
+        /// <summary>Return the child grid blocks.</summary>
+        /// <returns></returns>
+        /// <exception cref="System.ArgumentException"></exception>
+        public List<IGridBlock_Base> GetChild_MacroGridBlocks()
+        {
+            var gridMacro = GridCuboid.GetChild_GridBlocks();
+            return gridMacro;
+        }
+
+        /// <summary>Setups the sub grids.</summary>
         /// <param name="macroAddress">The macro address.</param>
+        /// <param name="settings">The settings.</param>
         /// <param name="subRows">The sub rows.</param>
         /// <param name="subCols">The sub cols.</param>
+        /// <param name="microName">Name of the micro.</param>
         /// <param name="microRows">The micro rows.</param>
         /// <param name="microCols">The micro cols.</param>
-        public void Setup_SubGrids(string macroAddress, int subRows, int subCols, int microRows, int microCols)
+        /// <exception cref="System.InvalidOperationException">Error! Macro grid was not found.</exception>
+        /// <exception cref="InvalidOperationException">Error! Macro grid was not found.</exception>
+        public void Setup_SubGrids(string macroAddress, GridControl_Settings settings, int subRows, int subCols, string microName, int microRows, int microCols)
         {
             IGridBlock_Base grid = GetChild_MacroGridBlock(macroAddress);
             var gridMacro = grid as GridBlock_3Macro;
             if (gridMacro == null) throw new InvalidOperationException("Error! Macro grid was not found.");
-            gridMacro.CreateSubGrids(OnGridCreate, OnGridRowCreate, subRows, subCols, microRows, microCols);
+            gridMacro.CreateSubGrids(OnGridCreate, OnGridRowCreate, settings, subRows, subCols, microRows, microCols);
         }
 
-        /// <summary>
-        /// Setups the sub grids.
-        /// </summary>
+        /// <summary>Setups the sub grids.</summary>
         /// <param name="macroAddress">The macro address.</param>
         /// <param name="subAddress">The sub address.</param>
+        /// <param name="settings">The settings.</param>
         /// <param name="microRows">The micro rows.</param>
         /// <param name="microCols">The micro cols.</param>
+        /// <exception cref="System.InvalidOperationException">Error! Macro grid was not found.</exception>
         /// <exception cref="InvalidOperationException">Error! Macro grid was not found.</exception>
-        public void Setup_MicroGrids(string macroAddress, string subAddress, int microRows, int microCols)
+        public void Setup_MicroGrids(string macroAddress, string subAddress, GridControl_Settings settings, int microRows, int microCols)
         {
             IGridBlock_Base grid = GetChild_SubGridBlock(macroAddress, subAddress);
             var gridMicro = grid as GridBlock_2Sub;
             if (gridMicro == null) throw new InvalidOperationException("Error! Macro grid was not found.");
-            gridMicro.CreateMicroGrids(OnGridCreate, OnGridRowCreate, microRows, microCols);
+            gridMicro.CreateMicroGrids(OnGridCreate, OnGridRowCreate, settings, microRows, microCols);
         }
 
-        public void CreateNewChildGrids(IGridControl grid, onGrid_CreateControl onCreateGridControl, int rows, int cols)
+        /// <summary>Creates the new child grids.</summary>
+        /// <param name="grid">The grid.</param>
+        /// <param name="settings">The settings.</param>
+        /// <param name="rows">The rows.</param>
+        /// <param name="cols">The cols.</param>
+        public void CreateNewChildGrids(IGridControl grid, GridControl_Settings settings, int rows, int cols)
         {
             var gridState = grid.GridState;
             var gridMacro = gridState as GridBlock_3Macro;
             if (gridMacro != null)
             {
-                gridMacro.CreateSubGrids(OnGridCreate, OnGridRowCreate,rows, cols, 0, 0);
+                gridMacro.CreateSubGrids(OnGridCreate, OnGridRowCreate, settings, rows, cols, 0, 0);
             }
 
             var gridsub = gridState as GridBlock_2Sub;
             if (gridsub != null)
             {
-                gridsub.CreateMicroGrids(OnGridCreate, OnGridRowCreate, rows, cols);
+                gridsub.CreateMicroGrids(OnGridCreate, OnGridRowCreate, settings, rows, cols);
             }
         }
     }

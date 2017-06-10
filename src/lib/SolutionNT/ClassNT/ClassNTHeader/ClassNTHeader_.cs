@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Xml.Serialization;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttributes;
@@ -7,7 +8,6 @@ using LamedalCore.lib.SolutionNT.ClassNT.ClassNTStats;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTHeader
 {
-    [Serializable]
     [BlueprintRule_Class(enBlueprintClassNetworkType.Node_State)]
     public sealed class ClassNTHeader_
     {

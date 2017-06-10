@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +10,8 @@ using LamedalCore.domain.Enumerals;
 using LamedalCore.zPublicClass;
 using Xunit;
 using Xunit.Abstractions;
+using HtmlAgilityPack;
+using MetroFramework.Drawing.Html;
 
 namespace LamedalCore.Test.Tests.lib
 {
@@ -16,7 +20,16 @@ namespace LamedalCore.Test.Tests.lib
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
 
-        public lib_Command_Test(ITestOutputHelper debug = null) : base(debug) { } 
+        public lib_Command_Test(ITestOutputHelper debug = null) : base(debug) { }
+
+        [Fact]
+        public void ConvertHtmlToImage(int width = 100, int height = 50, string html = "<html><body><p>This is a shitty html code</p></body>")
+        {
+            var m_Bitmap = new Bitmap(width, height);
+            var area = new RectangleF(0,0, width, height);
+            HtmlRenderer.Render(Graphics.FromImage(m_Bitmap), html, area, true);
+            m_Bitmap.Save(@"C:\Test.png", ImageFormat.Png);
+        }
 
         [Fact]
         [Test_Method("Execute_Notepad()")]

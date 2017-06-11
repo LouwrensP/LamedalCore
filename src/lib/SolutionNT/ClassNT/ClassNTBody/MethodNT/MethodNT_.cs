@@ -13,7 +13,6 @@ using LamedalCore.zz;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT
 {
-    [Serializable]
     [BlueprintRule_Class(enBlueprintClassNetworkType.Node_State)]
     [DebuggerDisplay("Name = {MethodName}")]
     public sealed class MethodNT_

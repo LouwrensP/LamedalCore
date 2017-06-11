@@ -11,6 +11,7 @@
     <PackageReleaseNotes>
 Lamedal v1.1.6
 ==============
+v1.1.6-alfa2: Use official version of DocumentFormat.OpenXml
 v1.1.6-alfa1: Added address definitions to 3 level Grids. 
 
 Lamedal v1.1.5
@@ -46,21 +47,24 @@ Lamedal v1.1.0
     <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-    <Version>1.1.6-alfa1</Version>
+    <Version>1.1.6-alfa2</Version>
     <RepositoryType>c#</RepositoryType>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="LamedalCore_Templates" Version="0.0.1-alfa" />
     <PackageReference Include="LamedalExcel" Version="1.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
     <PackageReference Include="JetBrains.Annotations" Version="10.4.0" />
+    <PackageReference Include="System.Xml.XmlSerializer" Version="4.3.0" />
     <PackageReference Include="xunit.extensibility.core" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.6' ">
     <PackageReference Include="HtmlAgilityPack.NetCore" Version="1.5.0.1" />
-    <PackageReference Include="LamedalOpenXML_Document" Version="2.5.2" />
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.7.2" />
+    <!--<PackageReference Include="LamedalOpenXML_Document" Version="2.5.2" /> -->
     <PackageReference Include="LamedaL.System.Drawing" Version="1.0.1" />
     <PackageReference Include="System.Diagnostics.Process" Version="4.1.0" />
   </ItemGroup>

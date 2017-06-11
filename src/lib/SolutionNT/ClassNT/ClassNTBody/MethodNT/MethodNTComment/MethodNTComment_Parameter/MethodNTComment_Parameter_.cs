@@ -5,7 +5,6 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTComment.MethodNTComment_Parameter
 {
-    [Serializable]
     [BlueprintRule_Class(enBlueprintClassNetworkType.Node_State)]
     [DebuggerDisplay("Name = {ParameterName}; Comment = {ParameterComment}")]
     public sealed class MethodNTComment_Parameter_

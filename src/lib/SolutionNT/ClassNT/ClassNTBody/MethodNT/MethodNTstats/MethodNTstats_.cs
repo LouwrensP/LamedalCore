@@ -8,7 +8,6 @@ using LamedalCore.zz;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTstats
 {
-    [Serializable]
     [BlueprintRule_Class(enBlueprintClassNetworkType.Node_State)]
     public sealed class MethodNTstats_
     {

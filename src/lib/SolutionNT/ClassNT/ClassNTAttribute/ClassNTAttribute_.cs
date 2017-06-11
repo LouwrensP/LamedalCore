@@ -6,7 +6,6 @@ using LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttributes;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute
 {
-    [Serializable]
     [BlueprintRule_Class(enBlueprintClassNetworkType.Node_State)]
     public sealed class ClassNTAttribute_
     {

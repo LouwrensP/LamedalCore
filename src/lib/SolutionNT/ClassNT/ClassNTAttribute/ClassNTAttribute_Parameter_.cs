@@ -4,7 +4,6 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute
 {
-    [Serializable]
     [BlueprintRule_Class(enBlueprintClassNetworkType.Node_State)]
     public sealed class ClassNTAttribute_Parameter_
     {

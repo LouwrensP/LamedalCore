@@ -1,6 +1,6 @@
 # LamedalCore v1.1.6-alfa2
 * Project : https://sites.google.com/site/lamedalwiki/
-* Lamedal Nuget package: https://www.nuget.org/packages/LamedalCore/
+* Lamedal Nuget package: https://www.nuget.org/packages/lamedalcore/ [![NuGet Badge](https://buildstats.info/nuget/lamedalcore)](https://www.nuget.org/packages/lamedalcore/) 
 * PM> Install-Package LamedalCore
 * The "master" branch is not stable. Click on [Workflow](docs/Workflow.md) to see the workflow of the project.
 
@@ -16,6 +16,9 @@ OSX Darwin 10.11-x64|dotnet build| -   | ![alt tag](https://travis-ci.org/perezL
 Linux Ubuntu 14.04  |dotnet build| yes | (todo) | [Travis](https://travis-ci.org/perezLamed/LamedalCore)               
 Static Analysis     |analysis    | -   | ![alt tag](https://scan.coverity.com/projects/12604/badge.svg?flat=1) | [Coverity Scan](https://scan.coverity.com/projects/perezlamed-lamedalcore?tab=overview)
 [Code Coverage](https://ci.appveyor.com/api/projects/perezLamed/lamedalcore/artifacts/dotCover%2Fbadge_linecoverage.svg)       |dotCover    | yes | ![Result](https://rawgithub.com/perezLamed/LamedalCore/master/pics/badge.svg) | [Report Generator](https://github.com/danielpalme/ReportGenerator)
+
+## Build History
+![Build History](https://buildstats.info/appveyor/chart/perezLamed/lamedalcore)
 
 ## Background
 -------------------------------------------------------------------------------------

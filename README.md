@@ -4,6 +4,8 @@
 * PM> Install-Package LamedalCore
 * The "master" branch is not stable. Click on [Workflow](docs/Workflow.md) to see the workflow of the project.
 
+* ![Result](https://rawgithub.com/perezLamed/LamedalCore/releases/download/1.1.185/badge_linecoverage.svg)
+
 ## State
 Platform            | Build      |Tests| Status | Server
 --------------------|------------|-----|--------|---------

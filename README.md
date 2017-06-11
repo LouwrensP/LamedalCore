@@ -10,7 +10,7 @@ Platform            | Build      |Tests| Status | Server
 Windows 10.0 VS2017 |Debug       | -   | ![alt tag](https://ci.appveyor.com/api/projects/status/5tt4c9sj7dpv5xx5?svg=true) | [AppVeyor](https://ci.appveyor.com/projects)
 Windows 10.0 VS2017 |Debug       | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/s8ox68g39xc9tfne?svg=true) | [AppVeyor](https://ci.appveyor.com/projects)
 Windows 10.0 VS2017 |Release     | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/9t93y3013de1ktwg?svg=true) | [AppVeyor](https://ci.appveyor.com/projects)
-Windows 10.0 VS2017 |tests run   | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true) | [AppVeyor](https://ci.appveyor.com/projects)
+Windows 10.0 VS2017 |tests run   | yes | ![alt tag](https://ci.appveyor.com/api/projects/status/r64leqcijlqfj24h?svg=true) | [AppVeyor artifacts](https://ci.appveyor.com/project/perezLamed/lamedalcore/build/artifacts)
 Linux Ubuntu 14.04  |dotnet build| -   | ![alt tag](https://travis-ci.org/perezLamed/LamedalCore.svg?branch=master) | [Travis](https://travis-ci.org/perezLamed/LamedalCore)
 OSX Darwin 10.11-x64|dotnet build| -   | ![alt tag](https://travis-ci.org/perezLamed/LamedalCore.svg?branch=master)| [Travis](https://travis-ci.org/perezLamed/LamedalCore)
 Linux Ubuntu 14.04  |dotnet build| yes | (todo) | [Travis](https://travis-ci.org/perezLamed/LamedalCore)               

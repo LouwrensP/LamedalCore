@@ -1,5 +1,5 @@
 # Workflow
-* For most applications the following workflow will work best.
+* For most applications the following workflow will work best. (That is use the nuget package at https://www.nuget.org/packages/LamedalCore)
 
 ![Kiku](/src/Designs/Lamedal_Usage_Workflow1.png)
 

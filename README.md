@@ -2,6 +2,7 @@
 * Project : https://sites.google.com/site/lamedalwiki/
 * Lamedal Nuget package: https://www.nuget.org/packages/LamedalCore/
 * PM> Install-Package LamedalCore
+* The "master" branch is not stable. Click on [Workflow](docs/Workflow.md) to see the workflow of the project.
 
 ## State
 Platform            | Build      |Tests| Status | Server
@@ -41,9 +42,6 @@ Code Coverage       |dotCover    | yes | ![Result](https://rawgithub.com/perezLa
 
 ## Setup
 * Click on [Setup](docs/Setup.md) to see how to setup and use the library.
-
-## Workflow
-* Click on [Workflow](docs/Workflow.md) to see the workflow of the project.
 
 ## License
 Apache License Version 2.0

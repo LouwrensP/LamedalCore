@@ -7,12 +7,15 @@
 
 ![Kiku](/src/Designs/Lamedal_Usage_Workflow2.png)
 
+(Please note: Do not use the "master" branch as it is used as the main branch for new development.
+
 # Development of Lamedal
 Please see [GitHub flow](http://scottchacon.com/2011/08/31/github-flow.html) for an explantion of why a simple workflow on Git is better. The following is a definition of the LamadalCore workflow. 
 
 * Main development will occur on master branch.
-* All new features need to be on branches and merged to master 
-* Before merge to master, new feature must have 100% test coverage. (Deviation to 95%-98% unit test coverage are allowed in cases where test cases are difficult).  
+* New features will be build directly into the main branch. 
+* In times when a release is finilised, new development will not be merged and can be done on feature branches (that can later be merged to master). 
+* Test coverage on master branch must be above 95%. (When test coverage goes below this number - then focus will shift to create more and better unit testing.  
 
 # Release
 * Once master is release ready (that is all new features are added and all test cases are working) -> Create NuGet package x.x.x-beta1. Note if not all features are completed then release as 'alfa'. Run test cases from Appveyor integration server

@@ -7,7 +7,7 @@
 
 ![Kiku](/src/Designs/Lamedal_Usage_Workflow2.png)
 
-(Please note: Do not use the "master" branch in projects that depend on Lamedal as it is used as the main branch for new development.
+(Please note: Do not use the "master" branch in projects that depend on Lamedal as it is used as the main branch for new development.)
 
 # Development of Lamedal
 Please see [GitHub flow](http://scottchacon.com/2011/08/31/github-flow.html) for an explantion of why a simple workflow on Git is better. The following is a definition of the LamadalCore workflow. 

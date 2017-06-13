@@ -1,0 +1,2320 @@
+<map version="1.0.1">
+<!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
+<node CREATED="1433685414567" ID="ID_1455115235" MODIFIED="1452060527964" STYLE="bubble">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      LaMedaL
+    </p>
+    <p>
+      Framework
+    </p>
+  </body>
+</html></richcontent>
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1433686479826" ID="ID_309089605" MODIFIED="1433923664220" POSITION="right" TEXT="About">
+<node CREATED="1434107213713" FOLDED="true" ID="ID_590898183" MODIFIED="1463817070391" TEXT="Story">
+<node CREATED="1438244821857" ID="ID_926836749" MODIFIED="1438244824611" TEXT="1">
+<node CREATED="1438244843900" ID="ID_67820284" MODIFIED="1451847517441" STYLE="bubble" TEXT="Water Affairs">
+<node CREATED="1438244885583" ID="ID_1789553254" MODIFIED="1438443659018" TEXT="Expert in">
+<node CREATED="1438244896121" ID="ID_1769308737" MODIFIED="1438244912891" TEXT="Web">
+<node CREATED="1438244912891" ID="ID_376228389" MODIFIED="1438244916559" TEXT="development"/>
+<node CREATED="1438244916970" ID="ID_920101396" MODIFIED="1438244933742" TEXT="management"/>
+</node>
+<node CREATED="1438244900855" ID="ID_1157075511" MODIFIED="1438244936706" TEXT="GIS">
+<node CREATED="1438244937398" ID="ID_763257504" MODIFIED="1438244941737" TEXT="databases"/>
+<node CREATED="1438244942164" ID="ID_686568608" MODIFIED="1438244944943" TEXT="development"/>
+</node>
+<node CREATED="1438244946197" ID="ID_1235665961" MODIFIED="1438244950317" TEXT="delphi">
+<node CREATED="1438244950775" ID="ID_99333524" MODIFIED="1438244952291" TEXT="coding"/>
+</node>
+<node CREATED="1438244954605" ID="ID_720200572" MODIFIED="1438244966370" TEXT="Architect">
+<node CREATED="1438244967280" ID="ID_1895043725" MODIFIED="1438244977375" TEXT="Corporate environment"/>
+<node CREATED="1438244977802" ID="ID_508656535" MODIFIED="1438244982562" TEXT="GIS environment"/>
+</node>
+</node>
+<node CREATED="1438245000291" ID="ID_1417356585" MODIFIED="1438245009324" TEXT="What is the next big challenge"/>
+</node>
+</node>
+<node CREATED="1438245023511" ID="ID_190661667" MODIFIED="1438245024651" TEXT="2">
+<node CREATED="1438245026420" ID="ID_839295787" MODIFIED="1451848015573">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Carab
+    </p>
+    <p>
+      team
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1435043347550" ID="ID_446208640" MODIFIED="1451847523961" TEXT="1">
+<node CREATED="1434107223237" ID="ID_1823784502" MODIFIED="1435043141840" TEXT="Iron lady">
+<node CREATED="1438244022971" ID="ID_332801993" MODIFIED="1438244025469" TEXT="Amanda"/>
+</node>
+<node CREATED="1438244556391" ID="ID_517383389" MODIFIED="1438244560995" TEXT="Restless developer">
+<node CREATED="1438244561781" ID="ID_370652154" MODIFIED="1438244569988" TEXT="Pierre"/>
+</node>
+<node CREATED="1435043185939" ID="ID_1526258112" MODIFIED="1435043200581" TEXT="Lone wolf">
+<node CREATED="1438244027581" ID="ID_715539369" MODIFIED="1438244534614" TEXT="Morne"/>
+<node CREATED="1435043145711" ID="ID_1415075442" MODIFIED="1435043180562" TEXT="Super sister">
+<node CREATED="1438244537351" ID="ID_1321472691" MODIFIED="1438244541706" TEXT="Natilie"/>
+</node>
+</node>
+<node CREATED="1435042791945" ID="ID_1604411477" MODIFIED="1435042800425" TEXT="Rambo developer">
+<node CREATED="1438244035670" ID="ID_449122047" MODIFIED="1438244040617" TEXT="Kobus Maree"/>
+</node>
+<node CREATED="1435042802424" ID="ID_86058357" MODIFIED="1435042812728" TEXT="Ironman developer">
+<node CREATED="1438244043010" ID="ID_1736762612" MODIFIED="1438244045539" TEXT="Christo"/>
+</node>
+<node CREATED="1435043511607" ID="ID_1983778031" MODIFIED="1438244750403" TEXT="Mother tester">
+<node CREATED="1438244046855" ID="ID_307856862" MODIFIED="1438244048417" TEXT="Thea"/>
+</node>
+</node>
+<node CREATED="1435043360507" ID="ID_1362069895" MODIFIED="1451847529125" TEXT="2">
+<node CREATED="1435043429924" ID="ID_1308363044" MODIFIED="1438443727699" TEXT="Training boss &amp; trusted friend">
+<node CREATED="1438244073025" ID="ID_1556995002" MODIFIED="1438244075631" TEXT="Jaco"/>
+</node>
+<node CREATED="1435043207247" ID="ID_449173090" MODIFIED="1435043229490" TEXT="Old faithful">
+<node CREATED="1438244050014" ID="ID_963347021" MODIFIED="1438244052590" TEXT="Louis"/>
+</node>
+<node CREATED="1435043235435" ID="ID_1634309035" MODIFIED="1435043312955" TEXT="Super lady">
+<node CREATED="1438244054920" ID="ID_1322386678" MODIFIED="1438244057247" TEXT="Jane"/>
+</node>
+<node CREATED="1435043313431" ID="ID_49832586" MODIFIED="1435043338101" TEXT="Analyst manager">
+<node CREATED="1438244155174" ID="ID_982122365" MODIFIED="1438244158530" TEXT="George"/>
+</node>
+<node CREATED="1435043404721" ID="ID_729373092" MODIFIED="1438244306098" TEXT="Passionate trainer">
+<node CREATED="1438244307087" ID="ID_694595562" MODIFIED="1438244309023" TEXT="Gerrie"/>
+</node>
+<node CREATED="1438244361211" ID="ID_159525113" MODIFIED="1438244411180" TEXT="Super trainer or undisciplined">
+<node CREATED="1438244412730" ID="ID_1999706788" MODIFIED="1438244415587" TEXT="Egan"/>
+</node>
+</node>
+<node CREATED="1435043338929" ID="ID_1879020544" MODIFIED="1451847531777" TEXT="3">
+<node CREATED="1435043378647" ID="ID_1176535771" MODIFIED="1438244458027" TEXT="Project manager &amp; reliable">
+<node CREATED="1438244111884" ID="ID_147768599" MODIFIED="1438244118297" TEXT="Andre"/>
+</node>
+<node CREATED="1435043468202" ID="ID_82997936" MODIFIED="1438244173467" TEXT="Quiet producer &amp; team leader">
+<node CREATED="1438244125510" ID="ID_347532717" MODIFIED="1438244139459" TEXT="Louwrens"/>
+</node>
+<node CREATED="1435043552886" ID="ID_735349704" MODIFIED="1435043563701" TEXT="Talking analyst">
+<node CREATED="1438244079600" ID="ID_1880932596" MODIFIED="1438244084188" TEXT="MC"/>
+</node>
+<node CREATED="1438244262448" ID="ID_1300812670" MODIFIED="1438244693915">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Working 100% or
+    </p>
+    <p>
+      teambuilding 100% or
+    </p>
+    <p>
+      fighter 100%
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1438244267993" ID="ID_949669134" MODIFIED="1438244269399" TEXT="Jan"/>
+</node>
+<node CREATED="1435043564471" ID="ID_241463180" MODIFIED="1435043925228" TEXT="Artistic painter">
+<node CREATED="1438244091830" ID="ID_1105801684" MODIFIED="1438244096730" TEXT="Henry"/>
+</node>
+<node CREATED="1435044050235" ID="ID_541737028" MODIFIED="1435044062962" TEXT="Whistling professor">
+<node CREATED="1438244087735" ID="ID_1977715782" MODIFIED="1438244090015" TEXT="Stefan"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1451848028449" ID="ID_1686540553" MODIFIED="1451848029746" TEXT="3">
+<node CREATED="1451848032123" ID="ID_651259800" MODIFIED="1451848118338">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Lost opportunity
+    </p>
+    <p>
+      when Carab IP
+    </p>
+    <p>
+      sold to BV
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1451848120466" ID="ID_1216536566" MODIFIED="1451848140943" TEXT="Development stopped in 2013/04/27"/>
+<node CREATED="1435042841114" ID="ID_1920592767" MODIFIED="1451847989146">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Reset of
+    </p>
+    <p>
+      2014/03/01
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1435042844038" ID="ID_1818274605" MODIFIED="1438443953029" TEXT="Bad">
+<node CREATED="1435042951004" ID="ID_638535512" MODIFIED="1435042963030" TEXT="Lost years of proven code"/>
+<node CREATED="1435042970064" ID="ID_81326211" MODIFIED="1435042987687" TEXT="To redo things are very difficult"/>
+<node CREATED="1435043012034" ID="ID_518994702" MODIFIED="1435043017089" TEXT="Lost of motivation"/>
+<node CREATED="1435043018773" ID="ID_1955955004" MODIFIED="1435043022806" TEXT="Lost of time"/>
+</node>
+<node CREATED="1435042855904" ID="ID_1832796782" MODIFIED="1438443960391" TEXT="Good">
+<node CREATED="1435042858335" ID="ID_633925024" MODIFIED="1435042871061" TEXT="Re-evaluate everything"/>
+<node CREATED="1435042871600" ID="ID_191361084" MODIFIED="1435042925126" TEXT="Redesign naming standards"/>
+<node CREATED="1435042902544" ID="ID_956807115" MODIFIED="1435042947066" TEXT="Create a better IDE"/>
+<node CREATED="1435043029983" ID="ID_456620387" MODIFIED="1438245178600" TEXT="Time is most valuable">
+<node CREATED="1435043043746" ID="ID_571297188" MODIFIED="1435043054378" TEXT="Invent ways to save time"/>
+</node>
+</node>
+<node CREATED="1451848160012" ID="ID_445122501" MODIFIED="1451848162229" TEXT="New">
+<node CREATED="1451848162968" ID="ID_492604106" MODIFIED="1451848169335" TEXT="Blueprint library"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1438245059953" ID="ID_964690505" MODIFIED="1451848186495" TEXT="4">
+<node CREATED="1438245087261" ID="ID_1246156406" MODIFIED="1438378491976" TEXT="Character">
+<node CREATED="1435042818460" ID="ID_1110553641" MODIFIED="1438244517307">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Strategic developer
+    </p>
+    <p>
+      &amp; father manager
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1438244485544" ID="ID_233195517" MODIFIED="1438244487527" TEXT="Cobus"/>
+</node>
+<node CREATED="1435920630730" ID="ID_1520791265" MODIFIED="1451847539109" TEXT="Why">
+<node CREATED="1435920639740" ID="ID_302368936" MODIFIED="1435920659508" TEXT="I love to write programs that">
+<node CREATED="1435920660482" ID="ID_1526143978" MODIFIED="1435920663277" TEXT="work well"/>
+<node CREATED="1435920664173" ID="ID_1164906358" MODIFIED="1435920681508" TEXT="is easy">
+<node CREATED="1435920682616" ID="ID_664617919" MODIFIED="1435920682616" TEXT="to change"/>
+<node CREATED="1435920684370" ID="ID_1325410892" MODIFIED="1435920688723" TEXT="enhance"/>
+</node>
+<node CREATED="1435920762221" ID="ID_19186690" MODIFIED="1435920774343" TEXT="do not break when new things are added"/>
+</node>
+<node CREATED="1435920697864" ID="ID_54778656" MODIFIED="1435920724080" TEXT="I want to">
+<node CREATED="1435920724821" ID="ID_237645562" MODIFIED="1435920732708" TEXT="prototype a lot of applications"/>
+<node CREATED="1435920733089" ID="ID_544567420" MODIFIED="1435920750714" TEXT="add quality later easily"/>
+<node CREATED="1435920869778" ID="ID_393344107" MODIFIED="1435920877735" TEXT="do quickfixes now">
+<node CREATED="1435920879552" ID="ID_1623297833" MODIFIED="1435920883377" TEXT="and auto">
+<node CREATED="1435920884367" ID="ID_1249666777" MODIFIED="1435920943368" TEXT="improve code over time"/>
+<node CREATED="1435920891364" ID="ID_1901561619" MODIFIED="1435920954359" TEXT="fix bugs over time"/>
+</node>
+</node>
+<node CREATED="1435920917617" ID="ID_585037499" MODIFIED="1435920931986" TEXT="fix bugs before I know it is there"/>
+<node CREATED="1435920968460" ID="ID_1616022472" MODIFIED="1435920980567" TEXT="implement a solution only once"/>
+<node CREATED="1435920983444" ID="ID_1852641064" MODIFIED="1435920998411" TEXT="ever increasing better results"/>
+<node CREATED="1435921079331" ID="ID_1926310662" MODIFIED="1435921107836" TEXT="be able to write any imaginable solution"/>
+</node>
+<node CREATED="1435920781386" ID="ID_364321243" MODIFIED="1435920812921" TEXT="Fixing bugs should be a great experience"/>
+<node CREATED="1435920835432" ID="ID_667892455" MODIFIED="1435920842874" TEXT="I do not want to">
+<node CREATED="1435920844082" ID="ID_92090002" MODIFIED="1435920846642" TEXT="spend">
+<node CREATED="1435920847288" ID="ID_629163788" MODIFIED="1435920854360" TEXT="two week time on a program"/>
+<node CREATED="1435920854866" ID="ID_766055999" MODIFIED="1435920861013" TEXT="when 2 hours can do the job"/>
+</node>
+</node>
+<node CREATED="1435921009900" ID="ID_1602541036" MODIFIED="1435921014581" TEXT="Most important">
+<node CREATED="1435921015945" ID="ID_1846565007" MODIFIED="1435921030641" TEXT="Coding">
+<node CREATED="1435921031475" ID="ID_367509412" MODIFIED="1435921031475" TEXT="should be fun"/>
+<node CREATED="1435921033826" ID="ID_1344161346" MODIFIED="1435921044717" TEXT="something all should enjoy"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1451847582610" ID="ID_1725745622" MODIFIED="1451848194521" TEXT="5">
+<node CREATED="1451847591149" ID="ID_658662152" MODIFIED="1451847674112" TEXT="Fire test">
+<node CREATED="1451847675459" ID="ID_1070029989" MODIFIED="1451847726785" TEXT="Personal life was tested by fire during 2015/07/21">
+<node CREATED="1451848201079" ID="ID_753200895" MODIFIED="1451848214450" TEXT="SCCC attack"/>
+</node>
+<node CREATED="1451848231491" ID="ID_1665514960" MODIFIED="1451848240089" TEXT="Focus was turned to">
+<node CREATED="1451848240937" ID="ID_1805660313" MODIFIED="1451848246726" TEXT="writing processes"/>
+<node CREATED="1451847731097" ID="ID_549934887" MODIFIED="1451847742783" TEXT="Stopped with all development"/>
+</node>
+<node CREATED="1451847743460" ID="ID_219774890" MODIFIED="1451847759389" TEXT="Start playing Royal Revolt">
+<node CREATED="1451847765167" ID="ID_417821951" MODIFIED="1451847796291" TEXT="Nearly lost everything of Gods grace in my life"/>
+</node>
+<node CREATED="1451847958413" ID="ID_1733570799" MODIFIED="1451847982119" TEXT="Repented and start to trust Jesus again for revival">
+<node CREATED="1451848269243" ID="ID_66143405" MODIFIED="1451848281834" TEXT="2015/12/30"/>
+</node>
+</node>
+</node>
+<node CREATED="1451848299359" ID="ID_130666957" MODIFIED="1451848300999" TEXT="6">
+<node CREATED="1451847803395" ID="ID_1972571266" MODIFIED="1451847916076" TEXT="Rebooted 2016/01/03">
+<node CREATED="1451847916045" ID="ID_1353872274" MODIFIED="1451847917355" TEXT="1">
+<node CREATED="1451847821514" ID="ID_602116699" MODIFIED="1451847836999" TEXT="Jesus is the centre"/>
+<node CREATED="1451847838066" ID="ID_1492069094" MODIFIED="1451847859768" TEXT="Ursula to be my PA"/>
+<node CREATED="1451847864798" ID="ID_1628291265" MODIFIED="1451847877294" TEXT="Include Stefan &amp; Duane"/>
+<node CREATED="1451847878127" ID="ID_1251205346" MODIFIED="1451847894306" TEXT="To include Annschen &amp; Jesse"/>
+</node>
+<node CREATED="1451847924802" ID="ID_454312803" MODIFIED="1451847925943" TEXT="2">
+<node CREATED="1451847927150" ID="ID_1035772488" MODIFIED="1451847936434" TEXT="Future unknown"/>
+<node CREATED="1451847937641" ID="ID_780809062" MODIFIED="1451847945677" TEXT="Full trust is in God"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1433923664182" FOLDED="true" ID="ID_1000287222" MODIFIED="1451848614246" TEXT="Background">
+<node CREATED="1433923200008" ID="ID_240196949" MODIFIED="1451848322371" TEXT="Problem">
+<node CREATED="1433923222209" ID="ID_1012535385" MODIFIED="1451848353782">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Software systems are complex
+    </p>
+    <p>
+      and it is very difficult to maintain them
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1451848355269" ID="ID_145982519" MODIFIED="1451848395067">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      and require fulltime maintenance
+    </p>
+    <p>
+      of development teams
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1433923282291" ID="ID_1033044872" MODIFIED="1433923625501" TEXT="90% of complexity is directly the result &#xa;of relationships and interdependencies &#xa;in huge amounts of source code."/>
+<node CREATED="1433923373814" ID="ID_389092497" MODIFIED="1433923641748">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Of all relations and interdependencies,
+    </p>
+    <p>
+      inheritance is the most complex to maintain
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1451848426320" ID="ID_1534731087" MODIFIED="1451848472030">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Inheritance form the foundation
+    </p>
+    <p>
+      building block of all new systems
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1451848480007" ID="ID_1632525174" MODIFIED="1451848551465">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      in spite of its negative side effects,
+    </p>
+    <p>
+      it is still delivers good results
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1433923490254" ID="ID_1612881746" MODIFIED="1451848554421" TEXT="Requirement">
+<node CREATED="1433926680397" ID="ID_1086968438" MODIFIED="1434106798776">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Faster &amp;
+    </p>
+    <p>
+      easier
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1433926643503" ID="ID_442911465" MODIFIED="1433926697037" TEXT="production of applications"/>
+<node CREATED="1433926658263" ID="ID_536598364" MODIFIED="1433926770069" TEXT="maintenance of applications"/>
+<node CREATED="1433928120165" ID="ID_139079593" MODIFIED="1433928134995" TEXT="construction of reusable components"/>
+</node>
+</node>
+<node CREATED="1433926634485" ID="ID_821663875" MODIFIED="1438444173256" TEXT="Solution">
+<node CREATED="1438245215329" ID="ID_1563832391" MODIFIED="1451848563118" TEXT="Minimise">
+<node CREATED="1433926586935" ID="ID_959716645" MODIFIED="1451848583414" TEXT="the complexity in big systems">
+<node CREATED="1438444138701" ID="ID_172011769" MODIFIED="1438444142461" TEXT="how?"/>
+</node>
+<node CREATED="1433923495801" ID="ID_696597844" MODIFIED="1451848591705" TEXT="the complexity in inheritance structures">
+<node CREATED="1438444138701" ID="ID_681989970" MODIFIED="1438444142461" TEXT="how?"/>
+</node>
+<node CREATED="1433923737449" ID="ID_504284174" MODIFIED="1451848604972" TEXT="the side effects of code complexity">
+<node CREATED="1438444138701" ID="ID_996883420" MODIFIED="1438444142461" TEXT="how?"/>
+</node>
+<node CREATED="1438245266598" ID="ID_187973956" MODIFIED="1451848603156" TEXT="side effects of defective designs">
+<node CREATED="1438444138701" ID="ID_111260952" MODIFIED="1438444142461" TEXT="how?"/>
+</node>
+</node>
+<node CREATED="1438245224603" ID="ID_196697865" MODIFIED="1451848574233" TEXT="Maximise">
+<node CREATED="1438245305153" ID="ID_1599711402" MODIFIED="1438245310537" TEXT="Code reuseability">
+<node CREATED="1438444138701" ID="ID_165174733" MODIFIED="1438444142461" TEXT="how?"/>
+</node>
+<node CREATED="1438245311916" ID="ID_835322532" MODIFIED="1438245317534" TEXT="Scalability">
+<node CREATED="1438444138701" ID="ID_1086733129" MODIFIED="1438444142461" TEXT="how?"/>
+</node>
+<node CREATED="1438245323749" ID="ID_1804750741" MODIFIED="1438245334234" TEXT="Development efforts">
+<node CREATED="1438444138701" ID="ID_81026114" MODIFIED="1438444142461" TEXT="how?"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1433913216492" ID="ID_1048936281" MODIFIED="1436114410559" TEXT="Goals">
+<node CREATED="1433928244093" ID="ID_320357368" MODIFIED="1436128881200" TEXT="Primary">
+<node CREATED="1433923827437" ID="ID_347063817" MODIFIED="1438444185489">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Simplify everything by
+    </p>
+    <p>
+      creating a new framework
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1435760896137" FOLDED="true" ID="ID_1567717062" MODIFIED="1463817096411">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Simplify on a
+    </p>
+    <p>
+      macro level
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1433925377055" ID="ID_234351495" MODIFIED="1433925468956" TEXT="Why?">
+<node CREATED="1434109330799" ID="ID_1643401151" MODIFIED="1434109335567" TEXT="In the old days">
+<node CREATED="1434109338237" ID="ID_401683732" MODIFIED="1434109503214">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Standards existed to name
+    </p>
+    <p>
+      a variable after the type
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1434109358890" ID="ID_1820282745" MODIFIED="1434109361141" TEXT="ex:">
+<node CREATED="1434109363056" ID="ID_296374217" MODIFIED="1434109366840" TEXT="strName"/>
+</node>
+</node>
+<node CREATED="1434109370282" ID="ID_839922157" MODIFIED="1434109484541">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      These standards are no
+    </p>
+    <p>
+      longer in use because&#160;
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1434109402285" ID="ID_1438525530" MODIFIED="1434109402285" TEXT="the IDE provide that information for free"/>
+<node CREATED="1434109404384" ID="ID_910771180" MODIFIED="1434109436395" TEXT="the standard tended to clutter or make code a bit less natural for reading"/>
+<node CREATED="1434109440861" ID="ID_926497314" MODIFIED="1434109471065" TEXT="The initial value perceived no longer applied"/>
+</node>
+<node CREATED="1451848726378" ID="ID_1937614915" MODIFIED="1451848758600" TEXT="Lesson learned:">
+<node CREATED="1451848758601" ID="ID_1089420845" MODIFIED="1451848876718" TEXT="Name standards can be very valuable and meaningful"/>
+<node CREATED="1451848791619" ID="ID_1580443292" MODIFIED="1451849767589" TEXT="Name standards can simplify complexity by emphasising type definitions"/>
+</node>
+</node>
+<node CREATED="1433925468947" ID="ID_459385680" MODIFIED="1438444288722">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      A good naming
+    </p>
+    <p>
+      convention can
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1434109131435" ID="ID_1369722333" MODIFIED="1434109528899" TEXT="be used to define">
+<node CREATED="1434109144363" ID="ID_1678230349" MODIFIED="1434109147882" TEXT="Context">
+<node CREATED="1434109166078" ID="ID_1687260736" MODIFIED="1451848703940">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      All things in life are dependent on context.
+    </p>
+    <p>
+      The same &quot;word&quot; or sentence means different things in
+    </p>
+    <p>
+      different situations and the same goes for code.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1451849303782" ID="ID_3217956" MODIFIED="1451849307232" TEXT="Ex.">
+<node CREATED="1451849308345" ID="ID_1612885610" MODIFIED="1451849335585" TEXT="Structures can be created to simplify other structures"/>
+</node>
+</node>
+<node CREATED="1434109151733" ID="ID_893555549" MODIFIED="1434109156460" TEXT="Behavior">
+<node CREATED="1451848919686" ID="ID_695908813" MODIFIED="1451849130139" TEXT="Classes can be sub-classified according to their behavior "/>
+<node CREATED="1434109304499" ID="ID_1447377242" MODIFIED="1451849166816" TEXT="Ex.">
+<node CREATED="1451849169115" ID="ID_57252890" MODIFIED="1451849220379" TEXT="a  class can be defined to only contain properties"/>
+<node CREATED="1451849182648" ID="ID_857679344" MODIFIED="1451849238561" TEXT="a class can be defined to only contain methods"/>
+<node CREATED="1451849244120" ID="ID_1461008710" MODIFIED="1451849248584" TEXT="etc."/>
+</node>
+</node>
+</node>
+<node CREATED="1434109531932" ID="ID_304094532" MODIFIED="1434109538112" TEXT="This results in">
+<node CREATED="1433925326805" ID="ID_300742562" MODIFIED="1451849389553" TEXT=" simplifying of things on a macro level."/>
+<node CREATED="1433925474160" ID="ID_27869089" MODIFIED="1451849603905" TEXT="automatic macro refactoring mechanisms "/>
+</node>
+</node>
+</node>
+<node CREATED="1451849546581" ID="ID_567573047" MODIFIED="1451849554024" TEXT="What?">
+<node CREATED="1433924022479" ID="ID_1168944763" MODIFIED="1451849463076" TEXT="Included">
+<node CREATED="1433924057548" ID="ID_1335583652" MODIFIED="1433924062967" TEXT="projects"/>
+<node CREATED="1433923996915" ID="ID_1075489879" MODIFIED="1433924032389" TEXT="classes"/>
+<node CREATED="1433924032782" ID="ID_754824774" MODIFIED="1433924034493" TEXT="methods"/>
+<node CREATED="1433925185411" ID="ID_599499943" MODIFIED="1433925189583" TEXT="enumerals"/>
+<node CREATED="1433925190169" ID="ID_1661094292" MODIFIED="1433925193541" TEXT="events"/>
+<node CREATED="1433925194250" ID="ID_19539988" MODIFIED="1433925198263" TEXT="interfaces"/>
+</node>
+<node CREATED="1433924025784" ID="ID_572535139" MODIFIED="1451849465284" TEXT="Excluded">
+<node CREATED="1433924037033" ID="ID_987368281" MODIFIED="1433924042821" TEXT="fields"/>
+<node CREATED="1433924043376" ID="ID_294764809" MODIFIED="1433924045598" TEXT="properties"/>
+<node CREATED="1433924046136" ID="ID_1236250259" MODIFIED="1433924049351" TEXT="parameters"/>
+<node CREATED="1433925219616" ID="ID_1625333501" MODIFIED="1433925221331" TEXT="etc"/>
+</node>
+</node>
+<node CREATED="1451849806393" ID="ID_1734710161" MODIFIED="1451849810255" TEXT="How?">
+<node CREATED="1433923847832" ID="ID_993323471" MODIFIED="1451849738424">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      A new naming coding standards
+    </p>
+    <p>
+      that will simplify things on a macro level.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1435760916876" ID="ID_782326863" MODIFIED="1438444363001" TEXT="Create">
+<node CREATED="1435760958698" ID="ID_335853558" MODIFIED="1438444731914">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      A new framework for&#160;
+    </p>
+    <p>
+      developing code
+    </p>
+    <p>
+      called CTIN
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1435761097506" ID="ID_222036176" MODIFIED="1438444744725" TEXT="Definition">
+<node CREATED="1435761126624" ID="ID_1548711539" MODIFIED="1435761126624" TEXT="Class Transformation Information Network">
+<node CREATED="1451849837904" ID="ID_1513390887" MODIFIED="1451849840386" TEXT="CTIN"/>
+</node>
+</node>
+<node CREATED="1435761138457" FOLDED="true" ID="ID_8564656" MODIFIED="1463817093122" TEXT="Pre-requires">
+<node CREATED="1435762039558" ID="ID_1035389612" MODIFIED="1438444748372">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      CTIN rules need
+    </p>
+    <p>
+      to be followed
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1435761181423" ID="ID_830615599" MODIFIED="1435761944697">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The class
+    </p>
+    <p>
+      network need
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1435761895306" ID="ID_656113715" MODIFIED="1435761897206" TEXT="to be">
+<node CREATED="1435761192470" ID="ID_1145086224" MODIFIED="1435761321695" TEXT="simple"/>
+<node CREATED="1435761204770" ID="ID_368055457" MODIFIED="1435761327078" TEXT="consistent"/>
+<node CREATED="1435761331506" ID="ID_41197624" MODIFIED="1435761344043" TEXT="safe"/>
+<node CREATED="1435761347901" ID="ID_651341084" MODIFIED="1435761350027" TEXT="correct"/>
+</node>
+<node CREATED="1435761884542" ID="ID_1734169389" MODIFIED="1435761893002" TEXT="to follow">
+<node CREATED="1435761841128" ID="ID_1667735375" MODIFIED="1435761962677" TEXT="naming standards and rules"/>
+</node>
+</node>
+<node CREATED="1435761222061" ID="ID_695058204" MODIFIED="1435761399569" TEXT="mechanism to">
+<node CREATED="1435761374913" ID="ID_337072170" MODIFIED="1435761404819" TEXT="specify">
+<node CREATED="1435761250479" ID="ID_1012154232" MODIFIED="1435761257111" TEXT="growth"/>
+<node CREATED="1435761266619" ID="ID_137637597" MODIFIED="1435761270600" TEXT="maintenance"/>
+</node>
+<node CREATED="1435761647597" ID="ID_1180935018" MODIFIED="1435761650404" TEXT="automatic">
+<node CREATED="1435761380369" ID="ID_1549432409" MODIFIED="1435761382789" TEXT="check">
+<node CREATED="1435761383625" ID="ID_1524904822" MODIFIED="1435761996097" TEXT="correctness in code"/>
+<node CREATED="1435761507355" ID="ID_676023750" MODIFIED="1435761986425" TEXT="no longer relevant code"/>
+<node CREATED="1435761535662" ID="ID_1217008789" MODIFIED="1435761992049" TEXT="problem areas in code"/>
+</node>
+<node CREATED="1435761416568" ID="ID_1706520085" MODIFIED="1435761485966">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      transform source
+    </p>
+    <p>
+      code of
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1435761420981" ID="ID_1061679826" MODIFIED="1435761422946" TEXT="classes"/>
+<node CREATED="1435761423185" ID="ID_61165645" MODIFIED="1435761425030" TEXT="methods"/>
+</node>
+<node CREATED="1435761559944" ID="ID_1082445791" MODIFIED="1435761569012" TEXT="Removal of">
+<node CREATED="1435761569746" ID="ID_186024071" MODIFIED="1435761619590" TEXT="problem areas in code"/>
+<node CREATED="1435761590412" ID="ID_1310560648" MODIFIED="1435761615782" TEXT="no longer relevant code"/>
+</node>
+</node>
+<node CREATED="1435761657758" ID="ID_890174302" MODIFIED="1435761708371" TEXT="ensure manual changes are transformable"/>
+</node>
+<node CREATED="1435762225132" ID="ID_1553819886" MODIFIED="1435762230409" TEXT="naming standard">
+<node CREATED="1435762231859" ID="ID_206718991" MODIFIED="1435762260133" TEXT="ensure">
+<node CREATED="1435762261312" ID="ID_162669438" MODIFIED="1435762261312" TEXT="optimum performance"/>
+<node CREATED="1435762265991" ID="ID_1957801936" MODIFIED="1435762291842" TEXT="simple definition of relationship">
+<node CREATED="1435762292715" ID="ID_1158538764" MODIFIED="1435762295369" TEXT="information"/>
+<node CREATED="1435762295611" ID="ID_1281452631" MODIFIED="1435762300213" TEXT="structures"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1435762355611" FOLDED="true" ID="ID_1518989683" MODIFIED="1463817090896">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      What is different form
+    </p>
+    <p>
+      normal OO programming?
+    </p>
+  </body>
+</html></richcontent>
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1435762364229" ID="ID_109211442" MODIFIED="1435762369773" TEXT="Names define">
+<node CREATED="1435762370591" ID="ID_77318304" MODIFIED="1435762375220" TEXT="structure"/>
+<node CREATED="1435762375671" ID="ID_1679535215" MODIFIED="1435762380765" TEXT="relationships"/>
+</node>
+<node CREATED="1435762414372" ID="ID_1030531598" MODIFIED="1435762428981" TEXT="Classes are not used via there names">
+<node CREATED="1435762461451" ID="ID_596239421" MODIFIED="1435762463840" TEXT="Why?">
+<node CREATED="1435762465355" ID="ID_1055472099" MODIFIED="1435762478947" TEXT="Names change dynamically"/>
+</node>
+</node>
+<node CREATED="1435762384311" ID="ID_1802458757" MODIFIED="1451849933760" TEXT="If structure or relationships change">
+<node CREATED="1435762393647" ID="ID_1870225695" MODIFIED="1435762412136" TEXT="then class names will also change"/>
+</node>
+</node>
+<node CREATED="1435761750709" FOLDED="true" ID="ID_190962018" MODIFIED="1463817089944" TEXT="CTIN Rules">
+<node CREATED="1435761771164" ID="ID_1702830154" MODIFIED="1435761777883" TEXT="Ensure">
+<node CREATED="1435761778446" ID="ID_1173369105" MODIFIED="1435761804352" TEXT="order is maintained">
+<node CREATED="1435761805271" ID="ID_844093669" MODIFIED="1435761805271" TEXT="on every level"/>
+<node CREATED="1435761806004" ID="ID_979003139" MODIFIED="1435761815354" TEXT="after transformations"/>
+</node>
+<node CREATED="1435762162907" ID="ID_1233757528" MODIFIED="1435762190125" TEXT="consistency and structure">
+<node CREATED="1435761805271" ID="ID_972880846" MODIFIED="1435761805271" TEXT="on every level"/>
+<node CREATED="1435761806004" ID="ID_1471373671" MODIFIED="1435761815354" TEXT="after transformations"/>
+</node>
+</node>
+</node>
+<node CREATED="1433924102578" ID="ID_700347975" MODIFIED="1438444797358">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Define new class
+    </p>
+    <p>
+      patterns:
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1433924573880" FOLDED="true" ID="ID_1343408588" MODIFIED="1463817088524">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Tradition OO
+    </p>
+    <p>
+      class definitions
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1433924584522" ID="ID_824073153" MODIFIED="1433924622837" TEXT="Scope">
+<node CREATED="1433924624022" ID="ID_1588792417" MODIFIED="1433924627009" TEXT="private"/>
+<node CREATED="1433924627415" ID="ID_1921502056" MODIFIED="1433924631222" TEXT="internal"/>
+<node CREATED="1433924631487" ID="ID_935851865" MODIFIED="1433924633614" TEXT="public"/>
+</node>
+<node CREATED="1433924636265" ID="ID_1756902357" MODIFIED="1433924641617" TEXT="Behavior">
+<node CREATED="1433924646363" ID="ID_1229288812" MODIFIED="1433924649272" TEXT="default"/>
+<node CREATED="1433924649691" ID="ID_637908057" MODIFIED="1433924651808" TEXT="static"/>
+<node CREATED="1433924652307" ID="ID_628964916" MODIFIED="1433924654266" TEXT="sealed"/>
+</node>
+</node>
+<node CREATED="1434108383455" FOLDED="true" ID="ID_1107973339" MODIFIED="1463817100452">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      New code patterns are required
+    </p>
+    <p>
+      to answer new challenges
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1434108575879" ID="ID_1711187316" MODIFIED="1438444805631" TEXT="CTIN">
+<node CREATED="1434108586314" ID="ID_1486782369" MODIFIED="1434108605538" TEXT="Is">
+<node CREATED="1434108588369" ID="ID_1258314598" MODIFIED="1434108597840" TEXT="Class Transformation Information Network "/>
+</node>
+<node CREATED="1434108524830" ID="ID_1390070806" MODIFIED="1434108526352" TEXT="What">
+<node CREATED="1434108448470" ID="ID_922601965" MODIFIED="1434108461565" TEXT="Transforming classes"/>
+<node CREATED="1434108468250" ID="ID_541275415" MODIFIED="1434108472960" TEXT="Transforming methods"/>
+<node CREATED="1434108502614" ID="ID_1352390900" MODIFIED="1434108520071" TEXT="Dynamic growth of code networks"/>
+</node>
+<node CREATED="1434108617127" ID="ID_1348186945" MODIFIED="1434108619196" TEXT="How">
+<node CREATED="1434108620567" ID="ID_1631892941" MODIFIED="1438379097504" TEXT="Rules that ensure">
+<node CREATED="1434108710715" ID="ID_1124908697" MODIFIED="1451850016199" TEXT="Class network">
+<node CREATED="1434110532723" ID="ID_645987225" MODIFIED="1434110533719" TEXT="is">
+<node CREATED="1434108641997" ID="ID_1974486119" MODIFIED="1438379115148" TEXT="is consist"/>
+<node CREATED="1434108726147" ID="ID_1725582125" MODIFIED="1438379118835" TEXT="simple"/>
+<node CREATED="1434108801142" ID="ID_305393933" MODIFIED="1438379135779" STYLE="bubble" TEXT="maintainable"/>
+</node>
+<node CREATED="1434108752827" ID="ID_1177211363" MODIFIED="1434109002363">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      automatic growth
+    </p>
+    <p>
+      transformations
+    </p>
+  </body>
+</html></richcontent>
+<linktarget COLOR="#b0b0b0" DESTINATION="ID_1177211363" ENDARROW="Default" ENDINCLINATION="116;0;" ID="Arrow_ID_1428525315" SOURCE="ID_598201950" STARTARROW="None" STARTINCLINATION="116;0;"/>
+<node CREATED="1434108779540" ID="ID_172713460" MODIFIED="1434108987852" TEXT="specify direction"/>
+<node CREATED="1434108784291" ID="ID_1055313920" MODIFIED="1434108993715" TEXT="specify limitations"/>
+<node CREATED="1434108844244" ID="ID_889085222" MODIFIED="1434108853827" TEXT="ensure">
+<node CREATED="1434108856237" ID="ID_1411894029" MODIFIED="1434108858373" TEXT="save"/>
+<node CREATED="1434108859774" ID="ID_1389507657" MODIFIED="1434108861803" TEXT="correct"/>
+</node>
+<node CREATED="1434108881865" ID="ID_1594994048" MODIFIED="1434108942514" TEXT="Identify">
+<linktarget COLOR="#b0b0b0" DESTINATION="ID_1594994048" ENDARROW="Default" ENDINCLINATION="62;0;" ID="Arrow_ID_1246367422" SOURCE="ID_318887715" STARTARROW="None" STARTINCLINATION="62;0;"/>
+<node CREATED="1434108886257" ID="ID_1193034149" MODIFIED="1434108888223" TEXT="Errors"/>
+<node CREATED="1434108888553" ID="ID_768830459" MODIFIED="1434108892640" TEXT="Problems"/>
+<node CREATED="1434108893836" ID="ID_396414965" MODIFIED="1434108905119" TEXT="No longer relevent"/>
+<node CREATED="1434108911022" ID="ID_745408964" MODIFIED="1434108917235" TEXT="Correctness"/>
+</node>
+<node CREATED="1434108925111" ID="ID_318887715" MODIFIED="1434108942514" TEXT="Fix">
+<arrowlink COLOR="#b0b0b0" DESTINATION="ID_1594994048" ENDARROW="Default" ENDINCLINATION="62;0;" ID="Arrow_ID_1246367422" STARTARROW="None" STARTINCLINATION="62;0;"/>
+</node>
+</node>
+<node CREATED="1434108964207" ID="ID_598201950" MODIFIED="1434109002363" TEXT="Manual growth">
+<arrowlink DESTINATION="ID_1177211363" ENDARROW="Default" ENDINCLINATION="116;0;" ID="Arrow_ID_1428525315" STARTARROW="None" STARTINCLINATION="116;0;"/>
+</node>
+</node>
+</node>
+<node CREATED="1434110281552" ID="ID_242615077" MODIFIED="1451850043686" TEXT="Code transformations">
+<node CREATED="1434110351228" ID="ID_836196607" MODIFIED="1434110357728" TEXT="What">
+<node CREATED="1434110377631" ID="ID_1772292534" MODIFIED="1434110386529" TEXT="Analysing of current code and"/>
+<node CREATED="1434110358802" ID="ID_1987034353" MODIFIED="1434110370226" TEXT="Automatic adding of new behavior to code"/>
+</node>
+<node CREATED="1434110410634" ID="ID_1099380245" MODIFIED="1434110412784" TEXT="When">
+<node CREATED="1434110417194" ID="ID_1239561388" MODIFIED="1434110420664" TEXT="Design time">
+<node CREATED="1434110425694" ID="ID_437844359" MODIFIED="1434110430456" TEXT="Why?">
+<node CREATED="1434110431003" ID="ID_1664986720" MODIFIED="1434110442116" TEXT="Developer can be envolved in the transformations"/>
+<node CREATED="1434110443183" ID="ID_667969920" MODIFIED="1434110460564" TEXT="New coding possibilities are created during development"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1436129068409" ID="ID_1918116467" MODIFIED="1451850075799">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      LaMedal vs
+    </p>
+    <p>
+      OO framework
+    </p>
+  </body>
+</html></richcontent>
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436129161954" ID="ID_618309186" MODIFIED="1438379207096" TEXT="Like OO">
+<node CREATED="1436129193537" ID="ID_648868328" MODIFIED="1436129198725" TEXT="Classes are used"/>
+<node CREATED="1436129199896" ID="ID_674431721" MODIFIED="1436129216877" TEXT="Class methods are used"/>
+<node CREATED="1436129217504" ID="ID_721059325" MODIFIED="1436129224540" TEXT="Class properties are used"/>
+<node CREATED="1436129226209" ID="ID_782024076" MODIFIED="1438379234299" TEXT="Class inheritance is used"/>
+</node>
+<node CREATED="1436129181672" ID="ID_80527362" MODIFIED="1451850091118" TEXT="Not like OO">
+<node CREATED="1436129380064" ID="ID_1432615795" MODIFIED="1438444862755" TEXT="Classes">
+<node CREATED="1436129419385" ID="ID_35376605" MODIFIED="1436129421725" TEXT="1">
+<node CREATED="1436129422489" ID="ID_340960444" MODIFIED="1436129440205" TEXT="Are not created by developer"/>
+<node CREATED="1436129440705" ID="ID_1852361568" MODIFIED="1451850107654" TEXT="Are created by the LaMedal engine"/>
+</node>
+<node CREATED="1436129456521" ID="ID_242239429" MODIFIED="1436129457725" TEXT="2">
+<node CREATED="1436129261825" ID="ID_305298790" MODIFIED="1436129296581" TEXT="Class names">
+<node CREATED="1436129297385" ID="ID_1104140199" MODIFIED="1436129303277" TEXT="does not">
+<node CREATED="1436129304224" ID="ID_1303062240" MODIFIED="1436129310733" TEXT="identify identity"/>
+</node>
+<node CREATED="1436129311880" ID="ID_271823385" MODIFIED="1436129315253" TEXT="but does">
+<node CREATED="1436129316561" ID="ID_1031474880" MODIFIED="1436129323749" TEXT="specify relationship"/>
+</node>
+</node>
+</node>
+<node CREATED="1436129479264" ID="ID_429236819" MODIFIED="1436129480645" TEXT="3">
+<node CREATED="1436129334137" ID="ID_308582827" MODIFIED="1451850127364" TEXT="When relationships">
+<node CREATED="1436129349897" ID="ID_268217402" MODIFIED="1436129353717" TEXT="changes">
+<node CREATED="1436129367689" ID="ID_203165211" MODIFIED="1436129374053" TEXT="class names will also change"/>
+</node>
+</node>
+</node>
+<node CREATED="1436129493353" ID="ID_1174949878" MODIFIED="1436129494605" TEXT="4">
+<node CREATED="1436129501841" ID="ID_1647460164" MODIFIED="1438243891723" TEXT="A class is of specific transformation type"/>
+<node CREATED="1436129528937" ID="ID_1982693074" MODIFIED="1436129540965" TEXT="Class behavior is governed by rules"/>
+</node>
+<node CREATED="1436129743577" ID="ID_363863084" MODIFIED="1438243913243" TEXT="5">
+<node CREATED="1438243913242" ID="ID_553925154" MODIFIED="1438243953054">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      As a general rule
+    </p>
+    <p>
+      (80% of times)
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1436129751505" ID="ID_187687183" MODIFIED="1436129826046" TEXT="Classes has methods or properties but not both"/>
+</node>
+</node>
+</node>
+<node CREATED="1436129668770" ID="ID_1621066682" MODIFIED="1438444926406" TEXT="Inheritance ">
+<node CREATED="1436129599113" ID="ID_1444934354" MODIFIED="1436130051589" TEXT="In OO">
+<node CREATED="1436129636608" ID="ID_1942323877" MODIFIED="1436129650709" TEXT="Code reuse &amp; extendability"/>
+</node>
+<node CREATED="1436129676632" ID="ID_1156863594" MODIFIED="1451850171668" TEXT="In Lamedal">
+<node CREATED="1436129681721" ID="ID_1782190599" MODIFIED="1436129720365" TEXT="extend tree networks"/>
+</node>
+</node>
+<node CREATED="1436129941136" ID="ID_1491016797" MODIFIED="1438379298160" TEXT="Extendability">
+<node CREATED="1436129970472" ID="ID_423797034" MODIFIED="1436129995305" TEXT="In OO">
+<node CREATED="1436129995306" ID="ID_812971974" MODIFIED="1438379320634" TEXT="done through inheritance"/>
+</node>
+<node CREATED="1436130012337" ID="ID_899027574" MODIFIED="1451850183798" TEXT="Lamedal">
+<node CREATED="1436130070881" ID="ID_768617095" MODIFIED="1436130085909" TEXT="CTIN rules"/>
+<node CREATED="1436130092297" ID="ID_736371718" MODIFIED="1438444980816" TEXT="Automatic code generation">
+<node CREATED="1436130127992" ID="ID_1763453507" MODIFIED="1436130136781" TEXT="new CTI networks"/>
+</node>
+<node CREATED="1436131150625" ID="ID_1401049993" MODIFIED="1436131195445" TEXT="Attributes and simple state classes"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1434110059571" ID="ID_714947992" MODIFIED="1451850221503" TEXT="Lamedal state engine">
+<node CREATED="1434110076485" ID="ID_1812025352" MODIFIED="1434110079820" TEXT="Background">
+<node CREATED="1434110080771" ID="ID_1367483033" MODIFIED="1434110141478">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      There is a lot of state engines
+    </p>
+    <p>
+      available but I have found them
+    </p>
+    <p>
+      to be difficult to use, non visual
+    </p>
+    <p>
+      of very expensive.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1434110143840" ID="ID_1868656180" MODIFIED="1434110146708" TEXT="Goals">
+<node CREATED="1434110147934" ID="ID_1395112995" MODIFIED="1434110154077" TEXT="Needs to be simple to use">
+<node CREATED="1434110180506" ID="ID_1003431126" MODIFIED="1434110185281" TEXT="easy to setup"/>
+<node CREATED="1434110185547" ID="ID_1833214323" MODIFIED="1434110189155" TEXT="easy to change"/>
+<node CREATED="1434110189623" ID="ID_207022056" MODIFIED="1434110199784" TEXT="easy to integrate into application"/>
+<node CREATED="1434110200222" ID="ID_98990165" MODIFIED="1434110204294" TEXT="easy to test"/>
+</node>
+<node CREATED="1434110154503" ID="ID_1252842732" MODIFIED="1434110172467" TEXT="Needs to be visual"/>
+<node CREATED="1434110173452" ID="ID_244667360" MODIFIED="1434110178113" TEXT="Small overhead"/>
+<node CREATED="1434110222983" ID="ID_229654097" MODIFIED="1434110235792" TEXT="Need to support the CTIN patterns"/>
+</node>
+</node>
+</node>
+<node CREATED="1433686311915" ID="ID_1226542944" MODIFIED="1436130265027">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      New class type
+    </p>
+    <p>
+      decorations
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1436130273776" FOLDED="true" ID="ID_1670868326" MODIFIED="1463817105614" TEXT="Rule scope">
+<node CREATED="1436130287240" ID="ID_1166705428" MODIFIED="1436166281236" TEXT="Whole network">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<icon BUILTIN="password"/>
+<node CREATED="1436130321664" ID="ID_371456532" MODIFIED="1451850245574" TEXT="CTIN">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436131379281" ID="ID_1205197055" MODIFIED="1451850247593" TEXT="What">
+<node CREATED="1436130354721" ID="ID_968191167" MODIFIED="1436130367245" TEXT="Class Transformation Information Network"/>
+</node>
+<node CREATED="1436131385945" ID="ID_461834950" MODIFIED="1451850252936" TEXT="Scope">
+<node CREATED="1436130368200" ID="ID_1105132998" MODIFIED="1436130382101" TEXT="Applies to the whole network"/>
+</node>
+<node CREATED="1436131391569" ID="ID_387622378" MODIFIED="1451850254597" TEXT="Where">
+<node CREATED="1436130382625" ID="ID_1261902272" MODIFIED="1436130398885" TEXT="Defined on the root class of the network"/>
+</node>
+<node CREATED="1436131395121" ID="ID_394983231" MODIFIED="1438379567122" TEXT="Rules">
+<node CREATED="1436132006138" ID="ID_878933120" MODIFIED="1451850257024" TEXT="Singleton">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436131741825" ID="ID_535058790" MODIFIED="1436131968036" TEXT="Class">
+<node CREATED="1436131754584" ID="ID_47595865" MODIFIED="1436131761901" TEXT="must be singleton"/>
+<node CREATED="1436131762401" ID="ID_684484640" MODIFIED="1436131773357" TEXT="can only contain properties"/>
+</node>
+<node CREATED="1436132186489" ID="ID_929835039" MODIFIED="1436132189437" TEXT="Reason">
+<node CREATED="1436132198482" ID="ID_1018058690" MODIFIED="1436132227785" TEXT="To ensure best performance and low memory &#xa;usage there should only be one CTI network &#xa;in memory. This network is reused by all clients"/>
+</node>
+</node>
+<node CREATED="1436132039401" ID="ID_937440319" MODIFIED="1451850275245" TEXT="NetworkDefinition">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436131461289" ID="ID_1240274342" MODIFIED="1436131886801">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      In the child
+    </p>
+    <p>
+      namespaces
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1436131398593" ID="ID_1950793175" MODIFIED="1436131476685" TEXT="All classes must be decorated with a CTI rule"/>
+<node CREATED="1436131478424" ID="ID_951334067" MODIFIED="1436131488477" TEXT="All methods must have at most">
+<node CREATED="1436131489689" ID="ID_1788479931" MODIFIED="1436131493670" TEXT="7 parameters"/>
+<node CREATED="1436131494160" ID="ID_838746354" MODIFIED="1436131501341" TEXT="30 lines of code"/>
+</node>
+<node CREATED="1436131896096" ID="ID_46918000" MODIFIED="1436131906277" TEXT="no class can be marked as CTIN"/>
+</node>
+<node CREATED="1436132279904" ID="ID_1288329116" MODIFIED="1436132285574" TEXT="Reason">
+<node CREATED="1436132287145" ID="ID_890066975" MODIFIED="1451850316994">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      This rule define the scope and boundaries
+    </p>
+    <p>
+      of the CTIN network. It setup the walls where
+    </p>
+    <p>
+      the Lamedal transformations may be done
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1436132082026" ID="ID_480140957" MODIFIED="1451850401309" TEXT="OneNetworkInAssembly">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436131896096" ID="ID_1408760034" MODIFIED="1436132159959">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      no class can be
+    </p>
+    <p>
+      marked as CTIN
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1436131461289" ID="ID_316438705" MODIFIED="1436132104829">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      In the child
+    </p>
+    <p>
+      namespaces
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1436131911400" ID="ID_1074654253" MODIFIED="1436132127121">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      In the parent
+    </p>
+    <p>
+      namespaces
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1436132381104" ID="ID_1120558836" MODIFIED="1436132384309" TEXT="Reason">
+<node CREATED="1436132385184" ID="ID_1915359775" MODIFIED="1451850423461">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Only one CTIN network per assembly are
+    </p>
+    <p>
+      allowed. This ensure that everything
+    </p>
+    <p>
+      integrates into one network.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1436132508636" FOLDED="true" ID="ID_1811121547" MODIFIED="1438379562073" TEXT="ClassNames">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436132529841" ID="ID_1599528071" MODIFIED="1436132545279">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      If the class name is of form &quot;*_&quot;
+    </p>
+    <p>
+      -&gt; the class name should be of form &quot;Namespace_&quot;
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1436132566897" ID="ID_1487504788" MODIFIED="1436132569917" TEXT="Reason">
+<node CREATED="1436132572689" ID="ID_1374074491" MODIFIED="1438379527974">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Order and structure is at the heart of the CTI network.
+    </p>
+    <p>
+      This simple rule ensures that order is defined in a visible way.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1436132637590" FOLDED="true" ID="ID_1250484478" MODIFIED="1438379571581" TEXT="ClassStructure">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436132676473" ID="ID_1103235562" MODIFIED="1436132688312">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      If class is marked with CTI / CTI_Link
+    </p>
+    <p>
+      -&gt; Class may only contain methods or properties but not both
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1436132692017" ID="ID_1977094146" MODIFIED="1436132698469" TEXT="Reason">
+<node CREATED="1436132714537" ID="ID_478125286" MODIFIED="1436132810070">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The network simulate neuron nodes and links between them.
+    </p>
+    <p>
+      A class is a node class or a link class. Hybrid classes are
+    </p>
+    <p>
+      not allowed.
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1436130311457" ID="ID_14988290" MODIFIED="1436166286231" TEXT="Class level">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<icon BUILTIN="password"/>
+<node CREATED="1436131819057" ID="ID_232358793" MODIFIED="1451850430379" TEXT="Scope">
+<node CREATED="1436131825304" ID="ID_1131167343" MODIFIED="1436131833930" TEXT="Is part of a CTIN network"/>
+<node CREATED="1436130499672" ID="ID_1376035186" MODIFIED="1436130508928" TEXT="Override CTIN rules"/>
+</node>
+<node CREATED="1436130400665" ID="ID_133289810" MODIFIED="1451850435036" TEXT="5 Types">
+<node CREATED="1436130413224" ID="ID_301565503" MODIFIED="1451850437993" TEXT="CTI_Node">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436132916753" ID="ID_1862185821" MODIFIED="1436165211323" TEXT="Rules">
+<node CREATED="1436166625285" ID="ID_19853958" MODIFIED="1452104203769" TEXT="What">
+<node CREATED="1436166636831" ID="ID_101527649" MODIFIED="1436166655365" TEXT="Node (or Neuron) class "/>
+<node CREATED="1436166655915" ID="ID_836864705" MODIFIED="1436166672137" TEXT="This class define groups of nodes"/>
+<node CREATED="1436166683032" ID="ID_598786156" MODIFIED="1436166690679" TEXT="Nodes are implemented as methods"/>
+<node CREATED="1436166702768" ID="ID_1231942845" MODIFIED="1436166705078" TEXT="Reason">
+<node CREATED="1436166716453" ID="ID_794440289" MODIFIED="1436166734105" TEXT="Methods ensure encapsulation on the smallest level"/>
+</node>
+</node>
+<node CREATED="1436133257529" ID="ID_179039853" MODIFIED="1452104214174" TEXT="Default">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436130518128" ID="ID_1021439541" MODIFIED="1436165313444" TEXT="Only methods allowed in class (no properties)"/>
+<node CREATED="1436165314035" ID="ID_1849017137" MODIFIED="1452104257834" TEXT="If there are fields they must be singleton classes"/>
+<node CREATED="1436165337464" ID="ID_958575184" MODIFIED="1436165351093" TEXT="Classname is in form &quot;*_*&quot;"/>
+<node CREATED="1436165355668" ID="ID_1461012419" MODIFIED="1452104296541" TEXT="The &quot;*_&quot; part of name is used as GroupName">
+<node CREATED="1436165462075" ID="ID_1970122803" MODIFIED="1436165495859">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      This name is used to group
+    </p>
+    <p>
+      similar methods together
+    </p>
+    <p>
+      after transformation
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1436166129456" ID="ID_1818707851" MODIFIED="1436166174353" TEXT="Any method with a first parameter of &quot;object&quot; is ignored in transformations"/>
+<node CREATED="1436165514198" FOLDED="true" ID="ID_1200221777" MODIFIED="1436168524086" TEXT="Reason">
+<node CREATED="1436165532114" ID="ID_528997809" MODIFIED="1436165543731">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      In order to transform methods effectively
+    </p>
+    <p>
+      they should not depend on the class
+    </p>
+    <p>
+      where they are located
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1436165211264" FOLDED="true" ID="ID_1486621621" MODIFIED="1436168534916">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Transformation
+    </p>
+    <p>
+      rules
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1436132651584" FOLDED="true" ID="ID_15479296" MODIFIED="1436168521335" TEXT="NotNullType">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436132943736" ID="ID_32513392" MODIFIED="1436132974883">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      If class XML attribute: CTIN_NotNull=&quot;type&quot;
+    </p>
+    <p>
+      -&gt; Everywhere this type is used in the network it
+    </p>
+    <p>
+      must be marked with the [NotNull] attribute and
+    </p>
+    <p>
+      the &#8216;JetBrains.Annotations&#8217; annotations library
+    </p>
+    <p>
+      dll be used.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1436132997961" ID="ID_1558436054" MODIFIED="1436133001157" TEXT="Reason">
+<node CREATED="1436133005257" ID="ID_1447530051" MODIFIED="1436133015030">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      This rule ensures correct use of the methods
+    </p>
+    <p>
+      and identifies a marker type for transformations.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1436133301073" ID="ID_637931477" MODIFIED="1436133440394" TEXT="DefaultType">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1436133319313" ID="ID_5936210" MODIFIED="1436133440393" TEXT="GroupName">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436165435240" ID="ID_1162975194" MODIFIED="1436165444568" TEXT="Override default GroupName"/>
+</node>
+<node CREATED="1436133325816" ID="ID_423672412" MODIFIED="1436133440394" TEXT="IgnoreGroup">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1436133356217" ID="ID_1697753521" MODIFIED="1436133440394" TEXT="RemoveGroup">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1436165184082" ID="ID_247400703" MODIFIED="1436165191759" TEXT="ShortcutClass">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+</node>
+<node CREATED="1436130316201" ID="ID_725844748" MODIFIED="1436166294192">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Method level
+    </p>
+    <p>
+      rules
+    </p>
+  </body>
+</html></richcontent>
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<icon BUILTIN="password"/>
+<node CREATED="1436130332137" FOLDED="true" ID="ID_1939753996" MODIFIED="1436168517851" TEXT="Scope">
+<font NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436130453049" ID="ID_1554403821" MODIFIED="1436130461237" TEXT="Defined on method level"/>
+<node CREATED="1436130461536" ID="ID_770018441" MODIFIED="1436130472965" TEXT="Override all other rules"/>
+</node>
+<node CREATED="1436133379313" ID="ID_504690033" MODIFIED="1436133381670" TEXT="Rules">
+<node CREATED="1436133397508" FOLDED="true" ID="ID_1632986830" MODIFIED="1436168516693" TEXT="MTI_Ignore">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436130912929" ID="ID_1398851371" MODIFIED="1436165870604" TEXT="Ignore this method when transformations are done"/>
+<node CREATED="1436165873672" ID="ID_404963604" MODIFIED="1436165876176" TEXT="Reason">
+<node CREATED="1436165876994" ID="ID_649873488" MODIFIED="1436166107960">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Some methods require complex
+    </p>
+    <p>
+      transformations. They are implemented
+    </p>
+    <p>
+      manually and need not be generated.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1436133409965" FOLDED="true" ID="ID_1493305510" MODIFIED="1436168516086" TEXT="MTI_Parameter">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436166333175" ID="ID_426712592" MODIFIED="1436166333175" TEXT="Use this &#x201c;parameter&#x201d; also in transformations where applicable"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1436130416407" ID="ID_1277785820" MODIFIED="1436130742760" TEXT="CTI_Link">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436130528296" ID="ID_423802046" MODIFIED="1436130535613" TEXT="Only properties allowed in class"/>
+<node CREATED="1436130707960" ID="ID_1128702293" MODIFIED="1436166430585" TEXT="3 Types">
+<node CREATED="1436130715665" FOLDED="true" ID="ID_154241452" MODIFIED="1436168510381" TEXT="CTI_Link">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436133107857" ID="ID_851210891" MODIFIED="1436133113813" TEXT="What">
+<node CREATED="1436131551753" ID="ID_1770223521" MODIFIED="1436131556861" TEXT="Linking class"/>
+<node CREATED="1436166599984" ID="ID_1552825172" MODIFIED="1436166613028" TEXT="This class define relationships within the network of nodes"/>
+</node>
+<node CREATED="1436133046992" ID="ID_655681028" MODIFIED="1436166443835" TEXT="Rules">
+<node CREATED="1436166445254" ID="ID_1748230699" MODIFIED="1436166445254" TEXT="PropertiesOnly">
+<node CREATED="1436133135871" ID="ID_1583254026" MODIFIED="1436133135871" TEXT="Class can only contain properties"/>
+<node CREATED="1436133145398" ID="ID_944661264" MODIFIED="1436133145398" TEXT="Fields should be &quot;_&quot; + Property Name"/>
+</node>
+<node CREATED="1436166457408" ID="ID_522368720" MODIFIED="1436166457408" TEXT="PropertyTypeName">
+<node CREATED="1436166531064" ID="ID_1752930672" MODIFIED="1436166555508">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      If class is marked 'CTI_Link' &amp; if class name is 'Class1_'
+    </p>
+    <p>
+      -&gt; The property type must be of form 'Class1_*'
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1436166781538" ID="ID_1650133317" MODIFIED="1436166784927" TEXT="Reason">
+<node CREATED="1436166797849" MODIFIED="1436166797849" TEXT="Network simplicity and consistency."/>
+</node>
+</node>
+<node CREATED="1436166463845" ID="ID_378266090" MODIFIED="1436166463845" TEXT="PropertyClassNameMatch">
+<node CREATED="1436133193360" ID="ID_1212554706" MODIFIED="1436133204704">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      If class is marked &quot;MTI_Link&quot; &amp; If type of property has &quot;*_*&quot;
+    </p>
+    <p>
+      -&gt; The &quot;*_&quot; part should be the same as the class name.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1433686377884" FOLDED="true" ID="ID_902098523" MODIFIED="1436168509767" TEXT="CTI_ALink">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436131569529" ID="ID_850035903" MODIFIED="1436131577957" TEXT="Automatic linking class"/>
+<node CREATED="1436131578425" ID="ID_1395708105" MODIFIED="1436131584181" TEXT="Is a static class"/>
+<node CREATED="1436131596128" ID="ID_997141513" MODIFIED="1436131609301" TEXT="All other rules are ignored for this class"/>
+</node>
+<node CREATED="1433686365579" FOLDED="true" ID="ID_456695711" MODIFIED="1436168507920" TEXT="CTI_MLink">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436131611560" ID="ID_1871677586" MODIFIED="1436131624101" TEXT="Is a static class"/>
+<node CREATED="1436131596128" ID="ID_1803825515" MODIFIED="1436131609301" TEXT="All other rules are ignored for this class"/>
+</node>
+</node>
+</node>
+<node CREATED="1436130584168" FOLDED="true" ID="ID_616538850" MODIFIED="1436168504196" TEXT="CTI_State">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436166923950" ID="ID_52247381" MODIFIED="1436166925745" TEXT="What">
+<node CREATED="1436131061937" ID="ID_1756380302" MODIFIED="1436131072733" TEXT="This is a state class"/>
+<node CREATED="1436167023762" ID="ID_1254695097" MODIFIED="1436167073064">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      A State class is a very simplistic class
+    </p>
+    <p>
+      and will only contain data and no behavior
+    </p>
+    <p>
+      or methods on that data. This simplistic
+    </p>
+    <p>
+      view is important to allow for
+    </p>
+    <p>
+      transformations on the class.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1436166935685" ID="ID_318076243" MODIFIED="1436166938174" TEXT="Default">
+<node CREATED="1436166938923" ID="ID_1191626880" MODIFIED="1436166984638" TEXT="Only fields and properties allowed"/>
+<node CREATED="1436167216411" ID="ID_14165302" MODIFIED="1436167255078" TEXT="State classes are created as needed and should not have a constructor "/>
+<node CREATED="1436167299985" ID="ID_1083609518" MODIFIED="1436167320434" TEXT="Name is of form &quot;state....&quot;"/>
+<node CREATED="1433921126972" ID="ID_1525097603" MODIFIED="1436037388736" TEXT="Start with &quot;state...&quot;"/>
+<node CREATED="1436037285985" ID="ID_1520130989" MODIFIED="1436079588465" TEXT="Shortcut class &quot;state..._Controller">
+<node CREATED="1436039279469" ID="ID_726303485" MODIFIED="1436039299072" TEXT="Method &quot;zzState()&quot;"/>
+</node>
+</node>
+<node CREATED="1436131133025" ID="ID_1368959418" MODIFIED="1436167093320" TEXT="Reason">
+<node CREATED="1436131237889" ID="ID_1948884494" MODIFIED="1436131264101" TEXT="To extend .Net classes without inheritance"/>
+<node CREATED="1436131276457" ID="ID_957818800" MODIFIED="1436131305549" TEXT="To group method parameters together">
+<node CREATED="1436131334080" ID="ID_1638973201" MODIFIED="1436131354421" TEXT="(method should not have more that 7 parameters)"/>
+</node>
+</node>
+</node>
+<node CREATED="1436130674536" FOLDED="true" ID="ID_1355480326" MODIFIED="1438380045513" TEXT="Conversion classes">
+<node CREATED="1436130749785" ID="ID_599471322" MODIFIED="1436130754701" TEXT="2 Types">
+<node CREATED="1436130763480" ID="ID_1871721198" MODIFIED="1436130856682" TEXT="CTI_Convert1">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436131017472" ID="ID_1652861501" MODIFIED="1436131047357" TEXT="one way conversion class to other type"/>
+</node>
+<node CREATED="1436130771065" ID="ID_469406591" MODIFIED="1436130856681" TEXT="CTI_Convert2">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436131017472" ID="ID_664929968" MODIFIED="1436131057469" TEXT="two way conversion class to other type"/>
+</node>
+</node>
+</node>
+<node CREATED="1436130822241" FOLDED="true" ID="ID_1018929173" MODIFIED="1436168541747" TEXT="CTI_Factory">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1436130872449" ID="ID_310612193" MODIFIED="1436165670108" TEXT="This is a normal OO class and namespace rules that is used"/>
+<node CREATED="1436130943329" ID="ID_595786233" MODIFIED="1436165688611" TEXT="This class and its namespace can not be part of a CTIN network"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1434109559656" ID="ID_612667664" MODIFIED="1451850242617">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      A smart help assistant
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1434109621744" ID="ID_1042721295" MODIFIED="1438379898922" TEXT="Background">
+<node CREATED="1434109625519" ID="ID_1888847436" MODIFIED="1434109649930" TEXT="There exists very advanced help systems."/>
+<node CREATED="1434109657219" ID="ID_435459362" MODIFIED="1434109704650">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      To extent these systems to include custom
+    </p>
+    <p>
+      code is not a simple task.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1434109716742" ID="ID_121295808" MODIFIED="1434109828132">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      When these help systems are
+    </p>
+    <p>
+      enhanced it is done at a great cost.
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1434109764387" ID="ID_493761431" MODIFIED="1434109811814">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      If it integrates with google / bing
+    </p>
+    <p>
+      it does not feel to really add new
+    </p>
+    <p>
+      benefit and the old functionality
+    </p>
+    <p>
+      is broken
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1434109829163" ID="ID_1014071254" MODIFIED="1434109885316">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The amount of work to enhance the
+    </p>
+    <p>
+      help system has already give way
+    </p>
+    <p>
+      to new development projects with
+    </p>
+    <p>
+      this theme as the focus area
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1434109890652" ID="ID_1085207055" MODIFIED="1438379927407">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      The goal is not to replace the
+    </p>
+    <p>
+      help system, but to enhance it
+    </p>
+    <p>
+      in a special non damaging way.
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1434109948556" ID="ID_578775838" MODIFIED="1434109953618" TEXT="Goals">
+<node CREATED="1434109955006" ID="ID_1856189188" MODIFIED="1434109981463" TEXT="Easy analyse of">
+<node CREATED="1434109960894" ID="ID_382789428" MODIFIED="1434109965869" TEXT="Custom code"/>
+<node CREATED="1434109966543" ID="ID_402778667" MODIFIED="1434109971637" TEXT="Library code"/>
+</node>
+<node CREATED="1434109984034" ID="ID_1068957871" MODIFIED="1434109999106" TEXT="Monitor user coding"/>
+<node CREATED="1434109999555" ID="ID_1499159226" MODIFIED="1434110021877" TEXT="Suggest / predict what is needed"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1433913219709" FOLDED="true" ID="ID_805781152" MODIFIED="1433928289703" TEXT="No code duplication">
+<node CREATED="1433913259459" ID="ID_742089652" MODIFIED="1433913316561" TEXT="Any method or method part needs to be implemented once"/>
+<node CREATED="1433913290423" ID="ID_1343794898" MODIFIED="1433913346101" TEXT="Methods and part of methods should be usable across the system"/>
+</node>
+<node CREATED="1433913351206" FOLDED="true" ID="ID_1858728320" MODIFIED="1433928290951" TEXT="Simple maintenance ">
+<node CREATED="1433913390379" ID="ID_975854275" MODIFIED="1433913418644" TEXT="Need to be easy to extend functionality"/>
+<node CREATED="1433913420078" ID="ID_198996863" MODIFIED="1433913432180" TEXT="Need to be easy to find problems and fix them"/>
+<node CREATED="1433913433163" ID="ID_1621919704" MODIFIED="1433913460605" TEXT="Changes to code should enhance other dependent code and not break it"/>
+<node CREATED="1433914075607" ID="ID_844870028" MODIFIED="1433914126187" TEXT="Inter dependent parts should be optimised to the most simplistic form"/>
+</node>
+<node CREATED="1433913539150" FOLDED="true" ID="ID_1030659835" MODIFIED="1433928291344" TEXT="Developer scalable">
+<node CREATED="1433913586942" ID="ID_1821268523" MODIFIED="1433913604204" TEXT="Easy for entry developers to use"/>
+<node CREATED="1433913605128" ID="ID_301480126" MODIFIED="1433913627415" TEXT="Provide mechanisms to integrate into any system"/>
+</node>
+</node>
+<node CREATED="1433928231662" ID="ID_891389226" MODIFIED="1438245410336" TEXT="Secondary">
+<node CREATED="1433913461983" FOLDED="true" ID="ID_567197438" MODIFIED="1434107107266" TEXT="Optimised for refactoring">
+<node CREATED="1433913473660" ID="ID_325410005" MODIFIED="1433913488836" TEXT="Doing systemwide refactoring should be easy"/>
+</node>
+<node CREATED="1433913497713" FOLDED="true" ID="ID_1887018188" MODIFIED="1434107110070" TEXT="Simple transformations">
+<node CREATED="1433913726551" ID="ID_449329746" MODIFIED="1433913836548" TEXT="Reason">
+<node CREATED="1433913837695" ID="ID_1637449885" MODIFIED="1433926514385">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Code structures tend to optimise for a specific conditions at the cost
+    </p>
+    <p>
+      of simplicity in other situations.&#160;Transformations allow to optimise for all situations.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Ex: In developing a code library the main focus is code structure while developing
+    </p>
+    <p>
+      an application the focus is to get the job done asap.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1433913761260" ID="ID_1117768025" MODIFIED="1433913770979" TEXT="Auto transformations of">
+<node CREATED="1433913771910" ID="ID_235257394" MODIFIED="1433913797399" TEXT="Methods to">
+<node CREATED="1433913791562" ID="ID_1120936829" MODIFIED="1433913800567" TEXT="new methods"/>
+<node CREATED="1433913801362" ID="ID_410230346" MODIFIED="1433913803887" TEXT="new classes"/>
+</node>
+<node CREATED="1433913774262" ID="ID_956630659" MODIFIED="1433913807460" TEXT="Classes to">
+<node CREATED="1433913780127" ID="ID_408789128" MODIFIED="1433913811485" TEXT="new classes"/>
+</node>
+<node CREATED="1433914143129" ID="ID_1580424285" MODIFIED="1433914187514" TEXT="Multiple interdependencies to">
+<node CREATED="1433914154402" ID="ID_1126982668" MODIFIED="1433914201394" TEXT="single interdependencies"/>
+</node>
+</node>
+</node>
+<node CREATED="1433923790817" FOLDED="true" ID="ID_1744049143" MODIFIED="1438245411746">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Develop
+    </p>
+    <p>
+      prototype
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1434106837701" ID="ID_169620383" MODIFIED="1434106907907" TEXT="Develop the  Blueprint NT library"/>
+<node CREATED="1433925580821" ID="ID_885637454" MODIFIED="1434002341175">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Provide the tools required
+    </p>
+    <p>
+      to manage the framework
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1434002341107" ID="ID_1397914816" MODIFIED="1434002358109" TEXT="BpImportCodeEditor.exe">
+<node CREATED="1433925871935" ID="ID_115637037" MODIFIED="1433925888222" TEXT="Blueprint import code editor"/>
+<node CREATED="1434002389299" ID="ID_166714852" MODIFIED="1434002400626" TEXT="Describe">
+<node CREATED="1434002401350" ID="ID_1622336166" MODIFIED="1434002477087">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Is a code editor that help to port code to a library.
+    </p>
+    <p>
+      As a first rule - code should never be copied and
+    </p>
+    <p>
+      pasted into any library. Look at new code and
+    </p>
+    <p>
+      rewrite it better.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1434002365996" ID="ID_605606948" MODIFIED="1434002369081" TEXT="BpCodeTemplateRunner.exe"/>
+</node>
+<node CREATED="1434002287996" ID="ID_1993697015" MODIFIED="1434002309050">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Provide tool to speedup
+    </p>
+    <p>
+      application development
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1434002321986" ID="ID_1484203613" MODIFIED="1434002325014" TEXT="BlueprintUI.Assets.dll"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1436114398564" ID="ID_1190989463" MODIFIED="1436114416516" TEXT="Name">
+<node CREATED="1436114417331" FOLDED="true" ID="ID_581124805" MODIFIED="1438444489108" TEXT="Blueprint">
+<node CREATED="1436119058648" ID="ID_1033432" MODIFIED="1436119073189" TEXT="Masterplan"/>
+<node CREATED="1436119086025" ID="ID_1599633436" MODIFIED="1436119104765" TEXT="The foundational plan for the architecture you are building"/>
+<node CREATED="1436119509448" ID="ID_1263332810" MODIFIED="1436119589708" TEXT="BuildEngine">
+<node CREATED="1436119548664" ID="ID_509439026" MODIFIED="1436119573876" TEXT="Spec + BuildEngine = application"/>
+</node>
+</node>
+<node CREATED="1436114422933" FOLDED="true" ID="ID_397144541" MODIFIED="1438444491508" TEXT="IamNo7">
+<node CREATED="1436119108441" FOLDED="true" ID="ID_345807775" MODIFIED="1438444486685">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      When building
+    </p>
+    <p>
+      new applications
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1436119140369" ID="ID_92279345" MODIFIED="1436119163821" TEXT="Create it as fast as possible">
+<node CREATED="1436119771816" ID="ID_1522173929" MODIFIED="1436119792357" TEXT="but ensure longterm">
+<node CREATED="1436119794368" ID="ID_1207073779" MODIFIED="1436119796728" TEXT="support"/>
+</node>
+</node>
+<node CREATED="1436119203304" ID="ID_592893775" MODIFIED="1436119750051">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Build it in a way
+    </p>
+    <p>
+      that it can be
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1436119689841" ID="ID_1354821835" MODIFIED="1436119690940" TEXT="1">
+<node CREATED="1436119225377" ID="ID_638168555" MODIFIED="1436119729892" TEXT="Extended 7 times"/>
+</node>
+<node CREATED="1436119693313" ID="ID_1773108705" MODIFIED="1436119694340" TEXT="2">
+<node CREATED="1436119229976" ID="ID_1832131986" MODIFIED="1436119722677" TEXT="Integrated 7 times"/>
+</node>
+<node CREATED="1436119695544" ID="ID_1598677808" MODIFIED="1436119697053" TEXT="3">
+<node CREATED="1436119237952" ID="ID_1961565259" MODIFIED="1436119717621" TEXT="Upgraded 7 times"/>
+</node>
+<node CREATED="1436119698417" ID="ID_1807265266" MODIFIED="1436119699173" TEXT="4">
+<node CREATED="1436119338712" ID="ID_869119229" MODIFIED="1436119711245" TEXT="Modified 7 times"/>
+</node>
+<node CREATED="1436119389216" ID="ID_1840099474" MODIFIED="1436119390237" TEXT="5">
+<node CREATED="1436119437296" ID="ID_1721762781" MODIFIED="1436119443484" TEXT="Regenerated 7 times"/>
+</node>
+<node CREATED="1436119391560" ID="ID_1014181862" MODIFIED="1436119392084" TEXT="6">
+<node CREATED="1436119628113" ID="ID_1316754816" MODIFIED="1436119682573" TEXT="Supported by 1..7 developers"/>
+</node>
+<node CREATED="1436119392777" ID="ID_1851342133" MODIFIED="1436119393268" TEXT="7">
+<node CREATED="1436119619296" ID="ID_1539471704" MODIFIED="1436119624748" TEXT="Platform independent"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1434104185373" ID="ID_649896255" MODIFIED="1434104270145" POSITION="right" TEXT="Class Structure">
+<node CREATED="1434104262644" ID="ID_1805119297" MODIFIED="1435483392221" TEXT="About">
+<node CREATED="1434104296419" ID="ID_564501834" MODIFIED="1434106995634">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      A consistent class structure is used to define domain areas.
+    </p>
+    <p>
+      This definition is important to ensure order is maintained on
+    </p>
+    <p>
+      all levels of the framework.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1434104270104" ID="ID_707465884" MODIFIED="1436167363218" TEXT="Structure">
+<node CREATED="1434104510278" FOLDED="true" ID="ID_479876834" MODIFIED="1452322182729" TEXT="assets">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1434104512676" ID="ID_948515804" MODIFIED="1434104514299" TEXT="About">
+<node CREATED="1434104515405" ID="ID_265957489" MODIFIED="1434104530015" TEXT="Image resource files "/>
+</node>
+</node>
+<node CREATED="1433686178657" ID="ID_1703116993" MODIFIED="1452322176814" TEXT="domain">
+<cloud/>
+<arrowlink DESTINATION="ID_1703116993" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_140356529" STARTARROW="None" STARTINCLINATION="0;0;"/>
+<linktarget COLOR="#b0b0b0" DESTINATION="ID_1703116993" ENDARROW="Default" ENDINCLINATION="0;0;" ID="Arrow_ID_140356529" SOURCE="ID_1703116993" STARTARROW="None" STARTINCLINATION="0;0;"/>
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1452322228920" ID="ID_1709486015" MODIFIED="1452322233874" TEXT="About">
+<node CREATED="1452322235285" ID="ID_1289175167" MODIFIED="1452322282119" TEXT="Classes that define small types that is reused many times"/>
+</node>
+<node CREATED="1434104172325" ID="ID_1306956756" MODIFIED="1434954818844" TEXT="Attributes">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1434104336080" ID="ID_211167207" MODIFIED="1435484565221" TEXT="About">
+<node CREATED="1434104341062" ID="ID_1979872559" MODIFIED="1434104348149" TEXT="Attribute classes"/>
+</node>
+<node CREATED="1434104247341" ID="ID_846926423" MODIFIED="1434104250406" TEXT="Rules">
+<node CREATED="1434104199456" ID="ID_1620951335" MODIFIED="1434104242338" TEXT="End with &quot;_Attribute&quot;"/>
+</node>
+<node CREATED="1435037924032" ID="ID_1658753128" MODIFIED="1435484606637" TEXT="Controller">
+<node CREATED="1435484616395" ID="ID_658608853" MODIFIED="1435484619452" TEXT="About">
+<node CREATED="1435484620875" ID="ID_1706343991" MODIFIED="1435484691292">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Methods that will be used
+    </p>
+    <p>
+      to access the attribute
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1435484606635" ID="ID_1741044575" MODIFIED="1435484610582" TEXT="Rules">
+<node CREATED="1435037930397" ID="ID_785156709" MODIFIED="1435037943492" TEXT="Also in Attributes folder"/>
+<node CREATED="1435037946757" ID="ID_1679816670" MODIFIED="1435038130866" TEXT="Ends with &quot;_Controller&quot;">
+<node CREATED="1435038131565" ID="ID_289593018" MODIFIED="1435038146414" TEXT="This gives better sorting"/>
+</node>
+<node CREATED="1435038019254" ID="ID_956012361" MODIFIED="1435038023390" TEXT="static"/>
+</node>
+</node>
+</node>
+<node CREATED="1433686201752" ID="ID_1109322325" MODIFIED="1435484703362" TEXT="Config">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1434104353194" ID="ID_83244598" MODIFIED="1435484709997" TEXT="About">
+<node CREATED="1434104356770" ID="ID_1720964202" MODIFIED="1434104359935" TEXT="Config classes"/>
+</node>
+<node CREATED="1433921192141" ID="ID_1870207238" MODIFIED="1433921194802" TEXT="Rules">
+<node CREATED="1433921316883" ID="ID_1936631631" MODIFIED="1436079912066" TEXT="Start with &quot;config_&quot;"/>
+<node CREATED="1433921195853" ID="ID_166169914" MODIFIED="1433926415582">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Config classes are
+    </p>
+    <p>
+      static and contain config,
+    </p>
+    <p>
+      template and static data
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1433686204771" ID="ID_815407989" MODIFIED="1435037889937" TEXT="Enumerals">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1433686518565" ID="ID_1793564417" MODIFIED="1435037891042" TEXT="Rules">
+<node CREATED="1433686523518" ID="ID_1315585972" MODIFIED="1433921154341" TEXT="Start with &quot;en&quot;"/>
+</node>
+</node>
+<node CREATED="1433686210223" ID="ID_240881154" MODIFIED="1435484713067" TEXT="Events">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1433921109842" ID="ID_765101629" MODIFIED="1433921112022" TEXT="Rules">
+<node CREATED="1433921113745" ID="ID_1546319876" MODIFIED="1433921120336" TEXT="Start with &quot;ev&quot;"/>
+</node>
+</node>
+<node CREATED="1436079221608" ID="ID_782334436" MODIFIED="1436079227483" TEXT="Exceptions">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1433686213476" ID="ID_559899146" MODIFIED="1435484714342" TEXT="Interfaces">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1433688158912" ID="ID_1293777845" MODIFIED="1433688162196" TEXT="Rules">
+<node CREATED="1433688162948" ID="ID_1550093405" MODIFIED="1433688168674" TEXT="Start with &quot;I&quot;"/>
+</node>
+</node>
+<node CREATED="1433686230009" ID="ID_933202542" MODIFIED="1435484715442" TEXT="State">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1433921123107" ID="ID_1333295563" MODIFIED="1433921126971" TEXT="Rules">
+<node CREATED="1436167390370" ID="ID_1116912278" MODIFIED="1436167445534" TEXT="See rules">
+<node CREATED="1436167446900" ID="ID_1529161773" MODIFIED="1436167450322" TEXT="CTI_State">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1439112043712" ID="ID_835902816" MODIFIED="1439112196106" TEXT="TypeExtension">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1439112091780" ID="ID_483767684" MODIFIED="1439112094586" TEXT="About">
+<node CREATED="1439112095416" ID="ID_647291166" MODIFIED="1439112166661">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Some time the only way to extent a .Net type is by inheritance.
+    </p>
+    <p>
+      For all that cases the class will be defined here
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1439112063733" ID="ID_1283769504" MODIFIED="1439112066454" TEXT="Rules">
+<node CREATED="1439112067037" ID="ID_308887671" MODIFIED="1439112083062" TEXT="TypeName_????"/>
+<node CREATED="1439112169889" ID="ID_61673038" MODIFIED="1439112191111" TEXT="???? = The extension name"/>
+</node>
+</node>
+</node>
+<node CREATED="1434104571541" ID="ID_505062135" MODIFIED="1452322102694" TEXT="lib">
+<cloud/>
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1452322288989" ID="ID_874186032" MODIFIED="1452322291899" TEXT="About">
+<node CREATED="1452322293154" ID="ID_775777644" MODIFIED="1452322322818" TEXT="Business layer methods (no frontend code)"/>
+<node CREATED="1452322353242" ID="ID_323479446" MODIFIED="1452322356286" TEXT="Method based"/>
+</node>
+<node CREATED="1434104558950" ID="ID_928741300" MODIFIED="1435482617363" TEXT="Comms">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1435482486691" ID="ID_814546158" MODIFIED="1435482489008" TEXT="IO"/>
+<node CREATED="1435482493171" ID="ID_1034119972" MODIFIED="1435482497143" TEXT="Test"/>
+<node CREATED="1435482497612" ID="ID_648157545" MODIFIED="1435482500073" TEXT="XML"/>
+</node>
+<node CREATED="1434104562454" ID="ID_853118741" MODIFIED="1435482617363" TEXT="DB">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1435482357277" ID="ID_1186841794" MODIFIED="1435482361409" TEXT="Connection">
+<node CREATED="1435482381522" ID="ID_1728551323" MODIFIED="1435482384039" TEXT="SQL"/>
+</node>
+<node CREATED="1435482399052" ID="ID_110970560" MODIFIED="1435482403429" TEXT="Server">
+<node CREATED="1435482404672" ID="ID_686280885" MODIFIED="1435482423429" TEXT="sqlServer"/>
+</node>
+<node CREATED="1435482362602" ID="ID_1259420338" MODIFIED="1435482369089" TEXT="Setup">
+<node CREATED="1435482440096" ID="ID_1793069040" MODIFIED="1435482445073" TEXT="Datacolumn"/>
+</node>
+<node CREATED="1435482369827" ID="ID_303247571" MODIFIED="1435482373199" TEXT="Table">
+<node CREATED="1435482458331" ID="ID_263419522" MODIFIED="1435482462638" TEXT="Cache"/>
+</node>
+</node>
+<node CREATED="1434104393406" FOLDED="true" ID="ID_1275300219" MODIFIED="1435482617363" TEXT="Include">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1434104396471" FOLDED="true" ID="ID_978749345" MODIFIED="1434105953361" TEXT="About">
+<node CREATED="1434104399110" ID="ID_1716507050" MODIFIED="1434104441991">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      When source code files from other
+    </p>
+    <p>
+      projects are directly referenced
+    </p>
+    <p>
+      then they need to be put in the
+    </p>
+    <p>
+      include folder (as a general rule)
+    </p>
+  </body>
+</html></richcontent>
+</node>
+<node CREATED="1434105425288" ID="ID_1876913192" MODIFIED="1434105446647">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      This is done to remove binary
+    </p>
+    <p>
+      dependencies.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+<node CREATED="1434104565149" FOLDED="true" ID="ID_1917437472" MODIFIED="1435482617363" TEXT="Rules">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1434104863125" ID="ID_1285162294" MODIFIED="1434105977224" TEXT="Types">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1434104870101" ID="ID_99722487" MODIFIED="1434105977222" TEXT="List">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1434104871885" ID="ID_1777033793" MODIFIED="1434105977220" TEXT="String">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+</node>
+</node>
+<node CREATED="1434104568023" FOLDED="true" ID="ID_1858668366" MODIFIED="1435482617363" TEXT="Spacial">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1434198754095" ID="ID_1813821110" MODIFIED="1434198764736" TEXT="_2D">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1434198758908" ID="ID_893599202" MODIFIED="1434198764736" TEXT="_3D">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+</node>
+<node CREATED="1434197896131" FOLDED="true" ID="ID_1988402411" MODIFIED="1463817127369" TEXT="system">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1434104684518" ID="ID_1994741462" MODIFIED="1434197916935" TEXT="cSharp">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1434197902752" ID="ID_1865153715" MODIFIED="1434198010487" TEXT="dotNet">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1434104693221" ID="ID_341067139" MODIFIED="1434105980668" TEXT="DTE">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1434105081677" ID="ID_1419591398" MODIFIED="1434198007749" TEXT="Win32">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+</node>
+<node CREATED="1463817121035" ID="ID_1604348064" MODIFIED="1463817123880" TEXT="Test">
+<node CREATED="1463817132310" ID="ID_942667175" MODIFIED="1463817134483" TEXT="About">
+<node CREATED="1463817136533" ID="ID_1965523155" MODIFIED="1463817150746" TEXT="Test data for xUnit testing"/>
+</node>
+</node>
+</node>
+<node CREATED="1435482245278" ID="ID_1198585535" MODIFIED="1452322095221" TEXT="libUI">
+<cloud/>
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1452322327974" ID="ID_379367474" MODIFIED="1452322337730" TEXT="About">
+<node CREATED="1452322333412" ID="ID_1649570641" MODIFIED="1452322336427" TEXT="Frontend code"/>
+<node CREATED="1452322361348" ID="ID_1301478997" MODIFIED="1452322365659" TEXT="Method based"/>
+</node>
+<node CREATED="1435482034402" ID="ID_1538214395" MODIFIED="1435482128374" TEXT="uiDesign">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1435481932812" ID="ID_1219652086" MODIFIED="1435482128374" TEXT="uiMobile">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1435481886124" ID="ID_221052385" MODIFIED="1435482128374" TEXT="uiWEB">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1435481860603" ID="ID_683293811" MODIFIED="1435482128374" TEXT="uiWin">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1434104666035" ID="ID_840108821" MODIFIED="1435482124599" TEXT="uiX">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1434106182768" ID="ID_1391193292" MODIFIED="1434106192344" TEXT="AvalonEdit">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1434106188406" ID="ID_625444479" MODIFIED="1434106192344" TEXT="Grid">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+</node>
+</node>
+<node CREATED="1434104274870" ID="ID_814999038" MODIFIED="1452322434124" TEXT="parts">
+<cloud/>
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1452322375922" ID="ID_405309791" MODIFIED="1452322393743" TEXT="About">
+<node CREATED="1452322381826" ID="ID_587204503" MODIFIED="1452322391783" TEXT="Class based library"/>
+</node>
+<node CREATED="1434104839397" ID="ID_221444383" MODIFIED="1434106012620" TEXT="AI">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1434104944985" ID="ID_706783012" MODIFIED="1434106012620" TEXT="AI_StateEngine">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1434104841554" ID="ID_1676949053" MODIFIED="1434106012620" TEXT="DBase">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1434104845033" ID="ID_376464080" MODIFIED="1434106012618" TEXT="dotNet">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1434104751182" ID="ID_45255242" MODIFIED="1452322422492" TEXT="Templates">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1452322437257" ID="ID_1605545377" MODIFIED="1452322443381" TEXT="About">
+<node CREATED="1452322445260" ID="ID_645738971" MODIFIED="1452322459729" TEXT="Auto generation of code via templates"/>
+</node>
+<node CREATED="1434105389964" ID="ID_376895351" MODIFIED="1434105392655" TEXT="?"/>
+<node CREATED="1434104765209" ID="ID_983240373" MODIFIED="1434106020031" TEXT="BlueprintLib">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1434104770354" ID="ID_494060930" MODIFIED="1434106020031" TEXT="cSharp">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1434104774585" ID="ID_1422145681" MODIFIED="1434106020031" TEXT="DTE">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1434104776689" ID="ID_892462911" MODIFIED="1434106020030" TEXT="Game">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1434104778457" ID="ID_1686218202" MODIFIED="1434106020030" TEXT="List">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1434104781641" ID="ID_170373150" MODIFIED="1434106020030" TEXT="nUnit">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1434104785723" ID="ID_576243572" MODIFIED="1434106020030" TEXT="Patterns">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+</node>
+<node CREATED="1434105039974" ID="ID_1583622965" MODIFIED="1434195739866" TEXT="UI">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1434105343449" ID="ID_1600541364" MODIFIED="1452322786846" TEXT="ASPForm">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1434105359712" ID="ID_1598415753" MODIFIED="1434105361095" TEXT="?"/>
+</node>
+<node CREATED="1434105347160" ID="ID_524050717" MODIFIED="1452322784608" TEXT="ASPControl">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1434105357121" ID="ID_855671401" MODIFIED="1434105358237" TEXT="?"/>
+</node>
+<node CREATED="1434104891657" ID="ID_1299741118" MODIFIED="1452322781667" TEXT="WinControl">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+<node CREATED="1434104827857" ID="ID_1454333715" MODIFIED="1452322777431" TEXT="WinForm">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+</node>
+</node>
+</node>
+<node CREATED="1434104280718" ID="ID_1071702137" MODIFIED="1452322413485" TEXT="zz">
+<cloud/>
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1434104446718" ID="ID_1904387490" MODIFIED="1434104451987" TEXT="About">
+<node CREATED="1434104467069" ID="ID_1220856455" MODIFIED="1434104500142">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Auto created shortcut classes
+    </p>
+    <p>
+      generated from transformed
+    </p>
+    <p>
+      methods.
+    </p>
+  </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1434104283466" FOLDED="true" ID="ID_927757681" MODIFIED="1434106033476" TEXT="z">
+<font BOLD="true" NAME="SansSerif" SIZE="12"/>
+<node CREATED="1434104453342" ID="ID_933327941" MODIFIED="1434104455115" TEXT="About">
+<node CREATED="1434104455903" ID="ID_1046275422" MODIFIED="1434104465343" TEXT="Manually created shortcut classes"/>
+</node>
+</node>
+<node CREATED="1435482948657" ID="ID_1191445068" MODIFIED="1435482959449" TEXT="..._Blueprint"/>
+<node CREATED="1435482960554" ID="ID_1874467149" MODIFIED="1435483003664" TEXT="..._BlueprintUI.Windows"/>
+</node>
+</node>
+<node CREATED="1435483038312" ID="ID_1206702102" MODIFIED="1438245486418" TEXT="Singleton">
+<node CREATED="1435483830583" FOLDED="true" ID="ID_1626130708" MODIFIED="1438245498067" TEXT="1">
+<node CREATED="1435483068482" ID="ID_254143415" MODIFIED="1435483068482" TEXT="Access2System_">
+<node CREATED="1435484420050" ID="ID_1846529795" MODIFIED="1435484424152" TEXT="_bpSystem">
+<node CREATED="1435484402490" ID="ID_1172468568" MODIFIED="1435484405272" TEXT="_system"/>
+</node>
+</node>
+<node CREATED="1435483082857" ID="ID_242417472" MODIFIED="1435483082857" TEXT="Blueprint_">
+<node CREATED="1435484428865" ID="ID_501327890" MODIFIED="1435484432357" TEXT="_bp">
+<node CREATED="1435484145195" ID="ID_1792137796" MODIFIED="1435484147737" TEXT="bp"/>
+</node>
+</node>
+<node CREATED="1435483128204" ID="ID_1684783700" MODIFIED="1435483128204" TEXT="BlueprintUIAssets_">
+<node CREATED="1435484434665" ID="ID_1158261362" MODIFIED="1435484439117" TEXT="_bpAssets">
+<node CREATED="1435484199179" ID="ID_1509783022" MODIFIED="1435484207791" TEXT="_assets"/>
+</node>
+</node>
+<node CREATED="1435483140493" ID="ID_1501770500" MODIFIED="1435483140493" TEXT="BlueprintUI_Windows_">
+<node CREATED="1435484441000" ID="ID_607435436" MODIFIED="1435484444537" TEXT="_bpWin">
+<node CREATED="1435484149605" ID="ID_994898830" MODIFIED="1435484154832" TEXT="bpWin"/>
+</node>
+</node>
+<node CREATED="1435483151035" ID="ID_278244470" MODIFIED="1435483151035" TEXT="BlueprintUI_WindowsX_">
+<node CREATED="1435484447000" ID="ID_450384858" MODIFIED="1435484452312" TEXT="_bpWinX">
+<node CREATED="1435484156525" ID="ID_379329934" MODIFIED="1435484161912" TEXT="bpWinX"/>
+</node>
+</node>
+<node CREATED="1435483176978" ID="ID_181653731" MODIFIED="1435483176978" TEXT="BlueprintTools">
+<node CREATED="1435484454290" ID="ID_631192963" MODIFIED="1435484457582" TEXT="_bpTools">
+<node CREATED="1435484140785" ID="ID_650137088" MODIFIED="1435484143577" TEXT="bpTools"/>
+</node>
+</node>
+<node CREATED="1435483297100" ID="ID_1396967459" MODIFIED="1435483297100" TEXT="ActiveTemplates">
+<node CREATED="1435484460825" ID="ID_1356672748" MODIFIED="1435484466577" TEXT="_bpTemplates">
+<node CREATED="1435484330424" ID="ID_1083369648" MODIFIED="1435484332656" TEXT="_templates"/>
+</node>
+</node>
+</node>
+<node CREATED="1435483364819" ID="ID_1170634893" MODIFIED="1435483387246" TEXT="BlueprintZone">
+<node CREATED="1435484504130" ID="ID_535460213" MODIFIED="1435484512517" TEXT="_bpZone"/>
+</node>
+</node>
+</node>
+<node CREATED="1433912475680" ID="ID_1002320100" MODIFIED="1436128863433" POSITION="right" TEXT="Rules">
+<node CREATED="1433912480745" FOLDED="true" ID="ID_1932654106" MODIFIED="1438245518337" TEXT="Forms">
+<node CREATED="1433912484834" ID="ID_582547194" MODIFIED="1435037872279" TEXT="Forms must be implemented in a &quot;controller&quot; called an">
+<node CREATED="1433914322624" ID="ID_1773106404" MODIFIED="1435037876690" TEXT="Agent"/>
+</node>
+<node CREATED="1433914413588" ID="ID_1449485480" MODIFIED="1433914421339" TEXT="No other code is allowed"/>
+</node>
+<node CREATED="1435037831943" FOLDED="true" ID="ID_1805975634" MODIFIED="1438245519319">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Control &amp;
+    </p>
+    <p>
+      Component
+    </p>
+  </body>
+</html></richcontent>
+<node CREATED="1435041149427" ID="ID_353670233" MODIFIED="1435041152049" TEXT="Designer">
+<node CREATED="1435041222692" ID="ID_1001221968" MODIFIED="1435041229068" TEXT="Name_Designer"/>
+<node CREATED="1435042579121" ID="ID_1960169644" MODIFIED="1435042592514" TEXT="Implemented as bool property"/>
+<node CREATED="1435042593212" ID="ID_120805684" MODIFIED="1435042609574" TEXT="Name ends with &quot;_Setup&quot;"/>
+</node>
+<node CREATED="1435041153972" ID="ID_878450539" MODIFIED="1435041171565" TEXT="Config Form">
+<node CREATED="1435041216338" ID="ID_1498218704" MODIFIED="1435041221602" TEXT="Name_Form"/>
+</node>
+<node CREATED="1435041172871" ID="ID_150913634" MODIFIED="1435041178309" TEXT="Selection Form">
+<node CREATED="1435041186399" ID="ID_134033406" MODIFIED="1435041211097" TEXT="Name_Select...._Form"/>
+</node>
+</node>
+<node CREATED="1433912554869" FOLDED="true" ID="ID_52965499" MODIFIED="1438245520383" TEXT="Agent">
+<node CREATED="1433914340522" ID="ID_506764488" MODIFIED="1433914381542" TEXT="Controller for">
+<node CREATED="1433914382344" ID="ID_120322687" MODIFIED="1433914384199" TEXT="Forms"/>
+<node CREATED="1433914385009" ID="ID_87025130" MODIFIED="1433914386671" TEXT="Controls"/>
+<node CREATED="1433914386985" ID="ID_747387345" MODIFIED="1433914394438" TEXT="Components"/>
+</node>
+<node CREATED="1433914400619" ID="ID_761680974" MODIFIED="1434107091648" TEXT="Is a static class"/>
+</node>
+</node>
+</node>
+</map>

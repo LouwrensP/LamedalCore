@@ -2,6 +2,7 @@
 using System.Drawing;
 using LamedalCore.zz;
 using LamedalCore_Templates;
+using LamedalCore_Templates.Enumerals;
 
 namespace LamedalCore.lib
 {

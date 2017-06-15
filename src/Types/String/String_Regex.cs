@@ -7,7 +7,7 @@ using LamedalCore.zz;
 
 namespace LamedalCore.Types.String
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, DefaultType = typeof(string), GroupName = "Str")]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, DefaultType = typeof(string), GroupName = "Str")]
     public sealed class String_Regex
     {
         /// <summary>

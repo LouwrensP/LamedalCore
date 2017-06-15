@@ -11,7 +11,7 @@ using LamedalCore.zz;
 
 namespace LamedalCore.lib.IO
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, GroupName = "Folder")]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, GroupName = "Folder")]
     public sealed class IO_Folder
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;

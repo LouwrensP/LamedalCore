@@ -28,7 +28,7 @@ namespace LamedalCore.Test.Tests.domain
 
         private void Exception_Show2()
         {
-            "Error message".zException_Show(enExceptionAction.reThrowError);
+            "Error message".zException_Show(enCode_ExceptionAction.reThrowError);
         }
 
         private void Exception_Show3()

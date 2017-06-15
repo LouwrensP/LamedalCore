@@ -37,7 +37,7 @@ namespace LamedalCore.lib.Words
         private static IDictionary<string, string> _simpEnglFromWordDict = null;
     }
 
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Transformation_Connector)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Transformation_Connector)]
     public static class Words_LoadList_Static
     {
         // <summary>Loads the word list.</summary>

@@ -8,7 +8,7 @@ using LamedalCore.zz;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Undefined)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Undefined)]
     public sealed class MethodNTHeader_Methods
     {
         /// <summary>
@@ -23,10 +23,10 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader
         /// <param name="specialty">The specialty.</param>
         /// <returns></returns>
         public static string Parse(List<string> sourceLines, ref int ii, out string methodName, out enCode_Scope scope,
-            out string returnType, out enMethod_Kind kind, out enCode_Specialty specialty)
+            out string returnType, out enCode_MethodKind kind, out enCode_Specialty specialty)
         {
             specialty = enCode_Specialty.IsNormal;
-            kind = enMethod_Kind.IsFunction;
+            kind = enCode_MethodKind.IsFunction;
             string seek = "(";
             string methodLines = sourceLines[ii].Trim();
 
@@ -35,8 +35,8 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader
             {
                 //! Check if this is a property (as a quickfix ->properties will end with '!!')
                 seek = "!!";
-                kind = enMethod_Kind.IsProperty;
-                if (methodLines.Contains("!!+")) kind = enMethod_Kind.IsSetter;
+                kind = enCode_MethodKind.IsProperty;
+                if (methodLines.Contains("!!+")) kind = enCode_MethodKind.IsSetter;
             }
             else
             {
@@ -77,8 +77,8 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader
             methodName = methodName.Trim();
             if (methodName.Contains("<")) methodName = methodName.zvar_Id("<");
 
-            if (returnType == "void") kind = enMethod_Kind.IsVoid;
-            if (returnType.zIsNullOrEmpty()) kind = enMethod_Kind.IsConstructor;
+            if (returnType == "void") kind = enCode_MethodKind.IsVoid;
+            if (returnType.zIsNullOrEmpty()) kind = enCode_MethodKind.IsConstructor;
 
             return methodLines;
         }
@@ -111,10 +111,10 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader
                 }
                 switch (parameter.ParameterRefType)
                 {
-                    case enParameterRefType.ByReference: ref1 = " ref "; break;
-                    case enParameterRefType.Output: ref1 = " out "; break;
-                    case enParameterRefType.ParamArray: ref1 = " params "; break;
-                    case enParameterRefType.ByValue: ref1 = ""; break;
+                    case enCode_ParameterRefType.ByReference: ref1 = " ref "; break;
+                    case enCode_ParameterRefType.Output: ref1 = " out "; break;
+                    case enCode_ParameterRefType.ParamArray: ref1 = " params "; break;
+                    case enCode_ParameterRefType.ByValue: ref1 = ""; break;
                     default: throw new Exception($"Argument '{nameof(parameter.ParameterRefType)}' error.");
 
                 }

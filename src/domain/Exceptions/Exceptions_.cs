@@ -11,8 +11,8 @@ namespace LamedalCore.domain.Exceptions
     /// <summary>
     /// Error handeling methods class
     /// </summary>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, DefaultType = typeof(Exception))]
-    [Test_IgnoreCoverage(enTestIgnore.CodeIsUsedForTesting)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, DefaultType = typeof(Exception))]
+    [Test_IgnoreCoverage(enCode_TestIgnore.CodeIsUsedForTesting)]
     public class Exceptions_
     {
         // Todo: [0.5d] (R&D) DebuggerStepThrough Attribute and apply on exception classes. Test it on type methods. Test InnerExceptions() method.
@@ -43,7 +43,7 @@ namespace LamedalCore.domain.Exceptions
         /// <param name="errMsg">The error msg setting. Default value = "".</param>
         /// <param name="action">The exception action setting. Default value = ExceptionAction.ThrowError.</param>
         [DebuggerStepThrough]
-        public virtual void Show(Exception ex, string errMsg = "", enExceptionAction action = enExceptionAction.reThrowError)
+        public virtual void Show(Exception ex, string errMsg = "", enCode_ExceptionAction action = enCode_ExceptionAction.reThrowError)
         {
             //_system.lib.Tools.Form_Remove_TopMost();
 
@@ -54,8 +54,8 @@ namespace LamedalCore.domain.Exceptions
 
             switch (action)
             {
-                case enExceptionAction.ThrowError: throw ex;
-                case enExceptionAction.reThrowError: throw New(errMsg, ex);
+                case enCode_ExceptionAction.ThrowError: throw ex;
+                case enCode_ExceptionAction.reThrowError: throw New(errMsg, ex);
                 default: throw new Exception($"Argument '{nameof(action)}' error.");
             }
         }
@@ -65,7 +65,7 @@ namespace LamedalCore.domain.Exceptions
         /// <param name="action">The action.</param>
         /// <param name="innerException">The inner exception.</param>
         [DebuggerStepThrough]
-        public void Show(string errMsg, enExceptionAction action = enExceptionAction.ThrowError, Exception innerException = null)
+        public void Show(string errMsg, enCode_ExceptionAction action = enCode_ExceptionAction.ThrowError, Exception innerException = null)
         {
             Exception ex = New(errMsg, innerException);
             Show(ex, "", action);

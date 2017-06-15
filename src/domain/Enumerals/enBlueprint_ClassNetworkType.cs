@@ -5,7 +5,7 @@ namespace LamedalCore.domain.Enumerals
     /// <summary>
     /// 
     /// </summary>
-    public enum enBlueprintClassNetworkType
+    public enum enBlueprint_ClassNetworkType
     {
         /// <summary>
         /// Ignore the class in transformations. This type of class should be changed or be moved to other parts of the CTIN network.

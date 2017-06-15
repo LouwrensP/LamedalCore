@@ -8,7 +8,7 @@ namespace LamedalCore.Types
     /// <summary>
     /// Conduct a test on the string excluding searching for patterns or values
     /// </summary>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, DefaultType = typeof(string), GroupName = "Str")]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, DefaultType = typeof(string), GroupName = "Str")]
     public sealed class Types_Test
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;

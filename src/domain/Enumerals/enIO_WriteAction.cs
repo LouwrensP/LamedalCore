@@ -1,6 +1,6 @@
 namespace LamedalCore.domain.Enumerals
 {
-    public enum enIOWriteAction
+    public enum enIO_WriteAction
     {
         /// <summary>The write file if it does not exist</summary>
         WriteFile,

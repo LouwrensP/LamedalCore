@@ -11,7 +11,7 @@ namespace LamedalCore.Types
     /// <summary>
     /// 
     /// </summary>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action)]
     public sealed class Types_Dictionary
     {
         ///// <summary>
@@ -46,16 +46,16 @@ namespace LamedalCore.Types
         /// <param name="newValue">Value to use when key is missing</param>
         /// <param name="onError">The on error.</param>
         public void Key_AddSafe<TKey, TValue>(IDictionary<TKey, TValue> dictionary, TKey key, TValue newValue, 
-                    enDuplicateError onError = enDuplicateError.Ignore)
+                    enCompare_DuplicateError onError = enCompare_DuplicateError.Ignore)
         {
             TValue result;
             if (dictionary.TryGetValue(key, out result) == true)
             {
                 switch (onError)
                 {
-                    case enDuplicateError.Replace: dictionary[key] = newValue; return; // <============================
-                    case enDuplicateError.Ignore: return;
-                    case enDuplicateError.Error: throw new ArgumentException("newValue");
+                    case enCompare_DuplicateError.Replace: dictionary[key] = newValue; return; // <============================
+                    case enCompare_DuplicateError.Ignore: return;
+                    case enCompare_DuplicateError.Error: throw new ArgumentException("newValue");
                     default: throw new Exception($"Argument '{nameof(onError)}' error.");
                 }
             }

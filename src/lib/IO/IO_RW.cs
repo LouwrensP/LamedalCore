@@ -9,7 +9,7 @@ using LamedalCore.zz;
 
 namespace LamedalCore.lib.IO
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action)]
     public sealed class IO_RW
     {
         private readonly IO_ _io = LamedalCore_.Instance.lib.IO;
@@ -19,7 +19,7 @@ namespace LamedalCore.lib.IO
         /// <summary>
         /// Gets the RW library methods.
         /// </summary>
-        [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
         public Excel_IO_Read Excel
         {
             get { return _Excel ?? (_Excel = new Excel_IO_Read()); }
@@ -34,7 +34,7 @@ namespace LamedalCore.lib.IO
         /// <param name="overwrite">if set to <c>true</c> [overwrite].</param>
         public void File_Write(string pathAndFile, string txt, bool overwrite)
         {
-            File_Write(pathAndFile, txt, overwrite ? enIOWriteAction.OverWriteFile : enIOWriteAction.WriteFile);
+            File_Write(pathAndFile, txt, overwrite ? enIO_WriteAction.OverWriteFile : enIO_WriteAction.WriteFile);
         }
 
         /// <summary>Write to file name</summary>
@@ -43,27 +43,27 @@ namespace LamedalCore.lib.IO
         /// <param name="overwrite">if set to <c>true</c> [overwrite].</param>
         public void File_Write(string pathAndFile, string[] lines, bool overwrite)
         {
-            File_Write(pathAndFile, lines, overwrite ? enIOWriteAction.OverWriteFile : enIOWriteAction.WriteFile);
+            File_Write(pathAndFile, lines, overwrite ? enIO_WriteAction.OverWriteFile : enIO_WriteAction.WriteFile);
         }
 
         /// <summary>Write to file name</summary>
         /// <param name="pathAndFile">The path and file.</param>
         /// <param name="txt">The text.</param>
         /// <param name="writeAction">The write action.</param>
-        public void File_Write(string pathAndFile, string txt, enIOWriteAction writeAction = enIOWriteAction.WriteFile)
+        public void File_Write(string pathAndFile, string txt, enIO_WriteAction writeAction = enIO_WriteAction.WriteFile)
         {
-            if (writeAction == enIOWriteAction.OverWriteFile)
+            if (writeAction == enIO_WriteAction.OverWriteFile)
             {
                 File.WriteAllText(pathAndFile, txt);
                 return;
             }
 
             bool fileExist = _io.File.Exists(pathAndFile);
-            if (writeAction == enIOWriteAction.WriteFile)
+            if (writeAction == enIO_WriteAction.WriteFile)
             {
                 if (fileExist) "Error! Can not write to file because it already exists.".zException_Show();
                 else File.WriteAllText(pathAndFile, txt);
-            } else if (writeAction == enIOWriteAction.AppendFile)
+            } else if (writeAction == enIO_WriteAction.AppendFile)
             {
                 if (_io.File.Exists(pathAndFile)) txt = "".NL() + txt; // Add extra space into file
                 File.AppendAllText(pathAndFile, txt);
@@ -74,7 +74,7 @@ namespace LamedalCore.lib.IO
         /// <param name="pathAndFile">The path and file.</param>
         /// <param name="lines">The lines.</param>
         /// <param name="writeAction">The write action.</param>
-        public void File_Write(string pathAndFile, string[] lines, enIOWriteAction writeAction = enIOWriteAction.WriteFile)
+        public void File_Write(string pathAndFile, string[] lines, enIO_WriteAction writeAction = enIO_WriteAction.WriteFile)
         {
             var txt = lines.zTo_Str("".NL());
             File_Write(pathAndFile, txt, writeAction);

@@ -3,7 +3,7 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.domain.Attributes
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.BlueprintRuleDef)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.BlueprintRuleDef)]
     [AttributeUsage(AttributeTargets.All, AllowMultiple = false)]
     public sealed class BlueprintData_DescriptionAttribute : Attribute
     {

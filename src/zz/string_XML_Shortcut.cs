@@ -6,8 +6,8 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.zz
 {
-    [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Transformation_Extention)]
+    [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Transformation_Extention)]
     public static class string_XML_Shortcut
     {
         /// <summary>

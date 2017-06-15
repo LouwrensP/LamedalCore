@@ -14,8 +14,8 @@ namespace LamedalCore.Types.String
     /// <summary>
     /// Strings Methods
     /// </summary>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Link, DefaultType = typeof(string), GroupName = "Str")]
-    [Test_IgnoreCoverage(enTestIgnore.ClassIsNodeLink)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Link, DefaultType = typeof(string), GroupName = "Str")]
+    [Test_IgnoreCoverage(enCode_TestIgnore.ClassIsNodeLink)]
     public sealed class String_
     {
         #region Edit

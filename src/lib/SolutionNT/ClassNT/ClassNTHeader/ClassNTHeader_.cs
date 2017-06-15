@@ -8,7 +8,7 @@ using LamedalCore.lib.SolutionNT.ClassNT.ClassNTStats;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTHeader
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_State)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_State)]
     public sealed class ClassNTHeader_
     {
         public string NameSpace_Name;                   // The Namespace of the class

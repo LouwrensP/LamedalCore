@@ -6,7 +6,7 @@ using LamedalCore.zz;
 
 namespace LamedalCore.lib.IO
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, GroupName = "Parts")]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, GroupName = "Parts")]
     public sealed class IO_Parts
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;

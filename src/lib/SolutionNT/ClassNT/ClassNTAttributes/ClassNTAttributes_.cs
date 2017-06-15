@@ -6,7 +6,7 @@ using LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttributes
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_State)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_State)]
     public sealed class ClassNTAttributes_
     {
         public readonly List<ClassNTAttribute_> Items = new List<ClassNTAttribute_>(); 

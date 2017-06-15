@@ -13,7 +13,7 @@ namespace LamedalCore.Types.String
     /// <summary>
     /// Make changes to the string
     /// </summary>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, DefaultType = typeof(string), GroupName = "Str")]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, DefaultType = typeof(string), GroupName = "Str")]
     public sealed class String_Edit
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
@@ -72,7 +72,7 @@ namespace LamedalCore.Types.String
         [Pure]
         public string Remove_Prefix(string inputStr,params string[] ignorePrefix)
         {
-            var ignorePrefixSorted = ignorePrefix.zArray_SortByLength(enCompareSort.Descending);
+            var ignorePrefixSorted = ignorePrefix.zArray_SortByLength(enCompare_Sort.Descending);
             var lenInput = inputStr.Length;
             foreach (var pre in ignorePrefixSorted)
             {

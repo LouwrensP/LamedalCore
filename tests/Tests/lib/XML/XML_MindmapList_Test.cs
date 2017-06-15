@@ -13,7 +13,7 @@ using Xunit.Abstractions;
 
 namespace LamedalCore.Test.Tests.lib.XML
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.XUnitTestMethods)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.XUnitTestMethods)]
     public sealed class XML_MindmapList_Test : pcTest
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;

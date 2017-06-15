@@ -4,7 +4,7 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.Types
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, GroupName = "TimeSpan", IgnoreGroup = true)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, GroupName = "TimeSpan", IgnoreGroup = true)]
     public sealed class Types_DateTimeSpan
     {
 

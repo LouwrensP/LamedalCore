@@ -384,7 +384,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
         {
             string paramLine;
             string typeName, name, optionalValue;
-            enParameterRefType refType;
+            enCode_ParameterRefType refType;
             bool isThis;
 
             #region Test1: List<string> sourceLines
@@ -392,7 +392,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             paramLine = "this List<string> sourceLines";
             MethodNTHeader_Parameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
             Assert.Equal(true, isThis);
-            Assert.Equal(enParameterRefType.ByValue, refType);
+            Assert.Equal(enCode_ParameterRefType.ByValue, refType);
             Assert.Equal("List<string>", typeName);
             Assert.Equal("sourceLines", name);
             Assert.Equal(null, optionalValue);
@@ -403,7 +403,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             paramLine = "ref int ii";
             MethodNTHeader_Parameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
             Assert.Equal(false, isThis);
-            Assert.Equal(enParameterRefType.ByReference, refType);
+            Assert.Equal(enCode_ParameterRefType.ByReference, refType);
             Assert.Equal("int", typeName);
             Assert.Equal("ii", name);
             Assert.Equal(null, optionalValue);
@@ -414,7 +414,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             paramLine = "List<string> sourceLines";
             MethodNTHeader_Parameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
             Assert.Equal(false, isThis);
-            Assert.Equal(enParameterRefType.ByValue, refType);
+            Assert.Equal(enCode_ParameterRefType.ByValue, refType);
             Assert.Equal("List<string>", typeName);
             Assert.Equal("sourceLines", name);
             Assert.Equal(null, optionalValue);
@@ -425,7 +425,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             paramLine = "out string methodName";
             MethodNTHeader_Parameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
             Assert.Equal(false, isThis);
-            Assert.Equal(enParameterRefType.Output, refType);
+            Assert.Equal(enCode_ParameterRefType.Output, refType);
             Assert.Equal("string", typeName);
             Assert.Equal("methodName", name);
             Assert.Equal(null, optionalValue);
@@ -436,7 +436,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             paramLine = "this bool isGeneric = false";
             MethodNTHeader_Parameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
             Assert.Equal(true, isThis);
-            Assert.Equal(enParameterRefType.ByValue, refType);
+            Assert.Equal(enCode_ParameterRefType.ByValue, refType);
             Assert.Equal("bool", typeName);
             Assert.Equal("isGeneric", name);
             Assert.Equal("false", optionalValue);
@@ -447,7 +447,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             paramLine = "Dictionary<string, int> array";
             MethodNTHeader_Parameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
             Assert.Equal(false, isThis);
-            Assert.Equal(enParameterRefType.ByValue, refType);
+            Assert.Equal(enCode_ParameterRefType.ByValue, refType);
             Assert.Equal("Dictionary<string, int>", typeName);
             Assert.Equal("array", name);
             Assert.Equal(null, optionalValue);
@@ -458,7 +458,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             paramLine = "Func<T, RT> func";
             MethodNTHeader_Parameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
             Assert.Equal(false, isThis);
-            Assert.Equal(enParameterRefType.ByValue, refType);
+            Assert.Equal(enCode_ParameterRefType.ByValue, refType);
             Assert.Equal("Func<T, RT>", typeName);
             Assert.Equal("func", name);
             Assert.Equal(null, optionalValue);
@@ -469,7 +469,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             paramLine = "List<Train_Food> trainFoods";
             MethodNTHeader_Parameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
             Assert.Equal(false, isThis);
-            Assert.Equal(enParameterRefType.ByValue, refType);
+            Assert.Equal(enCode_ParameterRefType.ByValue, refType);
             Assert.Equal("List<Train_Food>", typeName);
             Assert.Equal("trainFoods", name);
             Assert.Equal(null, optionalValue);
@@ -480,7 +480,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             paramLine = "this IEnumerable<T> array";
             MethodNTHeader_Parameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
             Assert.Equal(true, isThis);
-            Assert.Equal(enParameterRefType.ByValue, refType);
+            Assert.Equal(enCode_ParameterRefType.ByValue, refType);
             Assert.Equal("IEnumerable<T>", typeName);
             Assert.Equal("array", name);
             Assert.Equal(null, optionalValue);
@@ -611,7 +611,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             string methodName;
             enCode_Scope scope;
             string returnType;
-            enMethod_Kind kind;
+            enCode_MethodKind kind;
             enCode_Specialty specialty;
 
             #region Test1: public void Setup(List<string> sourceLines, ref int ii)
@@ -622,7 +622,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             Assert.Equal("Setup", methodName);
             Assert.Equal(enCode_Scope._public, scope);
             Assert.Equal("void", returnType);
-            Assert.Equal(enMethod_Kind.IsVoid, kind);
+            Assert.Equal(enCode_MethodKind.IsVoid, kind);
             Assert.Equal(enCode_Specialty.IsNormal, specialty);
             Assert.Equal("public void Setup(List<string> sourceLines, ref int ii)", header);
             #endregion
@@ -637,7 +637,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             Assert.Equal("Parse", methodName);
             Assert.Equal(enCode_Scope._public, scope);
             Assert.Equal("string", returnType);
-            Assert.Equal(enMethod_Kind.IsFunction, kind);
+            Assert.Equal(enCode_MethodKind.IsFunction, kind);
             Assert.Equal(enCode_Specialty.IsStatic, specialty);
             #endregion
 
@@ -650,7 +650,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             Assert.Equal("Shape_Move", methodName);
             Assert.Equal(enCode_Scope._public, scope);
             Assert.Equal("List<Rectangle>", returnType);
-            Assert.Equal(enMethod_Kind.IsFunction, kind);
+            Assert.Equal(enCode_MethodKind.IsFunction, kind);
             Assert.Equal(enCode_Specialty.IsStatic, specialty);
             #endregion
 
@@ -670,7 +670,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             Assert.Equal("AI_FoodSort", methodName);
             Assert.Equal(enCode_Scope._public, scope);
             Assert.Equal("SortedList<int, Train_PathInfo>", returnType);
-            Assert.Equal(enMethod_Kind.IsFunction, kind);
+            Assert.Equal(enCode_MethodKind.IsFunction, kind);
             Assert.Equal(enCode_Specialty.IsStatic, specialty);
             #endregion
 
@@ -682,7 +682,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             Assert.Equal("ForEach", methodName);
             Assert.Equal(enCode_Scope._public, scope);
             Assert.Equal("IEnumerable<RT>", returnType);
-            Assert.Equal(enMethod_Kind.IsFunction, kind);
+            Assert.Equal(enCode_MethodKind.IsFunction, kind);
             Assert.True(specialty.zFlag_IsSet(false, enCode_Specialty.IsStatic, enCode_Specialty.IsGeneric));
             #endregion
 
@@ -691,11 +691,11 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             ii = 0;
             source = MethodNTHeader_Methods.Str2StrList("public string PropetyName !!");
             var header7 = MethodNTHeader_Methods.Parse(source, ref ii, out methodName, out scope, out returnType, out kind, out specialty);
-            Assert.Equal(enMethod_Kind.IsProperty, kind);
+            Assert.Equal(enCode_MethodKind.IsProperty, kind);
 
             source = MethodNTHeader_Methods.Str2StrList("public string PropetyName !!+");
             var header8 = MethodNTHeader_Methods.Parse(source, ref ii, out methodName, out scope, out returnType, out kind, out specialty);
-            Assert.Equal(enMethod_Kind.IsSetter, kind);
+            Assert.Equal(enCode_MethodKind.IsSetter, kind);
             #endregion
 
             #region Test8: public string PropetyName !!+
@@ -703,7 +703,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             ii = 0;
             source = MethodNTHeader_Methods.Str2StrList("public ConstructorName()");
             var header9 = MethodNTHeader_Methods.Parse(source, ref ii, out methodName, out scope, out returnType, out kind, out specialty);
-            Assert.Equal(enMethod_Kind.IsConstructor, kind);
+            Assert.Equal(enCode_MethodKind.IsConstructor, kind);
             #endregion
         }
 
@@ -720,7 +720,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             Assert.Equal("Setup1", method.Header_Name);
             Assert.Equal(enCode_Scope._public, method.Header_Scope);
             Assert.Equal("void", method.Header_ReturnType);
-            Assert.Equal(enMethod_Kind.IsVoid, method.Header_Kind);
+            Assert.Equal(enCode_MethodKind.IsVoid, method.Header_Kind);
             Assert.Equal(enCode_Specialty.IsNormal, method.Header_Specialty);
             Assert.Equal("public void Setup1(List<string> sourceLines, ref int ii)", method.Method_HeaderLine);
             Assert.Equal("Setup1(List<string>, ref int)", method.Method_Signature);
@@ -800,7 +800,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             // =============================================
             Assert.Equal("public string SubStr_Right(string inputStr, int chars)", method.Header.Method_HeaderLine);
             Assert.Equal("SubStr_Right(string,int) : string", method.Header.Method_Signature);
-            Assert.Equal(enMethod_Kind.IsFunction, method.Header.Header_Kind);
+            Assert.Equal(enCode_MethodKind.IsFunction, method.Header.Header_Kind);
             Assert.Equal(enCode_Scope._public, method.Header.Header_Scope);
             Assert.Equal("string", method.Header.Header_ReturnType);
             Assert.Equal("SubStr_Right", method.Header.Header_Name);
@@ -812,7 +812,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             Assert.Equal("inputStr", method.Header.Header_Parameters[0].ParameterName);
             Assert.Equal("string", method.Header.Header_Parameters[0].ParameterTypeName);
             Assert.Equal(null, method.Header.Header_Parameters[0].ParameterValue);
-            Assert.Equal(enParameterRefType.ByValue, method.Header.Header_Parameters[0].ParameterRefType);
+            Assert.Equal(enCode_ParameterRefType.ByValue, method.Header.Header_Parameters[0].ParameterRefType);
             Assert.Equal("chars", method.Header.Header_Parameters[1].ParameterName);
             Assert.Equal("int", method.Header.Header_Parameters[1].ParameterTypeName);
             Assert.Equal(2, method.Header.Header_Parameters.Count);
@@ -914,7 +914,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             // =============================================
             Assert.Equal("public string SubStr_Right(string inputStr, int chars)", header.Method_HeaderLine);
             Assert.Equal("SubStr_Right(string,int) : string", header.Method_Signature);
-            Assert.Equal(enMethod_Kind.IsFunction, header.Header_Kind);
+            Assert.Equal(enCode_MethodKind.IsFunction, header.Header_Kind);
             Assert.Equal(enCode_Scope._public, header.Header_Scope);
             Assert.Equal("string", header.Header_ReturnType);
             Assert.Equal("SubStr_Right", header.Header_Name);
@@ -927,7 +927,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             Assert.Equal("string", header.Header_Parameters[0].ParameterTypeName);
             Assert.Equal("The input string.", header.Header_Parameters[0].ParameterComment);
             Assert.Equal(null, header.Header_Parameters[0].ParameterValue);
-            Assert.Equal(enParameterRefType.ByValue, header.Header_Parameters[0].ParameterRefType);
+            Assert.Equal(enCode_ParameterRefType.ByValue, header.Header_Parameters[0].ParameterRefType);
             Assert.Equal("chars", header.Header_Parameters[1].ParameterName);
             Assert.Equal("int", header.Header_Parameters[1].ParameterTypeName);
             Assert.Equal("The chars.", header.Header_Parameters[1].ParameterComment);

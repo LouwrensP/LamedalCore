@@ -9,8 +9,8 @@ using LamedalCore.lib.XML;
 
 namespace LamedalCore.lib
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Link)]
-    [Test_IgnoreCoverage(enTestIgnore.ClassIsNodeLink)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Link)]
+    [Test_IgnoreCoverage(enCode_TestIgnore.ClassIsNodeLink)]
     public sealed class lib_
     {
         #region About

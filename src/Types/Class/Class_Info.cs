@@ -35,7 +35,7 @@ namespace LamedalCore.Types.Class
         /// </summary>
         /// <param name="classType">The class type</param>
         /// <returns>FieldInfo[]</returns>
-        public Blueprint_Attributes Blueprint_Attributes(Type classType)
+        public BlueprintAttribute_Controller Blueprint_Attributes(Type classType)
         {
             return Dictionary.Blueprint_Attributes(classType);
         }
@@ -47,17 +47,17 @@ namespace LamedalCore.Types.Class
         /// <param name="fieldOrPropertyName">Name of the field or property.</param>
         /// <param name="memberType">Type of the member.</param>
         /// <returns></returns>
-        public MemberInfo PropertyField_Info(Type objectType, string fieldOrPropertyName, out enClassMemberType memberType)
+        public MemberInfo PropertyField_Info(Type objectType, string fieldOrPropertyName, out enCode_ClassMemberType memberType)
         {
-            memberType = enClassMemberType.Undefined;
+            memberType = enCode_ClassMemberType.Undefined;
             // Field
             MemberInfo result = Field_AsFieldInfo(objectType, fieldOrPropertyName);
-            if (result != null) memberType = enClassMemberType.ClassField;
+            if (result != null) memberType = enCode_ClassMemberType.ClassField;
             else
             {
                 // Property
                 result = Property_AsPropertyInfo(objectType, fieldOrPropertyName);
-                if (result != null) memberType = enClassMemberType.ClassProperty;
+                if (result != null) memberType = enCode_ClassMemberType.ClassProperty;
             }
             return result;
         }
@@ -68,7 +68,7 @@ namespace LamedalCore.Types.Class
         /// <returns></returns>
         public MemberInfo PropertyField_Info(Type objectType, string fieldOrPropertyName)
         {
-            enClassMemberType memberType;
+            enCode_ClassMemberType memberType;
             var result = PropertyField_Info(objectType, fieldOrPropertyName, out memberType);
             return result;
         }

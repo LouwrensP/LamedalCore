@@ -17,7 +17,7 @@ using Xunit.Abstractions;
 
 namespace LamedalCore.Test.Tests.lib.ClassNT
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action)]
     public sealed class ClassNT_Test : pcTest
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
@@ -65,7 +65,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             Assert.Equal("Blueprint.lib.Rules.Types", Class.Header.NameSpace_Name);
             Assert.Equal("Money convertions", Class.Header.Header_Comment);
             Assert.Equal(1, Class.Header.Namespace_Attributes.Items.Count);
-            Assert.Equal(enBlueprintClassNetworkType.Node_Action, blueprintRule.ClassType);
+            Assert.Equal(enBlueprint_ClassNetworkType.Node_Action, blueprintRule.ClassType);
 
             #endregion
 
@@ -255,7 +255,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             bool error;
             ClassNTBlueprintRule_ blueprintRule;
             var Class = ClassNT_.Create(folderPath + "String_.cs", out error, out blueprintRule);
-            Assert.Equal(enBlueprintClassNetworkType.Node_Link, Class.BlueprintRule.ClassType);
+            Assert.Equal(enBlueprint_ClassNetworkType.Node_Link, Class.BlueprintRule.ClassType);
             Assert.Equal(7, Class.Properties.Count);
             Assert.Equal(0, Class.Methods.Count);
             Assert.Equal("String_", Class.ClassName);

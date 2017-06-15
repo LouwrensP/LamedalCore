@@ -7,7 +7,7 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.lib.Excel
 {
-    [Test_IgnoreCoverage(enTestIgnore.ClassIsNodeLink)]
+    [Test_IgnoreCoverage(enCode_TestIgnore.ClassIsNodeLink)]
     public sealed class Excel_
     {
         #region About

@@ -7,7 +7,7 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.Types.Class
 {
-    [Test_IgnoreCoverage(enTestIgnore.ClassIsNodeLink)]
+    [Test_IgnoreCoverage(enCode_TestIgnore.ClassIsNodeLink)]
     public sealed class Class_
     {
         #region ClassAttributes

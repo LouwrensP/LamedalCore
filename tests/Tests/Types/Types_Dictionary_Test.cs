@@ -53,11 +53,11 @@ namespace LamedalCore.Test.Tests.Types
             Assert.Equal("value1", myDict1["key1"]);
 
             // replace
-            _lamed.Types.Dictionary.Key_AddSafe(myDict1, "key1", "value111", enDuplicateError.Replace);
+            _lamed.Types.Dictionary.Key_AddSafe(myDict1, "key1", "value111", enCompare_DuplicateError.Replace);
             Assert.Equal("value111", myDict1["key1"]);
 
             // error
-            Assert.Throws<ArgumentException>(() => _lamed.Types.Dictionary.Key_AddSafe(myDict1, "key1", "value111", enDuplicateError.Error));
+            Assert.Throws<ArgumentException>(() => _lamed.Types.Dictionary.Key_AddSafe(myDict1, "key1", "value111", enCompare_DuplicateError.Error));
         }
 
         [Fact]

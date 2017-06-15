@@ -1,6 +1,6 @@
 ﻿namespace LamedalCore.domain.Enumerals
 {
-    public enum enAttributeLocation
+    public enum enCode_AttributeLocation
     {
         Class,
         Constructor,

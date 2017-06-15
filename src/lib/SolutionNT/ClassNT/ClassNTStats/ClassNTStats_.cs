@@ -3,7 +3,7 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTStats
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_State)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_State)]
     public sealed class ClassNTStats_
     {
         // Class ========================

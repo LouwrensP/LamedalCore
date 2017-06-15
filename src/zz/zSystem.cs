@@ -5,8 +5,8 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.zz
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Transformation_Connector)]
-    [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Transformation_Connector)]
+    [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
     public static class zSystem
     {
 
@@ -63,7 +63,7 @@ namespace LamedalCore.zz
         /// <param name="errMsg">The error MSG.</param>
         /// <param name="action">The action.</param>
         [DebuggerStepThrough]
-        public static void zException_Show(this Exception ex, string errMsg = "", enExceptionAction action = enExceptionAction.ThrowError)
+        public static void zException_Show(this Exception ex, string errMsg = "", enCode_ExceptionAction action = enCode_ExceptionAction.ThrowError)
         {
             LamedalCore_.Instance.Exceptions.Show(ex, errMsg, action);
         }
@@ -73,7 +73,7 @@ namespace LamedalCore.zz
         /// <param name="action">The action.</param>
         /// <param name="innerException">The inner exception.</param>
         [DebuggerStepThrough]
-        public static void zException_Show(this string errMsg,enExceptionAction action = enExceptionAction.ThrowError, Exception innerException = null)
+        public static void zException_Show(this string errMsg,enCode_ExceptionAction action = enCode_ExceptionAction.ThrowError, Exception innerException = null)
         {
             LamedalCore_.Instance.Exceptions.Show(errMsg, action, innerException);
         }

@@ -7,7 +7,7 @@ using LamedalCore.zz;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute.ClassNTBlueprintRule
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.VS_Static)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.VS_Static)]
     public static class ClassNTBlueprintMethodRuleAliasDef_Methods
     {
         [BlueprintRule_MethodAliasDef(MirrorClass = typeof(string), MirrorMethodName = "mirrorMethod", MirrorParameter1 = "parName")]

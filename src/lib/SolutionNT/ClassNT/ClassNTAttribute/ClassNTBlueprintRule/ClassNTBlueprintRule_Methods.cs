@@ -7,16 +7,16 @@ using LamedalCore.zz;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute.ClassNTBlueprintRule
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.VS_Static)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.VS_Static)]
     public static class ClassNTBlueprintRule_Methods
     {
-        public static bool BlueprintRule_Attributes(string attributeCode, out string name, out List<string> parameters, out enBlueprintClassNetworkType classNetworkType,
+        public static bool BlueprintRule_Attributes(string attributeCode, out string name, out List<string> parameters, out enBlueprint_ClassNetworkType classNetworkType,
             out string ignore1, out string ignore2, out string ignore3, out string ignore4)
         {
             ClassNTAttributes_Methods.Attribute_Parts(attributeCode, out name, out parameters);
 
             // Default values
-            classNetworkType = enBlueprintClassNetworkType.Undefined;
+            classNetworkType = enBlueprint_ClassNetworkType.Undefined;
             ignore1 = null;
             ignore2 = null;
             ignore3 = null;
@@ -27,7 +27,7 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute.ClassNTBlueprintRu
             // Test the parameters
             // The first parameter is the enBlueprintClassNetworkType
             var parm1 = parameters[0];
-            classNetworkType = parm1.zEnum_To_EnumValue<enBlueprintClassNetworkType>();
+            classNetworkType = parm1.zEnum_To_EnumValue<enBlueprint_ClassNetworkType>();
             //var value = parm1.zvar_Value(".");
             //classNetworkType = value.zEnum_To_EnumValue<enBlueprintClassNetworkType>();
 

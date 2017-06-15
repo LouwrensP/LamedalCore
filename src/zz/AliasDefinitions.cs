@@ -11,14 +11,14 @@ namespace LamedalCore.zz
     /// <summary>
     /// Redefine exception classes with easier names
     /// </summary>
-    [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+    [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
     public class AliasDefinitions { }
 
     /// <summary>
     /// ArgumentException
     /// </summary>
     /// <seealso cref="System.ArgumentException" />
-    [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+    [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
     public class Exception_Argument : ArgumentException
     {
         #region constructors
@@ -48,7 +48,7 @@ namespace LamedalCore.zz
     /// ArgumentNullException
     /// </summary>
     /// <seealso cref="System.ArgumentNullException" />
-    [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+    [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
     public sealed class Exception_ArgumentIsNull : ArgumentNullException
     {
         #region constructors
@@ -74,7 +74,7 @@ namespace LamedalCore.zz
     /// ArgumentOutOfRangeException
     /// </summary>
     /// <seealso cref="System.ArgumentOutOfRangeException" />
-    [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+    [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
     public class Exception_ArgumentIsOutOfRange : ArgumentOutOfRangeException
     {
         #region constructors
@@ -104,7 +104,7 @@ namespace LamedalCore.zz
     /// NotImplementedException
     /// </summary>
     /// <seealso cref="System.NotImplementedException" />
-    [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+    [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
     public class Exception_NotImplemented : NotImplementedException
     {
         #region constructors

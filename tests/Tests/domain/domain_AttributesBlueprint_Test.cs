@@ -31,7 +31,7 @@ namespace LamedalCore.Test.Tests.domain
             Assert.Equal("Class Attribute Data", blueprint.Class_DataTableInfo.Caption);
 
             // Rules
-            Assert.Equal(enBlueprintClassNetworkType.Node_Data, blueprint.Class_Rule.ClassType);
+            Assert.Equal(enBlueprint_ClassNetworkType.Node_Data, blueprint.Class_Rule.ClassType);
             Assert.Equal("NameIsField3", blueprint.Rule_PropertyField("Field3").Name);
             Assert.Equal("This is the description", blueprint.Rule_PropertyField("Property1").Description);
             Assert.Equal("zzTest_Method", blueprint.Rule_Method("TestMethod").ShortcutMethodName);

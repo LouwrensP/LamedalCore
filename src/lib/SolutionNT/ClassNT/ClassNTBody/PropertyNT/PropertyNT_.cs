@@ -4,7 +4,7 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.PropertyNT
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_State)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_State)]
     public sealed class PropertyNT_
     {
         public string Name;

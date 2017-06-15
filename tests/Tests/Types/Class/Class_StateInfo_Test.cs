@@ -9,7 +9,7 @@ using Xunit.Abstractions;
 
 namespace LamedalCore.Test.Tests.Types.Class
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.XUnitTestData)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.XUnitTestData)]
     public sealed class Class_StateInfo_Test : pcTest
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library

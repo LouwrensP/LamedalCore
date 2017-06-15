@@ -36,7 +36,7 @@ namespace LamedalCore.lib.IO
     /// <summary>
     ///  Input Outpuf file methods
     /// </summary>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, GroupName = "File")]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, GroupName = "File")]
     public sealed class IO_File
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
@@ -158,7 +158,7 @@ namespace LamedalCore.lib.IO
         public void Config_Save(string lines, string file = "")
         {
             if (file == "") file = _io.File.Filename_Config();
-            _io.RW.File_Write(file, lines, enIOWriteAction.OverWriteFile);
+            _io.RW.File_Write(file, lines, enIO_WriteAction.OverWriteFile);
         }
         /// <summary>Saves the Object to the configuration file.</summary>
         public void Config_Save<T>(T Object, string file = "")
@@ -174,7 +174,7 @@ namespace LamedalCore.lib.IO
         /// <param name="config">The configuration.</param>
         /// <param name="configFile">The configuration file.</param>
         /// <returns></returns>
-        [Test_IgnoreCoverage(enTestIgnore.CodeIsUsedForTesting)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.CodeIsUsedForTesting)]
         public bool Config_UnitTests(out string folderApplication, out string folderTestCases, out pcTest_Configuration config, out string configFile)
         {
             // Protected area
@@ -421,15 +421,15 @@ namespace LamedalCore.lib.IO
         /// <param name="trim">The trim.</param>
         /// <returns>System.Nullable&lt;DateTime&gt;.</returns>
         [Pure]
-        public DateTime Time(string fileName, enIOFileActionTime fileTime = enIOFileActionTime.Creation, enDateTimeTrim trim = enDateTimeTrim.Trim2Second)
+        public DateTime Time(string fileName, enIO_FileActionTime fileTime = enIO_FileActionTime.Creation, enDateTimeTrim trim = enDateTimeTrim.Trim2Second)
         {
             DateTime result = _lamed.Types.DateTime.null_;
             var _time = _lamed.Types.DateTime;
             switch (fileTime)
             {
-                case enIOFileActionTime.Creation:   result = _time.Trim(File.GetCreationTime(fileName), trim); break;
-                case enIOFileActionTime.LastAccess: result = _time.Trim(File.GetLastAccessTime(fileName), trim); break;
-                case enIOFileActionTime.LastWrite: result = _time.Trim(File.GetLastWriteTime(fileName), trim); break;
+                case enIO_FileActionTime.Creation:   result = _time.Trim(File.GetCreationTime(fileName), trim); break;
+                case enIO_FileActionTime.LastAccess: result = _time.Trim(File.GetLastAccessTime(fileName), trim); break;
+                case enIO_FileActionTime.LastWrite: result = _time.Trim(File.GetLastWriteTime(fileName), trim); break;
                 default: throw new Exception($"Argument '{nameof(fileTime)}' error.");
             }
             return result;

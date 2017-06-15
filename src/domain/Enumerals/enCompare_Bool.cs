@@ -1,6 +1,6 @@
 ﻿namespace LamedalCore.domain.Enumerals
 {
-    public enum enCompareBool
+    public enum enCompare_Bool
     {
         undefined, True, False
     }

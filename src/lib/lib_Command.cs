@@ -7,7 +7,7 @@ using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 namespace LamedalCore.lib
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action)]
     public sealed class lib_Command
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
@@ -17,7 +17,7 @@ namespace LamedalCore.lib
         /// <param name="strArgs">The string arguments.</param>
         /// <param name="strFolder">The string folderOrFile.</param>
         /// <param name="waitForExit">if set to <c>true</c> [wait for exit].</param>
-        [Test_IgnoreCoverage(enTestIgnore.FrontendCode)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.FrontendCode)]
         public void Execute(string strCmd, string strArgs = "", string strFolder = "", bool waitForExit = false)
         {
             Console.WriteLine(" ->" + strCmd + " " + strArgs + " (" + strFolder + ")");
@@ -52,7 +52,7 @@ namespace LamedalCore.lib
         /// <summary>Open explorer window for the folderOrFile specified. If none provided the application folderOrFile will be opened.</summary>
         /// <param name="folderOrFile">The folderOrFile.</param>
         /// <param name="waitForExit">if set to <c>true</c> [wait for exit].</param>
-        [Test_IgnoreCoverage(enTestIgnore.FrontendCode)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.FrontendCode)]
         public void Execute_Explorer(string folderOrFile = "", bool waitForExit = false)
         {
             // Default values
@@ -80,7 +80,7 @@ namespace LamedalCore.lib
         /// <param name="document">The document.</param>
         /// <param name="folder">The folderOrFile.</param>
         /// <param name="waitForExit">if set to <c>true</c> [wait for exit].</param>
-        [Test_IgnoreCoverage(enTestIgnore.FrontendCode)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.FrontendCode)]
         public void Execute_Notepad(string document, string folder = "", bool waitForExit = false)
         {
             if (folder == "") folder = _lamed.lib.IO.Folder.Path_Application();

@@ -6,7 +6,7 @@ using LamedalCore.zz;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader.MethodNTHeader_Parameter
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.VS_Static)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.VS_Static)]
     public static class MethodNTHeader_Parameter_Methods
     {
         #region Parameters_Parse
@@ -85,7 +85,7 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader
         /// <param name="typeName">Return the type name</param>
         /// <param name="name">The name.</param>
         /// <param name="optionalValue">The optional value.</param>
-        public static void Parameter_Parts(ref string paramLine, out bool isThis, out enParameterRefType refType, out string typeName, out string name, out string optionalValue)
+        public static void Parameter_Parts(ref string paramLine, out bool isThis, out enCode_ParameterRefType refType, out string typeName, out string name, out string optionalValue)
         {
             var defBuffer = paramLine;
             if (defBuffer.IndexOf("this ") == 0)
@@ -102,25 +102,25 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader
             {
                 case "params":
                     {
-                        refType = enParameterRefType.ParamArray;
+                        refType = enCode_ParameterRefType.ParamArray;
                         typeName = " ".zVar_Next(ref defBuffer);
                         break;
                     }
                 case "out":
                     {
-                        refType = enParameterRefType.Output;
+                        refType = enCode_ParameterRefType.Output;
                         typeName = " ".zVar_Next(ref defBuffer);
                         break;
                     }
                 case "ref":
                     {
-                        refType = enParameterRefType.ByReference;
+                        refType = enCode_ParameterRefType.ByReference;
                         typeName = " ".zVar_Next(ref defBuffer);
                         break;
                     }
 
                 default:
-                    refType = enParameterRefType.ByValue;
+                    refType = enCode_ParameterRefType.ByValue;
                     break;
             }
 

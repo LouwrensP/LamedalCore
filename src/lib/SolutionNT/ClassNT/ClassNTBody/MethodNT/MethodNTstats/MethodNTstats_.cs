@@ -8,7 +8,7 @@ using LamedalCore.zz;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTstats
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_State)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_State)]
     public sealed class MethodNTstats_
     {
         // Method Lines =======================
@@ -25,7 +25,7 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTstats
         public List<string> ReferenceCalls;         // Reference calls of the method
         public readonly List<string> SourceLines = new List<string>();            // Source lines of the method
 
-        [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
         public static MethodNTstats_ Create(List<string> sourceLines, ref int ii, MethodNT_ method)
         {
             return Create(sourceLines, ref ii, method.Comment, method.Header, method.Attribute_Lines.Count);

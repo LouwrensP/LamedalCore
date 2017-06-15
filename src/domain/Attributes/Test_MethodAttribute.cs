@@ -10,13 +10,13 @@ namespace LamedalCore.domain.Attributes
     /// This attribute is to save the name of the method that is tested
     /// </summary>
     /// <seealso cref="System.Attribute" />
-    [BlueprintRule_Class(enBlueprintClassNetworkType.BlueprintRuleDef)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.BlueprintRuleDef)]
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = true)]
     public sealed class Test_MethodAttribute: Attribute
     {
         public string MethodName;
 
-        [Test_IgnoreCoverage(enTestIgnore.CodeIsUsedForTesting)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.CodeIsUsedForTesting)]
         public Test_MethodAttribute(string methodName)
         {
             MethodName = methodName;

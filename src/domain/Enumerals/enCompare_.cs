@@ -1,6 +1,6 @@
 ﻿namespace LamedalCore.domain.Enumerals
 {
-    public enum enCompare
+    public enum enCompare_
     {
         Equal,
         Equal_AndGreater,

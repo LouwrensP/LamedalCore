@@ -7,7 +7,7 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.Types.List
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action)]
     public sealed class List_Queue
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library

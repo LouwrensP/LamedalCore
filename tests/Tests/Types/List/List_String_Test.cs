@@ -97,8 +97,8 @@ namespace LamedalCore.Test.Tests.Types.List
         {
             var items2Sort = new[] { "zzzzz", "zzzz", "zz", "z", "aa"};
             Assert.Equal(new[] { "z", "zz", "aa", "zzzz", "zzzzz" }, _lamed.Types.List.String.SortByStrLength(items2Sort));
-            Assert.Equal(new[] { "zzzzz", "zzzz", "zz", "aa", "z" }, _lamed.Types.List.String.SortByStrLength(items2Sort, enCompareSort.Descending));
-            Assert.Equal(items2Sort, _lamed.Types.List.String.SortByStrLength(items2Sort, enCompareSort.NoSort));
+            Assert.Equal(new[] { "zzzzz", "zzzz", "zz", "aa", "z" }, _lamed.Types.List.String.SortByStrLength(items2Sort, enCompare_Sort.Descending));
+            Assert.Equal(items2Sort, _lamed.Types.List.String.SortByStrLength(items2Sort, enCompare_Sort.NoSort));
         }
 
         [Fact]

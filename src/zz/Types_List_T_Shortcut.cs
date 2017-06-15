@@ -8,8 +8,8 @@ namespace LamedalCore.zz
     /// <summary>
     /// List/<T/> Shortcut methods
     /// </summary>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Transformation_Extention)]
-    [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Transformation_Extention)]
+    [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
     public static class Types_List_T_Shortcut
     {
         

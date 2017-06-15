@@ -3,7 +3,7 @@
 namespace LamedalCore.domain.Enumerals
 {
     [Flags]
-    public enum enMethod_Kind
+    public enum enCode_MethodKind
     {
         IsProperty = 1, 
         IsSetter = 2,  // Setter also implies a property

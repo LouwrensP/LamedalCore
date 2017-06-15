@@ -153,24 +153,24 @@ Link->MindMapEdit:Heading3|->MindMapEdit:Heading1";
             element.zxDoc_Attribute_Set("TEXT", value);
 
             // Icon
-            var icon = enFreemindIcon.folder;
+            var icon = enGenerate_FreemindIcon.folder;
             if (id == 1) 
             {
-                icon = enFreemindIcon.gohome;
+                icon = enGenerate_FreemindIcon.gohome;
 
                 //<font BOLD="true" NAME="SansSerif" SIZE="20"/>
                 XElement_AddFont(element, "SansSerif", 20, true);
             }
             else if (value.Contains(".csproj"))
             {
-                icon = enFreemindIcon.launch;
+                icon = enGenerate_FreemindIcon.launch;
                 // <font BOLD="true" NAME="SansSerif" SIZE="16"/>
                 XElement_AddFont(element, "SansSerif", 16, true);
             }
             else if (value.zContains_Any(".cs", ".doc", ".docx", ".xlsx", ".pptx", ".avi", ".flv", ".pdf", ".ppt", ".png",
-                ".chm", ".gui", "*.jpg")) icon = enFreemindIcon.idea;
-            else if (value.zContains_All("(", ")")) icon = enFreemindIcon.xmag;
-            else if (value.Contains("- ")) icon = enFreemindIcon.help;
+                ".chm", ".gui", "*.jpg")) icon = enGenerate_FreemindIcon.idea;
+            else if (value.zContains_All("(", ")")) icon = enGenerate_FreemindIcon.xmag;
+            else if (value.Contains("- ")) icon = enGenerate_FreemindIcon.help;
 
             XElement_AddIcon(element, icon);
 
@@ -186,7 +186,7 @@ Link->MindMapEdit:Heading3|->MindMapEdit:Heading1";
             fontElement.zxDoc_Attribute_Set("SIZE", size.zTo_Str());
         }
 
-        private void XElement_AddIcon(XElement element, enFreemindIcon icon)
+        private void XElement_AddIcon(XElement element, enGenerate_FreemindIcon icon)
         {
             var iconElement = element.zxDoc_Element_Add("icon");
             iconElement.zxDoc_Attribute_Set("BUILTIN", (icon.zTo_Description()));

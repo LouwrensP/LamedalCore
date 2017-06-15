@@ -13,7 +13,7 @@ namespace LamedalCore.Types
     /// <summary>
     /// Do type conversions; group=As;
     /// </summary>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action)]
     public sealed class Types_Convert
     {
         private readonly Types_Object _object = LamedalCore_.Instance.Types.Object;

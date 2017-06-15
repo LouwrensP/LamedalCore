@@ -12,7 +12,7 @@ namespace LamedalCore.Types.String
     /// <summary>
     /// Actions of sentences and words
     /// </summary>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, DefaultType = typeof(string), GroupName = "Str")]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, DefaultType = typeof(string), GroupName = "Str")]
     public sealed class String_Word
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;

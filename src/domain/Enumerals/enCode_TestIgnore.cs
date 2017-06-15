@@ -1,6 +1,6 @@
 ﻿namespace LamedalCore.domain.Enumerals
 {
-    public enum enTestIgnore
+    public enum enCode_TestIgnore
     {
         /// <summary>The method is used for testing and is therfor not part of unit testing scope.</summary>
         CodeIsUsedForTesting,

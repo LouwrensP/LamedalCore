@@ -8,7 +8,7 @@ using LamedalCore.zz;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTstats
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.VS_Static)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.VS_Static)]
     public static class MethodNTstats_Methods
     {
 

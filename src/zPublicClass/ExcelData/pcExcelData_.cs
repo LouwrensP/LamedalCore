@@ -101,7 +101,7 @@ namespace LamedalCore.zPublicClass.ExcelData
             return _lamed.lib.Excel.Data.Value_Get(this, cellName);
         }
 
-        [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
         public void Macro_Compile()
         {
             string errorMsg;
@@ -110,7 +110,7 @@ namespace LamedalCore.zPublicClass.ExcelData
 
         /// <summary>Executeutablecutes the tdata macro.</summary>
         /// <param name="dataSource">The data source</param>
-        [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
         public void Macro_Execute(pcExcelData_ dataSource)
         {
             _excel.Macro.Execute_Data(dataSource, this);
@@ -120,7 +120,7 @@ namespace LamedalCore.zPublicClass.ExcelData
         /// <param name="col">The col.</param>
         /// <param name="row">The row.</param>
         /// <param name="value">The value.</param>
-        [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
         public void Value_Set(int col, int row, string value)
         {
             _lamed.lib.Excel.Data.Value_Set(this, col, row, value);
@@ -136,7 +136,7 @@ namespace LamedalCore.zPublicClass.ExcelData
 
         /// <summary>Load the CSV file.</summary>
         /// <param name="csvFilename">The CSV filename.</param>
-        [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
         public void csvLoadFromFile(string csvFilename)
         {
             // Read the CSV file and populate the data structure
@@ -172,7 +172,7 @@ namespace LamedalCore.zPublicClass.ExcelData
         /// <param name="compare">The compare formula to use.</param>
         /// <param name="returnType">Type of the return.</param>
         /// <returns></returns>
-        [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
         public List<string> Find(string findValue = "|->", enExcel_Compare compare = enExcel_Compare.Contains,
             enExcel_FindReturnValue returnType = enExcel_FindReturnValue.CellValue)
         {
@@ -213,7 +213,7 @@ namespace LamedalCore.zPublicClass.ExcelData
         /// <summary>Set the column width of the sheet.</summary>
         /// <param name="colName">Name of the col.</param>
         /// <param name="colWidth">Width of the col.</param>
-        [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
         public void WorkSheet_ColumnWidth(string colName, double colWidth)
         {
             _lamed.lib.Excel.WorkSheet.WorkSheet_ColumnWidth(this, colName, colWidth);

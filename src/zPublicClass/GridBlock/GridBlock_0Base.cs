@@ -60,7 +60,7 @@ namespace LamedalCore.zPublicClass.GridBlock
 
         public Dictionary<string, IGridBlock_Base> GridBlocksDictionary { get { return _GridBlocksDictionary; } }
 
-        [Test_IgnoreCoverage(enTestIgnore.FrontendCode)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.FrontendCode)]
         public object zTag { get; set; }
 
 
@@ -87,12 +87,12 @@ namespace LamedalCore.zPublicClass.GridBlock
         /// </exception>
         /// <exception cref="ArgumentException"></exception>
         public IGridBlock_Base GetChild_GridBlock(string searchValue, enGrid_BlockDisplayType searchItem = enGrid_BlockDisplayType.Address, 
-                    bool showError = true, enCompare compare = enCompare.Equal)
+                    bool showError = true, enCompare_ compare = enCompare_.Equal)
         {
             IGridBlock_Base grid = null;
             if (searchItem == enGrid_BlockDisplayType.Address)
             {
-                if (compare != enCompare.Equal) throw new ArgumentException($"Error, '{nameof(compare)}' must be 'Equal'");
+                if (compare != enCompare_.Equal) throw new ArgumentException($"Error, '{nameof(compare)}' must be 'Equal'");
 
                 if (_GridBlocksDictionary.TryGetValue(searchValue, out grid) == false)
                 {
@@ -115,7 +115,7 @@ namespace LamedalCore.zPublicClass.GridBlock
             return grid;
         }
 
-        private IGridBlock_Base GetChild_FromGridState(string searchValue, enGrid_BlockDisplayType searchItem, IList<IGridBlock_State> grids, enCompare compare)
+        private IGridBlock_Base GetChild_FromGridState(string searchValue, enGrid_BlockDisplayType searchItem, IList<IGridBlock_State> grids, enCompare_ compare)
         {
             int searchInt = searchValue.zTo_Int();
             double searchDouble = 0;
@@ -138,12 +138,12 @@ namespace LamedalCore.zPublicClass.GridBlock
         /// <param name="compare">The compare.</param>
         /// <returns></returns>
         /// <exception cref="System.ArgumentException">compare</exception>
-        private static IGridBlock_Base Find_DbName(IList<IGridBlock_State> grids, string searchValue, enCompare compare)
+        private static IGridBlock_Base Find_DbName(IList<IGridBlock_State> grids, string searchValue, enCompare_ compare)
         {
             switch (compare)
             {
-                case enCompare.Equal: return grids.Where(x => x.State_DbName == searchValue).First() as IGridBlock_Base;
-                case enCompare.NotEqual: return grids.Where(x => x.State_DbName != searchValue).First() as IGridBlock_Base;
+                case enCompare_.Equal: return grids.Where(x => x.State_DbName == searchValue).First() as IGridBlock_Base;
+                case enCompare_.NotEqual: return grids.Where(x => x.State_DbName != searchValue).First() as IGridBlock_Base;
                 default: throw new ArgumentException($"Error! '{nameof(compare)}' only allowed for '=' and '!='.");
             }
         }
@@ -154,16 +154,16 @@ namespace LamedalCore.zPublicClass.GridBlock
         /// <param name="compare">The compare.</param>
         /// <returns></returns>
         /// <exception cref="System.ArgumentException">compare</exception>
-        private static IGridBlock_Base Find_DbId(IList<IGridBlock_State> grids, int searchInt, enCompare compare)
+        private static IGridBlock_Base Find_DbId(IList<IGridBlock_State> grids, int searchInt, enCompare_ compare)
         {
             switch (compare)
             {
-                case enCompare.Equal: return grids.Where(x => x.State_DbId == searchInt).First() as IGridBlock_Base;
-                case enCompare.NotEqual: return grids.Where(x => x.State_DbId != searchInt).First() as IGridBlock_Base;
-                case enCompare.Equal_AndGreater: return grids.Where(x => x.State_DbId >= searchInt).First() as IGridBlock_Base;
-                case enCompare.Equal_AndLess: return grids.Where(x => x.State_DbId <= searchInt).First() as IGridBlock_Base;
-                case enCompare.Greater: return grids.Where(x => x.State_DbId > searchInt).First() as IGridBlock_Base;
-                case enCompare.Less: return grids.Where(x => x.State_DbId > searchInt).First() as IGridBlock_Base;
+                case enCompare_.Equal: return grids.Where(x => x.State_DbId == searchInt).First() as IGridBlock_Base;
+                case enCompare_.NotEqual: return grids.Where(x => x.State_DbId != searchInt).First() as IGridBlock_Base;
+                case enCompare_.Equal_AndGreater: return grids.Where(x => x.State_DbId >= searchInt).First() as IGridBlock_Base;
+                case enCompare_.Equal_AndLess: return grids.Where(x => x.State_DbId <= searchInt).First() as IGridBlock_Base;
+                case enCompare_.Greater: return grids.Where(x => x.State_DbId > searchInt).First() as IGridBlock_Base;
+                case enCompare_.Less: return grids.Where(x => x.State_DbId > searchInt).First() as IGridBlock_Base;
                 default: throw new ArgumentException($"Error! '{nameof(compare)}' only allowed for '=' and '!='.");
             }
         }
@@ -174,16 +174,16 @@ namespace LamedalCore.zPublicClass.GridBlock
         /// <param name="compare">The compare.</param>
         /// <returns></returns>
         /// <exception cref="System.ArgumentException">compare</exception>
-        private static IGridBlock_Base Find_DbIndex(IList<IGridBlock_State> grids, int searchInt, enCompare compare)
+        private static IGridBlock_Base Find_DbIndex(IList<IGridBlock_State> grids, int searchInt, enCompare_ compare)
         {
             switch (compare)
             {
-                case enCompare.Equal: return grids.Where(x => x.State_Index == searchInt).First() as IGridBlock_Base;
-                case enCompare.NotEqual: return grids.Where(x => x.State_Index != searchInt).First() as IGridBlock_Base;
-                case enCompare.Equal_AndGreater: return grids.Where(x => x.State_Index >= searchInt).First() as IGridBlock_Base;
-                case enCompare.Equal_AndLess: return grids.Where(x => x.State_Index <= searchInt).First() as IGridBlock_Base;
-                case enCompare.Greater: return grids.Where(x => x.State_Index > searchInt).First() as IGridBlock_Base;
-                case enCompare.Less: return grids.Where(x => x.State_Index > searchInt).First() as IGridBlock_Base;
+                case enCompare_.Equal: return grids.Where(x => x.State_Index == searchInt).First() as IGridBlock_Base;
+                case enCompare_.NotEqual: return grids.Where(x => x.State_Index != searchInt).First() as IGridBlock_Base;
+                case enCompare_.Equal_AndGreater: return grids.Where(x => x.State_Index >= searchInt).First() as IGridBlock_Base;
+                case enCompare_.Equal_AndLess: return grids.Where(x => x.State_Index <= searchInt).First() as IGridBlock_Base;
+                case enCompare_.Greater: return grids.Where(x => x.State_Index > searchInt).First() as IGridBlock_Base;
+                case enCompare_.Less: return grids.Where(x => x.State_Index > searchInt).First() as IGridBlock_Base;
                 default: throw new ArgumentException($"Error! '{nameof(compare)}' only allowed for '=' and '!='.");
             }
         }
@@ -194,12 +194,12 @@ namespace LamedalCore.zPublicClass.GridBlock
         /// <param name="compare">The compare.</param>
         /// <returns></returns>
         /// <exception cref="System.ArgumentException">compare</exception>
-        private static IGridBlock_Base Find_StateId(IList<IGridBlock_State> grids, int searchInt, enCompare compare)
+        private static IGridBlock_Base Find_StateId(IList<IGridBlock_State> grids, int searchInt, enCompare_ compare)
         {
             switch (compare)
             {
-                case enCompare.Equal: return grids.Where(x => x.State_EnumValue == searchInt).First() as IGridBlock_Base;
-                case enCompare.NotEqual: return grids.Where(x => x.State_EnumValue != searchInt).First() as IGridBlock_Base;
+                case enCompare_.Equal: return grids.Where(x => x.State_EnumValue == searchInt).First() as IGridBlock_Base;
+                case enCompare_.NotEqual: return grids.Where(x => x.State_EnumValue != searchInt).First() as IGridBlock_Base;
                 default: throw new ArgumentException($"Error! '{nameof(compare)}' only allowed for '=' and '!='.");
             }
         }
@@ -210,16 +210,16 @@ namespace LamedalCore.zPublicClass.GridBlock
         /// <param name="compare">The compare.</param>
         /// <returns></returns>
         /// <exception cref="System.ArgumentException">compare</exception>
-        private static IGridBlock_Base Find_Value(IList<IGridBlock_State> grids, double searchDouble, enCompare compare)
+        private static IGridBlock_Base Find_Value(IList<IGridBlock_State> grids, double searchDouble, enCompare_ compare)
         {
             switch (compare)
             {
-                case enCompare.Equal: return grids.Where(x => x.State_ValueDouble == searchDouble).First() as IGridBlock_Base;
-                case enCompare.NotEqual: return grids.Where(x => x.State_ValueDouble != searchDouble).First() as IGridBlock_Base;
-                case enCompare.Equal_AndGreater: return grids.Where(x => x.State_ValueDouble >= searchDouble).First() as IGridBlock_Base;
-                case enCompare.Equal_AndLess: return grids.Where(x => x.State_ValueDouble <= searchDouble).First() as IGridBlock_Base;
-                case enCompare.Greater: return grids.Where(x => x.State_ValueDouble > searchDouble).First() as IGridBlock_Base;
-                case enCompare.Less: return grids.Where(x => x.State_ValueDouble > searchDouble).First() as IGridBlock_Base;
+                case enCompare_.Equal: return grids.Where(x => x.State_ValueDouble == searchDouble).First() as IGridBlock_Base;
+                case enCompare_.NotEqual: return grids.Where(x => x.State_ValueDouble != searchDouble).First() as IGridBlock_Base;
+                case enCompare_.Equal_AndGreater: return grids.Where(x => x.State_ValueDouble >= searchDouble).First() as IGridBlock_Base;
+                case enCompare_.Equal_AndLess: return grids.Where(x => x.State_ValueDouble <= searchDouble).First() as IGridBlock_Base;
+                case enCompare_.Greater: return grids.Where(x => x.State_ValueDouble > searchDouble).First() as IGridBlock_Base;
+                case enCompare_.Less: return grids.Where(x => x.State_ValueDouble > searchDouble).First() as IGridBlock_Base;
                 default: throw new ArgumentException($"Error! '{nameof(compare)}' only allowed for '=' and '!='.");
             }
         }

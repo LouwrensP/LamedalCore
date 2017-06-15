@@ -43,7 +43,7 @@ namespace LamedalCore.zPublicClass.GridBlock.GridInterface
         /// <param name="compare">The compare.</param>
         /// <returns></returns>
         IGridBlock_Base GetChild_GridBlock(string searchValue, enGrid_BlockDisplayType searchItem = enGrid_BlockDisplayType.Address,
-                    bool showError = true, enCompare compare = enCompare.Equal);
+                    bool showError = true, enCompare_ compare = enCompare_.Equal);
 
         /// <summary>Gets the child grid blocks.</summary>
         /// <returns></returns>

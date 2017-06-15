@@ -5,8 +5,8 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.zz
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Transformation_Connector)]
-    [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Transformation_Connector)]
+    [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
     public sealed class zSystemObjects_Extender
     {
         public readonly object Object;

@@ -6,7 +6,7 @@ namespace LamedalCore.domain.Attributes
     /// <summary>
     /// Add rules to a method to assist with transformations.
     /// </summary>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.BlueprintRuleDef)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.BlueprintRuleDef)]
     [AttributeUsage(AttributeTargets.Method)]
     public class BlueprintRule_MethodAliasDefAttribute : Attribute
     {

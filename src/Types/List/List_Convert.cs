@@ -8,7 +8,7 @@ using System.Text;
 
 namespace LamedalCore.Types.List
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, DefaultType = typeof(Array), IgnoreGroup = true, GroupName = "Word_FromAbbreviation")]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, DefaultType = typeof(Array), IgnoreGroup = true, GroupName = "Word_FromAbbreviation")]
     public sealed class List_Convert
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
@@ -111,7 +111,7 @@ namespace LamedalCore.Types.List
         /// <returns></returns>
         /// <exception cref="System.ArgumentNullException">list</exception>
         /// <code ShortcutClass="Enums" GenerateParameter1="enumToConvert"></code>
-        [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
         [BlueprintRule_MethodAliasDef(MirrorClass = typeof(Types_Enum), MirrorMethodName = "To_IList")]
         public IList<string> IList_FromEnum(Type enumToConvert, bool clearList = true, string prefix = "",
             string postfix = "", string replaceUnderscoreWith = "_")

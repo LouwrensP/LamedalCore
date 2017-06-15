@@ -6,7 +6,7 @@ namespace LamedalCore.domain.Attributes
     [AttributeUsage(AttributeTargets.Class)]
     public class BlueprintRule_ClassAttribute : Attribute
     {
-        public enBlueprintClassNetworkType ClassType;
+        public enBlueprint_ClassNetworkType ClassType;
         public string DefaultGroup = "";     // If the mehtod is of the default type -> use this default group. Usually it should be empty
         public Type DefaultType;      // If a method first parameter is the default type, the default type will be part of the method name
         public string GroupName = "";        // The default value for the groupname will be the classname. This override the default classname as the group
@@ -25,12 +25,12 @@ namespace LamedalCore.domain.Attributes
         //public string ShortcutClass_Object;     // <code ShortcutClass_Object ="String_Object"></code> 
         public string ShortcutClass;            // <code ShortcutClass ="Enum_Shortcut"></code>  // Override default method filter behavior -> move this method to the Enums_Shortcut class
 
-        public BlueprintRule_ClassAttribute(enBlueprintClassNetworkType classType)
+        public BlueprintRule_ClassAttribute(enBlueprint_ClassNetworkType classType)
         {
             ClassType = classType;
         }
 
-        [Test_IgnoreCoverage(enTestIgnore.ConstructorIsPrivate)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.ConstructorIsPrivate)]
         private BlueprintRule_ClassAttribute()
         {
             // Only available in inherited class

@@ -5,8 +5,8 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.zz
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Transformation_Extention)]
-    [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Transformation_Extention)]
+    [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
     public static class Types_IList_Shortcut
     {
         /// <summary>

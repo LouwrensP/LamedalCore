@@ -11,7 +11,7 @@ using LamedalCore.zz;
 
 namespace LamedalCore.Types
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, DefaultType = typeof(Enum), GroupName = "Enum", ShortcutClass = "Enum_Blueprint")]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, DefaultType = typeof(Enum), GroupName = "Enum", ShortcutClass = "Enum_Blueprint")]
     public sealed class Types_Enum
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
@@ -99,7 +99,7 @@ namespace LamedalCore.Types
                 Debug.WriteLine(e);
                 var typeName = type.ToString();
                 var errMsg = "ERROR: Value '{0}' was not found in type {1}".zFormat(value, typeName);
-                e.zException_Show(errMsg, enExceptionAction.reThrowError);
+                e.zException_Show(errMsg, enCode_ExceptionAction.reThrowError);
             }
             return null;
             //var result2 = Convert.ChangeType(null, type);
@@ -116,7 +116,7 @@ namespace LamedalCore.Types
         /// <param name="postfix">The postfix.</param>
         /// <param name="replaceUnderscoreWith">The replace underscore with.</param>
         /// <code>CTIM_Generation;</code>
-        [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
         public void enum_2IList(Type enumToConvert, IList list, bool clearList = true, string prefix = "", string postfix = "", string replaceUnderscoreWith = "_")
         {
             //=================
@@ -135,7 +135,7 @@ namespace LamedalCore.Types
         /// <param name="postfix">The postfix.</param>
         /// <param name="replaceUnderscoreWith">The replace underscore with.</param>
         /// <code Shortcut="Enums" GenerateParameter1="enumToConvert"></code>
-        [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
         public void enum_2IList(IList list, Type enumToConvert, bool clearList = true, string prefix = "", string postfix = "", string replaceUnderscoreWith = "_")
         {
             _lamed.Types.List.Convert.IList_FromEnum(list, enumToConvert, clearList, prefix, postfix, replaceUnderscoreWith);

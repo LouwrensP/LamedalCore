@@ -4,7 +4,7 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.Test.Tests.Types.Class
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Data)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Data)]
     [BlueprintData_Table(false, Caption = "Class Attribute Data", Description = "This class is used for testing purposes.")]
     public sealed class Class_Attributes_Data
     {

@@ -1,6 +1,6 @@
 ﻿namespace LamedalCore.domain.Enumerals
 {
-    public enum enClassMemberType
+    public enum enCode_ClassMemberType
     {
         Undefined,
         ClassProperty,

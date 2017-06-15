@@ -5,7 +5,7 @@ using LamedalCore.zz;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute.ClassNTBlueprintRule
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_State)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_State)]
     public sealed class ClassNTBlueprintRule_ : BlueprintRule_ClassAttribute
     {
         // Fields - See fields of parent class BlueprintRule_Attribute
@@ -52,7 +52,7 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute.ClassNTBlueprintRu
 
         //private ClassNTBlueprintRule_() { }  // Hide default constructor
 
-        public ClassNTBlueprintRule_(enBlueprintClassNetworkType classType = enBlueprintClassNetworkType.Undefined) : base(classType)
+        public ClassNTBlueprintRule_(enBlueprint_ClassNetworkType classType = enBlueprint_ClassNetworkType.Undefined) : base(classType)
         {
         }
     }

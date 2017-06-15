@@ -1,6 +1,6 @@
 ﻿namespace LamedalCore.domain.Enumerals
 {
-    public enum enParameterRefType
+    public enum enCode_ParameterRefType
     {
         ByValue,
         ByReference,

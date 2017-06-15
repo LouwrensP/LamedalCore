@@ -12,7 +12,7 @@ using Xunit;
 
 namespace LamedalCore.Test.Tests.lib.IO
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.XUnitTestMethods)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.XUnitTestMethods)]
     public sealed class IO_File_Test
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
@@ -62,12 +62,12 @@ namespace LamedalCore.Test.Tests.lib.IO
             #endregion
 
             #region Append to file
-            _lamed.lib.IO.RW.File_Write(file, "This is test line3", enIOWriteAction.AppendFile);
+            _lamed.lib.IO.RW.File_Write(file, "This is test line3", enIO_WriteAction.AppendFile);
             Assert.Equal("This is test line2".NL() + "This is test line3", _lamed.lib.IO.RW.File_Read2Str(file));
             #endregion
 
             #region Write to existing file
-            var ex = Assert.Throws<InvalidOperationException>(()=>_lamed.lib.IO.RW.File_Write(file, "This is a test", enIOWriteAction.WriteFile));
+            var ex = Assert.Throws<InvalidOperationException>(()=>_lamed.lib.IO.RW.File_Write(file, "This is a test", enIO_WriteAction.WriteFile));
             Assert.Equal("Error! Can not write to file because it already exists.", ex.Message);
             #endregion
 
@@ -204,17 +204,17 @@ namespace LamedalCore.Test.Tests.lib.IO
             _lamed.lib.IO.RW.File_Write(testFolder + "testFile.txt", "This is a test", true);
 
             #region time
-            var time1 = _lamed.lib.IO.File.Time(testFolder + "testFile.txt", enIOFileActionTime.Creation);
-            var time2 = _lamed.lib.IO.File.Time(testFolder + "testFile.txt", enIOFileActionTime.LastAccess);
-            var time3 = _lamed.lib.IO.File.Time(testFolder + "testFile.txt", enIOFileActionTime.LastWrite);
+            var time1 = _lamed.lib.IO.File.Time(testFolder + "testFile.txt", enIO_FileActionTime.Creation);
+            var time2 = _lamed.lib.IO.File.Time(testFolder + "testFile.txt", enIO_FileActionTime.LastAccess);
+            var time3 = _lamed.lib.IO.File.Time(testFolder + "testFile.txt", enIO_FileActionTime.LastWrite);
             Assert.Equal(time1, time2);
             Assert.Equal(time2,time3);
 
             _lamed.lib.Command.Sleep(2100);
-            _lamed.lib.IO.RW.File_Write(testFolder + "testFile.txt", "This is a new line", enIOWriteAction.AppendFile);
-            var time4 = _lamed.lib.IO.File.Time(testFolder + "testFile.txt", enIOFileActionTime.Creation);
-            var time5 = _lamed.lib.IO.File.Time(testFolder + "testFile.txt", enIOFileActionTime.LastAccess);
-            var time6 = _lamed.lib.IO.File.Time(testFolder + "testFile.txt", enIOFileActionTime.LastWrite);
+            _lamed.lib.IO.RW.File_Write(testFolder + "testFile.txt", "This is a new line", enIO_WriteAction.AppendFile);
+            var time4 = _lamed.lib.IO.File.Time(testFolder + "testFile.txt", enIO_FileActionTime.Creation);
+            var time5 = _lamed.lib.IO.File.Time(testFolder + "testFile.txt", enIO_FileActionTime.LastAccess);
+            var time6 = _lamed.lib.IO.File.Time(testFolder + "testFile.txt", enIO_FileActionTime.LastWrite);
             Assert.Equal(time1, time4);
             Assert.Equal(time2, time5);
             Assert.NotEqual(time1, time6);

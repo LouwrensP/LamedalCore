@@ -133,13 +133,13 @@ namespace LamedalCore.Types.List
         /// <param name="list">The list.</param>
         /// <param name="sort">if set to <c>true</c> [acending].</param>
         /// <returns></returns>
-        public IList<T> Sort<T>(IList<T> list, enCompareSort sort = enCompareSort.Ascending)
+        public IList<T> Sort<T>(IList<T> list, enCompare_Sort sort = enCompare_Sort.Ascending)
         {
             switch (sort)
             {
-                case enCompareSort.Ascending: return list.OrderBy(q => q).ToList();
-                case enCompareSort.Descending: return list.OrderByDescending(q => q).ToList();
-                case enCompareSort.NoSort: return list;
+                case enCompare_Sort.Ascending: return list.OrderBy(q => q).ToList();
+                case enCompare_Sort.Descending: return list.OrderByDescending(q => q).ToList();
+                case enCompare_Sort.NoSort: return list;
                 default: throw new Exception($"Argument '{nameof(sort)}' error.");
             }
             return list;
@@ -165,7 +165,7 @@ namespace LamedalCore.Types.List
         public IList<string> Unique(IList<string> list)
         {
             // This method is here to prevent Unique<T>() to execute for strings.
-            return Unique(list, enCompareSort.NoSort, false);
+            return Unique(list, enCompare_Sort.NoSort, false);
         }
 
         /// <summary>Return a unique list.</summary>
@@ -175,7 +175,7 @@ namespace LamedalCore.Types.List
         /// <returns></returns>
         /// <exception cref="System.ArgumentNullException">list</exception>
         [BlueprintRule_MethodAliasDef(MirrorClass = typeof(List_String))]   // This implies the name and parameters stay the same
-        public IList<string> Unique(IList<string> list, enCompareSort sortType = enCompareSort.NoSort, bool ignoreCase = false)
+        public IList<string> Unique(IList<string> list, enCompare_Sort sortType = enCompare_Sort.NoSort, bool ignoreCase = false)
         {
             if (list == null) return null;   // throw new ArgumentNullException(nameof(list));
 

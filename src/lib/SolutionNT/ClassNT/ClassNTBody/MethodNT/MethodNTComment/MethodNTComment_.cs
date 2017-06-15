@@ -8,7 +8,7 @@ using LamedalCore.zz;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTComment
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_State)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_State)]
     [DebuggerDisplay("Summary = {CommentSummary}; Parameters = {CommentParameters.Count}")]
     public sealed class MethodNTComment_
     {

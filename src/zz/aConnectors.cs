@@ -6,8 +6,8 @@ using LamedalCore.Types.List;
 
 namespace LamedalCore.zz
 {
-    [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Transformation_Connector)]
+    [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Transformation_Connector)]
     public static class aConnectors
     {
         /// <summary>

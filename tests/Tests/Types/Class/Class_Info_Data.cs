@@ -13,7 +13,7 @@ namespace LamedalCore.Test.Tests.Types.Class
         Unknown, Dog
     }
 
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Data)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Data)]
     [BlueprintData_Table("This is animal data")]
     public class Types_ClassInfo_Animal 
     { 

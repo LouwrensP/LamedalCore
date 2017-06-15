@@ -4,12 +4,12 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader.MethodNTHeader_Parameter
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_State)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_State)]
     [DebuggerDisplay("Name = {ParameterName}; Value = {ParameterValue}")]
     public sealed class MethodNTHeader_Parameter_
     {
         public bool ParmeterIsThis;
-        public enParameterRefType ParameterRefType = enParameterRefType.ByValue;
+        public enCode_ParameterRefType ParameterRefType = enCode_ParameterRefType.ByValue;
         public string ParameterTypeName;
         public string ParameterName;
         public string ParameterValue;

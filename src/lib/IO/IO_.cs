@@ -9,7 +9,7 @@ using LamedalCore.lib.IO.IO_StateInfo;
 
 namespace LamedalCore.lib.IO
 {
-    [Test_IgnoreCoverage(enTestIgnore.ClassIsNodeLink)]
+    [Test_IgnoreCoverage(enCode_TestIgnore.ClassIsNodeLink)]
     public sealed class IO_
     {
         #region Folder

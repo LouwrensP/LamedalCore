@@ -12,7 +12,7 @@ namespace LamedalCore.Test.Tests.lib.XML
     /// <summary>
     /// public class
     /// </summary>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_State)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_State)]
     public sealed class pcMindMap
     {
         public XElement mm;

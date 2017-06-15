@@ -12,7 +12,7 @@ using Xunit;
 
 namespace LamedalCore.Test.Tests.lib.ClassNT
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.XUnitTestMethods)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.XUnitTestMethods)]
     public sealed class ClassNTAttribute_Test
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
@@ -40,7 +40,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             Assert.Equal("BlueprintRule_", parmeter.Name);
             Assert.Equal(true, parmeter.IsEnumeral);
             Assert.Equal("enBlueprintClassNetworkType.Node_State", parmeter.Value);
-            Assert.Equal(enBlueprintClassNetworkType.Node_State, _lamed.Types.Enum.Str_2EnumValue<enBlueprintClassNetworkType>(parmeter.Value.zObject().AsStr()));
+            Assert.Equal(enBlueprint_ClassNetworkType.Node_State, _lamed.Types.Enum.Str_2EnumValue<enBlueprint_ClassNetworkType>(parmeter.Value.zObject().AsStr()));
         }
 
         [Fact]
@@ -261,7 +261,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             string name;
             List<string> parameters;
             string ignore1, ignore2, ignore3, ignore4;
-            enBlueprintClassNetworkType classNetworkType;
+            enBlueprint_ClassNetworkType classNetworkType;
             string attributeCode1;
             bool isBlueprintRule;
             string defaultGroup, groupName, ShortcutClass;
@@ -274,7 +274,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             attributeCode1 = "[Test]";
             isBlueprintRule = ClassNTBlueprintRule_Methods.BlueprintRule_Attributes(attributeCode1, out name, out parameters, out classNetworkType, out ignore1, out ignore2, out ignore3, out ignore4);
             Assert.Equal(false, isBlueprintRule);
-            Assert.Equal(enBlueprintClassNetworkType.Undefined, classNetworkType);
+            Assert.Equal(enBlueprint_ClassNetworkType.Undefined, classNetworkType);
             Assert.Equal(0, parameters.Count);
             Assert.Equal(null, ignore1);
             Assert.Equal(null, ignore2);
@@ -309,7 +309,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
                 "[BlueprintCodeInjection_(typeof(Controller_BlueprintLogger), true)]"
             };
             var rule2 = ClassNTBlueprintRule_.Create(attributes);
-            Assert.Equal(enBlueprintClassNetworkType.Node_Action, rule2.ClassType);
+            Assert.Equal(enBlueprint_ClassNetworkType.Node_Action, rule2.ClassType);
             #endregion
 
 

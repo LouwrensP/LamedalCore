@@ -39,8 +39,8 @@ namespace LamedalCore
     /// <summary>
     /// Starting point for the LamedalCore_ library
     /// </summary>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.CTIN, Ignore_Namespace1 = "Factory", Ignore_Namespace2 = "")]
-    [Test_IgnoreCoverage(enTestIgnore.ClassIsNodeLink)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.CTIN, Ignore_Namespace1 = "Factory", Ignore_Namespace2 = "")]
+    [Test_IgnoreCoverage(enCode_TestIgnore.ClassIsNodeLink)]
     public sealed class LamedalCore_
     {
         // private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
@@ -97,7 +97,7 @@ namespace LamedalCore
         /// <summary>
         /// Shows a error message. This is for testing purposes.
         /// </summary>
-        [Test_IgnoreCoverage(enTestIgnore.CodeIsUsedForTesting)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.CodeIsUsedForTesting)]
         public void Error_Test()
         {
             throw new NotImplementedException("Hello. This is a test error message.");
@@ -105,7 +105,7 @@ namespace LamedalCore
 
         /// <summary>Exits the application.</summary>
         /// <param name="exitCode">The exit code.</param>
-        [Test_IgnoreCoverage(enTestIgnore.CodeIsUsedForTesting)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.CodeIsUsedForTesting)]
         public void Exit(int exitCode = 0)
         {
             Environment.Exit(exitCode);
@@ -113,7 +113,7 @@ namespace LamedalCore
 
         /// <summary>Exits the application and write message on the event log.</summary>
         /// <param name="eventlogMsg">The eventlog MSG.</param>
-        [Test_IgnoreCoverage(enTestIgnore.CodeIsUsedForTesting)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.CodeIsUsedForTesting)]
         public void Exit_Fast(string eventlogMsg = "")
         {
             Environment.FailFast(eventlogMsg);

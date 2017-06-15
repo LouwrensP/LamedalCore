@@ -6,12 +6,12 @@ using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader.Met
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_State)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_State)]
     [DebuggerDisplay("Name = {Header_Name}; Signature = {Method_Signature}")]
     public sealed class MethodNTHeader_
     {
         public enCode_Scope Header_Scope = enCode_Scope._private;
-        public enMethod_Kind Header_Kind = enMethod_Kind.IsVoid;
+        public enCode_MethodKind Header_Kind = enCode_MethodKind.IsVoid;
         public string Header_ReturnType;
         public string Header_Name;
         public enCode_Specialty Header_Specialty = enCode_Specialty.IsNormal;

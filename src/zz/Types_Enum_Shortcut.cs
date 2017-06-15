@@ -5,7 +5,7 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.zz
 {
-    [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+    [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
     public static class Types_Enum_Shortcut
     {
         

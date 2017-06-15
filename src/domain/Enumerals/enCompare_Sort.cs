@@ -1,6 +1,6 @@
 ﻿namespace LamedalCore.domain.Enumerals
 {
-    public enum enCompareSort
+    public enum enCompare_Sort
     {
         NoSort,
         Ascending,

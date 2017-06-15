@@ -15,7 +15,7 @@ namespace LamedalCore.Types
     /// private readonly Types_Is Is = Blueprint_.Instance.Types.Is;
     /// </summary>
     /// <code>CTI;</code>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action)]
     public sealed class Types_Object
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library

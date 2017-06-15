@@ -14,7 +14,7 @@ using HtmlAgilityPack;
 
 namespace LamedalCore.Test.Tests.lib
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.XUnitTestMethods)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.XUnitTestMethods)]
     public sealed class lib_Command_Test: pcTest
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;

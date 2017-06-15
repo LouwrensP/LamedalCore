@@ -7,7 +7,7 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.Types.Class
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, DefaultGroup = "Attribute")]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, DefaultGroup = "Attribute")]
     public sealed class Class_Attributes
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
@@ -169,22 +169,22 @@ namespace LamedalCore.Types.Class
         /// <param name="classType">Type of the class.</param>
         /// <param name="attribute">Return the attribute</param>
         /// <returns>eAttributeLocation</returns>
-        public enAttributeLocation Find_ForType<TfilterForThisAttribute>(Type classType, out TfilterForThisAttribute attribute) where TfilterForThisAttribute : Attribute
+        public enCode_AttributeLocation Find_ForType<TfilterForThisAttribute>(Type classType, out TfilterForThisAttribute attribute) where TfilterForThisAttribute : Attribute
         {
-            if (Find_MemberInfo(classType.GetTypeInfo(), out attribute)) return enAttributeLocation.Class;
+            if (Find_MemberInfo(classType.GetTypeInfo(), out attribute)) return enCode_AttributeLocation.Class;
 
             // The attribute was not on the type -> test the methods
-            if (Find_Method(classType, out attribute)) return enAttributeLocation.Method;
+            if (Find_Method(classType, out attribute)) return enCode_AttributeLocation.Method;
 
-            if (Find_Field(classType, out attribute)) return enAttributeLocation.Field;
+            if (Find_Field(classType, out attribute)) return enCode_AttributeLocation.Field;
 
             // The attribute was not on the fields -> test the properties
-            if (Find_Property(classType, out attribute)) return enAttributeLocation.Property;
+            if (Find_Property(classType, out attribute)) return enCode_AttributeLocation.Property;
 
             // The attribute was not on the constructor -> test the properties
-            if (Find_Constructor(classType, out attribute)) return enAttributeLocation.Constructor;
+            if (Find_Constructor(classType, out attribute)) return enCode_AttributeLocation.Constructor;
 
-            return enAttributeLocation.None;
+            return enCode_AttributeLocation.None;
         }
 
         /// <summary>Determines whether the class property has attribute.</summary>

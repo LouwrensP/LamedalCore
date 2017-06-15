@@ -15,7 +15,7 @@ namespace LamedalCore.Test
     {
         private static readonly LamedalCore_ _lamed = LamedalCore_.Instance;
 
-        [Test_IgnoreCoverage(enTestIgnore.FrontendCode)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.FrontendCode)]
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");

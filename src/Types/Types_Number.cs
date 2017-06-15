@@ -38,7 +38,7 @@ namespace LamedalCore.Types
         /// <summary>Conver Int list values to string ranges.</summary>
         /// <param name="numbers">The numbers.</param>
         /// <returns></returns>
-        [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
         public IEnumerable<string> ToStrRanges(params int[] numbers)
         {
             return _lamed.Types.List.Convert.Int_ToStrRanges(numbers);

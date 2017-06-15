@@ -6,7 +6,7 @@ using LamedalCore.zz;
 
 namespace LamedalCore.Types.Class
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Transformation_Extention)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Transformation_Extention)]
     public sealed class Class_StateInfo
     {
         // private readonly TypeState_ _singletonTypeState = TypeState_.Instance; // Get reference to this class

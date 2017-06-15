@@ -1,6 +1,6 @@
 ﻿namespace LamedalCore.domain.Enumerals
 {
-    public enum enDuplicateError
+    public enum enCompare_DuplicateError
     {
         Ignore,
         Replace,

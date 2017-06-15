@@ -12,7 +12,7 @@ namespace LamedalCore.Types.String
     /// <summary>
     /// Searches a string for a value
     /// </summary>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, DefaultType = typeof(string), GroupName = "Str")]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, DefaultType = typeof(string), GroupName = "Str")]
     public sealed class String_Search
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
@@ -319,7 +319,7 @@ namespace LamedalCore.Types.String
         /// <summary>Determines whether [is valid string] [the specified s].</summary>
         /// <param name="s">The string</param>
         /// <returns></returns>
-        [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
         public bool IsValidStr(string s)
         {
             return _lamed.Types.Test.IsValidStr(s);

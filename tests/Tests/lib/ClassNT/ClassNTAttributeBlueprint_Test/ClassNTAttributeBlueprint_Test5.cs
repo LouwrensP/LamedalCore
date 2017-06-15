@@ -10,7 +10,7 @@ using Xunit;
 
 namespace LamedalCore.Test.Tests.lib.ClassNT.ClassNTAttributeBlueprint_Test
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Transformation_Extention, DefaultGroup = "default group", DefaultType = typeof(string), GroupName = "group name", IgnoreGroup = true, IgnoreGroupPath = true, Ignore_Namespace1 = "ignore 1", ShortcutClass = "Shortcut Class")]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Transformation_Extention, DefaultGroup = "default group", DefaultType = typeof(string), GroupName = "group name", IgnoreGroup = true, IgnoreGroupPath = true, Ignore_Namespace1 = "ignore 1", ShortcutClass = "Shortcut Class")]
     public sealed class ClassNTAttributeBlueprint_Test5
     {
         [Fact]
@@ -20,7 +20,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT.ClassNTAttributeBlueprint_Test
             string name;
             List<string> parameters;
             string ignore1, ignore2, ignore3, ignore4;
-            enBlueprintClassNetworkType classNetworkType;
+            enBlueprint_ClassNetworkType classNetworkType;
             string attributeCode1;
             bool isBlueprintRule;
             string defaultGroup, groupName, ShortcutClass;
@@ -33,7 +33,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT.ClassNTAttributeBlueprint_Test
             attributeCode1 = "[BlueprintRule_Class(enBlueprintClassNetworkType.Transformation_Extention, DefaultGroup = \"default group\", DefaultType = typeof(string), GroupName = \"group name\", IgnoreGroup = true, IgnoreGroupPath = true, Ignore_Namespace1 = \"ignore 1\", ShortcutClass = \"Shortcut Class\")]";
             isBlueprintRule = ClassNTBlueprintRule_Methods.BlueprintRule_Attributes(attributeCode1, out name, out parameters, out classNetworkType, out ignore1, out ignore2, out ignore3, out ignore4);
             Assert.Equal(true, isBlueprintRule);
-            Assert.Equal(enBlueprintClassNetworkType.Transformation_Extention, classNetworkType);
+            Assert.Equal(enBlueprint_ClassNetworkType.Transformation_Extention, classNetworkType);
             Assert.Equal(8, parameters.Count);
             Assert.Equal("ignore 1", ignore1);
             Assert.Equal(null, ignore2);

@@ -4,8 +4,8 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.zz
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Transformation_Extention)]
-    [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Transformation_Extention)]
+    [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
     public static class Types_Dictionary_Shortcut
     {
         /// <summary>
@@ -31,7 +31,7 @@ namespace LamedalCore.zz
         /// <param name="newValue">Value to use when key is missing</param>
         /// <param name="onError">The on error.</param>
         public static void zDictionary_AddSafe<TKey, TValue>(this IDictionary<TKey, TValue> dictionary, TKey key, TValue newValue,
-            enDuplicateError onError = enDuplicateError.Ignore)
+            enCompare_DuplicateError onError = enCompare_DuplicateError.Ignore)
         {
             LamedalCore_.Instance.Types.Dictionary.Key_AddSafe(dictionary, key, newValue, onError);
         }

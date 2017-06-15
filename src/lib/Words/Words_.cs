@@ -10,7 +10,7 @@ using LamedalCore.zz;
 
 namespace LamedalCore.lib.Words
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Link)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Link)]
     public sealed class Words_
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;

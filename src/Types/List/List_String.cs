@@ -191,16 +191,16 @@ namespace LamedalCore.Types.List
         /// <param name="array">The array</param>
         /// <param name="sortType">Acending indicator. Default value = true.</param>
         /// <returns>IEnumerable<string/></returns>
-        public IEnumerable<string> SortByStrLength(IEnumerable<string> array, enCompareSort sortType = enCompareSort.Ascending)
+        public IEnumerable<string> SortByStrLength(IEnumerable<string> array, enCompare_Sort sortType = enCompare_Sort.Ascending)
         {
             // Use LINQ to sortType the array received and return a copy.
 
-            if (sortType == enCompareSort.Ascending)
+            if (sortType == enCompare_Sort.Ascending)
             {
                 var sorted = array.OrderBy(str => str.Length).ToArray();
                 return sorted;
             }
-            else if (sortType == enCompareSort.Descending)
+            else if (sortType == enCompare_Sort.Descending)
             {
                 var sorted = array.OrderByDescending(str => str.Length).ToArray();
                 return sorted;
@@ -215,7 +215,7 @@ namespace LamedalCore.Types.List
         /// <param name="onError">The on error.</param>
         /// <returns></returns>
         public IDictionary<string, string> ToDictionary(IList<string> list, string seperator = "=", bool reverseOrder = false,
-                        enDuplicateError onError = enDuplicateError.Ignore)
+                        enCompare_DuplicateError onError = enCompare_DuplicateError.Ignore)
         {
             var result = new Dictionary<string, string>(list.Count); // Replace with longer version
             foreach (string abbr in list)
@@ -306,8 +306,8 @@ namespace LamedalCore.Types.List
         /// <param name="ignoreCase">if set to <c>true</c> [ignore case].</param>
         /// <returns></returns>
         /// <exception cref="System.ArgumentNullException">list</exception>
-        [Test_IgnoreCoverage(enTestIgnore.MethodIsShortCut)]
-        public IList<string> Unique(IList<string> list, enCompareSort sortType = enCompareSort.NoSort, bool ignoreCase = false)
+        [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
+        public IList<string> Unique(IList<string> list, enCompare_Sort sortType = enCompare_Sort.NoSort, bool ignoreCase = false)
         {
             return _lamed.Types.List.Action.Unique(list, sortType, ignoreCase);
         }

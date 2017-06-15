@@ -12,7 +12,7 @@ namespace LamedalCore.Types.Class
     /// <summary>
     /// This class is used internally to optimise reflection opperations
     /// </summary>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action)]
     internal sealed class Class_Info_Dictionary
     {
         //private readonly LaMedal.Portable.Types.Types_ _types = LaMedal.Portable.LaMedalPortable.Instance.Types;
@@ -20,9 +20,9 @@ namespace LamedalCore.Types.Class
         // Caching of reflection items in order to speedup usage.
         #region Dictionary fields
 
-        //Blueprint_Attributes
+        //BlueprintAttribute_Controller
         /// <summary>ConstructorInfo quick reference.</summary>
-        private static readonly Dictionary<Type, Blueprint_Attributes> _blueprintAttributes = new Dictionary<Type, Blueprint_Attributes>();
+        private static readonly Dictionary<Type, BlueprintAttribute_Controller> _blueprintAttributes = new Dictionary<Type, BlueprintAttribute_Controller>();
 
         /// <summary>ConstructorInfo quick reference.</summary>
         private static readonly Dictionary<Type, ConstructorInfo[]> _constructorInfos = new Dictionary<Type, ConstructorInfo[]>();
@@ -54,12 +54,12 @@ namespace LamedalCore.Types.Class
         /// </summary>
         /// <param name="classType">The class type</param>
         /// <returns>FieldInfo[]</returns>
-        public Blueprint_Attributes Blueprint_Attributes(Type classType)
+        public BlueprintAttribute_Controller Blueprint_Attributes(Type classType)
         {
             if (_blueprintAttributes.ContainsKey(classType)) return _blueprintAttributes[classType];
 
             // Add classType to the quick reference list
-            var blueprint = new Blueprint_Attributes(classType);
+            var blueprint = new BlueprintAttribute_Controller(classType);
             _blueprintAttributes.Add(classType, blueprint);
             return blueprint;
         }

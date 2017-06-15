@@ -3,6 +3,6 @@
     /// <summary>
     /// Specify the FileTime type
     /// </summary>
-    public enum enIOFileActionTime { Creation, LastAccess, LastWrite }
+    public enum enIO_FileActionTime { Creation, LastAccess, LastWrite }
 
 }

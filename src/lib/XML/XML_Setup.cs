@@ -10,7 +10,7 @@ using LamedalCore.zz;
 
 namespace LamedalCore.lib.XML
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action)]
     public sealed class XML_Setup
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library

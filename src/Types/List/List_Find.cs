@@ -14,7 +14,7 @@ namespace LamedalCore.Types.List
     ///  Generic list methods
     /// </summary>
     /// <remarks>IgnoreGroup</remarks>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, GroupName = "Generic", IgnoreGroup = true)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, GroupName = "Generic", IgnoreGroup = true)]
     public sealed class List_Find
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library

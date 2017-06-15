@@ -11,7 +11,7 @@ using LamedalCore.zz;
 
 namespace LamedalCore.lib.XML
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, GroupName = "xDoc")]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, GroupName = "xDoc")]
     public sealed class XML_xDoc
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library

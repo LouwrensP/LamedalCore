@@ -7,7 +7,7 @@ namespace LamedalCore.domain.Attributes
     /// <summary>
     /// This class return blueprint rule and data attributes.
     /// </summary>
-    public sealed class Blueprint_Attributes
+    public sealed class BlueprintAttribute_Controller
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
 
@@ -26,9 +26,9 @@ namespace LamedalCore.domain.Attributes
         private readonly IList<Tuple<MethodInfo, BlueprintRule_MethodAttribute>> _ruleMethods;
         private readonly IList<Tuple<MethodInfo, BlueprintRule_MethodAliasDefAttribute>> _ruleMethodsAlias;
 
-        /// <summary>Initializes a new instance of the <see cref="Blueprint_Attributes"/> class.</summary>
+        /// <summary>Initializes a new instance of the <see cref="BlueprintAttribute_Controller"/> class.</summary>
         /// <param name="classType">Type of the class.</param>
-        public Blueprint_Attributes(Type classType)
+        public BlueprintAttribute_Controller(Type classType)
         {
             _classType = classType;
 

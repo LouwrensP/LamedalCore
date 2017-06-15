@@ -9,7 +9,7 @@ namespace LamedalCore.zPublicClass
     /// <summary>
     /// Public class for testing purposes. This gives one point to extent Xunit debug.console messages.
     /// </summary>
-    [Test_IgnoreCoverage(enTestIgnore.CodeIsUsedForTesting)]
+    [Test_IgnoreCoverage(enCode_TestIgnore.CodeIsUsedForTesting)]
     public class pcTest
     {
         #region Debug Output

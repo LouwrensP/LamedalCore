@@ -3,7 +3,7 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.Test.Tests.lib.IO
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Data)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Data)]
     public sealed class IO_StateInfo_Data
     {
         [BlueprintData_Field(Caption = "What is your name [{0}]? ")]

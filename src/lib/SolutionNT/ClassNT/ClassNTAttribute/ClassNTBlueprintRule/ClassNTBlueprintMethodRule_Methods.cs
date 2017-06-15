@@ -6,7 +6,7 @@ using LamedalCore.zz;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute.ClassNTBlueprintRule
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.VS_Static)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.VS_Static)]
     public static class ClassNTBlueprintMethodRule_Methods
     {
         public static bool Method_Attributes(string attributeCode, out string name, out bool ignore, out string shortcutClassName,out string shortcutMethodName)

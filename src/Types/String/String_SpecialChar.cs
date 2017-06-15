@@ -141,7 +141,7 @@ Decimal   ASCII     Hex
 
 namespace LamedalCore.Types.String
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, DefaultType = typeof(string), GroupName = "Str")]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, DefaultType = typeof(string), GroupName = "Str")]
     public sealed class String_SpecialChar
     {
         #region private settings
@@ -270,7 +270,7 @@ namespace LamedalCore.Types.String
         /// <param name="line">The line.</param>
         /// <param name="total">The total.</param>
         /// <returns></returns>
-        [Test_IgnoreCoverage(enTestIgnore.FrontendCode)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.FrontendCode)]
         public string Function_Del(string line, int total = 1)
         {
             line += new string(func_del, total);
@@ -283,7 +283,7 @@ namespace LamedalCore.Types.String
         /// <param name="line">The line.</param>
         /// <param name="total">The total.</param>
         /// <returns></returns>
-        [Test_IgnoreCoverage(enTestIgnore.FrontendCode)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.FrontendCode)]
         public string Function_ESC(string line, int total = 1)
         {
             line += new string(func_escape_, total);

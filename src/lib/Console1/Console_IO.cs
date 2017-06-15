@@ -70,7 +70,7 @@ namespace LamedalCore.lib.Console1
         /// <summary>Reads the line and show the default value</summary>
         /// <param name="question">The question.</param>
         /// <param name="defaultValue">The defaultValue.</param>
-        [Test_IgnoreCoverage(enTestIgnore.FrontendCode)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.FrontendCode)]
         public void ReadLine(string question, ref string defaultValue)
         {
             //var info = defaultValue.GetType().GetTypeInfo();
@@ -83,7 +83,7 @@ namespace LamedalCore.lib.Console1
         /// <summary>Menu from the in array optional array.</summary>
         /// <param name="menuItems">The in array optional array</param>
         /// <returns>int</returns>
-        [Test_IgnoreCoverage(enTestIgnore.FrontendCode)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.FrontendCode)]
         public int Menu_Interactive(params string[] menuItems)
         {
             // Check parameters
@@ -131,7 +131,7 @@ namespace LamedalCore.lib.Console1
         }
         public static bool TestCode1 = false;
 
-        [Test_IgnoreCoverage(enTestIgnore.FrontendCode)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.FrontendCode)]
         public void Menu_ReadKey1(ConsoleKeyInfo consoleKeyInfo, int menuItemsCount, ref int selectedItem, ref bool loopComplete)
         {
             switch (consoleKeyInfo.Key)
@@ -212,7 +212,7 @@ namespace LamedalCore.lib.Console1
             return result;
         }
 
-        [Test_IgnoreCoverage(enTestIgnore.FrontendCode)]
+        [Test_IgnoreCoverage(enCode_TestIgnore.FrontendCode)]
         private bool Table_FormatReset(out string result)
         {
             result = Environment.NewLine; // This is an auto reset. Add extra line

@@ -13,7 +13,7 @@ namespace LamedalCore.Types.String
     /// <summary>
     /// Set quotes and new line characters
     /// </summary>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, DefaultType = typeof(string), GroupName = "Str")]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, DefaultType = typeof(string), GroupName = "Str")]
     public sealed class String_Quote
     {
         private readonly Types_Convert As = LamedalCore_.Instance.Types.Convert;

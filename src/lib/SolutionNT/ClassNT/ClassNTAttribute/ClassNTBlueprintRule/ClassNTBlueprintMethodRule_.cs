@@ -4,7 +4,7 @@ using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute.ClassNTBlueprintRule
 {
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_State)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_State)]
     public sealed class ClassNTBlueprintMethodRule_ : BlueprintRule_MethodAttribute
     {
         // Fields - See fields of parent class BlueprintMethodRule_Attribute

@@ -3,7 +3,7 @@
     /// <summary>
     /// Actions to take on exception
     /// </summary>
-    public enum enExceptionAction
+    public enum enCode_ExceptionAction
     {
         /// <summary>
         /// Throw the exception

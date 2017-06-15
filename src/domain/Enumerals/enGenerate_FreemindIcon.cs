@@ -1,6 +1,6 @@
 namespace LamedalCore.domain.Enumerals
 {
-    public enum enFreemindIcon
+    public enum enGenerate_FreemindIcon
     {
         gohome,
         folder,

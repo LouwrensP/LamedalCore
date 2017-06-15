@@ -28,40 +28,40 @@ namespace LamedalCore.Test.Tests.Types.Class
             #region Find_ForType
             // Constructor
             BlueprintData_DescriptionAttribute attributeDesc;
-            enAttributeLocation location = _lamed.Types.Class.ClassAttributes.Find_ForType(test.GetType(), out attributeDesc);
-            Assert.Equal(enAttributeLocation.Constructor, location);
+            enCode_AttributeLocation location = _lamed.Types.Class.ClassAttributes.Find_ForType(test.GetType(), out attributeDesc);
+            Assert.Equal(enCode_AttributeLocation.Constructor, location);
             Assert.NotEqual(null, attributeDesc);
             Assert.Equal("Constructor()", attributeDesc.Description);
 
             // Method
             BlueprintRule_MethodAliasDefAttribute attribute2;
             var location2 = _lamed.Types.Class.ClassAttributes.Find_ForType(test.GetType(), out attribute2);
-            Assert.Equal(enAttributeLocation.Method, location2);
+            Assert.Equal(enCode_AttributeLocation.Method, location2);
 
             // Field
             BlueprintData_FieldAttribute attribute3;
             var location3 = _lamed.Types.Class.ClassAttributes.Find_ForType(test.GetType(), out attribute3);
-            Assert.Equal(enAttributeLocation.Field, location3);
+            Assert.Equal(enCode_AttributeLocation.Field, location3);
 
             // None
             FactAttribute attribute4;
             var location4 = _lamed.Types.Class.ClassAttributes.Find_ForType(test.GetType(), out attribute4);
-            Assert.Equal(enAttributeLocation.None, location4);
+            Assert.Equal(enCode_AttributeLocation.None, location4);
 
             // Property
             DescriptionAttribute attribute5;
             var location5 = _lamed.Types.Class.ClassAttributes.Find_ForType(test.GetType(), out attribute5);
-            Assert.Equal(enAttributeLocation.Property, location5);
+            Assert.Equal(enCode_AttributeLocation.Property, location5);
 
             // Class
             BlueprintRule_ClassAttribute attribute6;
             var location6 = _lamed.Types.Class.ClassAttributes.Find_ForType(test.GetType(), out attribute6);
-            Assert.Equal(enAttributeLocation.Class, location6);
+            Assert.Equal(enCode_AttributeLocation.Class, location6);
             #endregion
 
             #region Check if field attribute exists
             BlueprintData_FieldAttribute attributeField;
-            Assert.Equal(enAttributeLocation.Field, _lamed.Types.Class.ClassAttributes.Find_ForType(test.GetType(), out attributeField));
+            Assert.Equal(enCode_AttributeLocation.Field, _lamed.Types.Class.ClassAttributes.Find_ForType(test.GetType(), out attributeField));
             Assert.True(attributeField != null);
             Assert.Equal("What is your name [{0}]? ", attributeField.Caption);
             #endregion

@@ -8,7 +8,7 @@ namespace LamedalCore.zz
 {
     [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.Transformation_Connector)]
-    public static class aConnectors
+    public static class zSystem_Connectors
     {
         /// <summary>
         /// Hook all IO methods to this setup point.

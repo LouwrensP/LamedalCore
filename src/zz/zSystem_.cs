@@ -7,7 +7,7 @@ namespace LamedalCore.zz
 {
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.Transformation_Connector)]
     [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
-    public static class zSystem
+    public static class zSystem_
     {
 
         /// <summary>

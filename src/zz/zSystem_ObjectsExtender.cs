@@ -7,15 +7,15 @@ namespace LamedalCore.zz
 {
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.Transformation_Connector)]
     [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
-    public sealed class zSystemObjects_Extender
+    public sealed class zSystem_ObjectsExtender
     {
         public readonly object Object;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="zSystemObjects_Extender"/> class.
+        /// Initializes a new instance of the <see cref="zSystem_ObjectsExtender"/> class.
         /// </summary>
         /// <param name="object">The object.</param>
-        public zSystemObjects_Extender(object @object)
+        public zSystem_ObjectsExtender(object @object)
         {
             Object = @object;
         }

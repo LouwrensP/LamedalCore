@@ -8,16 +8,16 @@ namespace LamedalCore.zz
     /// </summary>
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.Transformation_Extention)]
     [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
-    public static class zSystemObjects
+    public static class zSystem_Objects
     {
         /// <summary>
         /// Work on sender object to convert to other class.
         /// </summary>
         /// <param name="sender">The sender.</param>
         /// <returns></returns>
-        public static zSystemObjects_Extender zObject(this object sender)
+        public static zSystem_ObjectsExtender zObject(this object sender)
         {
-            return new zSystemObjects_Extender(sender);
+            return new zSystem_ObjectsExtender(sender);
         }
 
         ///// <summary>

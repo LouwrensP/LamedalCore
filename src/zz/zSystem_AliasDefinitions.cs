@@ -12,7 +12,7 @@ namespace LamedalCore.zz
     /// Redefine exception classes with easier names
     /// </summary>
     [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
-    public class AliasDefinitions { }
+    public class zSystem_AliasDefinitions { }
 
     /// <summary>
     /// ArgumentException

@@ -30,7 +30,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT.ClassNTAttributeBlueprint_Test
 
             #region Test3: [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, DefaultType = typeof(string), GroupName = "Str")]
             // =========================================================================================================================================
-            attributeCode1 = "[BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, DefaultType = typeof(string), GroupName = \"Str\")]";
+            attributeCode1 = "[BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, DefaultType = typeof(string), GroupName = \"Str\")]";
             isBlueprintRule = ClassNTBlueprintRule_Methods.BlueprintRule_Attributes(attributeCode1, out name, out parameters, out classNetworkType, out ignore1, out ignore2, out ignore3, out ignore4);
             Assert.Equal(true, isBlueprintRule);
             Assert.Equal(enBlueprint_ClassNetworkType.Node_Action, classNetworkType);

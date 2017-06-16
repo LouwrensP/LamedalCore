@@ -30,7 +30,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT.ClassNTAttributeBlueprint_Test
 
             #region Test5: [BlueprintRule_Class(enBlueprintClassNetworkType.Transformation_Extention, DefaultGroup = "default group", DefaultType = typeof(string), GroupName = "group name", IgnoreGroup = true, IgnoreGroupPath = true, Ignore_Namespace1 = "ignore 1", ShortcutClass = "Shortcut Class")]
             // =========================================================================================================================================
-            attributeCode1 = "[BlueprintRule_Class(enBlueprintClassNetworkType.Transformation_Extention, DefaultGroup = \"default group\", DefaultType = typeof(string), GroupName = \"group name\", IgnoreGroup = true, IgnoreGroupPath = true, Ignore_Namespace1 = \"ignore 1\", ShortcutClass = \"Shortcut Class\")]";
+            attributeCode1 = "[BlueprintRule_Class(enBlueprint_ClassNetworkType.Transformation_Extention, DefaultGroup = \"default group\", DefaultType = typeof(string), GroupName = \"group name\", IgnoreGroup = true, IgnoreGroupPath = true, Ignore_Namespace1 = \"ignore 1\", ShortcutClass = \"Shortcut Class\")]";
             isBlueprintRule = ClassNTBlueprintRule_Methods.BlueprintRule_Attributes(attributeCode1, out name, out parameters, out classNetworkType, out ignore1, out ignore2, out ignore3, out ignore4);
             Assert.Equal(true, isBlueprintRule);
             Assert.Equal(enBlueprint_ClassNetworkType.Transformation_Extention, classNetworkType);

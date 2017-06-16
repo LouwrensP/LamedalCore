@@ -22,7 +22,7 @@
       "System"
     ],
     "NameSpace_AttributeLines": [
-      "[BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action)]"
+      "[BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action)]"
     ],
     "Namespace_Attributes": {
       "Items": [
@@ -31,7 +31,7 @@
           "Parameters": [
             {
               "Name": "BlueprintRule_Class",
-              "Value": "enBlueprintClassNetworkType.Node_Action",
+              "Value": "enBlueprint_ClassNetworkType.Node_Action",
               "IsEnumeral": true
             }
           ]
@@ -147,7 +147,7 @@
     "    /// <summary>",
     "    /// Money convertions",
     "    /// </summary>",
-    "    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action)]",
+    "    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action)]",
     "    public sealed class Types_Money",
     "    {",
     "        /// <summary>",

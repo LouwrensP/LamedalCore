@@ -69,8 +69,8 @@ namespace LamedalCore.Test.Tests.Types
         public void Str_2EnumValue_Test()
         {
             Assert.Equal(enBlueprint_ClassNetworkType.Node_State, _lamed.Types.Enum.Str_2EnumValue<enBlueprint_ClassNetworkType>("Node_State"));
-            Assert.Equal(enBlueprint_ClassNetworkType.Node_State, _lamed.Types.Enum.Str_2EnumValue<enBlueprint_ClassNetworkType>("enBlueprintClassNetworkType.Node_State"));
-            Assert.Equal(enBlueprint_ClassNetworkType.Node_State, _lamed.Types.Enum.Str_2EnumValue("enBlueprintClassNetworkType.Node_State", typeof(enBlueprint_ClassNetworkType)));
+            Assert.Equal(enBlueprint_ClassNetworkType.Node_State, _lamed.Types.Enum.Str_2EnumValue<enBlueprint_ClassNetworkType>("enBlueprint_ClassNetworkType.Node_State"));
+            Assert.Equal(enBlueprint_ClassNetworkType.Node_State, _lamed.Types.Enum.Str_2EnumValue("enBlueprint_ClassNetworkType.Node_State", typeof(enBlueprint_ClassNetworkType)));
 
             Assert.Throws<InvalidOperationException>(() => _lamed.Types.Enum.Str_2EnumValue(null, typeof(enBlueprint_ClassNetworkType)));
             Assert.Throws<InvalidOperationException>(() => _lamed.Types.Enum.Str_2EnumValue("Illigal value", typeof(enBlueprint_ClassNetworkType)));

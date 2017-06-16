@@ -13,7 +13,7 @@ namespace LamedalCore.Types.String
     /// <summary>
     /// Strings Methods
     /// </summary>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Link, DefaultType = typeof(string), GroupName = "Str")]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Link, DefaultType = typeof(string), GroupName = "Str")]
     public sealed class String_
     {
 

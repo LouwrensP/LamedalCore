@@ -36,10 +36,10 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
         [Test_Method("ClassNTAttribute_Parameter_.Create()")]
         public void ClassNTAttribute_Parameter_Test2()
         {
-            var parmeter = ClassNTAttribute_Parameter_.Create("BlueprintRule_", "enBlueprintClassNetworkType.Node_State");
+            var parmeter = ClassNTAttribute_Parameter_.Create("BlueprintRule_", "enBlueprint_ClassNetworkType.Node_State");
             Assert.Equal("BlueprintRule_", parmeter.Name);
             Assert.Equal(true, parmeter.IsEnumeral);
-            Assert.Equal("enBlueprintClassNetworkType.Node_State", parmeter.Value);
+            Assert.Equal("enBlueprint_ClassNetworkType.Node_State", parmeter.Value);
             Assert.Equal(enBlueprint_ClassNetworkType.Node_State, _lamed.Types.Enum.Str_2EnumValue<enBlueprint_ClassNetworkType>(parmeter.Value.zObject().AsStr()));
         }
 
@@ -305,7 +305,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             attributes = new List<string>
             {
                 "[Fact]",
-                "[BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action)]",
+                "[BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action)]",
                 "[BlueprintCodeInjection_(typeof(Controller_BlueprintLogger), true)]"
             };
             var rule2 = ClassNTBlueprintRule_.Create(attributes);

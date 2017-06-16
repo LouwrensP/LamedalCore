@@ -33,7 +33,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT.ClassNTAttributeBlueprint_Test
 
             #region Test2: [BlueprintRule_Class(enBlueprintClassNetworkType.CTIN, Ignore_Namespace1 = "Factory", Ignore_Namespace2 = "zz", Ignore_Namespace3 = "domain", Ignore_Namespace4 = "Testing")]
             // =========================================================================================================================================
-            attributeCode1 = "[BlueprintRule_Class(enBlueprintClassNetworkType.CTIN, Ignore_Namespace1 = \"Factory\", Ignore_Namespace2 = \"zz\", Ignore_Namespace3 = \"domain\", Ignore_Namespace4 = \"Testing\")]";
+            attributeCode1 = "[BlueprintRule_Class(enBlueprint_ClassNetworkType.CTIN, Ignore_Namespace1 = \"Factory\", Ignore_Namespace2 = \"zz\", Ignore_Namespace3 = \"domain\", Ignore_Namespace4 = \"Testing\")]";
             isBlueprintRule = ClassNTBlueprintRule_Methods.BlueprintRule_Attributes(attributeCode1, out name, out parameters, out classNetworkType, out ignore1, out ignore2, out ignore3, out ignore4);
             Assert.Equal(enBlueprint_ClassNetworkType.CTIN, classNetworkType);
             Assert.Equal("Factory", ignore1);

@@ -5,7 +5,7 @@ namespace Blueprint.lib.Rules.Types
     /// <summary>
     /// Money convertions
     /// </summary>
-    [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action)]
     [BlueprintCodeInjection_(typeof(Controller_BlueprintLogger), true)]
     public sealed class Types_Money
     {

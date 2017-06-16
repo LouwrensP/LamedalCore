@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using LamedalCore.domain.Attributes;
-using LamedalCore.domain.Enumerals;
-using LamedalCore.zPublicClass;
-using LamedalCore.zPublicClass.ExcelData;
+using LamedalCoreRemoved.ExcelData;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace LamedalCore.Test.Tests.zPublicClass.MsExcel
+namespace LamedalCoreRemoved.Tests.MsExcel
 {
     public sealed class MsExcel_Sheet_Test: pcTest
     {

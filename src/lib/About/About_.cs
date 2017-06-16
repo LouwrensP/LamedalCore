@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
-using LamedalCore.lib.Excel;
 
 namespace LamedalCore.lib.About
 {
@@ -32,16 +31,7 @@ namespace LamedalCore.lib.About
             return typeof(LamedalCore_).GetTypeInfo().Assembly;
         }
 
-        #region Excel
-        /// <summary>
-        /// Gets the About library methods.
-        /// </summary>
-        public Excel_About Excel
-        {
-            get { return _Excel ?? (_Excel = new Excel_About()); }
-        }
-        private Excel_About _Excel;
-        #endregion
+
 
         /// <summary>Return the machine name.</summary>
         /// <returns></returns>

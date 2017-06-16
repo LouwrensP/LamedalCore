@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using LamedalCore.domain.Attributes;
-using LamedalCore.domain.Enumerals;
-using LamedalCore.lib.Excel;
-using LamedalCore.zz;
 using LamedalExcel;
 
-namespace LamedalCore.zPublicClass.ExcelData
+namespace LamedalCoreRemoved.ExcelData
 {
     /// <summary>Public class to access excel data files</summary>
     public sealed class pcExcelData_

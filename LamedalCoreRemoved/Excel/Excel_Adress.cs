@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using LamedalCore.domain.Enumerals;
-using LamedalCore.zPublicClass.ExcelData;
-using LamedalCore.zz;
+using LamedalCoreRemoved.ExcelData;
 
-namespace LamedalCore.lib.Excel
+namespace LamedalCoreRemoved.Excel
 {
     /// <summary>
     /// Order must be Col, Row

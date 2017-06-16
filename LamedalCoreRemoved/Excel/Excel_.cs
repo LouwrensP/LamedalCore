@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using LamedalCore.domain.Attributes;
-using LamedalCore.domain.Enumerals;
-
-namespace LamedalCore.lib.Excel
+﻿namespace LamedalCoreRemoved.Excel
 {
-    [Test_IgnoreCoverage(enCode_TestIgnore.ClassIsNodeLink)]
+    //[Test_IgnoreCoverage(enCode_TestIgnore.ClassIsNodeLink)]
     public sealed class Excel_
     {
         #region About

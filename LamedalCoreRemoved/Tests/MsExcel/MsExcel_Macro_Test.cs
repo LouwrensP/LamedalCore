@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using LamedalCore.domain.Attributes;
-using LamedalCore.domain.Enumerals;
-using LamedalCore.lib.Excel;
-using LamedalCore.zPublicClass.ExcelData;
-using LamedalCore.zz;
-using Xunit;
+using LamedalCoreRemoved.ExcelData;
 
-namespace LamedalCore.Test.Tests.zPublicClass.MsExcel
+namespace LamedalCoreRemoved.Tests.MsExcel
 {
     public sealed class MsExcel_Macro_Test
     {

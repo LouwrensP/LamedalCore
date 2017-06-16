@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Text;
-using System.Threading.Tasks;
-using LamedalCore.domain.Enumerals;
-using LamedalCore.zz;
 
-namespace LamedalCore.lib.Excel
+namespace LamedalCoreRemoved.Excel
 {
     public sealed class Excel_Csv
     {

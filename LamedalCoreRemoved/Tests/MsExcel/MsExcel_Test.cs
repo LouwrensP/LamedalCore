@@ -1,10 +1,9 @@
 ﻿using System;
-using LamedalCore.domain.Attributes;
-using LamedalCore.lib.Excel;
-using LamedalCore.zPublicClass.ExcelData;
+using LamedalCoreRemoved.Excel;
+using LamedalCoreRemoved.ExcelData;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.zPublicClass.MsExcel
+namespace LamedalCoreRemoved.Tests.MsExcel
 {
     /// <summary>
     /// MS Excel methods

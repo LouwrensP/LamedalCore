@@ -45,7 +45,6 @@ namespace LamedalCore.Test.Tests.lib
             _lamed.lib.About.MachineName();
             _lamed.lib.About.StackTrace();
             _lamed.lib.About.TickCount();
-            _lamed.lib.About.Excel.About_Excel();
             _lamed.lib.About.ProcessorCount();
         }
 

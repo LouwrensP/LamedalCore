@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Drawing;
-using LamedalCore.domain.Enumerals;
-using LamedalCore.zPublicClass.ExcelData;
+using LamedalCoreRemoved.ExcelData;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.zPublicClass.MsExcel
+namespace LamedalCoreRemoved.Tests.MsExcel
 {
     public sealed class MsExcel_Create_Test
     {

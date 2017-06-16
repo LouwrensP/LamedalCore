@@ -1,33 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using LamedalCore.zPublicClass.ExcelData;
-using LamedalCore.zz;
+﻿using System.Collections.Generic;
+using LamedalCoreRemoved.ExcelData;
 
-namespace LamedalCore.lib.Excel
+namespace LamedalCoreRemoved.Excel
 {
     public sealed class Excel_About
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
+        ///// <summary>Generate Excel document to describe the Macro commands available.</summary>
+        //public string About_Excel(string outputFile = "AboutExcelSetup.csv")
+        //{
+        //    List<string> aboutExcel_AsList = About_Excel_ToList();
+        //    var data = new pcExcelData_();
+        //    var array = aboutExcel_AsList.ToArray();
+        //    data.csvLoadFromLines(array);
 
-        /// <summary>Generate Excel document to describe the Macro commands available.</summary>
-        public string About_Excel(string outputFile = "AboutExcelSetup.csv")
-        {
-            List<string> aboutExcel_AsList = About_Excel_ToList();
-            var data = new pcExcelData_();
-            var array = aboutExcel_AsList.ToArray();
-            data.csvLoadFromLines(array);
+        //    // Test all integrity points
+        //    string errorMsg;
+        //    if (_lamed.lib.Excel.Macro.DataIntegrity_Check(data, out errorMsg) == false) errorMsg.zException_Show();  // Unit test needed 
 
-            // Test all integrity points
-            string errorMsg;
-            if (_lamed.lib.Excel.Macro.DataIntegrity_Check(data, out errorMsg) == false) errorMsg.zException_Show();  // Unit test needed 
-
-            var folder = _lamed.lib.IO.Folder.Path_Application();
-            var result = folder + outputFile;
-            data.csvSave2File(result, true);
-            return result;
-        }
+        //    var folder = _lamed.lib.IO.Folder.Path_Application();
+        //    var result = folder + outputFile;
+        //    data.csvSave2File(result, true);
+        //    return result;
+        //}
 
         /// <summary>Return the Excel About message as a list. This is used for testing</summary>
         /// <returns></returns>

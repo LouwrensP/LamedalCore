@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using LamedalCore.domain.Enumerals;
-using LamedalCore.zPublicClass.ExcelData;
+using LamedalCoreRemoved.ExcelData;
 
-namespace LamedalCore.lib.Excel
+namespace LamedalCoreRemoved.Excel
 {
     public sealed class Excel_Data
     {

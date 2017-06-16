@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
-using LamedalCore.domain.Enumerals;
-using LamedalCore.zPublicClass.ExcelData;
-using LamedalCore.zz;
+using LamedalCoreRemoved.ExcelData;
+using Cell = LamedalExcel.Cells.Cell;
+using Worksheet = LamedalExcel.Worksheet;
+
 //using Xunit;
 
-namespace LamedalCore.lib.Excel
+namespace LamedalCoreRemoved.Excel
 {
     public sealed class Excel_Macro
     {

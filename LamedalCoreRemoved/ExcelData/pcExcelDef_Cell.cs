@@ -1,4 +1,4 @@
-﻿namespace LamedalCore.zPublicClass.ExcelData
+﻿namespace LamedalCoreRemoved.ExcelData
 {
     public sealed class pcExcelDef_Cell
     {

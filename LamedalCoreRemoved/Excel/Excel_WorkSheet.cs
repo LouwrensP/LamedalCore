@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Drawing;
-using LamedalCore.domain.Enumerals;
-using LamedalCore.zPublicClass.ExcelData;
+﻿using System.Drawing;
+using LamedalCoreRemoved.ExcelData;
 using LamedalExcel;
 using LamedalExcel.Cells;
 using LamedalExcel.enums;
-using LamedalCore.zz;
 
-namespace LamedalCore.lib.Excel
+namespace LamedalCoreRemoved.Excel
 {
     public sealed class Excel_WorkSheet
     {
@@ -154,7 +148,7 @@ namespace LamedalCore.lib.Excel
         /// </summary>
         /// <param name="excelData"></param>
         /// <returns></returns>
-        private Worksheet Worksheet_FromExcelData(pcExcelData_ excelData)
+        public Worksheet Worksheet_FromExcelData(pcExcelData_ excelData)
         {
             var sheet = excelData.Worksheet;
             if (sheet == null) "Error! There is no worksheet in excelData.".zException_Show();  // Unit test needed for this

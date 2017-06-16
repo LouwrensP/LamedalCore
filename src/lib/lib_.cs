@@ -2,7 +2,6 @@
 using LamedalCore.domain.Enumerals;
 using LamedalCore.lib.About;
 using LamedalCore.lib.Console1;
-using LamedalCore.lib.Excel;
 using LamedalCore.lib.IO;
 using LamedalCore.lib.Words;
 using LamedalCore.lib.XML;
@@ -44,17 +43,6 @@ namespace LamedalCore.lib
             get { return _Command ?? (_Command = new lib_Command()); }
         }
         private lib_Command _Command;
-        #endregion
-
-        #region Excel
-        /// <summary>
-        /// Gets the Excel library methods.
-        /// </summary>
-        public Excel_ Excel
-        {
-            get { return _Excel ?? (_Excel = new Excel_()); }
-        }
-        private Excel_ _Excel;
         #endregion
 
         #region IO

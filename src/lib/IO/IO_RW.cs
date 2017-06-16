@@ -4,7 +4,6 @@ using System.Linq;
 using System.Reflection;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
-using LamedalCore.lib.Excel;
 using LamedalCore.zz;
 
 namespace LamedalCore.lib.IO
@@ -13,20 +12,6 @@ namespace LamedalCore.lib.IO
     public sealed class IO_RW
     {
         private readonly IO_ _io = LamedalCore_.Instance.lib.IO;
-
-
-        #region Excel
-        /// <summary>
-        /// Gets the RW library methods.
-        /// </summary>
-        [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
-        public Excel_IO_Read Excel
-        {
-            get { return _Excel ?? (_Excel = new Excel_IO_Read()); }
-        }
-        // This inclusion is an exception to the rule.
-        private Excel_IO_Read _Excel;
-        #endregion
 
         /// <summary>Write to file name</summary>
         /// <param name="pathAndFile">The path and file.</param>

@@ -183,14 +183,8 @@
     <Compile Include="Tests\Types\String\String_SpecialChar_Test.cs" />
     <Compile Include="Tests\Types\String\String_Word_Test.cs" />
     <Compile Include="Tests\Types\String\String_Regex_Test.cs" />
-    <Compile Include="Tests\zPublicClass\MsExcel\MsExcel_Create_Test.cs" />
-    <Compile Include="Tests\zPublicClass\MsExcel\MsExcel_Dashboard_Test.cs" />
-    <Compile Include="Tests\zPublicClass\MsExcel\MsExcel_ExcelFiles_TestCases.cs" />
-    <Compile Include="Tests\zPublicClass\MsExcel\MsExcel_Sheet_Test.cs" />
-    <Compile Include="Tests\zPublicClass\MsExcel\MsExcel_Macro_Test.cs" />
     <Compile Include="Tests\domain\domain_Exceptions_Test.cs" />
     <Compile Include="Tests\lib\IO\IO_Json_Test.cs" />
-    <Compile Include="Tests\zPublicClass\MsExcel\MsExcel_Test.cs" />
     <Compile Include="Tests\Config_Test.cs" />
     <Compile Include="Tests\lib\XML\XML_Setup_Test.cs" />
     <Compile Include="Tests\Types\Class\Class_StateInfo_Test.cs" />

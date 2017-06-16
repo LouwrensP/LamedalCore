@@ -6,11 +6,9 @@ using System.Linq;
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
-using LamedalCore.domain.Enumerals;
-using LamedalCore.zPublicClass.ExcelData;
-using LamedalCore.zz;
+using LamedalCoreRemoved.ExcelData;
 
-namespace LamedalCore.lib.Excel
+namespace LamedalCoreRemoved.Excel
 {
     public sealed class Excel_IO_Read
     {

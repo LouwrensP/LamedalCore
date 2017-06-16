@@ -94,7 +94,7 @@ namespace LamedalCore.domain.Enumerals
         VS_Static,
 
         [BlueprintRule_Field(Name = "Visual Studio Class", Description = "Visual Studio Stateful class.", Class_IsStatic = false)]
-        VS_Statefull,
+        StandardClass,
 
         [BlueprintRule_Field(Name = "Blueprint Rule definition", Description = "This is an attribute class that define blueprint rules", Class_IsStatic = false)]
         BlueprintRuleDef,

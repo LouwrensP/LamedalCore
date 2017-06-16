@@ -1,4 +1,6 @@
 ﻿using System;
+using LamedalCore;
+using LamedalCore.domain.Attributes;
 using LamedalCoreRemoved.Excel;
 using LamedalCoreRemoved.ExcelData;
 using Xunit;

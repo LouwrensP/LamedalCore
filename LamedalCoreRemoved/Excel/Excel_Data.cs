@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using LamedalCore;
+using LamedalCore.domain.Enumerals;
 using LamedalCoreRemoved.ExcelData;
 
 namespace LamedalCoreRemoved.Excel

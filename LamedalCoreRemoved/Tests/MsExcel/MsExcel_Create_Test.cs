@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Drawing;
+using LamedalCore;
+using LamedalCore.domain.Enumerals;
 using LamedalCoreRemoved.ExcelData;
 using Xunit;
 

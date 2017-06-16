@@ -1,6 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using LamedalCore;
+using LamedalCore.domain.Attributes;
+using LamedalCore.domain.Enumerals;
+using LamedalCore.zz;
+using LamedalCoreRemoved.Excel;
 using LamedalCoreRemoved.ExcelData;
+using Xunit;
 
 namespace LamedalCoreRemoved.Tests.MsExcel
 {

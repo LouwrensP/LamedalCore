@@ -6,6 +6,9 @@ using System.Linq;
 using DocumentFormat.OpenXml;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
+using LamedalCore;
+using LamedalCore.domain.Enumerals;
+using LamedalCore.zz;
 using LamedalCoreRemoved.ExcelData;
 
 namespace LamedalCoreRemoved.Excel

@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text;
+using LamedalCore;
+using LamedalCore.zz;
 
 namespace LamedalCoreRemoved.Excel
 {

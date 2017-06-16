@@ -14,4 +14,8 @@
     <Folder Include="zPublicClass\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\src\LamedalCore.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,5 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using LamedalCore;
+using LamedalCore.domain.Attributes;
+using LamedalCore.domain.Enumerals;
+using LamedalCore.zPublicClass;
 using LamedalCoreRemoved.ExcelData;
 using Xunit;
 using Xunit.Abstractions;

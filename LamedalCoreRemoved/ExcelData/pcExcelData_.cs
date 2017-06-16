@@ -1,6 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using LamedalCore;
+using LamedalCore.domain.Attributes;
+using LamedalCore.domain.Enumerals;
+using LamedalCore.zz;
+using LamedalCoreRemoved.Excel;
 using LamedalExcel;
 
 namespace LamedalCoreRemoved.ExcelData

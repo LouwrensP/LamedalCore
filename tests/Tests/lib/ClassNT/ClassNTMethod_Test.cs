@@ -5,9 +5,9 @@ using LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute.ClassNTBlueprintRule;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttributes;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTComment;
-using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTComment.MethodNTComment_Parameter;
+using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTComment.MethodNTCommentParameter;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader;
-using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader.MethodNTHeader_Parameter;
+using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader.MethodNTHeaderParameter;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTstats;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTStats;
 using LamedalCore.zz;
@@ -26,7 +26,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             // Test1: <param name="convertToValidXML">Convert to valid XML indicator. Default value = false.</param>
             string paramLine = "<param name=\"convertToValidXML\">Convert to valid XML indicator. Default value = false.</param>";
             string nameValue, commentValue;
-            MethodNTComment_Parameter_Methods.Parameter_FromXML(paramLine, out nameValue, out commentValue);
+            MethodNTCommentParameter_Methods.Parameter_FromXML(paramLine, out nameValue, out commentValue);
             Assert.Equal("convertToValidXML", nameValue);
             Assert.Equal("Convert to valid XML indicator. Default value = false.", commentValue);
         }
@@ -35,7 +35,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
         [Test_Method("Parameter_ToXML()")]
         public static void Parameter_ToXML_Test()
         {
-            string parameterXML = MethodNTComment_Parameter_Methods.Parameter_ToXML("convertToValidXML", "Convert to valid XML indicator. Default value = false.");
+            string parameterXML = MethodNTCommentParameter_Methods.Parameter_ToXML("convertToValidXML", "Convert to valid XML indicator. Default value = false.");
             Assert.Equal("        <param name=\"convertToValidXML\">Convert to valid XML indicator. Default value = false.</param>".NL(), parameterXML);
         }
 
@@ -390,7 +390,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             #region Test1: List<string> sourceLines
             //      =======================================
             paramLine = "this List<string> sourceLines";
-            MethodNTHeader_Parameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
+            MethodNTHeaderParameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
             Assert.Equal(true, isThis);
             Assert.Equal(enCode_ParameterRefType.ByValue, refType);
             Assert.Equal("List<string>", typeName);
@@ -401,7 +401,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             #region Test2: ref int ii
             //      ===========================================
             paramLine = "ref int ii";
-            MethodNTHeader_Parameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
+            MethodNTHeaderParameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
             Assert.Equal(false, isThis);
             Assert.Equal(enCode_ParameterRefType.ByReference, refType);
             Assert.Equal("int", typeName);
@@ -412,7 +412,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             #region Test3: List<string> sourceLines
             //      ===========================================
             paramLine = "List<string> sourceLines";
-            MethodNTHeader_Parameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
+            MethodNTHeaderParameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
             Assert.Equal(false, isThis);
             Assert.Equal(enCode_ParameterRefType.ByValue, refType);
             Assert.Equal("List<string>", typeName);
@@ -423,7 +423,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             #region Test4: out string methodName
             //      ===========================================
             paramLine = "out string methodName";
-            MethodNTHeader_Parameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
+            MethodNTHeaderParameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
             Assert.Equal(false, isThis);
             Assert.Equal(enCode_ParameterRefType.Output, refType);
             Assert.Equal("string", typeName);
@@ -434,7 +434,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             #region Test5: bool isGeneric = false
             //      ===========================================
             paramLine = "this bool isGeneric = false";
-            MethodNTHeader_Parameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
+            MethodNTHeaderParameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
             Assert.Equal(true, isThis);
             Assert.Equal(enCode_ParameterRefType.ByValue, refType);
             Assert.Equal("bool", typeName);
@@ -445,7 +445,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             #region Test6: Dictionary<string, int> array
             //      ===========================================
             paramLine = "Dictionary<string, int> array";
-            MethodNTHeader_Parameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
+            MethodNTHeaderParameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
             Assert.Equal(false, isThis);
             Assert.Equal(enCode_ParameterRefType.ByValue, refType);
             Assert.Equal("Dictionary<string, int>", typeName);
@@ -456,7 +456,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             #region Test7: Func<T, RT> func
             //      ===========================================
             paramLine = "Func<T, RT> func";
-            MethodNTHeader_Parameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
+            MethodNTHeaderParameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
             Assert.Equal(false, isThis);
             Assert.Equal(enCode_ParameterRefType.ByValue, refType);
             Assert.Equal("Func<T, RT>", typeName);
@@ -467,7 +467,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             #region Test8: List<Train_Food> trainFoods
             //      ===========================================
             paramLine = "List<Train_Food> trainFoods";
-            MethodNTHeader_Parameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
+            MethodNTHeaderParameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
             Assert.Equal(false, isThis);
             Assert.Equal(enCode_ParameterRefType.ByValue, refType);
             Assert.Equal("List<Train_Food>", typeName);
@@ -478,7 +478,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             #region Test9: IEnumerable<T> array
             //      ===========================================
             paramLine = "this IEnumerable<T> array";
-            MethodNTHeader_Parameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
+            MethodNTHeaderParameter_Methods.Parameter_Parts(ref paramLine, out isThis, out refType, out typeName, out name, out optionalValue);
             Assert.Equal(true, isThis);
             Assert.Equal(enCode_ParameterRefType.ByValue, refType);
             Assert.Equal("IEnumerable<T>", typeName);
@@ -493,7 +493,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
         {
             #region Test1: List<string> sourceLines, ref int ii
             //      ================================================
-            List<string> Lines = MethodNTHeader_Parameter_Methods.Parameter_Parse2StrList("List<string> sourceLines, ref int ii");
+            List<string> Lines = MethodNTHeaderParameter_Methods.Parameter_Parse2StrList("List<string> sourceLines, ref int ii");
             Assert.Equal("List<string> sourceLines", Lines[0]);
             Assert.Equal("ref int ii", Lines[1]);
 
@@ -502,7 +502,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
 
             #region Test2: List<string> sourceLines, ref int ii, out string methodName, out DTE_MethodScope scope, out string returnType, out DTE_MethodKind kind, bool isGeneric = false
             //      ==================================================================================================================================================
-            Lines = MethodNTHeader_Parameter_Methods.Parameter_Parse2StrList("this List<string> sourceLines, ref int ii, out string methodName, out DTE_MethodScope scope, out string returnType, out DTE_MethodKind kind, bool isGeneric = false");
+            Lines = MethodNTHeaderParameter_Methods.Parameter_Parse2StrList("this List<string> sourceLines, ref int ii, out string methodName, out DTE_MethodScope scope, out string returnType, out DTE_MethodKind kind, bool isGeneric = false");
             Assert.Equal("this List<string> sourceLines", Lines[0]);
             Assert.Equal("ref int ii", Lines[1]);
             Assert.Equal("out string methodName", Lines[2]);
@@ -522,7 +522,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             //      ==============================================================
             var header = "public void Setup(List<string> sourceLines, ref int ii)";
             List<string> parametersLines;
-            MethodNTHeader_Parameter_Methods.Parameters_Parse(header, out parametersLines);
+            MethodNTHeaderParameter_Methods.Parameters_Parse(header, out parametersLines);
             Assert.Equal("List<string> sourceLines", parametersLines[0]);
             Assert.Equal("ref int ii", parametersLines[1]);
             Assert.Equal(2, parametersLines.Count);
@@ -532,7 +532,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             #region Test2: public static string Parse(List<string> sourceLines, ref int ii, out string methodName, out DTE_MethodScope scope, out string returnType, out DTE_MethodKind kind, bool isGeneric = false)
             // ======================================================================
             header = "public static string Parse(List<string> sourceLines, ref int ii, out string methodName, out DTE_MethodScope scope, out string returnType, out DTE_MethodKind kind, bool isGeneric = false)";
-            MethodNTHeader_Parameter_Methods.Parameters_Parse(header, out parametersLines);
+            MethodNTHeaderParameter_Methods.Parameters_Parse(header, out parametersLines);
             Assert.Equal("List<string> sourceLines", parametersLines[0]);
             Assert.Equal("ref int ii", parametersLines[1]);
             Assert.Equal("out string methodName", parametersLines[2]);
@@ -547,7 +547,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             #region Test3: public static List<Rectangle> Shape_Move(List<Rectangle> shape, int x, int y, int recSize)
             // =================================================================================================
             header = "public static List<Rectangle> Shape_Move(List<Rectangle> shape, int x, int y, int recSize)";
-            MethodNTHeader_Parameter_Methods.Parameters_Parse(header, out parametersLines);
+            MethodNTHeaderParameter_Methods.Parameters_Parse(header, out parametersLines);
             Assert.Equal("List<Rectangle> shape", parametersLines[0]);
             Assert.Equal("int x", parametersLines[1]);
             Assert.Equal("int y", parametersLines[2]);
@@ -560,7 +560,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             #region Test4: public static SortedList<int, Train_PathInfo> AI_FoodSort(Train_ train, ref bool foodChange, List<Train_Food> trainFoods)
             // ================================================================================================================================
             header = "public static SortedList<int, Train_PathInfo> AI_FoodSort(Train_ train, ref bool foodChange, List<Train_Food> trainFoods)";
-            MethodNTHeader_Parameter_Methods.Parameters_Parse(header, out parametersLines);
+            MethodNTHeaderParameter_Methods.Parameters_Parse(header, out parametersLines);
             Assert.Equal("Train_ train", parametersLines[0]);
             Assert.Equal("ref bool foodChange", parametersLines[1]);
             Assert.Equal("List<Train_Food> trainFoods", parametersLines[2]);
@@ -572,7 +572,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             #region Test5: public static IEnumerable<RT> ForEach<T, RT>(IEnumerable<T> array, Func<T, RT> func)
             // ===========================================================================================
             header = "public static IEnumerable<RT> ForEach<T, RT>(IEnumerable<T> array, Func<T, RT> func)";
-            MethodNTHeader_Parameter_Methods.Parameters_Parse(header, out parametersLines);
+            MethodNTHeaderParameter_Methods.Parameters_Parse(header, out parametersLines);
             Assert.Equal("IEnumerable<T> array", parametersLines[0]);
             Assert.Equal("Func<T, RT> func", parametersLines[1]);
             Assert.Equal(2, parametersLines.Count);
@@ -583,7 +583,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             #region Test6: public void TestMethod(Train_ train, ref bool foodChange, List<Train_Food> trainFoods)
             // =============================================================================================
             header = "public void TestMethod(Train_ train, ref bool foodChange, List<Train_Food> trainFoods)";
-            MethodNTHeader_Parameter_Methods.Parameters_Parse(header, out parametersLines);
+            MethodNTHeaderParameter_Methods.Parameters_Parse(header, out parametersLines);
             Assert.Equal("Train_ train", parametersLines[0]);
             Assert.Equal("ref bool foodChange", parametersLines[1]);
             Assert.Equal("List<Train_Food> trainFoods", parametersLines[2]);
@@ -594,7 +594,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             #region Test7: public void TestMethod(Dictionary<string, int> array, Func<T, RT> func)
             // ==============================================================================
             header = "public void TestMethod(Dictionary<string, int> array, Func<T, RT> func)";
-            MethodNTHeader_Parameter_Methods.Parameters_Parse(header, out parametersLines);
+            MethodNTHeaderParameter_Methods.Parameters_Parse(header, out parametersLines);
             Assert.Equal("Dictionary<string, int> array", parametersLines[0]);
             Assert.Equal("Func<T, RT> func", parametersLines[1]);
             Assert.Equal(2, parametersLines.Count);
@@ -842,7 +842,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             MethodNTHeader_ header;
             MethodNTstats_ body;
             ClassNTBlueprintMethodRule_ blueprintMethodRule;
-            ClassNTBlueprintMethodRuleAliasDef_ aliasDef;
+            ClassNTBlueprintMethodRule_AliasDef_ aliasDef;
             string methodName;
             List<string> sourceCode;
             List<string> attribute_Lines;

@@ -5,7 +5,7 @@ using LamedalCore.zz;
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute
 {
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.VS_Static)]
-    public static class ClassNTAttribute_Parameter_Methods
+    public static class ClassNTAttribute_ParameterMethods
     {
         /// <summary>
         /// Parameter attribute.

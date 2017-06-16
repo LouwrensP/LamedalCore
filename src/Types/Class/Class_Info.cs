@@ -10,7 +10,7 @@ namespace LamedalCore.Types.Class
     public sealed class Class_Info
     {
         /// <summary>Gets the class information reference.</summary>
-        private Class_Info_Dictionary Dictionary { get; } = new Class_Info_Dictionary();
+        private Class_InfoDictionary Dictionary { get; } = new Class_InfoDictionary();
 
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
 

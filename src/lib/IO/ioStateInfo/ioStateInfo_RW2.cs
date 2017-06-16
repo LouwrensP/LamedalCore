@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace LamedalCore.lib.IO.IO_StateInfo
+﻿namespace LamedalCore.lib.IO.ioStateInfo
 {
-    public sealed class IO_StateInfo_RW2 : IO_StateInfo_RW
+    public sealed class ioStateInfo_RW2 : ioStateInfo_RW
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
-        private IO_StateInfo_lvl2 _state;
+        private ioStateInfo_lvl2 _state;
 
         /// <summary>Gets the state.</summary>
-        public IO_StateInfo_lvl2 State
+        public ioStateInfo_lvl2 State
         {
             get { return _state; }
         }
@@ -22,8 +17,8 @@ namespace LamedalCore.lib.IO.IO_StateInfo
             set
             {
                 base.FileName = value;
-                if (_jsonStr == "") _state = new IO_StateInfo_lvl2();  // This line need unit testing
-                else _state = _lamed.lib.IO.Json.Convert_ToType<IO_StateInfo_lvl2>(_jsonStr);
+                if (_jsonStr == "") _state = new ioStateInfo_lvl2();  // This line need unit testing
+                else _state = _lamed.lib.IO.Json.Convert_ToType<ioStateInfo_lvl2>(_jsonStr);
             }
         }
 

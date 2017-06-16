@@ -35,7 +35,7 @@ namespace LamedalCore.lib.SolutionNT.ClassNT
             // Execute static method to populate result parameters
             int ii = 0;
             result.SourceCode = sourceLines.ToList();
-            ClassNT_Methods.Parse_Class(sourceLines, ref ii, result, out error, out result.Header, out result.Methods, out result.Properties, out result.Statistics, out result.BlueprintRule);
+            ClassNTMethods.Parse_Class(sourceLines, ref ii, result, out error, out result.Header, out result.Methods, out result.Properties, out result.Statistics, out result.BlueprintRule);
             blueprintRule = result.BlueprintRule;
             result.ClassName = result.Header.ClassName;
             result.ClassFileName = classFilename;

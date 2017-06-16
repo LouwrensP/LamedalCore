@@ -29,7 +29,7 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTCommen
         public static string Return_ToXML(string returnHelpStr, bool convertToValidXML = false)
         {
             if (convertToValidXML) returnHelpStr = LamedalCore_.Instance.lib.XML.Setup.Fix_InvalidXML(returnHelpStr);
-            returnHelpStr = ClassNT_Methods.codeSpace + "<returns>" + returnHelpStr + "</returns>";
+            returnHelpStr = ClassNTMethods.codeSpace + "<returns>" + returnHelpStr + "</returns>";
             return returnHelpStr;
         }
 
@@ -50,7 +50,7 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTCommen
         /// <returns>string</returns>
         public static string Summary_ToXML(string summaryStr, bool convertToValidXML = false, bool Add3Slashes = false)
         {
-            var space = ClassNT_Methods.codeSpace;
+            var space = ClassNTMethods.codeSpace;
             if (Add3Slashes) space += "/// ";
             if (convertToValidXML) summaryStr = LamedalCore_.Instance.lib.XML.Setup.Fix_InvalidXML(summaryStr);
             var summaryXML = space + "<summary>" + summaryStr + "</summary>".NL();    // Do not add newline here

@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using LamedalCore.zz;
 
-namespace LamedalCore.lib.IO.IO_StateInfo
+namespace LamedalCore.lib.IO.ioStateInfo
 {
     /// <summary>
     /// Lookup for string key value pairs in memory. This class should not be used directly.
     /// </summary>
-    public sealed class IO_StateInfo_lvl1
+    public sealed class ioStateInfo_lvl1
     {
         public readonly Dictionary<string, string> DataDic = new Dictionary<string, string>();
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;

@@ -13,7 +13,7 @@ namespace LamedalCore.Types.Class
     /// This class is used internally to optimise reflection opperations
     /// </summary>
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action)]
-    internal sealed class Class_Info_Dictionary
+    internal sealed class Class_InfoDictionary
     {
         //private readonly LaMedal.Portable.Types.Types_ _types = LaMedal.Portable.LaMedalPortable.Instance.Types;
 

@@ -22,7 +22,7 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute
             string name;
             object value;
             bool isEnum;
-            ClassNTAttribute_Parameter_Methods.Attribute_Parameter(attributeName, parameterStr, out name, out value, out isEnum);
+            ClassNTAttribute_ParameterMethods.Attribute_Parameter(attributeName, parameterStr, out name, out value, out isEnum);
 
             return new ClassNTAttribute_Parameter_ {Name = name, Value = value, IsEnumeral = isEnum};
         }

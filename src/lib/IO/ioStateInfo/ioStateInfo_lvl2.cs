@@ -1,18 +1,18 @@
 using System.Collections.Generic;
 
-namespace LamedalCore.lib.IO.IO_StateInfo
+namespace LamedalCore.lib.IO.ioStateInfo
 {
     /// <summary>
     /// Lookup for 2 level string key and values to memory. This class should not be used directly.
     /// </summary>
-    public sealed class IO_StateInfo_lvl2
+    public sealed class ioStateInfo_lvl2
     {
         // This is not a singleton because this class must be generated from json strings
 
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
 
         //public string FileName;
-        public readonly Dictionary<string,IO_StateInfo_lvl1> ClassDic = new Dictionary<string, IO_StateInfo_lvl1>();
+        public readonly Dictionary<string,ioStateInfo_lvl1> ClassDic = new Dictionary<string, ioStateInfo_lvl1>();
 
         /// <summary>Add data to the structure.</summary>
         /// <param name="Heading">The heading.</param>
@@ -20,11 +20,11 @@ namespace LamedalCore.lib.IO.IO_StateInfo
         /// <param name="jsonStr">The json string.</param>
         public void Data_Add(string Heading, string lvl1Name, string jsonStr)
         {
-            IO_StateInfo_lvl1 state;
+            ioStateInfo_lvl1 state;
             if (ClassDic.TryGetValue(Heading, out state) == false)
             {
                 // Need unit testing. (Difficult to test next two lines because the state is saved).
-                state = new IO_StateInfo_lvl1();
+                state = new ioStateInfo_lvl1();
                 ClassDic[Heading] = state;
             }
             state.Data_Add(lvl1Name, jsonStr);
@@ -36,7 +36,7 @@ namespace LamedalCore.lib.IO.IO_StateInfo
         /// <returns></returns>
         public string Data_Get(string Heading, string lvl1Name)
         {
-            IO_StateInfo_lvl1 state;
+            ioStateInfo_lvl1 state;
             if (ClassDic.TryGetValue(Heading, out state) == false) return "";
 
             var json = state.Data_Get(lvl1Name);
@@ -48,7 +48,7 @@ namespace LamedalCore.lib.IO.IO_StateInfo
         /// <returns></returns>
         public List<string> lvl1_Names(string Heading)
         {
-            IO_StateInfo_lvl1 state;
+            ioStateInfo_lvl1 state;
             if (ClassDic.TryGetValue(Heading, out state) == false) return new List<string>();
             return state.lvl1_Names();
         }

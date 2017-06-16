@@ -1,13 +1,12 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.zz;
 
-namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader.MethodNTHeader_Parameter
+namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader.MethodNTHeaderParameter
 {
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.VS_Static)]
-    public static class MethodNTHeader_Parameter_Methods
+    public static class MethodNTHeaderParameter_Methods
     {
         #region Parameters_Parse
 

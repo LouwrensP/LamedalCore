@@ -1,15 +1,13 @@
 ﻿using System.Diagnostics;
-using LamedalCore;
-using LamedalCore.domain.Enumerals;
 using LamedalCore.zz;
 
-namespace LamedalCore.lib.IO.IO_StateInfo
+namespace LamedalCore.lib.IO.ioStateInfo
 {
     /// <summary>
     /// Saves and load the 2 lvl string lookup key value data. This class should not be used directly.
     /// </summary>
     /// <seealso cref="System.IDisposable" />
-    public abstract class IO_StateInfo_RW
+    public abstract class ioStateInfo_RW
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
         protected string _FileName = "";

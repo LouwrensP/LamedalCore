@@ -235,7 +235,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
 
             #region [BlueprintRule_MethodAliasDef(MirrorClass = "mirrorClass", MirrorMethodName = "mirrorMethod", MirrorParameter1 = "parName")]
             attributeStr = "[BlueprintRule_MethodAliasDef(MirrorClass = \"mirrorClass\", MirrorMethodName = \"mirrorMethod\", MirrorParameter1 = \"parName\")]";
-            var result = ClassNTBlueprintMethodRuleAliasDef_Methods.Attribute_AliasDefinition(attributeStr, out name, out MirrorParameter1, out MirrorClass, out MirrorMethodName);
+            var result = ClassNTBlueprintMethodRule_AliasDefMethods.Attribute_AliasDefinition(attributeStr, out name, out MirrorParameter1, out MirrorClass, out MirrorMethodName);
             Assert.Equal(true, result);
             Assert.Equal("BlueprintRule_MethodAliasDef", name);
             Assert.Equal("mirrorClass", MirrorClass);
@@ -243,13 +243,13 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             Assert.Equal("parName", MirrorParameter1);
 
             List<string> source = MethodNTHeader_Methods.Str2StrList(attributeStr);
-            var attrDef = ClassNTBlueprintMethodRuleAliasDef_.Create(source);
+            var attrDef = ClassNTBlueprintMethodRule_AliasDef_.Create(source);
             Assert.Equal("mirrorMethod", attrDef.MirrorMethodName);
             #endregion
 
             #region [Fact]
             attributeStr = "[Fact]";
-            result = ClassNTBlueprintMethodRuleAliasDef_Methods.Attribute_AliasDefinition(attributeStr, out name, out MirrorParameter1, out MirrorClass, out MirrorMethodName);
+            result = ClassNTBlueprintMethodRule_AliasDefMethods.Attribute_AliasDefinition(attributeStr, out name, out MirrorParameter1, out MirrorClass, out MirrorMethodName);
             Assert.Equal(false, result);
             #endregion
         }

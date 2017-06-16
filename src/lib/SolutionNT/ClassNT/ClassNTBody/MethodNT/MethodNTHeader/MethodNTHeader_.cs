@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
-using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader.MethodNTHeader_Parameter;
+using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader.MethodNTHeaderParameter;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader
 {
@@ -15,7 +15,7 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader
         public string Header_ReturnType;
         public string Header_Name;
         public enCode_Specialty Header_Specialty = enCode_Specialty.IsNormal;
-        public readonly List<MethodNTHeader_Parameter_> Header_Parameters = new List<MethodNTHeader_Parameter_>();
+        public readonly List<MethodNTHeaderParameter_> Header_Parameters = new List<MethodNTHeaderParameter_>();
 
         public string Method_HeaderLine;     // Original method header
         public string Method_Signature;     // The signature of the method
@@ -29,10 +29,10 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader
 
             // Get the parameters
             List<string> parametersLines;
-            MethodNTHeader_Parameter_Methods.Parameters_Parse(result.Method_HeaderLine, out parametersLines);
+            MethodNTHeaderParameter_Methods.Parameters_Parse(result.Method_HeaderLine, out parametersLines);
             foreach (string paramLine in parametersLines)
             {
-                var parameter = MethodNTHeader_Parameter_.Create(paramLine);
+                var parameter = MethodNTHeaderParameter_.Create(paramLine);
                 result.Header_Parameters.Add(parameter);
             }
 

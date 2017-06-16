@@ -2,10 +2,10 @@
 using LamedalCore.domain.Enumerals;
 using LamedalCore.zz;
 
-namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTComment.MethodNTComment_Parameter
+namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTComment.MethodNTCommentParameter
 {
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.VS_Static)]
-    public static class MethodNTComment_Parameter_Methods
+    public static class MethodNTCommentParameter_Methods
     {
         /// <summary>
         /// Parameter values from the  XML parameter line.
@@ -26,7 +26,7 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTCommen
         /// <returns>string</returns>
         public static string Parameter_ToXML(string parameterName, string helpStr, bool convertToValidXML = false, bool add3SlashLines = false)
         {
-            var space = ClassNT_Methods.codeSpace;
+            var space = ClassNTMethods.codeSpace;
             if (add3SlashLines) space += "/// ";
             if (convertToValidXML) helpStr = LamedalCore_.Instance.lib.XML.Setup.Fix_InvalidXML(helpStr);
             var result = space + "<param name=\"" + parameterName + "\">" + helpStr + "</param>".NL();

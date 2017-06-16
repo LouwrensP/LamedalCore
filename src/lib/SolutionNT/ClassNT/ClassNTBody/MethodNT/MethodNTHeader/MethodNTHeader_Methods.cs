@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
-using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader.MethodNTHeader_Parameter;
+using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader.MethodNTHeaderParameter;
 using LamedalCore.zz;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader
@@ -97,12 +97,12 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader
         /// <param name="parameters">The parameters list</param>
         /// <param name="returnType">The return type</param>
         /// <returns>string</returns>
-        public static void ParameterSignature(string methodName, List<MethodNTHeader_Parameter_> parameters, string returnType, out string signature, out string parameterLine)
+        public static void ParameterSignature(string methodName, List<MethodNTHeaderParameter_> parameters, string returnType, out string signature, out string parameterLine)
         {
             signature = "";
             parameterLine = "";
             var ref1 = "";
-            foreach (MethodNTHeader_Parameter_ parameter in parameters)
+            foreach (MethodNTHeaderParameter_ parameter in parameters)
             {
                 if (signature.Length > 0)
                 {

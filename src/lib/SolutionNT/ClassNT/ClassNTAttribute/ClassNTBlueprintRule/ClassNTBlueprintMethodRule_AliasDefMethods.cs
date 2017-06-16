@@ -8,7 +8,7 @@ using LamedalCore.zz;
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute.ClassNTBlueprintRule
 {
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.VS_Static)]
-    public static class ClassNTBlueprintMethodRuleAliasDef_Methods
+    public static class ClassNTBlueprintMethodRule_AliasDefMethods
     {
         [BlueprintRule_MethodAliasDef(MirrorClass = typeof(string), MirrorMethodName = "mirrorMethod", MirrorParameter1 = "parName")]
         public static bool Attribute_AliasDefinition(string attributeCode, out string attrinuteName, out string mirrorParameter1, out string mirrorClass, out string mirrorMethodName)

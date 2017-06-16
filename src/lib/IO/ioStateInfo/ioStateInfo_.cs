@@ -1,16 +1,14 @@
-﻿using System.Resources;
-
-namespace LamedalCore.lib.IO.IO_StateInfo
+﻿namespace LamedalCore.lib.IO.ioStateInfo
 {
-    public sealed class IO_StateInfo_
+    public sealed class ioStateInfo_
     {
         #region Level1
         /// <summary>
         /// Gets the IO for level 1 state information.
         /// </summary>
-        public IO_StateInfo_RW1 Level1
+        public ioStateInfo_RW1 Level1
         {
-            get { return IO_StateInfo_Singleton.Instance.Level(1) as IO_StateInfo_RW1; }
+            get { return ioStateInfo_Singleton.Instance.Level(1) as ioStateInfo_RW1; }
         }
         #endregion
 
@@ -19,21 +17,21 @@ namespace LamedalCore.lib.IO.IO_StateInfo
         /// <summary>
         /// Gets the IO for level 1 state information.
         /// </summary>
-        public IO_StateInfo_RW2 Level2
+        public ioStateInfo_RW2 Level2
         {
-            get { return IO_StateInfo_Singleton.Instance.Level(2) as IO_StateInfo_RW2; }
+            get { return ioStateInfo_Singleton.Instance.Level(2) as ioStateInfo_RW2; }
         }
 
         /// <summary>Resets the state information.</summary>
         public void Reset()
         {
-            IO_StateInfo_Singleton.Instance.Reset();
+            ioStateInfo_Singleton.Instance.Reset();
         }
 
         /// <summary>Resets the state information.</summary>
         public void Reset(int level)
         {
-            IO_StateInfo_Singleton.Instance.Reset(level);
+            ioStateInfo_Singleton.Instance.Reset(level);
         }
 
         #endregion

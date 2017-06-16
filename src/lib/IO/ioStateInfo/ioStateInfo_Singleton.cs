@@ -1,16 +1,16 @@
-﻿namespace LamedalCore.lib.IO.IO_StateInfo
+﻿namespace LamedalCore.lib.IO.ioStateInfo
 {
-    public sealed class IO_StateInfo_Singleton
+    public sealed class ioStateInfo_Singleton
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
 
-        private IO_StateInfo_RW1 _info1;
-        private IO_StateInfo_RW2 _info2;
+        private ioStateInfo_RW1 _info1;
+        private ioStateInfo_RW2 _info2;
 
         #region Singleton of StateInfo_IO_1lvl
-        private static readonly IO_StateInfo_Singleton _StateInfo_IO_1lvl = new IO_StateInfo_Singleton();  // This is the only instance of this class
+        private static readonly ioStateInfo_Singleton _StateInfo_IO_1lvl = new ioStateInfo_Singleton();  // This is the only instance of this class
 
-        private IO_StateInfo_Singleton()
+        private ioStateInfo_Singleton()
         {
             // Private constructor prevents creation by external clients
         }
@@ -18,7 +18,7 @@
         /// <summary>
         /// Return Instance of StateInfo_4Forms
         /// </summary>
-        public static IO_StateInfo_Singleton Instance
+        public static ioStateInfo_Singleton Instance
         {
             get { return _StateInfo_IO_1lvl; }
         }
@@ -28,12 +28,12 @@
         /// <summary>Returns the level state information.</summary>
         /// <param name="level">The level.</param>
         /// <returns></returns>
-        public IO_StateInfo_RW Level(int level=1)
+        public ioStateInfo_RW Level(int level=1)
         {
-            if (level == 1) return _info1 ?? (_info1 = new IO_StateInfo_RW1());
+            if (level == 1) return _info1 ?? (_info1 = new ioStateInfo_RW1());
 
             // Assume level = 2
-            return _info2 ?? (_info2 = new IO_StateInfo_RW2());
+            return _info2 ?? (_info2 = new ioStateInfo_RW2());
         }
 
         /// <summary>Resets state memory.</summary>

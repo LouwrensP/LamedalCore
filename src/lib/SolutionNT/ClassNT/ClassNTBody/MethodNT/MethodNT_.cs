@@ -23,7 +23,7 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT
         public List<string> Attribute_Lines;
         public ClassNTAttributes_ Attribute_Breakdown;
         public ClassNTBlueprintMethodRule_ Attribute_Rule;
-        public ClassNTBlueprintMethodRuleAliasDef_ Attribute_Alias;
+        public ClassNTBlueprintMethodRule_AliasDef_ Attribute_Alias;
         public MethodNTHeader_ Header;
         public MethodNTstats_ Statistics;
 

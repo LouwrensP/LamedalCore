@@ -7,20 +7,20 @@ using LamedalCore.zz;
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute.ClassNTBlueprintRule
 {
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_State)]
-    public sealed class ClassNTBlueprintMethodRuleAliasDef_ : BlueprintRule_MethodAliasDefAttribute
+    public sealed class ClassNTBlueprintMethodRule_AliasDef_ : BlueprintRule_MethodAliasDefAttribute
     {
-        public static ClassNTBlueprintMethodRuleAliasDef_ Create(string attributeCode)
+        public static ClassNTBlueprintMethodRule_AliasDef_ Create(string attributeCode)
         {
-            var result = new ClassNTBlueprintMethodRuleAliasDef_(); 
+            var result = new ClassNTBlueprintMethodRule_AliasDef_(); 
             // Execute static method to populate result parameters
             string attrinuteName;
             string mirrorClass;
-            ClassNTBlueprintMethodRuleAliasDef_Methods.Attribute_AliasDefinition(attributeCode, out attrinuteName, out result.MirrorParameter1, out mirrorClass, out result.MirrorMethodName);
+            ClassNTBlueprintMethodRule_AliasDefMethods.Attribute_AliasDefinition(attributeCode, out attrinuteName, out result.MirrorParameter1, out mirrorClass, out result.MirrorMethodName);
             result.MirrorClass = Type.GetType(mirrorClass);  // If type cannot be found -> do other conversions here
             return result;
         }
 
-        public static ClassNTBlueprintMethodRuleAliasDef_ Create(List<string> attributeLines)
+        public static ClassNTBlueprintMethodRule_AliasDef_ Create(List<string> attributeLines)
         {
             foreach (string attLine in attributeLines)
             {
@@ -45,6 +45,6 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute.ClassNTBlueprintRu
         private static string _BlueprintMethodAliasRule2 = null;
 
 
-        private ClassNTBlueprintMethodRuleAliasDef_() { }  // Hide default constructor
+        private ClassNTBlueprintMethodRule_AliasDef_() { }  // Hide default constructor
     }
 }

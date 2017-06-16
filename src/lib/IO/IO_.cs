@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
-using LamedalCore.lib.IO.IO_StateInfo;
+using LamedalCore.lib.IO.ioStateInfo;
 
 namespace LamedalCore.lib.IO
 {
@@ -81,11 +81,11 @@ namespace LamedalCore.lib.IO
         /// <summary>
         /// Gets the StateInfo library methods.
         /// </summary>
-        public IO_StateInfo_ StateInfo
+        public ioStateInfo_ StateInfo
         {
-            get { return _StateInfo ?? (_StateInfo = new IO_StateInfo_()); }
+            get { return _StateInfo ?? (_StateInfo = new ioStateInfo_()); }
         }
-        private IO_StateInfo_ _StateInfo;
+        private ioStateInfo_ _StateInfo;
         #endregion
     }
 }

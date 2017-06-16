@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using LamedalCore.domain.Attributes;
-using LamedalCore.lib.IO.IO_StateInfo;
+using LamedalCore.lib.IO.ioStateInfo;
 using LamedalCore.Test.Tests.Types.Class;
 using Xunit;
 
@@ -26,7 +26,7 @@ namespace LamedalCore.Test.Tests.lib.IO
 
             // Setup the StateInfo if not exits
             var person = new IO_StateInfo_Data();
-            IO_StateInfo_RW1 _infoPerson = _lamed.lib.IO.StateInfo.Level1;
+            ioStateInfo_RW1 _infoPerson = _lamed.lib.IO.StateInfo.Level1;
             _infoPerson = _lamed.lib.IO.StateInfo.Level1; // Reload all
 
             _infoPerson.Data_Load("Person", person); // Load the data

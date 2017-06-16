@@ -5,9 +5,9 @@ using LamedalCore.domain.Enumerals;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute.ClassNTBlueprintRule;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttributes;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTComment;
-using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTComment.MethodNTComment_Parameter;
+using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTComment.MethodNTCommentParameter;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader;
-using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader.MethodNTHeader_Parameter;
+using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader.MethodNTHeaderParameter;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTstats;
 using LamedalCore.zz;
 
@@ -33,7 +33,7 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT
         /// <param name="stats">The body.</param>
         public static void Method_Parse(List<string> sourceLines, ref int ii, int iiMethodEnd, out string methodName, out List<string> sourceCode, 
             out MethodNTComment_ comment, out List<string> attribute_Lines, out ClassNTAttributes_ attribute_Breakdown, 
-            out ClassNTBlueprintMethodRule_ methodRule, out ClassNTBlueprintMethodRuleAliasDef_ methodAliasDef,
+            out ClassNTBlueprintMethodRule_ methodRule, out ClassNTBlueprintMethodRule_AliasDef_ methodAliasDef,
             out MethodNTHeader_ header, out MethodNTstats_ stats)
         {
             if (iiMethodEnd == 0) iiMethodEnd = sourceLines.Count-1;
@@ -44,7 +44,7 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT
             int jj = 0;
             comment = MethodNTComment_.Create(sourceCode, ref jj, out attribute_Lines);
             methodRule = ClassNTBlueprintMethodRule_.Create(attribute_Lines);
-            methodAliasDef = ClassNTBlueprintMethodRuleAliasDef_.Create(attribute_Lines);
+            methodAliasDef = ClassNTBlueprintMethodRule_AliasDef_.Create(attribute_Lines);
             attribute_Breakdown = ClassNTAttributes_.Create(attribute_Lines);  // attributes
             header = MethodNTHeader_.Create(sourceCode, ref jj);
             stats = MethodNTstats_.Create(sourceCode, ref jj, comment, header, attribute_Lines.Count);
@@ -60,10 +60,10 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT
         public static void SyncParametersWithComments(MethodNTHeader_ header, MethodNTComment_ comments)
         {
             var parameters = header.Header_Parameters;
-            foreach (MethodNTHeader_Parameter_ parameter in parameters)
+            foreach (MethodNTHeaderParameter_ parameter in parameters)
             {
                 var name = parameter.ParameterName.Replace("@", "");
-                MethodNTComment_Parameter_ parmComment = comments.CommentParameters.FirstOrDefault(x => x.ParameterName == name);
+                MethodNTCommentParameter_ parmComment = comments.CommentParameters.FirstOrDefault(x => x.ParameterName == name);
                 if (parmComment != null) parameter.ParameterComment = parmComment.ParameterComment;
             }
         }

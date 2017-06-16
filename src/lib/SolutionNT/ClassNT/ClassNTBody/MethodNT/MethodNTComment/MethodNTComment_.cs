@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
-using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTComment.MethodNTComment_Parameter;
+using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTComment.MethodNTCommentParameter;
 using LamedalCore.zz;
 
 namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTComment
@@ -14,7 +14,7 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTCommen
     {
         public string CommentSummary;
         public string CommentReturn;
-        public readonly List<MethodNTComment_Parameter_> CommentParameters = new List<MethodNTComment_Parameter_>();
+        public readonly List<MethodNTCommentParameter_> CommentParameters = new List<MethodNTCommentParameter_>();
 
         /// <summary>
         /// Convert the comment to XML.
@@ -22,7 +22,7 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTCommen
         public string ToXML(bool add3SlashLines = false)
         {
             var result = MethodNTComment_Methods.Summary_ToXML(CommentSummary, true, add3SlashLines);
-            foreach (MethodNTComment_Parameter_ parameter_ in CommentParameters)
+            foreach (MethodNTCommentParameter_ parameter_ in CommentParameters)
             {
                 result += parameter_.ToXML(add3SlashLines);
             }
@@ -41,7 +41,7 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTCommen
             // Add the parameters
             foreach (string parameterLine in parameterLines)
             {
-                var parameter = MethodNTComment_Parameter_.Create(parameterLine);
+                var parameter = MethodNTCommentParameter_.Create(parameterLine);
                 result.CommentParameters.Add(parameter);
             }
 

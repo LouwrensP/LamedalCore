@@ -184,7 +184,8 @@ namespace LamedalCore.lib.IO
                     IList listCurrent = _lamed.Types.Object.CastTo<IList>(property);
                     var listCurrent2 = _lamed.Types.List.Convert.IList_2IListT<string>(listCurrent);
                     List<string> listNew = propertyValue.ToObject<List<string>>();
-                    listCurrent2.zFrom_IList(listNew);
+                    _lamed.Types.List.Action.Copy_From_T(listCurrent2, listNew);
+                    //listCurrent2.zFrom_IList(listNew);
                 }
             }
             else

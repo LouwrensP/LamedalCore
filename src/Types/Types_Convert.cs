@@ -243,8 +243,8 @@ namespace LamedalCore.Types
                 }
                 else if (Object is IList)
                 {
-                    var list = _lamed.Types.List.Convert.IList_2IListT<string>((IList)Object);
-                    result = "[" +_lamed.Types.List.String.ToString(list, ",") + "]";
+                    //IList<string> list = _lamed.Types.List.Convert.IList_2IListT<string>((IList)Object);
+                    result = "[" +_lamed.Types.List.String.ToString((IList)Object, ",") + "]";
                 }
                 else if (_lamed.Types.Object.IsClass(Object))
                 {

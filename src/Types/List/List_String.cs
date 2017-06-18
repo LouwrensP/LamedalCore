@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -252,7 +253,33 @@ namespace LamedalCore.Types.List
             return array.Select(s => s.ToLowerInvariant()).ToList();
         }
 
-        /// <summary>Word_FromAbbreviation an Array to string.</summary>
+        ///// <summary>Convert a list of T to string.</summary>
+        ///// <typeparam name="T"></typeparam>
+        ///// <param name="list">The array.</param>
+        ///// <param name="delimiter">The delimiter.</param>
+        ///// <param name="trim">if set to <c>true</c> [trim].</param>
+        ///// <param name="index">The index.</param>
+        ///// <param name="lastIndex">The last index. if -1 then it will be up to the last item</param>
+        ///// <returns>System.String.</returns>
+        ///// <code ShortcutMethod="ToString"></code>
+        //public string ToString<T>(IList<T> list, string delimiter = "♣", bool trim = false, int index = 0, int lastIndex = -1)
+        //{
+        //    if (list == null) return "";
+        //    if (lastIndex == -1 || lastIndex > list.Count) lastIndex = list.Count;
+
+        //    var result = new StringBuilder("");
+        //    for (var ii = index; ii < lastIndex; ii++)
+        //    {
+        //        string item = list[ii] as string;
+        //        if (trim) item = item.Trim();
+
+        //        if (ii == index) result.Append(item);
+        //        else result.Append(delimiter + item);
+        //    }
+        //    return result.ToString();
+        //}
+
+        /// <summary>Convert a IList to string. This is used in frontend controls</summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="list">The array.</param>
         /// <param name="delimiter">The delimiter.</param>
@@ -261,7 +288,7 @@ namespace LamedalCore.Types.List
         /// <param name="lastIndex">The last index. if -1 then it will be up to the last item</param>
         /// <returns>System.String.</returns>
         /// <code ShortcutMethod="ToString"></code>
-        public string ToString<T>(IList<T> list, string delimiter = "♣", bool trim = false, int index = 0, int lastIndex = -1)
+        public string ToString(IList list, string delimiter = "♣", bool trim = false, int index = 0, int lastIndex = -1)
         {
             if (list == null) return "";
             if (lastIndex == -1 || lastIndex > list.Count) lastIndex = list.Count;
@@ -277,7 +304,6 @@ namespace LamedalCore.Types.List
             }
             return result.ToString();
         }
-
         /// <summary>
         /// Trim left side of all the lines in the array by an equal amount. This has the effect of triming on the left side of a block of text.
         /// </summary>

@@ -26,7 +26,7 @@ namespace LamedalCore.zz
         /// <code>CTIN_Transformation;</code>
         public static string zTo_Str<T>(this List<T> list, string delimiter = ",", int index = 0, int lastIndex = -1)
         {
-            return LamedalCore_.Instance.Types.List.String.ToString<T>(list, delimiter, false, index, lastIndex);
+            return LamedalCore_.Instance.Types.List.String.ToString(list, delimiter, false, index, lastIndex);
         }
 
         ///// <summary>

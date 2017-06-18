@@ -31,9 +31,9 @@ namespace LamedalCore.Types.List
         /// <param name="clearList">if set to <c>true</c> [clear list].</param>
         /// <param name="iiStart">The ii start.</param>
         /// <param name="iiEnd">The ii end.</param>
-        public void Copy_From<T>(IList<T> toList, IList<T> fromList, bool clearList = true, int iiStart = 0, int iiEnd = -1)
+        public void Copy_From_T<T>(IList<T> toList, IList<T> fromList, bool clearList = true, int iiStart = 0, int iiEnd = -1)
         {
-            Copy_To(fromList, toList, clearList, iiStart, iiEnd);
+            Copy_To_T(fromList, toList, clearList, iiStart, iiEnd);
         }
 
         /// <summary>Copies items from one list to the other list.</summary>
@@ -67,11 +67,11 @@ namespace LamedalCore.Types.List
         /// <param name="clearList">if set to <c>true</c> [clear list].</param>
         /// <param name="indexStart">The ii start.</param>
         /// <param name="indexEnd">The ii end.</param>
-        public void Copy_To<T>(IList<T> fromList, IList<T> toList, bool clearList = true, int indexStart = 0, int indexEnd = -1)
+        public void Copy_To_T<T>(IList<T> fromList, IList<T> toList, bool clearList = true, int indexStart = 0, int indexEnd = -1)
         {
             // Check arguments
-            if (fromList == null) throw new ArgumentNullException(nameof(fromList)); 
-            if (toList == null)   throw new ArgumentNullException(nameof(toList));
+            if (fromList == null) throw new ArgumentNullException(nameof(fromList));
+            if (toList == null) throw new ArgumentNullException(nameof(toList));
             if (indexStart < 0) indexStart = 0;
             if (indexEnd < 0) indexEnd = -1;
 
@@ -120,16 +120,29 @@ namespace LamedalCore.Types.List
             }
         }
 
-        /// <summary>Merge the values from two lists.</summary>
+        /// <summary>Merge the values from two lists. Used in frontend code</summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="list1">The list1.</param>
         /// <param name="list2">The list2.</param>
         /// <returns></returns>
-        public IList<T> Merge<T>(IList<T> list1, IList<T> list2)
+        public IList<T> Merge<T>(IList list1, IList list2)
         {
             var result = new List<T>(list1.Count + list2.Count);
             Copy_To(list1, result);
             Copy_To(list2, result);
+            return result;
+        }
+
+        /// <summary>Merge the values from two lists. Used in frontend code</summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list1">The list1.</param>
+        /// <param name="list2">The list2.</param>
+        /// <returns></returns>
+        public IList<T> Merge_T<T>(IList<T> list1, IList<T> list2)
+        {
+            var result = new List<T>(list1.Count + list2.Count);
+            Copy_To_T(list1, result);
+            Copy_To_T(list2, result);
             return result;
         }
 

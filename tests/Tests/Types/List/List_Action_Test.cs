@@ -60,7 +60,7 @@ namespace LamedalCore.Test.Tests.Types.List
             var items = new[] { 4, 2, 5, 6, 4 }; // 4, 2, 5, 6, 4 
             var items2 = new[] { 2, 4, 5, 6 };  // 2, 4, 5, 6
 
-            var mergedItems = _lamed.Types.List.Action.Merge(items.ToList(), items2.ToList());
+            var mergedItems = _lamed.Types.List.Action.Merge_T(items.ToList(), items2.ToList());
             Assert.True(_lamed.Types.List.Find.Contains(new[] { 4, 2, 5, 6, 4, 2, 4, 5, 6 }, mergedItems));
         }
 

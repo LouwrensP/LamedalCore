@@ -18,7 +18,7 @@ namespace LamedalCore.zz
         /// <param name="iiStart">The ii start.</param>
         /// <param name="iiEnd">The ii end.</param>
         /// <code>CTIN_Transformation;</code>
-        public static void zFrom_IList<T>(this IList<T> list, IList<T> fromList, bool clearList = true, int iiStart = 0, int iiEnd = -1)
+        public static void zFrom_IList(this IList list, IList fromList, bool clearList = true, int iiStart = 0, int iiEnd = -1)
         {
             LamedalCore_.Instance.Types.List.Action.Copy_From(list, fromList, clearList, iiStart, iiEnd);
         }
@@ -30,7 +30,7 @@ namespace LamedalCore.zz
         /// <param name="trim">if set to <c>true</c> [trim].</param>
         /// <returns></returns>
         /// <code>CTIN_Transformation;</code>
-        public static string zTo_Str<T>(this IList<T> list, string delimiter = "♣", bool trim = false)
+        public static string zTo_Str(this IList list, string delimiter = "♣", bool trim = false)
         {
             return LamedalCore_.Instance.Types.List.String.ToString(list, delimiter, trim);
         }
@@ -45,7 +45,7 @@ namespace LamedalCore.zz
         /// <param name="iiEnd">The ii end.</param>
         /// <code>IgnoreName;</code>
         /// <code>CTIN_Transformation;</code>
-        public static void zTo_IList<T>(this IList<T> fromList, IList<T> toList, bool clearList = true, int iiStart = 0, int iiEnd = -1)
+        public static void zTo_IList(this IList fromList, IList toList, bool clearList = true, int iiStart = 0, int iiEnd = -1)
         {
             LamedalCore_.Instance.Types.List.Action.Copy_To(fromList, toList, clearList, iiStart, iiEnd);
         }

@@ -33,7 +33,7 @@ namespace LamedalCore.zz
         /// <code>CTIN_Transformation;</code>
         public static void zTo_List<T>(this List<T> fromArray, List<T> toList, bool clearList = true)
         {
-            LamedalCore_.Instance.Types.List.Action.Copy_To<T>(fromArray, toList, clearList);
+            LamedalCore_.Instance.Types.List.Action.Copy_To(fromArray, toList, clearList);
         }
 
         

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -31,6 +32,18 @@ namespace LamedalCore.Types.List
         /// <param name="iiStart">The ii start.</param>
         /// <param name="iiEnd">The ii end.</param>
         public void Copy_From<T>(IList<T> toList, IList<T> fromList, bool clearList = true, int iiStart = 0, int iiEnd = -1)
+        {
+            Copy_To(fromList, toList, clearList, iiStart, iiEnd);
+        }
+
+        /// <summary>Copies items from one list to the other list.</summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="toList">The list.</param>
+        /// <param name="fromList">From list.</param>
+        /// <param name="clearList">if set to <c>true</c> [clear list].</param>
+        /// <param name="iiStart">The ii start.</param>
+        /// <param name="iiEnd">The ii end.</param>
+        public void Copy_From(IList toList, IList fromList, bool clearList = true, int iiStart = 0, int iiEnd = -1)
         {
             Copy_To(fromList, toList, clearList, iiStart, iiEnd);
         }
@@ -68,6 +81,33 @@ namespace LamedalCore.Types.List
                 ((List<T>)toList).AddRange(fromList);
                 return;  //<========================================
             }
+
+            // Only copy part of fromList; First make sure iiStart and indexEnd are within excepted bounds
+
+            if (indexStart > fromList.Count - 1) indexStart = fromList.Count - 1;  // Make sure iiStart is within range
+            if (indexEnd == -1 || indexEnd > fromList.Count - 1) indexEnd = fromList.Count - 1;  // Make sure indexEnd is within range
+            for (var ii = indexStart; ii <= indexEnd; ii++)
+            {
+                var item = fromList[ii];
+                toList.Add(item);
+            }
+        }
+
+        /// <summary>Copies items from one list to the other list. Used my fontend controls</summary>
+        /// <param name="fromList">From list.</param>
+        /// <param name="toList">To list.</param>
+        /// <param name="clearList">if set to <c>true</c> [clear list].</param>
+        /// <param name="indexStart">The ii start.</param>
+        /// <param name="indexEnd">The ii end.</param>
+        public void Copy_To(IList fromList, IList toList, bool clearList = true, int indexStart = 0, int indexEnd = -1)
+        {
+            // Check arguments
+            if (fromList == null) throw new ArgumentNullException(nameof(fromList));
+            if (toList == null) throw new ArgumentNullException(nameof(toList));
+            if (indexStart < 0) indexStart = 0;
+            if (indexEnd < 0) indexEnd = fromList.Count-1;
+
+            if (clearList) toList.Clear();
 
             // Only copy part of fromList; First make sure iiStart and indexEnd are within excepted bounds
 
@@ -145,6 +185,18 @@ namespace LamedalCore.Types.List
             return list;
         }
 
+        /// <summary>Return a unique list.</summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list">The list.</param>
+        /// <returns></returns>
+        /// <exception cref="System.ArgumentNullException">list</exception>
+        public IEnumerable<T> Unique<T>(IEnumerable<T> list)
+        {
+            if (list == null) return null;   //throw new ArgumentNullException(nameof(list));
+            IList<T> result = list.Distinct(EqualityComparer<T>.Default).ToList();
+            return result;
+        }
+       
         /// <summary>Return a unique list.</summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="list">The list.</param>

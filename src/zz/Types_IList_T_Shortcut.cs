@@ -30,6 +30,16 @@ namespace LamedalCore.zz
             return LamedalCore_.Instance.Types.List.Action.Unique<T>(list);
         }
 
-       
+        /// <summary>
+        /// Return a unique list.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list">The list.</param>
+        /// <returns></returns>
+        /// <code>CTIN_Transformation;</code>
+        public static IEnumerable<T> zUnique2<T>(this IEnumerable<T> list)
+        {
+            return LamedalCore_.Instance.Types.List.Action.Unique<T>(list);
+        }
     }
 }

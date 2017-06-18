@@ -5,6 +5,9 @@
         /// <summary>The method is used for testing and is therfor not part of unit testing scope.</summary>
         CodeIsUsedForTesting,
 
+        /// <summary>The code is used for exception handling.</summary>
+        ExceptionHandling,
+
         /// <summary>The method is short cut method and already tested and need not be bested again</summary>
         MethodIsShortCut,
 

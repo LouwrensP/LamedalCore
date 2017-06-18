@@ -28,7 +28,6 @@ using System.Linq;
 using System.Text;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
-using LamedalCore.domain.Exceptions;
 using LamedalCore.lib;
 using LamedalCore.Types;
 using LamedalCore.zz;
@@ -126,11 +125,11 @@ namespace LamedalCore
         /// <summary>
         /// Gets the Exceptions library methods. 
         /// </summary>
-        public Exceptions_ Exceptions
+        public LamedalCore_Exceptions Exceptions
         {
-            get { return _Exceptions ?? (_Exceptions = new Exceptions_()); }
+            get { return _Exceptions ?? (_Exceptions = new LamedalCore_Exceptions()); }
         }
-        private Exceptions_ _Exceptions;
+        private LamedalCore_Exceptions _Exceptions;
         #endregion
 
 

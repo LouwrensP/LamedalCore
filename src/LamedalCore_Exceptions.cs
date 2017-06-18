@@ -1,19 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Runtime.CompilerServices;
+using System.Reflection;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.zz;
 
-namespace LamedalCore.domain.Exceptions
+namespace LamedalCore
 {
     /// <summary>
     /// Error handeling methods class
     /// </summary>
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, DefaultType = typeof(Exception))]
-    [Test_IgnoreCoverage(enCode_TestIgnore.CodeIsUsedForTesting)]
-    public class Exceptions_
+    [Test_IgnoreCoverage(enCode_TestIgnore.ExceptionHandling)]
+    public class LamedalCore_Exceptions
     {
         // Todo: [0.5d] (R&D) DebuggerStepThrough Attribute and apply on exception classes. Test it on type methods. Test InnerExceptions() method.
 

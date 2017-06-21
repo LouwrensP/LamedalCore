@@ -7,6 +7,9 @@ namespace LamedalCore.zPublicClass.GridBlock
     {
         public static string GridPrefix(IGridBlock_Base grid, GridControl_Settings settings)
         {
+            if (grid == null) throw new ArgumentNullException(nameof(grid));
+            if (settings == null) throw new ArgumentNullException(nameof(settings));
+
             string prefix = "";
             if (grid is GridBlock_1Micro) prefix = settings.GridBlock_Name1Micro;
             else if (grid is GridBlock_2Sub) prefix = settings.GridBlock_Name2Sub;

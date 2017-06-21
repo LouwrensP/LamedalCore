@@ -138,19 +138,19 @@ namespace LamedalCore.zPublicClass.GridBlock
         }
 
         /// <summary>
-            /// Setup the Grid settings.
-            /// </summary>
-            /// <param name="settings">The settings.</param>
-            /// <param name="macroRows">The macro rows.</param>
-            /// <param name="macroCols">The macro cols.</param>
-            /// <param name="subRows">The sub rows.</param>
-            /// <param name="subCols">The sub cols.</param>
-            /// <param name="microRows">The micro rows.</param>
-            /// <param name="microCols">The micro cols.</param>
-            /// <param name="width">The width.</param>
-            /// <param name="height">The height.</param>
-            /// <returns></returns>
-            public static GridControl_Settings Setup(GridControl_Settings settings, int macroRows, int macroCols,
+        /// Setup the Grid settings.
+        /// </summary>
+        /// <param name="settings">The settings.</param>
+        /// <param name="macroRows">The macro rows.</param>
+        /// <param name="macroCols">The macro cols.</param>
+        /// <param name="subRows">The sub rows.</param>
+        /// <param name="subCols">The sub cols.</param>
+        /// <param name="microRows">The micro rows.</param>
+        /// <param name="microCols">The micro cols.</param>
+        /// <param name="width">The width.</param>
+        /// <param name="height">The height.</param>
+        /// <returns></returns>
+        public static GridControl_Settings Setup(GridControl_Settings settings, int macroRows, int macroCols,
                                 int subRows, int subCols,
                                 int microRows, int microCols,
                                 int width = 0, int height = 0)

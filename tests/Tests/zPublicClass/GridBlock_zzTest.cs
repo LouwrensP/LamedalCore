@@ -178,9 +178,23 @@ Grid//R1cub1_1R1macro1_1R1sub1_1R1//R1cub1_1R1macro1_1R1sub1_1R1mic1_1//MicroBlo
 
             var treeControls = _ListTest1.zTo_Str("".NL());
             Assert.Equal(treeControlsStr, treeControls);
-
             Assert.Equal(treeControlsStr, gridCuboid2.TreeControlList().zTo_Str("".NL()));
+        }
 
+        [Fact]
+        [Test_Method("GridPrefix_Test()")]
+        public void GridPrefix_Test()
+        {
+            // null, null
+            var ex = Assert.Throws<ArgumentNullException>(() => GridBlock_zMethods.GridPrefix(null, null));
+            Assert.Equal("Value cannot be null.".NL() + "Parameter name: grid", ex.Message);
+
+            // macro, null
+            var settings = GridControl_Settings.Setup(1, 1, 1, 1, 1, 1);
+            var gridCuboid = new GridBlock_5Setup(OnCreateGridControl1, settings);
+            IGridBlock_Base grid = gridCuboid.GetChild_MacroGridBlock("1_1");
+            ex = Assert.Throws<ArgumentNullException>(() => GridBlock_zMethods.GridPrefix(grid, null));
+            Assert.Equal("Value cannot be null.".NL() + "Parameter name: settings", ex.Message);
         }
 
         private List<string> _ListTest1 = new List<string>();
@@ -201,7 +215,7 @@ Grid//R1cub1_1R1macro1_1R1sub1_1R1//R1cub1_1R1macro1_1R1sub1_1R1mic1_1//MicroBlo
         [Test_Method("GridBlock_4MacroSetup(1_1,1_1,5_5)")]
         public void GridBlock_Frontend_Test2()
         {
-            var settings = GridControl_Settings.Setup(1, 1, 1, 1, 5, 5);
+            GridControl_Settings settings = GridControl_Settings.Setup(1, 1, 1, 1, 5, 5);
             var gridCuboid = new GridBlock_5Setup(null, settings);
             var treeStr = gridCuboid.TreeNameList().zTo_Str("".NL());
 
@@ -411,7 +425,10 @@ R1cub1_1R2macro2_2R2sub2_2R2mic2_2";
             GridControl_Settings.Address_2RowCol("7_3", out row, out col, addressDef: enGrid_AddressDefOrder.ColRow);
             Assert.Equal(3, row);
             Assert.Equal(7, col);
-            GridControl_Settings.Address_2RowCol("G_3", out row, out col, addressDef: enGrid_AddressDefOrder.ColRow, addressCol:enGrid_AddressValue.Alfa);
+            GridControl_Settings.Address_2RowCol("G_3", out row, out col, addressDef: enGrid_AddressDefOrder.ColRow, addressCol: enGrid_AddressValue.Alfa);
+            Assert.Equal(3, row);
+            Assert.Equal(7, col);
+            GridControl_Settings.Address_2RowCol("G_C", out row, out col, addressDef: enGrid_AddressDefOrder.ColRow, addressCol: enGrid_AddressValue.Alfa, addressRow:enGrid_AddressValue.Alfa);
             Assert.Equal(3, row);
             Assert.Equal(7, col);
 
@@ -422,6 +439,16 @@ R1cub1_1R2macro2_2R2sub2_2R2mic2_2";
             Assert.Equal("3_7", GridControl_Settings.Address_FromRowCol(7,3, addressDef: enGrid_AddressDefOrder.ColRow));
             Assert.Equal("C_7", GridControl_Settings.Address_FromRowCol(7,3, addressDef: enGrid_AddressDefOrder.ColRow, addressCol:enGrid_AddressValue.Alfa));
             Assert.Equal("G_3", GridControl_Settings.Address_FromRowCol(3,7, addressDef: enGrid_AddressDefOrder.ColRow, addressCol:enGrid_AddressValue.Alfa));
+            Assert.Equal("G_C", GridControl_Settings.Address_FromRowCol(3,7, addressDef: enGrid_AddressDefOrder.ColRow, addressCol:enGrid_AddressValue.Alfa, addressRow:enGrid_AddressValue.Alfa));
+        }
+
+        [Fact]
+        [Test_Method("GridControl_Settings.Setup()")]
+        public void GridControl_SettingsSetup_Test()
+        {
+            var settings = GridControl_Settings.Setup(null,1,1,1,1,1,1,100,30);
+            Assert.Equal(100, settings.Size_MicroWidth);
+            Assert.Equal(30, settings.Size_MicroHeight);
         }
     }
 }

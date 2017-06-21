@@ -195,6 +195,7 @@ namespace LamedalCore.Test.Tests.lib.IO
         [Fact]
         [Test_Method("Time()")]
         [Test_Method("IsFile()")]
+        [Test_Method("FileInfo()")]
         public void Time_Test()
         {
             var appFolder = _lamed.lib.IO.Folder.Path_Application();
@@ -222,6 +223,10 @@ namespace LamedalCore.Test.Tests.lib.IO
 
             // IsFile
             Assert.True(_lamed.lib.IO.File.IsFile(testFolder + "testFile.txt"));
+            var info = _lamed.lib.IO.File.FileInfo(testFolder + "testFile.txt");
+            Assert.NotEqual(testFolder,info.DirectoryName);
+            var folder = _lamed.lib.IO.Parts._Format2Slash(info.DirectoryName);
+            Assert.Equal(testFolder,folder);
 
             IO_Folder_Test.Folder_Cleanup(testFolder);
         }

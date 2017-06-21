@@ -130,26 +130,23 @@ namespace LamedalCore.lib.IO
         public string Path_Application()
         {
             string result = "";
-            var assembly = Assembly.GetEntryAssembly();
+            Assembly assembly = Assembly.GetEntryAssembly();
             if (assembly == null) result = Directory.GetCurrentDirectory() +"/";   // This will give the folder for xunit tests
             else result = Path.GetDirectoryName(assembly.Location) + "/";  // This code is covered on .Net core environment
 
             return _io.Parts._Format2Slash(result);  // Change all '\' to '/'
         }
 
-        /// <summary>
-        /// Function to get assembly path.
-        /// </summary>
-        /// <param name="name">The assembly name</param>
-        /// <returns>string</returns>
-        [Pure]
-        public string Path_Assembly(AssemblyName name)
-        {
-            var result = _io.File.FilePath_Assembly(name);
-            return _io.Parts.Folder(result);
-        }
-
-
+        ///// <summary>
+        ///// Function to get assembly path.
+        ///// </summary>
+        ///// <param name="name">The assembly name</param>
+        ///// <returns>string</returns>
+        //[Pure]
+        //public string Path_Assembly(AssemblyName name)
+        //{
+        //    return _lamed.Types.Assembly.To_FilePath(name); 
+        //}
 
         /// <summary>
         /// Returns the path of the current user's temporary folder.

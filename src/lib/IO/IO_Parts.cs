@@ -16,8 +16,9 @@ namespace LamedalCore.lib.IO
         /// <returns></returns>
         public string Drive(string filePath)
         {
-            FileInfo fileInfo = _lamed.lib.IO.File.FileInfo(filePath);
-            string drive = Path.GetPathRoot(fileInfo.FullName);
+            //FileInfo fileInfo = _lamed.lib.IO.File.FileInfo(filePath);
+            //string drive = Path.GetPathRoot(fileInfo.FullName);
+            string drive = Path.GetPathRoot(filePath);
             return _Format2Slash(drive);
         }
 

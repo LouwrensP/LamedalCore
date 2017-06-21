@@ -28,10 +28,8 @@ namespace LamedalCore.lib.About
         /// <returns></returns>
         public Assembly Assembly()
         {
-            return typeof(LamedalCore_).GetTypeInfo().Assembly;
+            return _lamed.Types.Assembly.From_LamedalCore();
         }
-
-
 
         /// <summary>Return the machine name.</summary>
         /// <returns></returns>

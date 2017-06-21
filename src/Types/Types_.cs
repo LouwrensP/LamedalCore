@@ -1,4 +1,5 @@
-﻿using LamedalCore.domain.Attributes;
+﻿using System.Runtime.InteropServices;
+using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.Types.Class;
 using LamedalCore.Types.List;
@@ -13,6 +14,16 @@ namespace LamedalCore.Types
     [Test_IgnoreCoverage(enCode_TestIgnore.ClassIsNodeLink)]
     public sealed class Types_
     {
+        #region Assembly_Get
+        /// <summary>
+        /// Gets the Assembly_Get library methods.
+        /// </summary>
+        public Types_Assembly Assembly
+        {
+            get { return _Assembly ?? (_Assembly = new Types_Assembly()); }
+        }
+        private Types_Assembly _Assembly;
+        #endregion
 
         #region Class
         /// <summary>

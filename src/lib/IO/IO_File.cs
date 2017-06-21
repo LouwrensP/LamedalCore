@@ -352,26 +352,20 @@ namespace LamedalCore.lib.IO
         //    return string.Format(pattern, countFast);
         //}
 
-        /// <summary>
-        /// Function to get assembly path.
-        /// </summary>
-        /// <param name="name">The assembly name</param>
-        /// <returns>string</returns>
-        [Pure]
-        public string FilePath_Assembly(AssemblyName name)
-        {
-            string result = "";
-            //try  // this option needs test case
-            {
-                result = Assembly.Load(name).Location;
-            }
-            //catch (Exception ex)
-            //{
-            //    Debug.WriteLine(ex.Message);
-            //}
-
-            return _io.Parts._Format2Slash(result);
-        }
+        ///// <summary>
+        ///// Function to get assembly path.
+        ///// </summary>
+        ///// <param name="name">The assembly name</param>
+        ///// <returns>string</returns>
+        //[Pure]
+        //public string FilePath_Assembly(AssemblyName name)
+        //{
+        //    string result = "";
+        //    {
+        //        result = Assembly.Load(name).Location;
+        //    }
+        //    return _io.Parts._Format2Slash(result);
+        //}
 
         /// <summary>
         /// Creates a uniquely named, zero-byte temporary file on disk and returns the full path of that file.

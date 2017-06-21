@@ -11,6 +11,7 @@
     <PackageReleaseNotes>
 Lamedal v1.1.6
 ==============
+v1.1.6-alfa3: Added Assembly methods to lib
 v1.1.6-alfa2: Use official version of DocumentFormat.OpenXml
 v1.1.6-alfa1: Added address definitions to 3 level Grids. 
 
@@ -37,7 +38,6 @@ Lamedal v1.1.0
     <PackageProjectUrl>https://sites.google.com/site/lamedalwiki/</PackageProjectUrl>
     <PackageLicenseUrl>https://sites.google.com/site/lamedalwiki/copyright</PackageLicenseUrl>
     <PackageTargetFallback Condition=" '$(TargetFramework)' == 'netstandard1.6' ">$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
-    <NetStandardImplicitPackageVersion Condition=" '$(TargetFramework)' == 'netstandard1.6' ">1.6.0</NetStandardImplicitPackageVersion>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
@@ -47,44 +47,35 @@ Lamedal v1.1.0
     <GenerateNeutralResourcesLanguageAttribute>false</GenerateNeutralResourcesLanguageAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
-    <Version>1.1.6-alfa2</Version>
+    <Version>1.1.6-alfa3</Version>
     <RepositoryType>c#</RepositoryType>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="LamedalCore_Templates" Version="0.0.1" />
+    <PackageReference Include="LamedalCore_Templates" Version="0.0.2" />
     <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
     <PackageReference Include="JetBrains.Annotations" Version="10.4.0" />
     <PackageReference Include="System.Xml.XmlSerializer" Version="4.3.0" />
     <PackageReference Include="xunit.extensibility.core" Version="2.2.0" />
     <PackageReference Include="DocumentFormat.OpenXml" Version="2.7.2" />
+    <!--<PackageReference Include= "System.Runtime.Loader" Version="4.0.0" /> -->
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.6' ">
     <PackageReference Include="HtmlAgilityPack.NetCore" Version="1.5.0.1" />
-    <!-- <PackageReference Include="DocumentFormat.OpenXml" Version="2.7.2" /> -->
     <PackageReference Include="LamedaL.System.Drawing" Version="1.0.1" />
     <PackageReference Include="System.Diagnostics.Process" Version="4.1.0" />
   </ItemGroup>
 
   <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
     <PackageReference Include="HtmlAgilityPack" Version="1.4.9.5" />
-    <!-- <PackageReference Include="DocumentFormat.OpenXml" Version="2.5.0" /> -->
+    <PackageReference Include="HtmlRenderer.Core" Version="1.5.0.6" />
+    <PackageReference Include="HtmlRenderer.WinForms" Version="1.5.0.6" />
     <Reference Include="WindowsBase" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'net461'">
-    <PackageReference Include="HtmlRenderer.Core">
-      <Version>1.5.0.6</Version>
-    </PackageReference>
-    <PackageReference Include="HtmlRenderer.WinForms">
-      <Version>1.5.0.6</Version>
-    </PackageReference>
-  </ItemGroup>
-
 </Project>

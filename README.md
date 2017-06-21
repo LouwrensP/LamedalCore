@@ -1,4 +1,4 @@
-# LamedalCore v1.1.6-alfa2
+# ![alt tag](https://sites.google.com/site/lamedalwiki/Project-News/lamedalporttonetcore10/Lamedal15.png) LamedalCore v1.1.6-alfa3
 * Project : https://sites.google.com/site/lamedalwiki/
 * Lamedal Nuget package: https://www.nuget.org/packages/lamedalcore/ [![NuGet Badge](https://buildstats.info/nuget/lamedalcore)](https://www.nuget.org/packages/lamedalcore/) 
 * PM> Install-Package LamedalCore

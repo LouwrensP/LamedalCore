@@ -8,6 +8,7 @@ namespace LamedalCore.domain.Attributes
         public string Caption;   // The caption of the table
         public readonly bool GenerateAllFields;  // Generate all fields even if the fields are not marked
         public string Description;  // Not used yet
+        public int TotalPanels = 1;
 
         /// <summary>Initializes a new instance of the <see cref="BlueprintData_TableAttribute"/> class.</summary>
         /// <param name="caption">The table caption setting. Default value = "".</param>

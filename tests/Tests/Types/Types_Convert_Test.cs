@@ -210,7 +210,7 @@ namespace LamedalCore.Test.Tests.Types
             // Guid
             Assert.Equal("1eb4c570-51cb-46d3-b9ba-a76ddbc8dfe8", _convert.Str_FromObj(new Guid("1eb4c570-51cb-46d3-b9ba-a76ddbc8dfe8")));
 
-            // Assembly
+            // Assembly_Get
             Assert.Equal(typeof(Assembly), _convert.Type_FromStr("Assembly"));
             //var strType = _lamed.Types.Convert.GetType().FullName;   // If the next line gives error, recalc the object string value
             Assert.Equal(_lamed.Types.Convert.GetType(), _convert.Type_FromStr("LamedalCore.Types.Types_Convert"));

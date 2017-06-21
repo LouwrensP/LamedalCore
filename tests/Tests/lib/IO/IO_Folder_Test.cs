@@ -20,7 +20,7 @@ namespace LamedalCore.Test.Tests.lib.IO
             // Just execute methods that can not be tested
             #region Path_Assembly
             var assembly = _lamed.lib.About.Assembly();
-            var assemblyFolder = _lamed.lib.IO.Folder.Path_Assembly(assembly.GetName());
+            var assemblyFolder = _lamed.Types.Assembly.To_FilePath(assembly);
             string error;
             Assert.True(IO_.IsGoodFolderOrFileFormat(assemblyFolder,out error), error);
             Assert.True(_lamed.lib.IO.Folder.Exists(assemblyFolder), assemblyFolder);
@@ -58,15 +58,21 @@ namespace LamedalCore.Test.Tests.lib.IO
             #endregion
 
             // Test
+            string error;
+            Assert.True(IO_.IsGoodFolderOrFileFormat(appFolder, out error), error);
+            Assert.True(IO_.IsGoodFolderOrFileFormat(testFolder, out error), error);
+
             Assert.True(_lamed.lib.IO.Folder.Exists(testFolder + "test1/"));
             Assert.True(_lamed.lib.IO.Folder.Exists(testFolder + "test2/"));
             Assert.True(_lamed.lib.IO.Folder.Exists(testFolder + "test3/"));
             Assert.True(_lamed.lib.IO.Folder.Exists(testFolder + "test4/Sub1/"));
             Assert.True(_lamed.lib.IO.Folder.Exists(testFolder + "test4/Sub1/Sub2/"));
             Assert.True(_lamed.lib.IO.Folder.Exists(testFolder + "test4/"));
+
             // Is Folder
             Assert.True(_lamed.lib.IO.Folder.IsFolder(testFolder));
             Assert.True(_lamed.lib.IO.Folder.IsFolder(testFolder + "test1/"));
+
             // Search
             IList<string> folders1 = _lamed.lib.IO.Search.Folders(testFolder);
             IList<string> folders2 = _lamed.lib.IO.Search.Folders(testFolder, searchOption: SearchOption.AllDirectories);

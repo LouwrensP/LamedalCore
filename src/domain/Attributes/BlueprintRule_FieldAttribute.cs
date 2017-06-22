@@ -16,21 +16,21 @@ namespace LamedalCore.domain.Attributes
         /// <summary>
         /// A Singleton field is a field to a blueprint singleton library class.
         /// </summary>
-        [BlueprintData_Description("A Singleton field is a field to a blueprint singleton library class.")]
+        [BlueprintData_Description("A Singleton field is a field/property to a singleton class. This framework provide better scalability than static classes.")]
         public bool Fields_OneOrMany_SingletonFields;
 
-        [BlueprintData_Description("If true then the class does not contain any fields.")]
-        public bool Fields_None;
+        [BlueprintData_Description("If true then the class does not contain any fields. When combined with None_Propertioes then this has the behavior of a static class (but is not marked as static to allow better scalability).")]
+        public bool Fields_None; // None_Fields
 
         // Properties ======================================================
         /// <summary>
         /// If true then the class can have properties.
         /// </summary>
         [BlueprintData_Description("If true then the class only has properties but no methods.")]
-        public bool Properties_OneOrMany;
+        public bool Properties_OneOrMany;  // None_Methods
 
-        [BlueprintData_Description("If true then the class can not contain properties.")]
-        public bool Properties_None;
+        [BlueprintData_Description("If true then the class can not contain properties. When combined with None_Propertioes then this has the behavior of a static class (but is not marked as static to allow better scalability).")]
+        public bool Properties_None;  // None_Properties
 
         // Class ======================================================
         [BlueprintData_Description("If true then the class must be singleton.")]

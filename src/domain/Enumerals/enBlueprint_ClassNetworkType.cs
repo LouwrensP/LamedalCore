@@ -3,7 +3,7 @@
 namespace LamedalCore.domain.Enumerals
 {
     /// <summary>
-    /// 
+    /// See mindmap for explanations
     /// </summary>
     public enum enBlueprint_ClassNetworkType
     {
@@ -12,13 +12,13 @@ namespace LamedalCore.domain.Enumerals
         /// </summary>
         [BlueprintRule_Field(Name = "Undefined", Description = "This class is not defined")]
         Undefined = 0,
-
+        
         /// <summary>
         /// Class Transformation Information Network
         /// </summary>
-        [BlueprintRule_Field(Name ="CTIN", Description = "Class Transformation Information Network ", 
+        [BlueprintRule_Field(Name ="CTIN", Description = "Class Transformation Information Network. This is starting point for the code network. ", 
                         Class_IsSingelton = true, Methods_None = true, Properties_OneOrMany = true)]
-        CTIN,
+        CTIN,  // Change this to "Node_Root"; Purpose -> 
 
         /// <summary>
         /// Class Transformation Information methods. This is a class with only methods.
@@ -94,7 +94,7 @@ namespace LamedalCore.domain.Enumerals
         VS_Static,
 
         [BlueprintRule_Field(Name = "Visual Studio Class", Description = "Visual Studio Stateful class.", Class_IsStatic = false)]
-        StandardClass,
+        StandardClass,     // Same as undefined -> remove this
 
         [BlueprintRule_Field(Name = "Blueprint Rule definition", Description = "This is an attribute class that define blueprint rules", Class_IsStatic = false)]
         BlueprintRuleDef,

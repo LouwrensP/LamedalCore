@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using LamedalCore;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.zPublicClass.GridBlock;
@@ -8,9 +9,9 @@ using LamedalCore.zPublicClass.GridBlock.GridInterface;
 using LamedalCore.zz;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.zPublicClass
+namespace LamdalCoreXunit_zPublicClass
 {
-    public sealed class GridBlock_zzTest   // Parent need to be of type IGridblock_Base
+    public class GridBlock_zzTest   // Parent need to be of type IGridblock_Base
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
 

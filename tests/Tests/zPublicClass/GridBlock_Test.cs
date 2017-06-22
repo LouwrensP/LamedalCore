@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LamdalCoreXunit_zPublicClass;
 
-namespace LamdalCoreXunit_zPublicClass
+namespace LamedalCore.Test.Tests.zPublicClass
 {
-    public class Class1
+    public class GridBlock_Test : GridBlock_zzTest
     {
     }
 }

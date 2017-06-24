@@ -160,13 +160,13 @@
     <Compile Include="Tests\lib\XML\XML_Mindmap_Test.cs" />
     <Compile Include="Tests\lib\XML\XML_xDoc_Test.cs" />
     <Compile Include="Tests\Types\Class\Class_Attributes_Data.cs" />
-    <Compile Include="Tests\Types\Types_DateTimeSpan_Test.cs" />
     <Compile Include="Tests\Types\Types_Enum_Data.cs" />
     <Compile Include="Tests\Types\List\List_Convert_Data.cs" />
     <Compile Include="Tests\Types\List\List_Action_Test.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tests\zPublicClass\GridBlock_Test.cs" />
+    <Compile Include="Tests\zPublicClass\Xunit_Types.cs" />
+    <Compile Include="Tests\zPublicClass\zPublicClass_GridBlock_Test.cs" />
     <Compile Include="Tests\_Data\TestData_Json.cs" />
     <Compile Include="Tests\Types\Class\Class_Info_Data.cs" />
     <Compile Include="Tests\_Data\Types_Is_Test_StructSimple.cs" />
@@ -190,7 +190,6 @@
     <Compile Include="Tests\Types\Class\Class_StateInfo_Test.cs" />
     <Compile Include="Tests\Types\Class\Class_Info_Test.cs" />
     <Compile Include="Tests\Types\List\List_Enum_Test.cs" />
-    <Compile Include="Tests\Types\Types_DateTime_Test.cs" />
     <Compile Include="Tests\Types\Types_Dictionary_Test.cs" />
     <Compile Include="Tests\Types\Types_Enum_Test.cs" />
     <Compile Include="Tests\Types\List\List_Convert_Test.cs" />
@@ -199,7 +198,6 @@
     <Compile Include="Tests\Types\Types_Number_Test.cs" />
     <Compile Include="Tests\Types\Types_Object_Test.cs" />
     <Compile Include="Tests\Types\Types_Test.cs" />
-    <Compile Include="Tests\Types\Types_Convert_Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -210,6 +208,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="TestData\" />
+    <Folder Include="Tests\cSharp\" />
+    <Folder Include="Tests\libIO\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
@@ -218,6 +218,10 @@
     <ProjectReference Include="..\src\LamedalCore.csproj">
       <Project>{cce0b77c-74ca-4e22-bebf-6a69cfa5442e}</Project>
       <Name>LamedalCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="testCases\LamdalCoreXunit_Types\LamdalCoreXunit_Types.csproj">
+      <Project>{85ca1dcc-adae-4036-930d-786d89ef1920}</Project>
+      <Name>LamdalCoreXunit_Types</Name>
     </ProjectReference>
     <ProjectReference Include="testCases\LamdalCoreXunit_zPublicClass\LamdalCoreXunit_zPublicClass.csproj">
       <Project>{e6ec126e-0481-479a-bb8e-4e357b3114e5}</Project>

@@ -1,9 +1,12 @@
 ﻿using System;
+using LamedalCore;
 using LamedalCore.domain.Attributes;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.Types
+namespace LamdalCoreXunit_Types
 {
+    [Trait("Category", "Types_General")]
+    [Collection("Types")]
     public sealed class Types_DateTimeSpan_Test
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library

@@ -11,7 +11,7 @@ using Xunit;
 
 namespace LamdalCoreXunit_zPublicClass
 {
-    public class GridBlock_zzTest   // Parent need to be of type IGridblock_Base
+    public class zPublicClass_GridBlock   // Parent need to be of type IGridblock_Base
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
 
@@ -71,7 +71,6 @@ namespace LamdalCoreXunit_zPublicClass
             Assert.Equal(enGrid_BlockDisplayType.Address, gridMacro.Child_DisplayType);
             Assert.Equal(macroY, gridMacro.State_Row);
             Assert.Equal(macroX, gridMacro.State_Col);
-
             #endregion
 
             #region Sub block

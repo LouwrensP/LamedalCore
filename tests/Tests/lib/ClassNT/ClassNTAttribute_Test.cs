@@ -264,9 +264,9 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             enBlueprint_ClassNetworkType classNetworkType;
             string attributeCode1;
             bool isBlueprintRule;
-            string defaultGroup, groupName, ShortcutClass;
-            Type defaultType;
-            bool ignoreGroup, ignorePath, includeObjects;
+            //string defaultGroup, groupName, ShortcutClass;
+            //Type defaultType;
+            //bool ignoreGroup, ignorePath, includeObjects;
             #endregion
 
             #region Test0: [Test]

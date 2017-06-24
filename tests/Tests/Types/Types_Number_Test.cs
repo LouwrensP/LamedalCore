@@ -8,6 +8,7 @@ using Xunit;
 
 namespace LamedalCore.Test.Tests.Types
 {
+    [Trait("Category", "Types_")]
     public sealed class Types_Number_Test
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library

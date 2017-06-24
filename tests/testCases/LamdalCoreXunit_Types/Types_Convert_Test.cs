@@ -1,19 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Reflection;
+using LamedalCore;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
-using LamedalCore.Test.Tests.Types.List;
-using LamedalCore.Test.Tests._Data;
 using LamedalCore.Types;
-using LamedalCore.Types.List;
 using Xunit;
-using Types_Is_Test_StructSimple = LamedalCore.Test.Tests._Data.Types_Is_Test_StructSimple;
 
-namespace LamedalCore.Test.Tests.Types
+namespace LamdalCoreXunit_Types
 {
-    public sealed class Types_Convert_Test
+    [Collection("Types")]
+    [Trait("Category", "Types_General")]
+    public class Types_Convert_Test
     {
         private readonly Types_Convert _convert = LamedalCore_.Instance.Types.Convert;
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
@@ -158,7 +156,7 @@ namespace LamedalCore.Test.Tests.Types
         {
             //var test = enum_Test.Test1;
             Debug.WriteLine("1. enum_Test");
-            var enum1 = List_Convert_Data.Test1;
+            var enum1 = Types_Convert_Data.Test1;
             Assert.True(_type.Enum.IsEnumerable(enum1.GetType()));
         }
 
@@ -205,7 +203,8 @@ namespace LamedalCore.Test.Tests.Types
             #endregion
 
             // Objects
-            Assert.Equal("LamedalCore.Test.Tests.Types.Types_Convert_Test", _convert.Str_FromObj(this.GetType()));
+            var me = new Types_Convert_Test();
+            Assert.Equal("LamdalCoreXunit_Types.Types_Convert_Test", _convert.Str_FromObj(me.GetType()));
 
             // Guid
             Assert.Equal("1eb4c570-51cb-46d3-b9ba-a76ddbc8dfe8", _convert.Str_FromObj(new Guid("1eb4c570-51cb-46d3-b9ba-a76ddbc8dfe8")));

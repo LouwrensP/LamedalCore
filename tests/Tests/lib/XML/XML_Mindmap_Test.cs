@@ -19,50 +19,49 @@ namespace LamedalCore.Test.Tests.lib.XML
 
         public XML_Mindmap_Test(ITestOutputHelper debug = null) : base(debug) { }
 
-        [Fact]
-        [Test_Method("()")]
-        public void MindmapSimple_Test()
-        {
-            var folderPath = Config_Info.Config_File_Test(_Debug) + @"mm/"; //@"D:\Dev\GitHub\LamedalCore\tests\TestData\Text\mm";
+//        [Fact]
+//        [Test_Method("()")]
+//        public void MindmapSimple_Test()
+//        {
+//            var folderPath = Config_Info.Config_File_Test(_Debug) + @"mm/"; //@"D:\Dev\GitHub\LamedalCore\tests\TestData\Text\mm";
 
-            #region input
-            var input =
-@"MindMapEdit
-MindMapEdit:Heading1
-MindMapEdit:Heading2
-MindMapEdit:Heading3
-Link->MindMapEdit:Heading1|->MindMapEdit:Heading2
-Link->MindMapEdit:Heading3|->MindMapEdit:Heading1";
-            #endregion
+//            #region input
+//            var input =
+//@"MindMapEdit
+//MindMapEdit:Heading1
+//MindMapEdit:Heading2
+//MindMapEdit:Heading3
+//Link->MindMapEdit:Heading1|->MindMapEdit:Heading2
+//Link->MindMapEdit:Heading3|->MindMapEdit:Heading1";
+//            #endregion
 
-            #region result
-            var result =
-@"<map version=""1.0.1"">
-<!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED=""1488370135477"" ID=""ID_1078424613"" MODIFIED=""1488373532710"" STYLE=""bubble"" TEXT=""MindMapEdit"">
-<node CREATED=""1488370594089"" ID=""ID_1962664020"" MODIFIED=""1488373904362"" POSITION=""right"" TEXT=""Heading1"">
-<arrowlink DESTINATION=""ID_1112146242"" ENDARROW=""Default"" ENDINCLINATION=""23;0;"" ID=""Arrow_ID_1162243404"" STARTARROW=""None"" STARTINCLINATION=""23;0;""/>
-<linktarget COLOR=""#b0b0b0"" DESTINATION=""ID_1962664020"" ENDARROW=""Default"" ENDINCLINATION=""46;0;"" ID=""Arrow_ID_1587029454"" SOURCE=""ID_1092339353"" STARTARROW=""None"" STARTINCLINATION=""46;0;""/>
-<font BOLD=""true"" NAME=""SansSerif"" SIZE=""12""/>
-</node>
-<node CREATED=""1488370602169"" ID=""ID_1112146242"" MODIFIED=""1488373899771"" POSITION=""right"" TEXT=""Heading2"">
-<linktarget COLOR=""#b0b0b0"" DESTINATION=""ID_1112146242"" ENDARROW=""Default"" ENDINCLINATION=""23;0;"" ID=""Arrow_ID_1162243404"" SOURCE=""ID_1962664020"" STARTARROW=""None"" STARTINCLINATION=""23;0;""/>
-</node>
-<node CREATED=""1488373524082"" ID=""ID_1092339353"" MODIFIED=""1488373904362"" POSITION=""right"" TEXT=""Heading3"">
-<arrowlink DESTINATION=""ID_1962664020"" ENDARROW=""Default"" ENDINCLINATION=""46;0;"" ID=""Arrow_ID_1587029454"" STARTARROW=""None"" STARTINCLINATION=""46;0;""/>
-<font BOLD=""true"" NAME=""SansSerif"" SIZE=""12""/>
-</node>
-</node>
-</map>";
-            #endregion
+//            #region result
+//            var result =
+//@"<map version=""1.0.1"">
+//<!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
+//<node CREATED=""1488370135477"" ID=""ID_1078424613"" MODIFIED=""1488373532710"" STYLE=""bubble"" TEXT=""MindMapEdit"">
+//<node CREATED=""1488370594089"" ID=""ID_1962664020"" MODIFIED=""1488373904362"" POSITION=""right"" TEXT=""Heading1"">
+//<arrowlink DESTINATION=""ID_1112146242"" ENDARROW=""Default"" ENDINCLINATION=""23;0;"" ID=""Arrow_ID_1162243404"" STARTARROW=""None"" STARTINCLINATION=""23;0;""/>
+//<linktarget COLOR=""#b0b0b0"" DESTINATION=""ID_1962664020"" ENDARROW=""Default"" ENDINCLINATION=""46;0;"" ID=""Arrow_ID_1587029454"" SOURCE=""ID_1092339353"" STARTARROW=""None"" STARTINCLINATION=""46;0;""/>
+//<font BOLD=""true"" NAME=""SansSerif"" SIZE=""12""/>
+//</node>
+//<node CREATED=""1488370602169"" ID=""ID_1112146242"" MODIFIED=""1488373899771"" POSITION=""right"" TEXT=""Heading2"">
+//<linktarget COLOR=""#b0b0b0"" DESTINATION=""ID_1112146242"" ENDARROW=""Default"" ENDINCLINATION=""23;0;"" ID=""Arrow_ID_1162243404"" SOURCE=""ID_1962664020"" STARTARROW=""None"" STARTINCLINATION=""23;0;""/>
+//</node>
+//<node CREATED=""1488373524082"" ID=""ID_1092339353"" MODIFIED=""1488373904362"" POSITION=""right"" TEXT=""Heading3"">
+//<arrowlink DESTINATION=""ID_1962664020"" ENDARROW=""Default"" ENDINCLINATION=""46;0;"" ID=""Arrow_ID_1587029454"" STARTARROW=""None"" STARTINCLINATION=""46;0;""/>
+//<font BOLD=""true"" NAME=""SansSerif"" SIZE=""12""/>
+//</node>
+//</node>
+//</map>";
+//            #endregion
 
-            MindMap_Create(input.zConvert_Str_ToListStr("".NL()));
-        }
+//            var mm = MindMap_Create(input.zConvert_Str_ToListStr("".NL()));
+//        }
 
         public string MindMap_Create(List<string> treeDefinitionList)
         {
             pcMindMap map = CreateMindmap();
-
             return "";
         }
 

@@ -1,16 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using LamedalCore;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.zz;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.Types
+namespace LamdalCoreXunit_Types
 {
-    public sealed class Types_DateTime_Test
+    [Collection("Types")]
+    [Trait("Category", "Types_General")]
+    public class Types_DateTime_Test
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
 

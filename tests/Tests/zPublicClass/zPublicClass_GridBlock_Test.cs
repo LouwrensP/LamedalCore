@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LamdalCoreXunit_zPublicClass;
+using LamedalCore.domain.Attributes;
+using LamedalCore.domain.Enumerals;
 
 namespace LamedalCore.Test.Tests.zPublicClass
 {
-    public class GridBlock_Test : GridBlock_zzTest
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.XUnitTestMethods)]
+    public class zPublicClass_GridBlock_Test : zPublicClass_GridBlock
     {
     }
 }

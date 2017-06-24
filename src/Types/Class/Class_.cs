@@ -8,6 +8,7 @@ using LamedalCore.domain.Enumerals;
 namespace LamedalCore.Types.Class
 {
     [Test_IgnoreCoverage(enCode_TestIgnore.ClassIsNodeLink)]
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action)]
     public sealed class Class_
     {
         #region ClassAttributes
@@ -38,5 +39,17 @@ namespace LamedalCore.Types.Class
         }
         #endregion
 
+        /// <summary>
+        /// Word_FromAbbreviation the specified object properties to printable string.
+        /// </summary>
+        /// <param name="classObject">The element.</param>
+        /// <param name="indentSize">Size of the indent.</param>
+        /// <param name="maxLength">The maximum length.</param>
+        /// <param name="maxItemCount">The maximum item count2.</param>
+        /// <returns>System.String.</returns>
+        public static string AsString(object classObject, int indentSize = 2, int maxLength = 1000, int maxItemCount = 20)
+        {
+            return Class_AsString.AsString(classObject, indentSize, maxLength, maxItemCount);
+        }
     }
 }

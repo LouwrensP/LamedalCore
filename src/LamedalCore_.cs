@@ -61,6 +61,29 @@ namespace LamedalCore
         }
         #endregion
 
+        #region Exceptions
+        /// <summary>
+        /// Gets the Exceptions library methods. 
+        /// </summary>
+        public LamedalCore_Exceptions Exceptions
+        {
+            get { return _Exceptions ?? (_Exceptions = new LamedalCore_Exceptions()); }
+        }
+        private LamedalCore_Exceptions _Exceptions;
+        #endregion
+
+        #region lib
+        /// <summary>
+        /// Gets the lib2 library methods.
+        /// </summary>
+        public lib_ lib
+        {
+            get { return _lib ?? (_lib = new lib_()); }
+        }
+        private lib_ _lib;
+        #endregion
+
+
         #region About messages
         /// <summary>Shows an about message of the LamedaL library.</summary>
         /// <returns></returns>
@@ -119,31 +142,6 @@ namespace LamedalCore
         }
 
         #endregion
-
-
-        #region Exceptions
-        /// <summary>
-        /// Gets the Exceptions library methods. 
-        /// </summary>
-        public LamedalCore_Exceptions Exceptions
-        {
-            get { return _Exceptions ?? (_Exceptions = new LamedalCore_Exceptions()); }
-        }
-        private LamedalCore_Exceptions _Exceptions;
-        #endregion
-
-
-        #region lib
-        /// <summary>
-        /// Gets the lib2 library methods.
-        /// </summary>
-        public lib_ lib
-        {
-            get { return _lib2 ?? (_lib2 = new lib_()); }
-        }
-        private lib_ _lib2;
-        #endregion
-
 
         #region Types
         /// <summary>

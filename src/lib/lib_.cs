@@ -10,7 +10,7 @@ namespace LamedalCore.lib
 {
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Link)]
     [Test_IgnoreCoverage(enCode_TestIgnore.ClassIsNodeLink)]
-    public sealed class lib_
+    public class lib_
     {
         #region About
         /// <summary>

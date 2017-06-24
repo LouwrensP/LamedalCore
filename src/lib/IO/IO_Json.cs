@@ -39,7 +39,11 @@ namespace LamedalCore.lib.IO
 
             // Error handling
             if (contract != null && contract.AllFieldsWereFound() == false)
-                ($"Error! The following fields were not found: {contract.MissedFields_AsStr()}").zException_Show();                        
+            {
+                var ex = new ArgumentException($"Error! The following fields were not found: {contract.MissedFields_AsStr()}", nameof(filterFields));
+                _lamed.Logger.L
+                ().zException_Show();
+            }
             return json;
         }
 
@@ -119,7 +123,11 @@ namespace LamedalCore.lib.IO
                     {
                         if (property_orFieldName.ToLower() == "name") continue;  // If the class do not have a name -> ignore this
                         if (showError)
-                             $"Error! Property / Field '{property_orFieldName}' does not exist in object: '{name}'.".zException_Show();
+                        {
+                            var ex = new ArgumentException($"Error! Property / Field '{property_orFieldName}' does not exist in object: '{name}'.", nameof(Object));
+                            _lamed.Logger.LogMessage(ex);
+                            throw ex;
+                        }
                         // <========================================================================================
                     } 
                 }

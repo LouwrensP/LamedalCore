@@ -127,6 +127,18 @@ namespace LamedalCore.lib.IO
             return file;
         }
 
+        /// <summary>Calculate the Configuration filename.</summary>
+        /// <param name="timeStr">The time string.</param>
+        /// <returns></returns>
+        public string Filename_Logging(out string timeStr)
+        {
+            var folder = _io.Folder.Path_Application();
+            var timename = _lamed.Types.DateTime.To_Str(DateTime.UtcNow, true, true);
+            timeStr = _lamed.Types.DateTime.To_Str(DateTime.UtcNow);
+            var file = folder + $"ApplicationLog{timename}.txt";
+            return file;
+        }
+
         /// <summary>Return the Configuration filename as string.</summary>
         /// <returns></returns>
         public string Config_Load(string file = "")

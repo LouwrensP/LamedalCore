@@ -280,15 +280,15 @@ namespace LamedalCore.Types.List
         //}
 
         /// <summary>Convert a IList to string. This is used in frontend controls</summary>
-        /// <typeparam name="T"></typeparam>
         /// <param name="list">The array.</param>
         /// <param name="delimiter">The delimiter.</param>
         /// <param name="trim">if set to <c>true</c> [trim].</param>
         /// <param name="index">The index.</param>
         /// <param name="lastIndex">The last index. if -1 then it will be up to the last item</param>
+        /// <param name="prefixStr">The prefix string.</param>
         /// <returns>System.String.</returns>
         /// <code ShortcutMethod="ToString"></code>
-        public string ToString(IList list, string delimiter = "♣", bool trim = false, int index = 0, int lastIndex = -1)
+        public string ToString(IList list, string delimiter = "♣", bool trim = false, int index = 0, int lastIndex = -1, string prefixStr = "")
         {
             if (list == null) return "";
             if (lastIndex == -1 || lastIndex > list.Count) lastIndex = list.Count;
@@ -298,7 +298,7 @@ namespace LamedalCore.Types.List
             {
                 string item = list[ii] as string;
                 if (trim) item = item.Trim();
-
+                if (prefixStr != "") item = prefixStr + item;
                 if (ii == index) result.Append(item);
                 else result.Append(delimiter + item);
             }

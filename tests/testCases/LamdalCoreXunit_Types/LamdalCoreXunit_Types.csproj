@@ -57,7 +57,7 @@
     <Compile Include="Types_Convert_Test.cs" />
     <Compile Include="Types_DateTimeSpan_Test.cs" />
     <Compile Include="Types_DateTime_Test.cs" />
-    <Compile Include="Types_Test1.cs" />
+    <Compile Include="xTypes_General.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\src\LamedalCore.csproj">

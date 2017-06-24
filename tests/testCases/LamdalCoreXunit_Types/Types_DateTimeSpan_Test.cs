@@ -5,12 +5,9 @@ using Xunit;
 
 namespace LamdalCoreXunit_Types
 {
-    [Trait("Category", "Types_General")]
-    [Collection("Types")]
-    public sealed class Types_DateTimeSpan_Test
+    // Types_DateTimeSpan_Test
+    public partial class xTypes_General 
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
-
         [Fact]
         [Test_Method("Sleep()")]
         [Test_Method("Elapsed()")]

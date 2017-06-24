@@ -249,5 +249,18 @@ namespace LamedalCore.Test.Tests.lib.IO
             string error;
             Assert.True(_lamed.lib.Test.ObjectsAreEqual(configResult, configTest, out error), error);
         }
+
+        [Fact]
+        [Test_Method("Filename_Logging()")]
+        public void Filename_Logging_Test()
+        {
+            string timeStr;
+            var file = _lamed.lib.IO.File.Filename_Logging(out timeStr);
+            var folder = _lamed.lib.IO.Folder.Path_Application();
+            var timename = _lamed.Types.DateTime.To_Str(DateTime.UtcNow, true, true);
+            Assert.True(file.Contains(folder));
+            Assert.True(file.Contains(timename));
+            Assert.Equal(folder + $"ApplicationLog{timename}.txt", file);
+        }
     }
 }

@@ -32,6 +32,7 @@ using LamedalCore.lib;
 using LamedalCore.Types;
 using LamedalCore.zz;
 using DocumentFormat.OpenXml.Spreadsheet;
+using LamedalCore.domain;
 
 namespace LamedalCore
 {
@@ -61,15 +62,15 @@ namespace LamedalCore
         }
         #endregion
 
-        #region Exceptions
+        #region Logger
         /// <summary>
         /// Gets the Exceptions library methods. 
         /// </summary>
-        public LamedalCore_Exceptions Exceptions
+        public domain_Logger Logger
         {
-            get { return _Exceptions ?? (_Exceptions = new LamedalCore_Exceptions()); }
+            get { return _Logger ?? (_Logger = new domain_Logger()); }
         }
-        private LamedalCore_Exceptions _Exceptions;
+        private domain_Logger _Logger;
         #endregion
 
         #region lib

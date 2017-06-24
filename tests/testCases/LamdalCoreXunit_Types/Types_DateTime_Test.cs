@@ -7,12 +7,11 @@ using Xunit;
 
 namespace LamdalCoreXunit_Types
 {
+    // Types_DateTime_Test
     [Collection("Types")]
     [Trait("Category", "Types_General")]
-    public class Types_DateTime_Test
+    public partial class xTypes_General 
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
-
         [Fact]
         [Test_Method("zObject().AsStr()")]
         public void Date_2String()
@@ -24,6 +23,18 @@ namespace LamdalCoreXunit_Types
             myDate = new DateTime(2016, 1, 22, 13,14,15);
             strDate = myDate.zObject().AsStr();
             Assert.Equal("2016-01-22 13:14:15 PM", strDate);
+        }
+
+        [Fact]
+        [Test_Method("To_Str()")]
+        public void To_Str()
+        {
+            var myDate = new DateTime(2016, 1, 22, 13,14,15,123);
+            Assert.Equal("2016-01-22", _lamed.Types.DateTime.To_Str(myDate, true));
+            Assert.Equal("2016-01-22 13:14:15.123", _lamed.Types.DateTime.To_Str(myDate));
+            Assert.Equal("2016_01_22", _lamed.Types.DateTime.To_Str(myDate, true, true));
+            Assert.Equal("2016_01_22T13_14_15", _lamed.Types.DateTime.To_Str(myDate, filenameFriendly:true));
+
         }
 
         [Fact]

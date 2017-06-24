@@ -187,8 +187,6 @@ namespace LamedalCore.Types
             return (int)Int_FromObj2(Object, 0);
         }
 
-
-
         /// <summary>
         /// Function to return nullable int from the object.
         /// </summary>

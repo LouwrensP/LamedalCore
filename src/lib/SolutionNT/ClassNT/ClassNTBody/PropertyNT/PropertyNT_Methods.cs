@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.zz;
@@ -25,7 +26,12 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.PropertyNT
             typePart3 = "";
 
             var words = propertyLine.zConvert_Array_FromStr(" ");
-            if (words.Count != 3) "Error in CodeDef_Property parser!".zException_Show();
+            if (words.Count != 3)
+            {
+                var ex= new InvalidOperationException("Error in CodeDef_Property parser!");
+                LamedalCore_.Instance.Logger.LogMessage(ex);
+                throw ex;
+            }
 
             scope = words[0];
             name = words[2];

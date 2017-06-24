@@ -58,35 +58,35 @@ namespace LamedalCore.zz
 
         #region Exceptions
 
-        /// <summary>Show Exception Message.</summary>
-        /// <param name="ex">The ex.</param>
-        /// <param name="errMsg">The error MSG.</param>
-        /// <param name="action">The action.</param>
-        [DebuggerStepThrough]
-        public static void zException_Show(this Exception ex, string errMsg = "", enCode_ExceptionAction action = enCode_ExceptionAction.ThrowError)
-        {
-            LamedalCore_.Instance.Exceptions.Show(ex, errMsg, action);
-        }
+        ///// <summary>Show Exception Message.</summary>
+        ///// <param name="ex">The ex.</param>
+        ///// <param name="errMsg">The error MSG.</param>
+        ///// <param name="action">The action.</param>
+        //[DebuggerStepThrough]
+        //public static void zException_Show(this Exception ex, string errMsg = "", enCode_ExceptionAction action = enCode_ExceptionAction.ThrowError)
+        //{
+        //    LamedalCore_.Instance.Exceptions.Show(ex, errMsg, action);
+        //}
 
-        /// <summary>Show Exception Message.</summary>
-        /// <param name="errMsg">The error MSG.</param>
-        /// <param name="action">The action.</param>
-        /// <param name="innerException">The inner exception.</param>
-        [DebuggerStepThrough]
-        public static void zException_Show(this string errMsg,enCode_ExceptionAction action = enCode_ExceptionAction.ThrowError, Exception innerException = null)
-        {
-            LamedalCore_.Instance.Exceptions.Show(errMsg, action, innerException);
-        }
+        ///// <summary>Show Exception Message.</summary>
+        ///// <param name="errMsg">The error MSG.</param>
+        ///// <param name="action">The action.</param>
+        ///// <param name="innerException">The inner exception.</param>
+        //[DebuggerStepThrough]
+        //public static void zException_Show(this string errMsg,enCode_ExceptionAction action = enCode_ExceptionAction.ThrowError, Exception innerException = null)
+        //{
+        //    LamedalCore_.Instance.Exceptions.Show(errMsg, action, innerException);
+        //}
 
-        /// <summary>Creates new exception.</summary>
-        /// <param name="errMsg">The error MSG.</param>
-        /// <param name="innerException">The inner exception.</param>
-        /// <returns></returns>
-        [DebuggerStepThrough]
-        public static Exception zException_New(this string errMsg, Exception innerException = null)
-        {
-            return LamedalCore_.Instance.Exceptions.New(errMsg, innerException);
-        }
+        ///// <summary>Creates new exception.</summary>
+        ///// <param name="errMsg">The error MSG.</param>
+        ///// <param name="innerException">The inner exception.</param>
+        ///// <returns></returns>
+        //[DebuggerStepThrough]
+        //public static Exception zException_New(this string errMsg, Exception innerException = null)
+        //{
+        //    return LamedalCore_.Instance.Exceptions.New(errMsg, innerException);
+        //}
         #endregion
 
         /// <summary>

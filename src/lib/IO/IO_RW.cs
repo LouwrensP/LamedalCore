@@ -13,6 +13,22 @@ namespace LamedalCore.lib.IO
     {
         private readonly IO_ _io = LamedalCore_.Instance.lib.IO;
 
+        /// <summary>Files the append.</summary>
+        /// <param name="pathAndFile">The path and file.</param>
+        /// <param name="txt">The text.</param>
+        /// <param name="threadSafeObject">The thread safe object. </param>
+        public void File_Append(string pathAndFile, string txt, object threadSafeObject = null)
+        {
+            if (threadSafeObject == null) File.AppendAllText(pathAndFile, txt);
+            else
+            {
+                lock (threadSafeObject)
+                {
+                    File.AppendAllText(pathAndFile, txt);
+                }
+            }
+        }
+
         /// <summary>Write to file name</summary>
         /// <param name="pathAndFile">The path and file.</param>
         /// <param name="txt">The text.</param>
@@ -46,7 +62,10 @@ namespace LamedalCore.lib.IO
             bool fileExist = _io.File.Exists(pathAndFile);
             if (writeAction == enIO_WriteAction.WriteFile)
             {
-                if (fileExist) "Error! Can not write to file because it already exists.".zException_Show();
+                if (fileExist)
+                {
+                    var ex = new ArgumentException("Error! Can not write to file because it already exists.", nameof(writeAction));
+                }
                 else File.WriteAllText(pathAndFile, txt);
             } else if (writeAction == enIO_WriteAction.AppendFile)
             {

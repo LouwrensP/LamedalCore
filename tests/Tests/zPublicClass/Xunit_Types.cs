@@ -2,7 +2,7 @@
 
 namespace LamedalCore.Test.Tests.zPublicClass
 {
-    public class Xunit_Types : Types_Test1
+    public class Types_General : xTypes_General
     {
 
     }

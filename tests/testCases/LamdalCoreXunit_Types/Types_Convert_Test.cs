@@ -9,15 +9,9 @@ using Xunit;
 
 namespace LamdalCoreXunit_Types
 {
-    [Collection("Types")]
-    [Trait("Category", "Types_General")]
-    public class Types_Convert_Test
+    // Types_Convert_Test
+    public partial class xTypes_General 
     {
-        private readonly Types_Convert _convert = LamedalCore_.Instance.Types.Convert;
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
-        private readonly Types_ _type = LamedalCore_.Instance.Types;
-        // system library
-
         [Fact]
         [Test_Method("Bool_FromObj()")]
         [Test_Method("Bool_FromObj2()")]
@@ -203,8 +197,8 @@ namespace LamdalCoreXunit_Types
             #endregion
 
             // Objects
-            var me = new Types_Convert_Test();
-            Assert.Equal("LamdalCoreXunit_Types.Types_Convert_Test", _convert.Str_FromObj(me.GetType()));
+            var me = new xTypes_General();
+            Assert.Equal("LamdalCoreXunit_Types.xTypes_General", _convert.Str_FromObj(me.GetType()));
 
             // Guid
             Assert.Equal("1eb4c570-51cb-46d3-b9ba-a76ddbc8dfe8", _convert.Str_FromObj(new Guid("1eb4c570-51cb-46d3-b9ba-a76ddbc8dfe8")));

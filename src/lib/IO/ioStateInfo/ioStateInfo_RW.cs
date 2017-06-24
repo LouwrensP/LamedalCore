@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using LamedalCore.zz;
 
 namespace LamedalCore.lib.IO.ioStateInfo
@@ -36,7 +37,9 @@ namespace LamedalCore.lib.IO.ioStateInfo
             {
                 if (_FileName != "")
                 {
-                    "Error! You can set the file name only once. Call Dispose() first to set another file name".zException_Show();
+                    var ex = new ArgumentException("Error! You can set the file name only once. Call Dispose() first to set another file name");
+                    _lamed.Logger.LogMessage(ex);
+                    throw ex;
                 }
                 _FileName = value;
                 if (_lamed.lib.IO.File.Exists(value) == false)

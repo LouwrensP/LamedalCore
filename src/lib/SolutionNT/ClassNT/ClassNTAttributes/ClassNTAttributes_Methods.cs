@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.zz;
@@ -19,7 +20,12 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttributes
             attributeName = "";
             parameterStrList = new List<string>();
 
-            if (attributeCode.zContains_All("[", "]") == false) ("Error! No attribute input parameter: '{0}'".zFormat(attributeCode)).zException_Show();
+            if (attributeCode.zContains_All("[", "]") == false)
+            {
+                var ex = new ArgumentException($"Error! No attribute input parameter: '{attributeCode}'", nameof(attributeCode));
+                LamedalCore_.Instance.Logger.LogMessage(ex);
+                throw ex;
+            }
 
             attributeCode = attributeCode.Replace("[", "").Replace("]", "");  //.Replace("(", " ").Replace(")", "");
             if (attributeCode.zContains_Any(" ", "(") == false)

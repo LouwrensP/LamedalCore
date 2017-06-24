@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 
@@ -282,6 +283,23 @@ namespace LamedalCore.Types
                     }
                 default: return string.Format("{0} day{1} ago", span.Days, span.Days != 1 ? plural : string.Empty);
             }
+        }
+
+        /// <summary>Conver date to string.</summary>
+        /// <param name="date">The date.</param>
+        /// <param name="dateOnly">if set to <c>true</c> [date only].</param>
+        /// <param name="filenameFriendly">if set to <c>true</c> [file name friendly version].</param>
+        /// <returns></returns>
+        public string To_Str(DateTime date, bool dateOnly = false, bool filenameFriendly = false)
+        {
+            var formatStr = "yyyy-MM-dd";
+            if (dateOnly == false) formatStr += " HH:mm:ss.fff";
+            if (filenameFriendly)
+            {
+                formatStr = formatStr.Replace("-", "_").Replace(" ", "T").Replace(":", "_").Replace(".fff", "");
+            }
+            string result = date.ToString(formatStr, CultureInfo.InvariantCulture);
+            return result;
         }
 
         /// <summary>Trims to the nearest milli-second.</summary>

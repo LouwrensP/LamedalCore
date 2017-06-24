@@ -249,12 +249,10 @@ namespace LamedalCore.Types
             if (result)
             {
                 errorMsg = defaultErrorMsg;
-                if (errorMsg != "" && showError) _lamed.Exceptions.Show(errorMsg);
+                if (errorMsg != "" && showError) throw new InvalidOperationException(errorMsg);
                 
             } else errorMsg = "";
-
             return result;
-
         }
 
         /// <summary>Check if Objects is null.</summary>

@@ -12,21 +12,20 @@ namespace LamedalCore.zz
     [Test_IgnoreCoverage(enCode_TestIgnore.MethodIsShortCut)]
     public static class Types_List_T_Shortcut
     {
-        
-        /// <summary>
-        /// Word_FromAbbreviation an List to string.
-        /// </summary>
+
+        /// <summary>Word_FromAbbreviation an List to string.</summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="list">The array.</param>
         /// <param name="delimiter">The delimiter.</param>
         /// <param name="index">The index.</param>
         /// <param name="lastIndex">The last index. if -1 then it will be up to the last item</param>
+        /// <param name="prefixStr">The prefix string.</param>
         /// <returns>System.String.</returns>
         /// <code ShortcutMethod="ToString"></code>
         /// <code>CTIN_Transformation;</code>
-        public static string zTo_Str<T>(this List<T> list, string delimiter = ",", int index = 0, int lastIndex = -1)
+        public static string zTo_Str<T>(this List<T> list, string delimiter = ",", int index = 0, int lastIndex = -1, string prefixStr = "")
         {
-            return LamedalCore_.Instance.Types.List.String.ToString(list, delimiter, false, index, lastIndex);
+            return LamedalCore_.Instance.Types.List.String.ToString(list, delimiter, false, index, lastIndex, prefixStr);
         }
 
         ///// <summary>

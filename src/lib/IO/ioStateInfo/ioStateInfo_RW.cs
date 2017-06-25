@@ -37,8 +37,8 @@ namespace LamedalCore.lib.IO.ioStateInfo
             {
                 if (_FileName != "")
                 {
-                    var ex = new ArgumentException("Error! You can set the file name only once. Call Dispose() first to set another file name");
-                    _lamed.Logger.LogMessage(ex);
+                    var ex = new ArgumentException("Error! You can set the file name only once. Call Dispose() first to set another file name", nameof(FileName));
+                    ex.zLogLibraryMsg();
                     throw ex;
                 }
                 _FileName = value;

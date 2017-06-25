@@ -67,8 +67,8 @@ namespace LamedalCore.Test.Tests.lib.IO
             #endregion
 
             #region Write to existing file
-            var ex = Assert.Throws<InvalidOperationException>(()=>_lamed.lib.IO.RW.File_Write(file, "This is a test", enIO_WriteAction.WriteFile));
-            Assert.Equal("Error! Can not write to file because it already exists.", ex.Message);
+            var ex = Assert.Throws<ArgumentException>(()=>_lamed.lib.IO.RW.File_Write(file, "This is a test", enIO_WriteAction.WriteFile));
+            Assert.Equal("Error! Can not write to file because it already exists.".NL() + "Parameter name: writeAction", ex.Message);
             #endregion
 
             #region Copy & move

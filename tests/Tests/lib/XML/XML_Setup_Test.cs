@@ -838,7 +838,7 @@ stored results.</span>
 
             xml = "<param name=\"paramLine\">The parameter line.</param>";
             Assert.Equal("name=\"paramLine\">The parameter line.", _lamed.lib.XML.Setup.XML_ValueBetweenTags(xml, "param", true));
-            Assert.Throws<InvalidOperationException>(() =>  _lamed.lib.XML.Setup.XML_ValueBetweenTags(xml, "param"));
+            Assert.Throws<ArgumentException>(() =>  _lamed.lib.XML.Setup.XML_ValueBetweenTags(xml, "param"));
         }
     }
 }

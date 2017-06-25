@@ -17,6 +17,8 @@ namespace LamedalCore.lib.SolutionNT.ClassNT
     [DebuggerDisplay("Name = {ClassName}")]
     public sealed class ClassNT_
     {
+        private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
+
         public string ClassName; //{ get; private set; } // Readonly refenerece to Classname    
         public string ClassFileName; // { get; private set; } // Readonly refenerece to Class filename                       
 
@@ -46,7 +48,12 @@ namespace LamedalCore.lib.SolutionNT.ClassNT
         public static ClassNT_ Create(string classFile, out bool error, out ClassNTBlueprintRule_ blueprintRule /*,ProjectNT_ project = null*/)
         {
             blueprintRule = null;
-            if (1f.zIO().File.Exists(classFile) == false) "Error! File '{0}' does not exists.".zFormat(classFile).zException_Show();
+            if (1f.zIO().File.Exists(classFile) == false)
+            {
+                var ex = new ArgumentException($"Error! File '{classFile}' does not exists.", nameof(classFile));
+                ex.zLogLibraryMsg();
+                throw ex;
+            }
 
             string[] codeLines = 1f.zIO().RW.File_Read2StrArray(classFile);
             return ClassNT_.Create(codeLines.ToList(), out error, out blueprintRule, classFile/*, project*/);

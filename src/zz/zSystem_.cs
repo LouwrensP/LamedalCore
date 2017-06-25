@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 
@@ -57,6 +58,21 @@ namespace LamedalCore.zz
         }
 
         #region Exceptions
+
+
+        /// <summary>Simple logger. Logs the specified message.</summary>
+        /// <param name="ex">The ex.</param>
+        /// <param name="lineNumber">The line number.</param>
+        /// <param name="caller">The caller.</param>
+        /// <param name="filepath">The filepath.</param>
+        /// <returns></returns>
+        internal static string zLogLibraryMsg(this Exception ex,
+            [CallerLineNumber] int lineNumber = 0,
+            [CallerMemberName] string caller = null,
+            [CallerFilePath] string filepath = "")
+        {
+            return LamedalCore_.Instance.Logger.LogLibraryMsg(ex, lineNumber, caller, filepath);
+        }
 
         ///// <summary>Show Exception Message.</summary>
         ///// <param name="ex">The ex.</param>

@@ -22,7 +22,12 @@ namespace LamedalCore.Types.List
         public IList<string> Query(IList<string> strList, int level = 1, string delimiter = ".", string filter = "")
         {
             if (strList == null) throw new ArgumentNullException(nameof(strList));
-            if(level < 1) "Error: Level parameter must always be > 0".zException_Show();
+            if (level < 1)
+            {
+                var ex = new ArgumentException("Error: Level parameter must always be > 0", nameof(level));
+                ex.zLogLibraryMsg();
+                throw  ex;
+            }
             var result = new List<string>();
             foreach (var nspace in strList)
             {

@@ -23,7 +23,7 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttributes
             if (attributeCode.zContains_All("[", "]") == false)
             {
                 var ex = new ArgumentException($"Error! No attribute input parameter: '{attributeCode}'", nameof(attributeCode));
-                LamedalCore_.Instance.Logger.LogMessage(ex);
+                ex.zLogLibraryMsg();
                 throw ex;
             }
 

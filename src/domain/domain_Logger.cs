@@ -48,50 +48,83 @@ namespace LamedalCore.domain
             for (; ex != null; ex = ex.InnerException) yield return ex;
         }
 
-        /// <summary>Simple logger. Logs the specified message.</summary>
-        /// <param name="message">The message.</param>
+        /// <summary>Return all the inner exceptions as string.</summary>
         /// <param name="ex">The ex.</param>
-        /// <param name="logType">Type of the log.</param>
+        /// <param name="prefixStr">The prefix string.</param>
+        /// <returns></returns>
+        public string InnerExceptions_AsStr(Exception ex, string prefixStr = " <Error>: ")
+        {
+            var result = InnerExceptions(ex).Select(x => x.Message).ToList().zTo_Str("".NL(), prefixStr: prefixStr);
+            return result;
+        }
+
+        /// <summary>Simple logger. Logs the specified message.</summary>
+        /// <param name="ex">The ex.</param>
         /// <param name="lineNumber">The line number.</param>
         /// <param name="caller">The caller.</param>
         /// <param name="filepath">The filepath.</param>
-        public string LogMessage(Exception ex, enCode_LogType logType = enCode_LogType.Info,
+        /// <returns></returns>
+        public string LogLibraryMsg(Exception ex,
             [CallerLineNumber] int lineNumber = 0,
             [CallerMemberName] string caller = null,
             [CallerFilePath] string filepath = "")
         {
-            return LogMessage(ex.Message, ex, logType, lineNumber, caller, filepath);
+            string logFile;
+            return LogMessage(ex.Message, out logFile, ex, enLogger_MsgType.Error, enLogger_DetailLevel.ClassLibrary, lineNumber, caller, filepath);
+        }
+
+        /// <summary>Simple logger. Logs the specified message.</summary>
+        /// <param name="ex">The ex.</param>
+        /// <param name="logType">Type of the log.</param>
+        /// <param name="detail">The detail.</param>
+        /// <param name="lineNumber">The line number.</param>
+        /// <param name="caller">The caller.</param>
+        /// <param name="filepath">The filepath.</param>
+        /// <returns></returns>
+        public string LogMessage(Exception ex, enLogger_DetailLevel detail = enLogger_DetailLevel.Application,
+            [CallerLineNumber] int lineNumber = 0,
+            [CallerMemberName] string caller = null,
+            [CallerFilePath] string filepath = "")
+        {
+            string logFile;
+            return LogMessage(ex.Message, out logFile, ex, enLogger_MsgType.Error, detail, lineNumber, caller, filepath);
         }
 
         /// <summary>Simple logger. Logs the specified message.</summary>
         /// <param name="message">The message.</param>
+        /// <param name="logFile">The log file.</param>
         /// <param name="ex">The ex.</param>
         /// <param name="logType">Type of the log.</param>
+        /// <param name="detail">The detail.</param>
         /// <param name="lineNumber">The line number.</param>
         /// <param name="caller">The caller.</param>
         /// <param name="filepath">The filepath.</param>
-        public string LogMessage(string message, Exception ex = null, enCode_LogType logType = enCode_LogType.Info,
+        /// <returns></returns>
+        public string LogMessage(string message, out string logFile, Exception ex = null, enLogger_MsgType logType = enLogger_MsgType.Info, enLogger_DetailLevel detail = enLogger_DetailLevel.Application,
                     [CallerLineNumber] int lineNumber = 0,
                     [CallerMemberName] string caller = null,
                     [CallerFilePath] string filepath = "")
         {
             string timeStr;
-            var logfile = _lamed.lib.IO.File.Filename_Logging(out timeStr);
-            var stack = "";
+            logFile = _lamed.lib.IO.File.Filename_Logging(out timeStr);
+            var exceptionList = "";
+            var stacktrace = "";
             string source = "";
             if (ex != null)
             {
                 // There was an exception, lets log more information
                 source = "".NL() +  $"  // Method:'{caller}()' at line {lineNumber} in file: '{filepath}'".NL();
-                logType = enCode_LogType.Error;
+                logType = enLogger_MsgType.Error;
                 var line = "--------------------------------------------------".NL();
-                var exceptions = InnerExceptions(ex).Select(x => x.Message).ToList().zTo_Str("".NL(), prefixStr: " <Error>: ");
-                stack = line+ exceptions.NL() + line + ex.ToString().NL() + line;
+                var exceptions = InnerExceptions_AsStr(ex);
+                exceptionList = line+ exceptions.NL() + line + ex.ToString().NL() + line;
+                stacktrace = ""+ex.StackTrace;
+                if (stacktrace != "") stacktrace += "".NL() + line;
             }
 
-            var msg = $"[{timeStr}] #{logType}# " + message + source + stack;
-            _lamed.lib.IO.RW.File_Append(logfile, msg, _logger);
-            return logfile;
+            var msg = $"[{timeStr}] #{logType}# " + message + source + exceptionList + stacktrace;
+            _lamed.lib.IO.RW.File_Append(logFile, msg, _logger);
+            return msg;
         }
         private object _logger = new Object();
 

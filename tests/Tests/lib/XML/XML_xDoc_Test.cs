@@ -138,7 +138,7 @@ namespace LamedalCore.Test.Tests.lib.XML
             Assert.Equal("<doc></doc>", doc.ToString());
 
             // Exceptions
-            Assert.Throws<XmlException>(()=> _lamed.lib.XML.xDoc.Document("<doc></dc>"));
+            Assert.Throws<ArgumentException>(()=> _lamed.lib.XML.xDoc.Document("<doc></dc>"));
         }
 
         [Fact]
@@ -149,7 +149,7 @@ namespace LamedalCore.Test.Tests.lib.XML
         [Test_Method("Element_AsStr()")]
         public void Element_Test()
         {
-            XDocument xDoc = _lamed.lib.XML.xDoc.Document("");
+            XDocument xDoc = _lamed.lib.XML.xDoc.Document("", true);
             XElement root = _lamed.lib.XML.xDoc.Element_RootSet(xDoc, "root");
             Assert.Equal("doc", root.Name);
 
@@ -170,7 +170,7 @@ namespace LamedalCore.Test.Tests.lib.XML
             Assert.Equal("", elementStr);
             Assert.Equal("<doc><Heading1 /><Heading2 /></doc>", element.ToString(SaveOptions.DisableFormatting));
             
-            Assert.Throws<InvalidOperationException>(()=>_lamed.lib.XML.xDoc.Element_Add(null, "Heading1"));
+            Assert.Throws<ArgumentException>(()=>_lamed.lib.XML.xDoc.Element_Add(null, "Heading1"));
         }
 
         [Fact]

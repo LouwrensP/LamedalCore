@@ -65,6 +65,8 @@ namespace LamedalCore.lib.IO
                 if (fileExist)
                 {
                     var ex = new ArgumentException("Error! Can not write to file because it already exists.", nameof(writeAction));
+                    ex.zLogLibraryMsg();
+                    throw ex;
                 }
                 else File.WriteAllText(pathAndFile, txt);
             } else if (writeAction == enIO_WriteAction.AppendFile)

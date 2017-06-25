@@ -35,9 +35,10 @@ namespace LamedalCore.lib.XML
             }
             catch (Exception e)
             {
-                Debug.WriteLine(e);
-                if (autoFix == false) return Document(xml, true);  // Retry with autofix
-                e.zException_Show("Error in XML: " + xml);
+                if (autoFix) return Document(xml, false);  // Retry with autofix
+                var ex = new ArgumentException($"Error in XML: '{xml}'", nameof(xml),e);
+                ex.zLogLibraryMsg();
+                throw ex;
             }
             return result;
         }
@@ -194,7 +195,9 @@ namespace LamedalCore.lib.XML
         {
             if (element == null)
             {
-                "Error! Can not add element value to undefined element!".zException_Show();
+                var ex = new ArgumentException("Error! Can not add element value to undefined element!", nameof(element));
+                ex.zLogLibraryMsg();
+                throw ex;
             }
             var result = new XElement(elementValue);
             element.Add(result);

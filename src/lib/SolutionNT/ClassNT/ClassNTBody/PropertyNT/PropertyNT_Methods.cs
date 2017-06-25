@@ -29,7 +29,7 @@ namespace LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.PropertyNT
             if (words.Count != 3)
             {
                 var ex= new InvalidOperationException("Error in CodeDef_Property parser!");
-                LamedalCore_.Instance.Logger.LogMessage(ex);
+                ex.zLogLibraryMsg();
                 throw ex;
             }
 

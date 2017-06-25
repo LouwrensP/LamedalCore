@@ -56,8 +56,8 @@ namespace LamedalCore.Test.Tests.Types.List
             result5 = _listLevel.Query(namesp, 15, ".", "bp");
             Assert.Equal(0, result5.Count);
 
-            var ex = Assert.Throws<InvalidOperationException>(() =>_listLevel.Query(namesp, 0, "."));
-            Assert.Equal("Error: Level parameter must always be > 0", ex.Message);
+            var ex = Assert.Throws<ArgumentException>(() =>_listLevel.Query(namesp, 0, "."));
+            Assert.Equal("Error: Level parameter must always be > 0".NL() + "Parameter name: level", ex.Message);
 
             namesp = null;
             var ex2 = Assert.Throws<ArgumentNullException>(() => _listLevel.Query(namesp, 0, "."));

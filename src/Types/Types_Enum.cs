@@ -96,14 +96,12 @@ namespace LamedalCore.Types
             }
             catch (Exception e)
             {
-                Debug.WriteLine(e);
                 var typeName = type.ToString();
-                var errMsg = "ERROR: Value '{0}' was not found in type {1}".zFormat(value, typeName);
-                e.zException_Show(errMsg, enCode_ExceptionAction.reThrowError);
+                var errMsg = $"ERROR: Value '{value}' was not found in type {typeName}";  // Provide better context to the exception
+                var ex = new InvalidOperationException(errMsg,e);
+                ex.zLogLibraryMsg();
+                throw ex;
             }
-            return null;
-            //var result2 = Convert.ChangeType(null, type);
-            //return result2;
         }
 
         /// <summary>
@@ -277,20 +275,24 @@ namespace LamedalCore.Types
         public T Flag_Add<T>(Enum type, T value)
         {
             T result = default(T);
-            var underlyingType = Enum.GetUnderlyingType(value.GetType());
+            Type underlyingType = Enum.GetUnderlyingType(value.GetType());
             try
             {
                 if (underlyingType == typeof(int))
                 {
-                    result =(T)(object)(((int)(object)type | (int)(object)value));
+                    result = (T) (object) (((int) (object) type | (int) (object) value));
                 }
                 else if (underlyingType == typeof(uint))
                 {
-                    result = (T)(object)(((uint)(object)type | (uint)(object)value));
+                    result = (T) (object) (((uint) (object) type | (uint) (object) value));
                 }
-            } 
-            catch (Exception ex)
-                  {ex.zException_Show($"Could not append value '{value}' to enumerated type 'typeof(T).Name)'.");}
+            }
+            catch (Exception e)
+            {
+                var ex = new ArgumentException($"Could not append value '{value}' to enumerated type '{underlyingType}'.", nameof(value), e);
+                ex.zLogLibraryMsg();
+                throw ex;
+            }
             return result;
         }
 
@@ -308,15 +310,19 @@ namespace LamedalCore.Types
             {
                 if (underlyingType == typeof(int))
                 {
-                    result = (T)(object)(((int)(object)type & ~(int)(object)value));
+                    result = (T) (object) (((int) (object) type & ~(int) (object) value));
                 }
                 else if (underlyingType == typeof(uint))
                 {
-                    result = (T)(object)(((uint)(object)type & ~(uint)(object)value));
+                    result = (T) (object) (((uint) (object) type & ~(uint) (object) value));
                 }
             }
-            catch (Exception ex)
-                  {ex.zException_Show($"Could not remove value '{value}' from enumerated type '{typeof(T).Name}'.");}
+            catch (Exception e)
+            {
+                var ex = new ArgumentException($"Could not remove value '{value}' from enumerated type '{underlyingType}'.", nameof(value), e);
+                ex.zLogLibraryMsg();
+                throw ex;
+            }
 
             return result;
         }

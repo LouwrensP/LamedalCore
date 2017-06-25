@@ -114,9 +114,9 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             #endregion
 
             #region Test4: Illigal input "", "[bla", "bla]"
-            Assert.Throws<InvalidOperationException>(() => ClassNTAttributes_Methods.Attribute_Parts("", out name, out parameters));
-            Assert.Throws<InvalidOperationException>(() => ClassNTAttributes_Methods.Attribute_Parts("[bla", out name, out parameters));
-            Assert.Throws<InvalidOperationException>(() => ClassNTAttributes_Methods.Attribute_Parts("bla]", out name, out parameters));
+            Assert.Throws<ArgumentException>(() => ClassNTAttributes_Methods.Attribute_Parts("", out name, out parameters));
+            Assert.Throws<ArgumentException>(() => ClassNTAttributes_Methods.Attribute_Parts("[bla", out name, out parameters));
+            Assert.Throws<ArgumentException>(() => ClassNTAttributes_Methods.Attribute_Parts("bla]", out name, out parameters));
 
             #endregion
         }

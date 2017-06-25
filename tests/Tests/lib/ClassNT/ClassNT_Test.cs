@@ -273,7 +273,7 @@ namespace LamedalCore.Test.Tests.lib.ClassNT
             #endregion
 
             #region InvalidFile.cs
-            Assert.Throws<InvalidOperationException>(() => ClassNT_.Create(folderPath + "InvalidFile.cs", out error, out blueprintRule));
+            Assert.Throws<ArgumentException>(() => ClassNT_.Create(folderPath + "InvalidFile.cs", out error, out blueprintRule));
             #endregion
         }
 

@@ -1,6 +1,6 @@
 ﻿namespace LamedalCore.domain.Enumerals
 {
-    public enum enCode_LogType
+    public enum enLogger_MsgType
     {
         Error,
         Warning,

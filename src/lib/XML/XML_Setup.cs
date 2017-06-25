@@ -88,7 +88,8 @@ namespace LamedalCore.lib.XML
             }
             catch (Exception ex)
             {
-                ex.zException_Show();
+                ex.zLogLibraryMsg();
+                throw;
             }
             return result;
         }
@@ -150,8 +151,12 @@ namespace LamedalCore.lib.XML
                 result = _lamed.Types.String.Edit.SubStr_Index(inputStr, indexStart, indexEnd);
             } else if (errorIfTagNotFound)
             {
-                var error = $"Error! '{startTag}' and '{endTag}' was not found in XML '{inputStr}'";
-                error.zException_Show();
+                ArgumentException ex;
+                if (inputStr.Contains(startTag) == false)
+                     ex = new ArgumentException($"Error! '{startTag}' was not found in XML '{inputStr}'", nameof(startTag));
+                else ex = new ArgumentException($"Error! '{endTag}' was not found in XML '{inputStr}'", nameof(endTag));
+                ex.zLogLibraryMsg();
+                throw ex;
             }
             return result;
         }

@@ -59,7 +59,8 @@ namespace LamedalCore.Types
                 }
                 catch (Exception ex)
                 {
-                    ex.zException_Show();
+                    ex.zLogLibraryMsg();
+                    throw;
                 }
             }
             return result;
@@ -90,14 +91,16 @@ namespace LamedalCore.Types
             if (this._object.IsNull(Object)) return DateTime.MinValue;
             if (Object is DateTime) return Convert.ToDateTime(Object);
 
-            DateTime result = _lamed.Types.DateTime.null_;
+            DateTime result; // = _lamed.Types.DateTime.null_;
             try
             {
                 result = Convert.ToDateTime(Object);
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                ex.zException_Show("Error! Unable to convert object to DateTime!");
+                var ex = new FormatException("Error! Unable to convert object to DateTime!",e);
+                ex.zLogLibraryMsg();
+                throw ex;
             }
 
             return result;
@@ -311,17 +314,21 @@ namespace LamedalCore.Types
         /// <summary>
         /// Converts the stringtype name to type.
         /// </summary>
-        /// <param name="strType">The string type</param>
+        /// <param name="strType2">The string type</param>
         /// <returns>Type</returns>
         public Type Type_FromStr(string strType)
         {
-            var test = strType;
-            if (test == "string") test = "System.String";
-            else if (test.zIn("string", "Enum", "Exception", "Array")) test = "System." + strType;
-            else if (test == "Assembly") return typeof(Assembly);
+            if (strType == "string") strType = "System.String";
+            else if (strType.zIn("string", "Enum", "Exception", "Array")) strType = "System." + strType;
+            else if (strType == "Assembly") return typeof(Assembly);
 
-            var result = Type.GetType(test);
-            if (result == null) ("Error! Unable to find type '{0}'.".zFormat(test)).zException_Show();
+            var result = Type.GetType(strType);
+            if (result == null)
+            {
+                var ex = new InvalidOperationException($"Error! Unable to find type '{strType}'.");
+                ex.zLogLibraryMsg();
+                throw ex;
+            }
             return result;
         }
 

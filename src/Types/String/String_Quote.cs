@@ -100,8 +100,9 @@ namespace LamedalCore.Types.String
             // ===============
             // Error condition
             // ===============
-            ("Error! Cannot convert type '" + Object.GetType() + "' to SQL!").zException_Show();  // Unable to test -> add unit test condition on error
-            return null;
+            var ex = new InvalidOperationException("Error! Cannot convert type '" + Object.GetType() + "' to SQL!");
+            ex.zLogLibraryMsg();
+            throw ex;
         }
 
         /// <summary>Word_FromAbbreviation all single quote characters to double single quotes to make it  SQL compatible.</summary>

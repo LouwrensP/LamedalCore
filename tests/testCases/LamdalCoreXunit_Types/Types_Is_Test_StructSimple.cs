@@ -1,4 +1,4 @@
-namespace LamedalCore.Test.Tests._Data
+namespace LamdalCoreXunit_Types
 {
     public struct Types_Is_Test_StructSimple
     {

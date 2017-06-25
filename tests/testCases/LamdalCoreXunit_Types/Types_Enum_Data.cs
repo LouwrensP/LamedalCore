@@ -1,7 +1,7 @@
 ﻿using System;
 using LamedalCore.domain.Attributes;
 
-namespace LamedalCore.Test.Tests.Types
+namespace LamdalCoreXunit_Types
 {
     /// <summary>
     /// This enumeral is for test purposes. It shows the capabilities that is possible with enumerales.

@@ -256,11 +256,11 @@ namespace LamedalCore.Test.Tests.lib.IO
         {
             string timeStr;
             var file = _lamed.lib.IO.File.Filename_Logging(out timeStr);
-            var folder = _lamed.lib.IO.Folder.Path_Application();
+            var folder = _lamed.lib.IO.Folder.Path_Application() +"log/";
             var timename = _lamed.Types.DateTime.To_Str(DateTime.UtcNow, true, true);
             Assert.True(file.Contains(folder));
             Assert.True(file.Contains(timename));
-            Assert.Equal(folder + $"ApplicationLog{timename}.txt", file);
+            Assert.Equal(folder + $"LamedalCoreLogger{timename}.txt", file);
         }
     }
 }

@@ -132,10 +132,12 @@ namespace LamedalCore.lib.IO
         /// <returns></returns>
         public string Filename_Logging(out string timeStr)
         {
-            var folder = _io.Folder.Path_Application();
+            var folder = _io.Folder.Path_Application() + "log/";
+            if (_lamed.lib.IO.Folder.Exists(folder)== false) _lamed.lib.IO.Folder.Create(folder);
+
             var timename = _lamed.Types.DateTime.To_Str(DateTime.UtcNow, true, true);
             timeStr = _lamed.Types.DateTime.To_Str(DateTime.UtcNow);
-            var file = folder + $"ApplicationLog{timename}.txt";
+            var file = folder + $"LamedalCoreLogger{timename}.txt";
             return file;
         }
 

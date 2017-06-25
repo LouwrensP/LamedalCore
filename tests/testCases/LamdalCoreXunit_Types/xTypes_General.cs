@@ -9,7 +9,6 @@ using Xunit;
 
 namespace LamdalCoreXunit_Types
 {
-    [Trait("Category", "Types_General")]
     public partial class xTypes_General 
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library

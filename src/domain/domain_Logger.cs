@@ -101,9 +101,9 @@ namespace LamedalCore.domain
         /// <param name="filepath">The filepath.</param>
         /// <returns></returns>
         public string LogMessage(string message, out string logFile, Exception ex = null, enLogger_MsgType logType = enLogger_MsgType.Info, enLogger_DetailLevel detail = enLogger_DetailLevel.Application,
-                    [CallerLineNumber] int lineNumber = 0,
-                    [CallerMemberName] string caller = null,
-                    [CallerFilePath] string filepath = "")
+            [CallerLineNumber] int lineNumber = 0,
+            [CallerMemberName] string caller = null,
+            [CallerFilePath] string filepath = "")
         {
             string timeStr;
             logFile = _lamed.lib.IO.File.Filename_Logging(out timeStr);
@@ -113,64 +113,19 @@ namespace LamedalCore.domain
             if (ex != null)
             {
                 // There was an exception, lets log more information
-                source = "".NL() +  $"  // Method:'{caller}()' at line {lineNumber} in file: '{filepath}'".NL();
+                source = $"  // Method:'{caller}()' at line {lineNumber} in file: '{filepath}'".NL();
                 logType = enLogger_MsgType.Error;
                 var line = "--------------------------------------------------".NL();
                 var exceptions = InnerExceptions_AsStr(ex);
                 exceptionList = line+ exceptions.NL() + line + ex.ToString().NL() + line;
                 stacktrace = ""+ex.StackTrace;
-                if (stacktrace != "") stacktrace += "".NL() + line;
+                if (stacktrace != "") stacktrace += "".NL();
             }
 
-            var msg = $"[{timeStr}] #{logType}# " + message + source + exceptionList + stacktrace;
+            var msg = $"[{timeStr}] #{logType}# " + message.NL() + source + exceptionList + stacktrace + "=========================================================".NL();
             _lamed.lib.IO.RW.File_Append(logFile, msg, _logger);
             return msg;
         }
         private object _logger = new Object();
-
-        /// <summary>Shows the Exception message</summary>
-        /// <param name="ex">The exception</param>
-        /// <param name="errMsg">The error msg setting. Default value = "".</param>
-        /// <param name="action">The exception action setting. Default value = ExceptionAction.ThrowError.</param>
-        [DebuggerStepThrough]
-        public virtual void Show(Exception ex, string errMsg = "", enCode_ExceptionAction action = enCode_ExceptionAction.reThrowError)
-        {
-            //_system.lib.Tools.Form_Remove_TopMost();
-
-            errMsg = (errMsg == "") ? "" : "".NL() + errMsg.NL(2);   // The first 2 new lines help with a new rethrow error message in unit tests. 
-            errMsg += ex.Message.NL(2);
-            //errMsg += Method_Stacktrace_AsStr();  // Get the stacktrace
-            ex.Data["UserMessage"] += errMsg;
-
-            switch (action)
-            {
-                case enCode_ExceptionAction.ThrowError: throw ex;
-                case enCode_ExceptionAction.reThrowError: throw New(errMsg, ex);
-                default: throw new Exception($"Argument '{nameof(action)}' error.");
-            }
-        }
-
-        /// <summary>Show Exception Message.</summary>
-        /// <param name="errMsg">The error MSG.</param>
-        /// <param name="action">The action.</param>
-        /// <param name="innerException">The inner exception.</param>
-        [DebuggerStepThrough]
-        public void Show(string errMsg, enCode_ExceptionAction action = enCode_ExceptionAction.ThrowError, Exception innerException = null)
-        {
-            Exception ex = New(errMsg, innerException);
-            Show(ex, "", action);
-        }
-
-        /// <summary>Creates new exception.</summary>
-        /// <param name="errMsg">The error MSG.</param>
-        /// <param name="innerException">The inner exception.</param>
-        /// <returns></returns>
-        public Exception New(string errMsg, Exception innerException = null)
-        {
-            if (innerException == null) return new InvalidOperationException(errMsg);
-
-            return new InvalidOperationException(errMsg, innerException);
-        }
-
     }
 }

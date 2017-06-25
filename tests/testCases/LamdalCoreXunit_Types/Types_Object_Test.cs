@@ -1,14 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using LamedalCore;
 using LamedalCore.domain.Attributes;
-using LamedalCore.Test.Tests.Types.Class;
-using LamedalCore.Test.Tests._Data;
 using LamedalCore.Types;
 using LamedalCore.zz;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.Types
+namespace LamdalCoreXunit_Types
 {
     [Trait("Category", "Types_")]
     public sealed class Types_Object_Test

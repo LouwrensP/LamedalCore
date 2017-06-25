@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using LamedalCore;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
-using LamedalCore.Test.Tests.Types.List;
-using LamedalCore.Types;
 using LamedalCore.zz;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.Types
+namespace LamdalCoreXunit_Types
 {
-    [Trait("Category", "Types_")]
     public sealed class Types_Enum_Test
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library

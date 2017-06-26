@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using LamedalCore.domain.Attributes;
 using LamedalCore.lib.IO;
-using LamedalCore.Test.Tests._Data;
+using LamedalCore.Test.Tests.lib.IO.data;
 using LamedalCore.zPublicClass;
 using LamedalCore.zz;
 using Xunit;

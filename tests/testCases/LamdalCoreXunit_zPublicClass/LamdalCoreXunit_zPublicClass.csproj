@@ -53,8 +53,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="zPublicClass_GridBlock.cs" />
+    <Compile Include="PublicClass_GridBlock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="xPublicClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

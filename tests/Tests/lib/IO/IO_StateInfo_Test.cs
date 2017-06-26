@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
+using LamdalCoreXunit_Types.Class;
+using LamdalCoreXunit_Types.Class.data;
 using LamedalCore.domain.Attributes;
 using LamedalCore.lib.IO.ioStateInfo;
-using LamedalCore.Test.Tests.Types.Class;
 using Xunit;
 
 namespace LamedalCore.Test.Tests.lib.IO

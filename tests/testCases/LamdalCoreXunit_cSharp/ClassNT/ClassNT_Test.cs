@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using LamedalCore;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.lib.SolutionNT.ClassNT;
@@ -15,7 +14,7 @@ using LamedalCore.zz;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace LamedalCore.Test.Tests.lib.ClassNT
+namespace LamdalCoreXunit_cSharp.ClassNT
 {
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action)]
     public sealed class ClassNT_Test : pcTest

@@ -1,17 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute.ClassNTBlueprintRule;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.lib.ClassNT.ClassNTAttributeBlueprint_Test
+namespace LamdalCoreXunit_cSharp.ClassNT.ClassNTAttributeBlueprint_Test
 {
-    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, DefaultType = typeof(Enum), GroupName = "Enum", ShortcutClass = "Enum_Blueprint")]
-    public sealed class ClassNTAttributeBlueprint_Test4
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Transformation_Extention, DefaultGroup = "default group", DefaultType = typeof(string), GroupName = "group name", IgnoreGroup = true, IgnoreGroupPath = true, Ignore_Namespace1 = "ignore 1", ShortcutClass = "Shortcut Class")]
+    public sealed class ClassNTAttributeBlueprint_Test5
     {
         [Fact]
         public void BlueprintRule_Class_Test()
@@ -28,14 +25,14 @@ namespace LamedalCore.Test.Tests.lib.ClassNT.ClassNTAttributeBlueprint_Test
             bool ignoreGroup, ignorePath, includeObjects;
             #endregion
 
-            #region Test4: [BlueprintRule_Class(enBlueprintClassNetworkType.Node_Action, DefaultType = typeof(Enum), GroupName = "Enum", ShortcutClass = "Enum_Blueprint")]
+            #region Test5: [BlueprintRule_Class(enBlueprintClassNetworkType.Transformation_Extention, DefaultGroup = "default group", DefaultType = typeof(string), GroupName = "group name", IgnoreGroup = true, IgnoreGroupPath = true, Ignore_Namespace1 = "ignore 1", ShortcutClass = "Shortcut Class")]
             // =========================================================================================================================================
-            attributeCode1 = "[BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, DefaultType = typeof(Enum), GroupName = \"Enum\", ShortcutClass = \"Enum_Blueprint\")]";
+            attributeCode1 = "[BlueprintRule_Class(enBlueprint_ClassNetworkType.Transformation_Extention, DefaultGroup = \"default group\", DefaultType = typeof(string), GroupName = \"group name\", IgnoreGroup = true, IgnoreGroupPath = true, Ignore_Namespace1 = \"ignore 1\", ShortcutClass = \"Shortcut Class\")]";
             isBlueprintRule = ClassNTBlueprintRule_Methods.BlueprintRule_Attributes(attributeCode1, out name, out parameters, out classNetworkType, out ignore1, out ignore2, out ignore3, out ignore4);
             Assert.Equal(true, isBlueprintRule);
-            Assert.Equal(enBlueprint_ClassNetworkType.Node_Action, classNetworkType);
-            Assert.Equal(4, parameters.Count);
-            Assert.Equal(null, ignore1);
+            Assert.Equal(enBlueprint_ClassNetworkType.Transformation_Extention, classNetworkType);
+            Assert.Equal(8, parameters.Count);
+            Assert.Equal("ignore 1", ignore1);
             Assert.Equal(null, ignore2);
             Assert.Equal(null, ignore3);
             Assert.Equal(null, ignore4);
@@ -44,14 +41,13 @@ namespace LamedalCore.Test.Tests.lib.ClassNT.ClassNTAttributeBlueprint_Test
             if (isBlueprintRule)
             {
                 ClassNTBlueprintRule_Methods.BlueprintRule_AttributeParameters(parameters, out defaultGroup, out defaultType, out groupName, out ignoreGroup, out ignorePath, out includeObjects, out ShortcutClass);
-
-                Assert.Equal(typeof(Enum), defaultType);
-                Assert.Equal(null, defaultGroup);
-                Assert.Equal("Enum", groupName);
-                Assert.Equal(false, ignoreGroup);
-                Assert.Equal(false, ignorePath);
+                Assert.Equal("default_group", defaultGroup);
+                Assert.Equal(typeof(string), defaultType);
+                Assert.Equal("group_name", groupName);
+                Assert.Equal(true, ignoreGroup);
+                Assert.Equal(true, ignorePath);
                 Assert.Equal(false, includeObjects);
-                Assert.Equal("Enum_Blueprint", ShortcutClass);
+                Assert.Equal("Shortcut_Class", ShortcutClass);
             }
             #endregion
         }

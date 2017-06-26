@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using LamedalCore;
 using LamedalCore.domain.Attributes;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT;
-using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTHeader;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT.MethodNTstats;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.lib.ClassNT
+namespace LamdalCoreXunit_cSharp.ClassNT
 {
     public sealed class ClassNTMethodStats_Test
     {

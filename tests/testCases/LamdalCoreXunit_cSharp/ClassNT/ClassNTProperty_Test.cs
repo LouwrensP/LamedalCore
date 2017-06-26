@@ -3,7 +3,7 @@ using LamedalCore.domain.Attributes;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.PropertyNT;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.lib.ClassNT
+namespace LamdalCoreXunit_cSharp.ClassNT
 {
     public sealed class ClassNTProperty_Test
     {

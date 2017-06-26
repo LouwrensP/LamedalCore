@@ -67,7 +67,7 @@ namespace LamedalCore.Test.Tests
         [Test_Method("Execute_Explorer()")]
         public void ExploreToResult_Test()
         {
-            if (Config_Info.Test_ShowConfigFiles) _lamed.lib.Command.Execute_Explorer();  // Open the output forlder
+            if (Config_Info.Test_ShowConfigFiles) _lamed.lib.Command.Execute_Explorer();  // Open the output folder
         }
     }
 }

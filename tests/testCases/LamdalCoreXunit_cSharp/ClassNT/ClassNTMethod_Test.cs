@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using LamedalCore;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute.ClassNTBlueprintRule;
@@ -13,7 +14,7 @@ using LamedalCore.lib.SolutionNT.ClassNT.ClassNTStats;
 using LamedalCore.zz;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.lib.ClassNT
+namespace LamdalCoreXunit_cSharp.ClassNT
 {
     public sealed class ClassNTMethod_Test
     {

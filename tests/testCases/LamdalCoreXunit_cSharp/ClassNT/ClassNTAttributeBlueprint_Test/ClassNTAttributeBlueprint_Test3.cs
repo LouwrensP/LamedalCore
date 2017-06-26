@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute.ClassNTBlueprintRule;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.lib.ClassNT.ClassNTAttributeBlueprint_Test
+namespace LamdalCoreXunit_cSharp.ClassNT.ClassNTAttributeBlueprint_Test
 {
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action, DefaultType = typeof(string), GroupName = "Str")]
     public sealed class ClassNTAttributeBlueprint_Test3

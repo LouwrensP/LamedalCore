@@ -1,22 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTAttribute.ClassNTBlueprintRule;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.lib.ClassNT.ClassNTAttributeBlueprint_Test
+namespace LamdalCoreXunit_cSharp.ClassNT.ClassNTAttributeBlueprint_Test
 {
-    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Link)]
-    public sealed class ClassNTAttributeBlueprint_Test1
+    [BlueprintRule_Class(enBlueprint_ClassNetworkType.CTIN, Ignore_Namespace1 = "Factory", Ignore_Namespace2 = "zz", Ignore_Namespace3 = "domain", Ignore_Namespace4 = "Testing")]
+    public sealed class ClassNTAttributeBlueprint_Test2
     {
         [Fact]
         public void BlueprintRule_Class_Test()
         {
+
             #region Parameters
+
             string name;
             List<string> parameters;
             string ignore1, ignore2, ignore3, ignore4;
@@ -26,19 +25,20 @@ namespace LamedalCore.Test.Tests.lib.ClassNT.ClassNTAttributeBlueprint_Test
             string defaultGroup, groupName, ShortcutClass;
             Type defaultType;
             bool ignoreGroup, ignorePath, includeObjects;
+
             #endregion
 
-            #region Test1: [BlueprintRule_Class(enClassNetwork.Node_Link)]
+            #region Test2: [BlueprintRule_Class(enBlueprintClassNetworkType.CTIN, Ignore_Namespace1 = "Factory", Ignore_Namespace2 = "zz", Ignore_Namespace3 = "domain", Ignore_Namespace4 = "Testing")]
             // =========================================================================================================================================
-            attributeCode1 = "[BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Link)]";
+            attributeCode1 = "[BlueprintRule_Class(enBlueprint_ClassNetworkType.CTIN, Ignore_Namespace1 = \"Factory\", Ignore_Namespace2 = \"zz\", Ignore_Namespace3 = \"domain\", Ignore_Namespace4 = \"Testing\")]";
             isBlueprintRule = ClassNTBlueprintRule_Methods.BlueprintRule_Attributes(attributeCode1, out name, out parameters, out classNetworkType, out ignore1, out ignore2, out ignore3, out ignore4);
+            Assert.Equal(enBlueprint_ClassNetworkType.CTIN, classNetworkType);
+            Assert.Equal("Factory", ignore1);
+            Assert.Equal("zz", ignore2);
+            Assert.Equal("domain", ignore3);
+            Assert.Equal("Testing", ignore4);
+            Assert.Equal(5, parameters.Count);
             Assert.Equal(true, isBlueprintRule);
-            Assert.Equal(enBlueprint_ClassNetworkType.Node_Link, classNetworkType);
-            Assert.Equal(1, parameters.Count);
-            Assert.Equal(null, ignore1);
-            Assert.Equal(null, ignore2);
-            Assert.Equal(null, ignore3);
-            Assert.Equal(null, ignore4);
 
             // Parameters
             if (isBlueprintRule)
@@ -53,7 +53,9 @@ namespace LamedalCore.Test.Tests.lib.ClassNT.ClassNTAttributeBlueprint_Test
                 Assert.Equal(false, includeObjects);
                 Assert.Equal(null, ShortcutClass);
             }
+
             #endregion
+
         }
     }
 }

@@ -37,7 +37,8 @@ Static Analysis     |analysis    | -   | ![alt tag](https://scan.coverity.com/pr
 * *Create test cases with at least 95% code coverage of the library. (Done)* 
 * *Create workflow process to ensure library stability and usability. (Done)*
 * *Integrate with Appveyor (Done)*
-* **Create a simple c# code parser to evaluate code on a macro scale. (In progress - 4 June 2017)**
+* **Create library based modular unit test cases. (In progress)**
+* **Create a simple c# code parser to evaluate code on a macro scale. (In progress - 30 July 2017)**
 * Create Visual Studio Tools to support the Lamedal framework. (Future)
 * Use Lamedal tools to refactor and optimise source code. (Future)
 * Publish Lamedal Blueprint rule framework methodology. (Future)

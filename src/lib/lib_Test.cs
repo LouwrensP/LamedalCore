@@ -44,7 +44,7 @@ namespace LamedalCore.lib
         /// <param name="config">The configuration.</param>
         /// <param name="configFile">The configuration file.</param>
         /// <returns></returns>
-        public bool ConfigSettings(out string folderApplication, out string folderTestCases, out pcTest_Configuration config, out string configFile)
+        public bool ConfigSettings(out string folderApplication, out string folderTestCases, out pcTest_ConfigData config, out string configFile)
         {
             var result = _lamed.lib.IO.File.Config_UnitTests(out folderApplication, out folderTestCases, out config, out configFile);
             return result;

@@ -42,7 +42,7 @@ namespace LamedalCore.Test.Tests
         /// <returns></returns>
         [Test_Method("Test.ConfigSettings()")]
         [Test_Method("IO.Folder.Exists()")]
-        public string Config_File_Test(out pcTest_Configuration config, out string folderApplication)
+        public string Config_File_Test(out pcTest_ConfigData config, out string folderApplication)
         {
             string folderTestCases;
             string configFile;

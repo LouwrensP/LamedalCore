@@ -136,7 +136,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config_Info.cs" />
     <Compile Include="Tests\domain_Test.cs" />
     <Compile Include="Tests\lib\IO\IO_.cs" />
     <Compile Include="Tests\lib\IO\IO_File_Test.cs" />

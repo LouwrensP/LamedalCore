@@ -189,14 +189,14 @@ namespace LamedalCore.lib.IO
         /// <param name="configFile">The configuration file.</param>
         /// <returns></returns>
         [Test_IgnoreCoverage(enCode_TestIgnore.CodeIsUsedForTesting)]
-        public bool Config_UnitTests(out string folderApplication, out string folderTestCases, out pcTest_Configuration config, out string configFile)
+        public bool Config_UnitTests(out string folderApplication, out string folderTestCases, out pcTest_ConfigData config, out string configFile)
         {
             // Protected area
             var result = true;
             lock (configLock)
             {
                 configFile = _lamed.lib.IO.File.Filename_Config();
-                config = _lamed.lib.IO.File.Config_Load<pcTest_Configuration>();
+                config = _lamed.lib.IO.File.Config_Load<pcTest_ConfigData>();
                 folderTestCases = config.Folder_TestCase;
 
                 // Check if values are filled in

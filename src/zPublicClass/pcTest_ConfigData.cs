@@ -7,7 +7,7 @@ namespace LamedalCore.zPublicClass
     /// Public class used for test configurations
     /// </summary>
     [Test_IgnoreCoverage(enCode_TestIgnore.CodeIsUsedForTesting)]
-    public sealed class pcTest_Configuration
+    public sealed class pcTest_ConfigData
     {
         public string Folder_TestCase_About = "Please specify the folder where the Excel test cases are located. Use '/' to separate folders. Path should end with '/'";
         public string Folder_TestCase = "";

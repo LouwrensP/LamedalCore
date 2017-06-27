@@ -29,7 +29,7 @@ namespace LamedalCore.Test.Tests.lib
             string folderTest = Config_Info.Config_File_Test(_Debug);
             string folderApplication;
             string folderTestCases;
-            pcTest_Configuration config;
+            pcTest_ConfigData config;
             string configFile;
             bool result = _lamed.lib.Test.ConfigSettings(out folderApplication, out folderTestCases, out config, out configFile);
             if (result == false)

@@ -11,6 +11,7 @@ using LamedalCore.zPublicClass;
 using Xunit;
 using Xunit.Abstractions;
 using HtmlAgilityPack;
+using LamedalCore.zPublicClass.Test;
 
 namespace LamedalCore.Test.Tests.lib
 {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using LamedalCore.zPublicClass;
+using LamedalCore.zPublicClass.Test;
 using LamedalCore.zz;
 
 namespace LamedalCore.lib

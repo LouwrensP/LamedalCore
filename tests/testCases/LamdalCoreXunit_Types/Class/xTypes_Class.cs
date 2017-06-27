@@ -7,6 +7,7 @@ using LamedalCore;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.zPublicClass;
+using LamedalCore.zPublicClass.Test;
 using Xunit;
 using Xunit.Abstractions;
 

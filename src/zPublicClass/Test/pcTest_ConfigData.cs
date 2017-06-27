@@ -1,7 +1,7 @@
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 
-namespace LamedalCore.zPublicClass
+namespace LamedalCore.zPublicClass.Test
 {
     /// <summary>
     /// Public class used for test configurations

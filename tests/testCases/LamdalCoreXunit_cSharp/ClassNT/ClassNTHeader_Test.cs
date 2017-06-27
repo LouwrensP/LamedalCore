@@ -4,6 +4,7 @@ using LamedalCore.domain.Attributes;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTHeader;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTStats;
 using LamedalCore.zPublicClass;
+using LamedalCore.zPublicClass.Test;
 using Xunit;
 using Xunit.Abstractions;
 

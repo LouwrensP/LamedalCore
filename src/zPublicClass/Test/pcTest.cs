@@ -4,7 +4,7 @@ using LamedalCore.domain.Enumerals;
 using LamedalCore.zz;
 using Xunit.Abstractions;
 
-namespace LamedalCore.zPublicClass
+namespace LamedalCore.zPublicClass.Test
 {
     /// <summary>
     /// Public class for testing purposes. This gives one point to extent Xunit debug.console messages.

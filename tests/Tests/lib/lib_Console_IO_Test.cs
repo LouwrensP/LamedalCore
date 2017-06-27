@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using LamedalCore.domain.Attributes;
 using LamedalCore.lib.Console1;
 using LamedalCore.zPublicClass;
+using LamedalCore.zPublicClass.Test;
 using LamedalCore.zz;
 using Xunit;
 using Xunit.Abstractions;

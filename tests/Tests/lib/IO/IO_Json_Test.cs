@@ -4,6 +4,7 @@ using LamedalCore.domain.Attributes;
 using LamedalCore.lib.IO;
 using LamedalCore.Test.Tests.lib.IO.data;
 using LamedalCore.zPublicClass;
+using LamedalCore.zPublicClass.Test;
 using LamedalCore.zz;
 using Xunit;
 using Xunit.Abstractions;

@@ -10,6 +10,7 @@ using LamedalCore.lib.SolutionNT.ClassNT.ClassNTBody.MethodNT;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTHeader;
 using LamedalCore.lib.SolutionNT.ClassNT.ClassNTStats;
 using LamedalCore.zPublicClass;
+using LamedalCore.zPublicClass.Test;
 using LamedalCore.zz;
 using Xunit;
 using Xunit.Abstractions;

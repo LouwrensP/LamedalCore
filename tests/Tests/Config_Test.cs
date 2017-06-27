@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using LamedalCore.domain.Attributes;
 using LamedalCore.zPublicClass;
+using LamedalCore.zPublicClass.Test;
 using Xunit;
 using Xunit.Abstractions;
 

@@ -29,6 +29,7 @@ using JetBrains.Annotations;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.zPublicClass;
+using LamedalCore.zPublicClass.Test;
 using LamedalCore.zz;
 
 namespace LamedalCore.lib.IO

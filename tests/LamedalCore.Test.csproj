@@ -180,6 +180,10 @@
       <Project>{cce0b77c-74ca-4e22-bebf-6a69cfa5442e}</Project>
       <Name>LamedalCore</Name>
     </ProjectReference>
+    <ProjectReference Include="testCases\LamdalCoreXunit_cSharp\LamdalCoreXunit_cSharp.csproj">
+      <Project>{41d2dc16-fd7a-412a-a6b2-b48429adc182}</Project>
+      <Name>LamdalCoreXunit_cSharp</Name>
+    </ProjectReference>
     <ProjectReference Include="testCases\LamdalCoreXunit_domain\LamdalCoreXunit_domain.csproj">
       <Project>{538D4CF4-51CA-4E9D-963C-0AB973583388}</Project>
       <Name>LamdalCoreXunit_domain</Name>

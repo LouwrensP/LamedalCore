@@ -9,7 +9,7 @@ namespace LamedalCore.zPublicClass.Test
     /// </summary>
     public static class pcTest_Config
     {
-        public static bool Test_ShowConfigFiles = true;  // if true, show config files
+        public static bool Test_ShowConfigFiles = false;  // if true, show config files
         public static string Test_Drive;  // The drive that the application is running on
 
         private static string _folderTestCases = "";

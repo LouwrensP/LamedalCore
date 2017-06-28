@@ -196,7 +196,7 @@ namespace LamdalCoreXunit_Types.other
 
             // Objects
             var me = new xTypes_Other();
-            Assert.Equal("LamdalCoreXunit_Types.xTypes_General", _convert.Str_FromObj(me.GetType()));
+            Assert.Equal("LamdalCoreXunit_Types.xTypes_Other", _convert.Str_FromObj(me.GetType()).Replace(".other",""));
 
             // Guid
             Assert.Equal("1eb4c570-51cb-46d3-b9ba-a76ddbc8dfe8", _convert.Str_FromObj(new Guid("1eb4c570-51cb-46d3-b9ba-a76ddbc8dfe8")));

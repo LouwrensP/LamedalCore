@@ -132,7 +132,7 @@ namespace LamedalCore.Test.Tests.lib.IO
             // Change a field name
             var syncStr2 = jsonResult.Replace("\"Email\": ", "\"Email2\": ");
             var ex = Assert.Throws<InvalidOperationException>(() => _json.Object_Set(json_TestClass, syncStr2));
-            Assert.Equal("Error! Property / Field 'Email2' does not exist in object: 'LamedalCore.Test.Tests._Data.TestData_Json'.", ex.Message);
+            Assert.Equal("Error! Property / Field 'Email2' does not exist in object: 'LamedalCore.Test.Tests.lib.IO.data.TestData_Json'.", ex.Message);
         }
 
 

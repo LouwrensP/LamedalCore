@@ -24,7 +24,7 @@ namespace LamedalCore.Test.Tests.lib.XML
 //        [Test_Method("()")]
 //        public void MindmapSimple_Test()
 //        {
-//            var folderPath = Config_Info.Config_File_Test(_Debug) + @"mm/"; //@"D:\Dev\GitHub\LamedalCore\tests\TestData\Text\mm";
+//            var folderPath = pcTest_Config.TestFolder(_Debug) + @"mm/"; //@"D:\Dev\GitHub\LamedalCore\tests\TestData\Text\mm";
 
 //            #region input
 //            var input =
@@ -70,7 +70,7 @@ namespace LamedalCore.Test.Tests.lib.XML
         [Test_Method("CreateMindmap()")]
         public void CreateMindmap_Test()
         {
-            var folderPath = Config_Info.Config_File_Test(_Debug) + @"text/mm/"; //@"D:\Dev\GitHub\LamedalCore\tests\TestData\Text\mm";
+            var folderPath = pcTest_Config.TestFolder() + @"text/mm/"; //@"D:\Dev\GitHub\LamedalCore\tests\TestData\Text\mm";
 
             // Create the map xml doc
             var map = CreateMindmap();

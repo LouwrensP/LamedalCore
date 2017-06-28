@@ -11,5 +11,6 @@ namespace LamedalCore.zPublicClass.Test
     {
         public string Folder_TestCase_About = "Please specify the folder where the Excel test cases are located. Use '/' to separate folders. Path should end with '/'";
         public string Folder_TestCase = "";
+        public string Test_Drive = "C:/";
     }
 }

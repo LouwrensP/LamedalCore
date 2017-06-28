@@ -71,7 +71,7 @@ namespace LamdalCoreXunit_cSharp.ClassNT
 
             #region Test2: Write & Read the class object
 
-            var folderPath = Config_Info.Config_File_Test(_Debug) + @"Text/ClassNT/"; //@"C:\test\stream\header.txt";
+            var folderPath = pcTest_Config.TestFolder() + @"Text/ClassNT/"; //@"C:\test\stream\header.txt";
             _lamed.lib.IO.Folder.Create(folderPath);
             var file = folderPath + "classTest.txt";
 
@@ -128,7 +128,7 @@ namespace LamdalCoreXunit_cSharp.ClassNT
             };
 
             // Write the lines
-            var folderPath = Config_Info.Config_File_Test(_Debug) + @"Text/ClassNT/"; //@"C:\test\stream\header.txt";
+            var folderPath = pcTest_Config.TestFolder() + @"Text/ClassNT/"; //@"C:\test\stream\header.txt";
             _lamed.lib.IO.Folder.Create(folderPath);
             var file = folderPath + "Types_Money.txt";
             _lamed.lib.IO.RW.File_Write(file, source.ToArray(), true);
@@ -220,7 +220,7 @@ namespace LamdalCoreXunit_cSharp.ClassNT
             };
 
             // Write the lines
-            var folderPath = Config_Info.Config_File_Test(_Debug, @"Text/cSharp/"); //@"C:\test\stream\header.txt";
+            var folderPath = pcTest_Config.TestFolder(@"Text/cSharp/"); //@"C:\test\stream\header.txt";
             var file = folderPath + "Types_Money.cs";
             _lamed.lib.IO.RW.File_Write(file, source.ToArray(), true);
 
@@ -251,7 +251,7 @@ namespace LamdalCoreXunit_cSharp.ClassNT
         public void String_Test()
         {
             #region String_.cs
-            var folderPath = Config_Info.Config_File_Test(_Debug, @"Text/cSharp/");
+            var folderPath = pcTest_Config.TestFolder(@"Text/cSharp/");
             bool error;
             ClassNTBlueprintRule_ blueprintRule;
             var Class = ClassNT_.Create(folderPath + "String_.cs", out error, out blueprintRule);
@@ -281,7 +281,7 @@ namespace LamdalCoreXunit_cSharp.ClassNT
         [Test_Method("ClassNT_.Create()")]
         public void String_Edit_Test()
         {
-            var folderPath = Config_Info.Config_File_Test(_Debug, @"Text/cSharp/");
+            var folderPath = pcTest_Config.TestFolder(@"Text/cSharp/");
             bool error;
             ClassNTBlueprintRule_ blueprintRule;
             var Class = ClassNT_.Create(folderPath + "String_Edit.cs", out error, out blueprintRule);

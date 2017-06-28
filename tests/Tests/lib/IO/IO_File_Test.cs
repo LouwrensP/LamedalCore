@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.Types;
+using LamedalCore.zPublicClass.Test;
 using LamedalCore.zz;
 using Xunit;
 
@@ -237,7 +238,7 @@ namespace LamedalCore.Test.Tests.lib.IO
         {
             // Drive & FileInfo
             var appFolder = _lamed.lib.IO.Folder.Path_Application();
-            Assert.Equal(Config_Info.Test_Drive, _lamed.lib.IO.Parts.Drive(appFolder));
+            Assert.Equal(pcTest_Config.Test_Drive, _lamed.lib.IO.Parts.Drive(appFolder));
         }
 
         [Fact]

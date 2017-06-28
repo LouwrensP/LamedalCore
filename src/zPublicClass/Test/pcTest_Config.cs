@@ -5,42 +5,41 @@ using Xunit.Abstractions;
 namespace LamedalCore.zPublicClass.Test
 {
     /// <summary>
-    /// Create simple test hookup class
+    /// Create simple test hookup class. This class is static for simplicity reasons. 
     /// </summary>
-    public class Config_Info
+    public static class pcTest_Config
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
+        public static bool Test_ShowConfigFiles = true;  // if true, show config files
+        public static string Test_Drive;  // The drive that the application is running on
 
-        public static bool Test_ShowConfigFiles = false;
-        public static string Test_Drive = "D:/";
-
-        private static bool   _FirstTime = true;
         private static string _folderTestCases = "";
         private static string _folderApplication;
-        private static string _configFile;
         private static pcTest_ConfigData _config;
-        private static ITestOutputHelper _Debug;
+        private static string _configFile;
+        private static bool _FirstTime = true;  // Flag
 
         /// <summary>Make sure the tests data folders are configured correctly.</summary>
         /// <param name="debug">The debug.</param>
         /// <param name="add2Path">The add2 path.</param>
         /// <returns>The test folder where the test data is located</returns>
-        public string Config_File_Test(ITestOutputHelper debug, string add2Path = "")
+        public static string TestFolder(string add2Path = "")
         {
             if (_FirstTime == false) return _folderTestCases + add2Path;  // Ensure that this method is only run once
+            var _lamed = LamedalCore_.Instance; // system library
 
-            _Debug = debug;
             var success  = LamedalCore_.Instance.lib.Test.ConfigSettings(out _folderApplication, out _folderTestCases, out _config, out _configFile);
             if (success == false)
             {
                 var msg = "Error! Unit test folder settings are incorrect.".NL() +
                     "  Please correct. (Opening the running folder and the 'Config.json' file.".NL()+
-                    $"  + Excel test case folder: '{_folderTestCases}'".NL() +
+                    $"  + Test case folder: '{_folderTestCases}'".NL() +
                     $"  + Application Folder    : '{_folderApplication}'";
                 var ex = new InvalidOperationException(msg);
                 _lamed.Logger.LogLibraryMsg(ex);
                 throw ex;
             }
+
+            Test_Drive = _config.Test_Drive;
 
             // Testcase folder specified
             if (_lamed.lib.IO.Folder.Exists(_folderTestCases) == false)
@@ -55,7 +54,7 @@ namespace LamedalCore.zPublicClass.Test
             _FirstTime = false;   // Only make flag false once we have tested everything works fine.
 
             var result = _folderTestCases + add2Path;
-            LamedalCore_.Instance.lib.IO.Folder.Create(result);
+            _lamed.lib.IO.Folder.Create(result);
             return result;
         }
     }

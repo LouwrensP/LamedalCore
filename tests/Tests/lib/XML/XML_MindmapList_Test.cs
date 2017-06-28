@@ -26,7 +26,7 @@ namespace LamedalCore.Test.Tests.lib.XML
         public void XML_ToTreeStringList_Test1()
         {
             // Get test xml data
-            string folder = Config_Info.Config_File_Test(_Debug, @"Text/mm/");
+            string folder = pcTest_Config.TestFolder(@"Text/mm/");
             string xml = _lamed.lib.IO.RW.File_Read2Str(folder + "test1.mm");
 
             #region Result expected
@@ -84,7 +84,7 @@ trunk:LaMedal:LaMedal.Access2System.csproj:domain:Enumerals:enClassNetworkType.c
         public void XML_ToTreeStringList_Test2()
         {
             // Get test xml data
-            string folder = Config_Info.Config_File_Test(_Debug, @"Text/mm/");
+            string folder = pcTest_Config.TestFolder(@"Text/mm/");
             string xml = _lamed.lib.IO.RW.File_Read2Str(folder + "test2.mm");
 
             #region Result expected
@@ -1748,7 +1748,7 @@ trunk:LaMedal:LaMedal.Core.csproj:zz:z:zTypes_Extender.cs";
             _lamed.lib.XML.Mindmap.xDoc_NodeElementAdd(root, "Oupa3", 40);
 
             var xml = xDoc.ToString();
-            string folder = Config_Info.Config_File_Test(_Debug, @"Text/mm/");
+            string folder = pcTest_Config.TestFolder(@"Text/mm/");
             _lamed.lib.IO.RW.File_Write(folder + "testSample.mm", xml, true);
 
         }

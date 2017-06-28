@@ -27,7 +27,7 @@ namespace LamedalCore.Test.Tests.lib
         [Test_Method("Execute_Notepad()")]
         public void Execute_Notepad_Test()
         {
-            string folderTest = Config_Info.Config_File_Test(_Debug);
+            string folderTest = pcTest_Config.TestFolder();
             string folderApplication;
             string folderTestCases;
             pcTest_ConfigData config;
@@ -45,7 +45,7 @@ namespace LamedalCore.Test.Tests.lib
             Assert.Equal(folderTest, folderTestCases);
             Assert.True(_lamed.lib.IO.File.Exists(configFile));
 
-            if (Config_Info.Test_ShowConfigFiles) _lamed.lib.Command.Execute_Notepad(configFile);   // Hide / show config files
+            if (pcTest_Config.Test_ShowConfigFiles) _lamed.lib.Command.Execute_Notepad(configFile);   // Hide / show config files
 
             // Todo
             // Test if notepad is running

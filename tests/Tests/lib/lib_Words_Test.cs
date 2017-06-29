@@ -18,8 +18,9 @@ namespace LamedalCore.Test.Tests.lib
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
 
-        [Fact]
+        [Theory]
         [Test_Method("Prefixes_Remove()")]
+        [Repeat(1)]
         public void Prefixes_Remove_Test()
         {
             #region Test1: bpTooltip_AsStr -> Tooltip_AsStr

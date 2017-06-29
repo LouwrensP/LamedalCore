@@ -15,7 +15,7 @@ namespace LamdalCoreXunit_Types.other
             _lamed.lib.Command.Sleep(1000);
             var span = _lamed.Types.DateTimeSpan.Elapsed(now);
             int ticks = (int)span.TotalMilliseconds/100;
-            Assert.True(10 == ticks | 11 == ticks);
+            Assert.True(10 == ticks | 11 == ticks, $"Ticks ={ticks}");
         }
     }
 }

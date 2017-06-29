@@ -123,9 +123,10 @@ namespace LamedalCore.domain
             }
 
             var msg = $"[{timeStr}] #{logType}# " + message.NL() + source + exceptionList + stacktrace + "=========================================================".NL();
+            if (_logger == null) throw new InvalidOperationException("Error! Memory lock is not assigned.");
             _lamed.lib.IO.RW.File_Append(logFile, msg, _logger);
             return msg;
         }
-        private object _logger = new Object();
+        private static readonly object _logger = new Object();
     }
 }

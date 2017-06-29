@@ -63,6 +63,7 @@
     <Compile Include="ClassNT\ClassNTMethod_Test.cs" />
     <Compile Include="ClassNT\ClassNTProperty_Test.cs" />
     <Compile Include="ClassNT\ClassNT_Test.cs" />
+    <Compile Include="ClassNT\Xunit_cSharp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

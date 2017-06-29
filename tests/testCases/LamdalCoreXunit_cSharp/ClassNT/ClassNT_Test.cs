@@ -17,13 +17,8 @@ using Xunit.Abstractions;
 
 namespace LamdalCoreXunit_cSharp.ClassNT
 {
-    [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Action)]
-    public sealed class ClassNT_Test : pcTest
+    public partial class Xunit_cSharp // ClassNT_Test
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
-
-        public ClassNT_Test(ITestOutputHelper debug = null) : base(debug) {}
-
         [Fact]
         [Test_Method("ClassNT_.Create()")]
         public void ClassNT_ReadWrite_Test()

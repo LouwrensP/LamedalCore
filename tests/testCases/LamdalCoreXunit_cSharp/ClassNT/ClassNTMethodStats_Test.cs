@@ -7,10 +7,8 @@ using Xunit;
 
 namespace LamdalCoreXunit_cSharp.ClassNT
 {
-    public sealed class ClassNTMethodStats_Test
+    public partial class Xunit_cSharp // ClassNTMethodStats_Test
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
-
         [Fact]
         [Test_Method("Code_Simplify()")]
         public void MethodSimplify_Test()

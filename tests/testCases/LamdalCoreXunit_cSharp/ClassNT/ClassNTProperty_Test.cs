@@ -5,9 +5,8 @@ using Xunit;
 
 namespace LamdalCoreXunit_cSharp.ClassNT
 {
-    public sealed class ClassNTProperty_Test
+    public partial class Xunit_cSharp // ClassNTProperty_Test
     {
-
         [Fact]
         [Test_Method("Property_Parse()")]
         public static void Property_Parse_Test()

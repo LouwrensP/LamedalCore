@@ -16,10 +16,8 @@ using Xunit;
 
 namespace LamdalCoreXunit_cSharp.ClassNT
 {
-    public sealed class ClassNTMethod_Test
+    public partial class Xunit_cSharp // ClassNTMethod_Test
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
-
         [Fact]
         [Test_Method("Parameter_FromXML()")]
         public static void Parameter_FromXML_Test()
@@ -835,7 +833,7 @@ namespace LamdalCoreXunit_cSharp.ClassNT
         [Test_Method("Method_Parse()")]
         [Test_Method("SyncParametersWithComments()")]
         [BlueprintRule_Method(Ignore = true)]
-        [BlueprintRule_MethodAliasDef(MirrorClass = typeof(ClassNTMethod_Test), MirrorMethodName = "MethodName", MirrorParameter1 = "parmeter1")]
+        [BlueprintRule_MethodAliasDef(MirrorClass = typeof(Xunit_cSharp), MirrorMethodName = "MethodName", MirrorParameter1 = "parmeter1")]
         public static void Method_Parse_Test()
         {
             int ii = 0, iiEnd = 0;
@@ -865,7 +863,7 @@ namespace LamdalCoreXunit_cSharp.ClassNT
                 "[BlueprintRule_Method(Ignore = true)]",
                 "[Fact, Test_Method(\"Key_Add()\"), Test_Method(\"Key_Find()\")]" ,
                 "[Test_Method(\"Key_Remove()\")]",
-                "[BlueprintRule_MethodAliasDef(MirrorClass = typeof(ClassNTMethod_Test), MirrorMethodName = \"MethodName\", MirrorParameter1 = \"parmeter1\")]",
+                "[BlueprintRule_MethodAliasDef(MirrorClass = typeof(Xunit_cSharp), MirrorMethodName = \"MethodName\", MirrorParameter1 = \"parmeter1\")]",
                 "public string SubStr_Right(string inputStr, int chars)",
                 "{",
                 "  if (chars > inputStr.Length) return \"\";",

@@ -13,11 +13,8 @@ using Xunit;
 
 namespace LamdalCoreXunit_cSharp.ClassNT
 {
-    [BlueprintRule_Class(enBlueprint_ClassNetworkType.XUnitTestMethods)]
-    public sealed class ClassNTAttribute_Test
+    public partial class Xunit_cSharp // ClassNTAttribute_Test
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
-
         [Fact]
         [Test_Method("ClassNTAttribute_Parameter_.Create()")]
         public void ClassNTAttribute_Parameter_Test1()
@@ -227,7 +224,7 @@ namespace LamdalCoreXunit_cSharp.ClassNT
 
         [Fact]
         [Test_Method("()")]
-        [BlueprintRule_MethodAliasDef(MirrorClass = typeof(ClassNTAttribute_Test), MirrorMethodName = "mirrorMethod", MirrorParameter1 = "parName")]
+        [BlueprintRule_MethodAliasDef(MirrorClass = typeof(Xunit_cSharp), MirrorMethodName = "mirrorMethod", MirrorParameter1 = "parName")]
         public void BlueprintRule_MethodAliasDef_Test()
         {
             string attributeStr;

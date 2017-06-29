@@ -52,11 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClassNT\ClassNTAttributeBlueprint_Test\ClassNTAttributeBlueprint_Test1.cs" />
-    <Compile Include="ClassNT\ClassNTAttributeBlueprint_Test\ClassNTAttributeBlueprint_Test2.cs" />
-    <Compile Include="ClassNT\ClassNTAttributeBlueprint_Test\ClassNTAttributeBlueprint_Test3.cs" />
-    <Compile Include="ClassNT\ClassNTAttributeBlueprint_Test\ClassNTAttributeBlueprint_Test4.cs" />
-    <Compile Include="ClassNT\ClassNTAttributeBlueprint_Test\ClassNTAttributeBlueprint_Test5.cs" />
+    <Compile Include="ClassNT\ClassNTAttributeBlueprint_Test.cs" />
     <Compile Include="ClassNT\ClassNTAttribute_Test.cs" />
     <Compile Include="ClassNT\ClassNTHeader_Test.cs" />
     <Compile Include="ClassNT\ClassNTMethodStats_Test.cs" />

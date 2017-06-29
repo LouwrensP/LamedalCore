@@ -10,11 +10,8 @@ using Xunit.Abstractions;
 
 namespace LamdalCoreXunit_cSharp.ClassNT
 {
-    public sealed class ClassNTHeader_Test : pcTest
+    public partial class Xunit_cSharp // ClassNTHeader_Test : pcTest
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
-        public ClassNTHeader_Test(ITestOutputHelper debug = null) : base(debug) { }
-
         [Fact]
         [Test_Method("Parse_ClassHeader()")]
         public static void Parse_ClassHeader_Test()

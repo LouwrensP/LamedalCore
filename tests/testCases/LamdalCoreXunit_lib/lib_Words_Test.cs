@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LamedalCore;
 using LamedalCore.domain.Attributes;
-using LamedalCore.domain.Enumerals;
-using LamedalCore.lib.Words;
-using LamedalCore.zz;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.lib
+namespace LamdalCoreXunit_lib
 {
     /// <summary>
     /// 
@@ -20,7 +13,7 @@ namespace LamedalCore.Test.Tests.lib
 
         [Theory]
         [Test_Method("Prefixes_Remove()")]
-        [Repeat(1)]
+        [Test_Repeat(1)]
         public void Prefixes_Remove_Test()
         {
             #region Test1: bpTooltip_AsStr -> Tooltip_AsStr

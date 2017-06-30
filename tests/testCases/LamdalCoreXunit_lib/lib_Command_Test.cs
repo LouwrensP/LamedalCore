@@ -1,27 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Drawing.Imaging;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LamedalCore;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
-using LamedalCore.zPublicClass;
+using LamedalCore.zPublicClass.Test;
 using Xunit;
 using Xunit.Abstractions;
-using HtmlAgilityPack;
-using LamedalCore.zPublicClass.Test;
 
-namespace LamedalCore.Test.Tests.lib
+namespace LamdalCoreXunit_lib
 {
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.XUnitTestMethods)]
     public sealed class lib_Command_Test: pcTest
     {
         private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
-
         public lib_Command_Test(ITestOutputHelper debug = null) : base(debug) { }
-
         
         [Fact]
         [Test_Method("Execute_Notepad()")]

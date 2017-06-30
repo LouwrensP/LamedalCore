@@ -4,13 +4,17 @@ using System.Linq;
 using System.Reflection;
 using Xunit.Sdk;
 
-namespace LamedalCore.Test.Tests
+namespace LamedalCore.domain.Attributes
 {
-    public class RepeatAttribute : DataAttribute
+    /// <summary>
+    /// Change [Fact] to [Theory] and add [Test_Repeat(5)] to repeat the test 5 times.
+    /// </summary>
+    /// <seealso cref="Xunit.Sdk.DataAttribute" />
+    public class Test_RepeatAttribute : DataAttribute
     {
         private readonly int _count;
 
-        public RepeatAttribute(int count)
+        public Test_RepeatAttribute(int count)
         {
             if (count < 1)
             {

@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using LamedalCore;
 using LamedalCore.domain.Attributes;
 using LamedalCore.lib.Console1;
-using LamedalCore.zPublicClass;
 using LamedalCore.zPublicClass.Test;
-using LamedalCore.zz;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace LamedalCore.Test.Tests.lib
+namespace LamdalCoreXunit_lib
 {
     public sealed class lib_Console_IO_Test : pcTest
     {

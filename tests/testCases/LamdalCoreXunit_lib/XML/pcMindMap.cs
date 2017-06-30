@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Xml.Linq;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 
-namespace LamedalCore.Test.Tests.lib.XML
+namespace LamdalCoreXunit_lib.XML
 {
     /// <summary>
     /// public class

@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Xml;
 using System.Xml.Linq;
+using LamedalCore;
 using LamedalCore.domain.Attributes;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.lib.XML
+namespace LamdalCoreXunit_lib.XML
 {
     public sealed class XML_Setup_Test
     {

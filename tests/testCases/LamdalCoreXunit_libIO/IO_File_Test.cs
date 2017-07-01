@@ -14,6 +14,7 @@ namespace LamdalCoreXunit_libIO
     public partial class xIO // IO_File_Test
     {
         // private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
+        private Types_DateTime _time = LamedalCore_.Instance.Types.DateTime;
 
         [Fact]
         [Test_Method("File_Write()")]
@@ -188,7 +189,6 @@ namespace LamdalCoreXunit_libIO
             Assert.Equal("c:/folder1/folder2/file_0015.txt", _lamed.lib.IO.File._FormatNo("c:/folder1/folder2/file.txt",15));
         }
 
-        private Types_DateTime _time = LamedalCore_.Instance.Types.DateTime;
 
         [Fact]
         [Test_Method("Time()")]
@@ -234,8 +234,9 @@ namespace LamdalCoreXunit_libIO
         public void Drive_Test()
         {
             // Drive & FileInfo
+            var dataFolder = Test_Config.TestFolder();
             var appFolder = _lamed.lib.IO.Folder.Path_Application();
-            Assert.Equal(Test_Config.Test_Drive, _lamed.lib.IO.Parts.Drive(appFolder));
+            Assert.True(Test_Config.Test_Drive ==_lamed.lib.IO.Parts.Drive(appFolder), $"App Folder: '{appFolder}'".NL() + $"Data Folder: '{dataFolder}'");
         }
 
         [Fact]

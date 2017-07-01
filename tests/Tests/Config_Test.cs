@@ -29,9 +29,8 @@ namespace LamedalCore.Test.Tests
         }
 
         [Theory]
-        [InlineData(0,1)]
-        [Trait("Ticket", "723")]
-        [Trait("Category", "A")]
+        [InlineData(0)]
+        [InlineData(1)]
         public void Test_Sample(int ii)
         {
             Assert.True(ii == 0 || ii == 1);

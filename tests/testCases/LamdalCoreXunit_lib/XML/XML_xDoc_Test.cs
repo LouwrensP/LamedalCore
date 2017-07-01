@@ -8,9 +8,9 @@ using Xunit;
 
 namespace LamdalCoreXunit_lib.XML
 {
-    public sealed class XML_xDoc_Test
+    public partial class xLibXML // XML_xDoc_Test
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
+        // private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
 
         [Fact]
         [Test_Method("Document_FixXML()")]

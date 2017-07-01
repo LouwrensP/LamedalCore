@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace LamedalCore.Test.Tests.lib.IO.data
+namespace LamdalCoreXunit_libIO.data
 {
     public sealed class TestData_Json
     {

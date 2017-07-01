@@ -1,16 +1,16 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Reflection;
+using LamedalCore;
 using LamedalCore.domain.Attributes;
-using LamedalCore.zz;
+using LamedalCore.zPublicClass.Test;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.lib.IO
+namespace LamdalCoreXunit_libIO
 {
-    public sealed class IO_Folder_Test
+    public partial class xIO // IO_Folder_Test
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
+        // private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
 
         [Fact]
         [Test_Method("Path_Assembly()")]
@@ -22,13 +22,13 @@ namespace LamedalCore.Test.Tests.lib.IO
             var assembly = _lamed.lib.About.Assembly();
             var assemblyFolder = _lamed.Types.Assembly.To_FilePath(assembly);
             string error;
-            Assert.True(IO_.IsGoodFolderOrFileFormat(assemblyFolder,out error), error);
+            Assert.True(Test_Config.IsGoodFolderOrFileFormat(assemblyFolder,out error), error);
             Assert.True(_lamed.lib.IO.Folder.Exists(assemblyFolder), assemblyFolder);
             #endregion
 
             #region Path_Temporary
             var tempFolder = _lamed.lib.IO.Folder.Path_Temporary();
-            Assert.True(IO_.IsGoodFolderOrFileFormat(tempFolder, out error), error);
+            Assert.True(Test_Config.IsGoodFolderOrFileFormat(tempFolder, out error), error);
             Assert.True(_lamed.lib.IO.Folder.Exists(tempFolder), tempFolder);
             #endregion
         }
@@ -54,13 +54,13 @@ namespace LamedalCore.Test.Tests.lib.IO
             #region Setup ] --------------------------------------------------------------------------------
             var appFolder = _lamed.lib.IO.Folder.Path_Application();
             var testFolder = appFolder + "TestFolder/";
-            Folder_Create(testFolder);
+            Test_Config.Folder_Create(testFolder);
             #endregion
 
             // Test
             string error;
-            Assert.True(IO_.IsGoodFolderOrFileFormat(appFolder, out error), error);
-            Assert.True(IO_.IsGoodFolderOrFileFormat(testFolder, out error), error);
+            Assert.True(Test_Config.IsGoodFolderOrFileFormat(appFolder, out error), error);
+            Assert.True(Test_Config.IsGoodFolderOrFileFormat(testFolder, out error), error);
 
             Assert.True(_lamed.lib.IO.Folder.Exists(testFolder + "test1/"));
             Assert.True(_lamed.lib.IO.Folder.Exists(testFolder + "test2/"));
@@ -93,32 +93,11 @@ namespace LamedalCore.Test.Tests.lib.IO
             Assert.Equal("C:/blah1/bling.txt", absolutePath);
 
             #region Cleanup -------------------------------------------------------------------------------
-            Folder_Cleanup(testFolder);
+
+            Test_Config.Folder_Cleanup(testFolder);
             Assert.False(_lamed.lib.IO.Folder.Exists(testFolder));
             Assert.False(_lamed.lib.IO.Folder.Exists(testFolder + "test1/"));
             #endregion
-        }
-
-        public static void Folder_Cleanup(string testFolder)
-        {
-            var lamed = LamedalCore_.Instance;
-            if (lamed.lib.IO.Folder.Exists(testFolder)) lamed.lib.IO.Folder.Delete(testFolder, true);
-        }
-
-        public static void Folder_Create(string testFolder)
-        {
-            var lamed = LamedalCore_.Instance;
-            if (lamed.lib.IO.Folder.Exists(testFolder)) lamed.lib.IO.Folder.Delete(testFolder, true);
-            Assert.False(lamed.lib.IO.Folder.Exists(testFolder), testFolder);
-
-            // Create folders ]-----------------------------------------------------------------------
-            lamed.lib.IO.Folder.Create(testFolder + "test1/");
-            lamed.lib.IO.Folder.Create(testFolder + "test1/"); // Redo step and no error is expected
-            lamed.lib.IO.Folder.Create(testFolder + "test2/");
-            lamed.lib.IO.Folder.Create(testFolder + "test3");
-            lamed.lib.IO.Folder.Create(testFolder + "test4/");
-            lamed.lib.IO.Folder.Create(testFolder + "test4/Sub1/Sub2/");
-            lamed.lib.IO.Folder.Create(testFolder + "folder\\folder2");
         }
     }
 }

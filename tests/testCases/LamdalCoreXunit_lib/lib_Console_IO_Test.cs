@@ -8,11 +8,9 @@ using Xunit.Abstractions;
 
 namespace LamdalCoreXunit_lib
 {
-    public sealed class lib_Console_IO_Test : pcTest
+    public partial class xLib // lib_Console_IO_Test : pcTest
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
-
-        public lib_Console_IO_Test(ITestOutputHelper debug = null) : base(debug) { } 
+        // public lib_Console_IO_Test(ITestOutputHelper debug = null) : base(debug) { } 
 
         [Fact]
         [Test_Method("Table_FormatStr()")]

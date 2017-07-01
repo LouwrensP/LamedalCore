@@ -7,9 +7,9 @@ using Xunit;
 
 namespace LamdalCoreXunit_lib.XML
 {
-    public sealed class XML_Setup_Test
+    public partial class xLibXML // XML_Setup_Test
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
+        // private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
 
         [Fact]
         [Test_Method("Fix_InvalidXML()")]

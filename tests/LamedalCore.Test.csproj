@@ -138,30 +138,17 @@
   <ItemGroup>
     <Compile Include="Tests\cSharp_Test.cs" />
     <Compile Include="Tests\domain_Test.cs" />
-    <Compile Include="Tests\lib\IO\IO_.cs" />
-    <Compile Include="Tests\lib\IO\IO_File_Test.cs" />
-    <Compile Include="Tests\lib\IO\IO_Parts_Test.cs" />
-    <Compile Include="Tests\lib\IO\IO_StateInfo_Data.cs" />
-    <Compile Include="Tests\lib\lib_Command_Test.cs" />
-    <Compile Include="Tests\lib\lib_Console_IO_Test.cs" />
-    <Compile Include="Tests\lib\XML\pcMindMap.cs" />
-    <Compile Include="Tests\lib\XML\XML_MindmapList_Test.cs" />
-    <Compile Include="Tests\lib\XML\XML_Mindmap_Test.cs" />
-    <Compile Include="Tests\lib\XML\XML_xDoc_Test.cs" />
+    <Compile Include="Tests\lib\libIO_Test.cs" />
+    <Compile Include="Tests\lib\libXML_Test.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tests\Types_List_Test.cs" />
-    <Compile Include="Tests\Types_Other_Test.cs" />
-    <Compile Include="Tests\Types_String.cs" />
+    <Compile Include="Tests\lib\lib_Test.cs" />
+    <Compile Include="Tests\TypesList_Test.cs" />
+    <Compile Include="Tests\TypesOther_Test.cs" />
+    <Compile Include="Tests\TypesString_Test.cs" />
     <Compile Include="Tests\zPublicClass_Test.cs" />
-    <Compile Include="Tests\lib\IO\data\TestData_Json.cs" />
-    <Compile Include="Tests\lib\IO\IO_StateInfo_Test.cs" />
-    <Compile Include="Tests\lib\IO\IO_Folder_Test.cs" />
-    <Compile Include="Tests\lib\lib_Words_Test.cs" />
-    <Compile Include="Tests\lib\IO\IO_Json_Test.cs" />
     <Compile Include="Tests\Config_Test.cs" />
-    <Compile Include="Tests\lib\XML\XML_Setup_Test.cs" />
-    <Compile Include="Tests\Types_Class_Test.cs" />
+    <Compile Include="Tests\TypesClass_Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -188,6 +175,14 @@
     <ProjectReference Include="testCases\LamdalCoreXunit_domain\LamdalCoreXunit_domain.csproj">
       <Project>{538D4CF4-51CA-4E9D-963C-0AB973583388}</Project>
       <Name>LamdalCoreXunit_domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="testCases\LamdalCoreXunit_libIO\LamdalCoreXunit_libIO.csproj">
+      <Project>{9c37e3d0-4e67-402a-9802-f70bff6314f4}</Project>
+      <Name>LamdalCoreXunit_libIO</Name>
+    </ProjectReference>
+    <ProjectReference Include="testCases\LamdalCoreXunit_lib\LamdalCoreXunit_lib.csproj">
+      <Project>{11f6efec-13db-4549-8d9b-cf99ccc09dcf}</Project>
+      <Name>LamdalCoreXunit_lib</Name>
     </ProjectReference>
     <ProjectReference Include="testCases\LamdalCoreXunit_Types\LamdalCoreXunit_Types.csproj">
       <Project>{85ca1dcc-adae-4036-930d-786d89ef1920}</Project>

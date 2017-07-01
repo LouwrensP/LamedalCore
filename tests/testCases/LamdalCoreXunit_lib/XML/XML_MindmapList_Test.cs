@@ -11,19 +11,17 @@ using Xunit.Abstractions;
 
 namespace LamdalCoreXunit_lib.XML
 {
-    [BlueprintRule_Class(enBlueprint_ClassNetworkType.XUnitTestMethods)]
-    public sealed class XML_MindmapList_Test : pcTest
+    public partial class xLibXML // XML_MindmapList_Test : pcTest
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
-
-        public XML_MindmapList_Test(ITestOutputHelper debug = null) : base(debug) { } 
+        // private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
+        // public XML_MindmapList_Test(ITestOutputHelper debug = null) : base(debug) { } 
 
         [Fact]
         [Test_Method("TreeStrList_FromXML()")]
         public void XML_ToTreeStringList_Test1()
         {
             // Get test xml data
-            string folder = pcTest_Config.TestFolder(@"Text/mm/");
+            string folder = Test_Config.TestFolder(@"Text/mm/");
             string xml = _lamed.lib.IO.RW.File_Read2Str(folder + "test1.mm");
 
             #region Result expected
@@ -81,7 +79,7 @@ trunk:LaMedal:LaMedal.Access2System.csproj:domain:Enumerals:enClassNetworkType.c
         public void XML_ToTreeStringList_Test2()
         {
             // Get test xml data
-            string folder = pcTest_Config.TestFolder(@"Text/mm/");
+            string folder = Test_Config.TestFolder(@"Text/mm/");
             string xml = _lamed.lib.IO.RW.File_Read2Str(folder + "test2.mm");
 
             #region Result expected
@@ -1745,7 +1743,7 @@ trunk:LaMedal:LaMedal.Core.csproj:zz:z:zTypes_Extender.cs";
             _lamed.lib.XML.Mindmap.xDoc_NodeElementAdd(root, "Oupa3", 40);
 
             var xml = xDoc.ToString();
-            string folder = pcTest_Config.TestFolder(@"Text/mm/");
+            string folder = Test_Config.TestFolder(@"Text/mm/");
             _lamed.lib.IO.RW.File_Write(folder + "testSample.mm", xml, true);
 
         }

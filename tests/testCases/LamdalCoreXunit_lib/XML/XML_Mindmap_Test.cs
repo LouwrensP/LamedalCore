@@ -11,11 +11,10 @@ using Xunit.Abstractions;
 
 namespace LamdalCoreXunit_lib.XML
 {
-    public sealed class XML_Mindmap_Test : pcTest
+    public partial class xLibXML // XML_Mindmap_Test : pcTest
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
-
-        public XML_Mindmap_Test(ITestOutputHelper debug = null) : base(debug) { }
+        // private readonly LamedalCore_ _lamed = LamedalCore_.Instance; // system library
+        // public XML_Mindmap_Test(ITestOutputHelper debug = null) : base(debug) { }
 
 //        [Fact]
 //        [Test_Method("()")]
@@ -67,7 +66,7 @@ namespace LamdalCoreXunit_lib.XML
         [Test_Method("CreateMindmap()")]
         public void CreateMindmap_Test()
         {
-            var folderPath = pcTest_Config.TestFolder() + @"text/mm/"; //@"D:\Dev\GitHub\LamedalCore\tests\TestData\Text\mm";
+            var folderPath = Test_Config.TestFolder() + @"text/mm/"; //@"D:\Dev\GitHub\LamedalCore\tests\TestData\Text\mm";
 
             // Create the map xml doc
             var map = CreateMindmap();

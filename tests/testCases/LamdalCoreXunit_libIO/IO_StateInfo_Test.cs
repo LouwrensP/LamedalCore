@@ -1,15 +1,16 @@
 ﻿using System.Collections.Generic;
-using LamdalCoreXunit_Types.Class;
-using LamdalCoreXunit_Types.Class.data;
+using LamdalCoreXunit_libIO.data;
+using LamedalCore;
 using LamedalCore.domain.Attributes;
 using LamedalCore.lib.IO.ioStateInfo;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.lib.IO
+namespace LamdalCoreXunit_libIO
 {
-    public sealed class IO_StateInfo_Test
+    public partial class xIO // IO_StateInfo_Test
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
+        //private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
+
         private static readonly object _Lock = new object();
         private static bool _firstTime = true;
 

@@ -1,9 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using LamedalCore;
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 using LamedalCore.Types;
@@ -11,12 +9,11 @@ using LamedalCore.zPublicClass.Test;
 using LamedalCore.zz;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.lib.IO
+namespace LamdalCoreXunit_libIO
 {
-    [BlueprintRule_Class(enBlueprint_ClassNetworkType.XUnitTestMethods)]
-    public sealed class IO_File_Test
+    public partial class xIO // IO_File_Test
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
+        // private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
 
         [Fact]
         [Test_Method("File_Write()")]
@@ -35,8 +32,8 @@ namespace LamedalCore.Test.Tests.lib.IO
             // Get the path
             var appFolder = _lamed.lib.IO.Folder.Path_Application();
             var testFolder = appFolder + "TestFolderIO/";
-            IO_Folder_Test.Folder_Cleanup(testFolder);  // Make sure folder is clean
-            IO_Folder_Test.Folder_Create(testFolder);
+            Test_Config.Folder_Cleanup(testFolder);  // Make sure folder is clean
+            Test_Config.Folder_Create(testFolder);
 
             #region File_Write
             var file = testFolder + "testFile.txt";
@@ -128,7 +125,7 @@ namespace LamedalCore.Test.Tests.lib.IO
             #endregion
 
             // Cleanup
-            IO_Folder_Test.Folder_Cleanup(testFolder);
+            Test_Config.Folder_Cleanup(testFolder);
             Assert.Equal(false, _lamed.lib.IO.File.Delete(file));
         }
 
@@ -138,7 +135,7 @@ namespace LamedalCore.Test.Tests.lib.IO
         {
             var file = _lamed.lib.IO.File.FilePath_Temporary();
             string error;
-            Assert.True(IO_.IsGoodFolderOrFileFormat(file, out error),error);
+            Assert.True(Test_Config.IsGoodFolderOrFileFormat(file, out error),error);
         }
 
         [Fact]
@@ -150,8 +147,8 @@ namespace LamedalCore.Test.Tests.lib.IO
             // Create testcases
             var appFolder = _lamed.lib.IO.Folder.Path_Application();
             var testFolder = appFolder + "TestFolderIO2/";
-            IO_Folder_Test.Folder_Cleanup(testFolder);
-            IO_Folder_Test.Folder_Create(testFolder);
+            Test_Config.Folder_Cleanup(testFolder);
+            Test_Config.Folder_Create(testFolder);
 
             Assert.Equal(testFolder+"testFileThatIsTotallyUnuque.txt", _lamed.lib.IO.File.Exists_GetNextNo(testFolder + "testFileThatIsTotallyUnuque.txt"));
             _lamed.lib.IO.RW.File_Write(testFolder + "testFile.txt", "This is a test", true);
@@ -177,9 +174,9 @@ namespace LamedalCore.Test.Tests.lib.IO
 
             Assert.Throws<ArgumentException>(()=>_lamed.lib.IO.File.Exists_GetNextNo(testFolder + "testFile.txt",jumpFactor:1));
 
-            if (showTestFolder)
+            if (showTestFolder) 
                  _lamed.lib.Command.Execute_Explorer(testFolder);
-            else IO_Folder_Test.Folder_Cleanup(testFolder);
+            else Test_Config.Folder_Cleanup(testFolder);
 
         }
 
@@ -201,8 +198,8 @@ namespace LamedalCore.Test.Tests.lib.IO
         {
             var appFolder = _lamed.lib.IO.Folder.Path_Application();
             var testFolder = appFolder + "TestTime/";
-            IO_Folder_Test.Folder_Cleanup(testFolder);
-            IO_Folder_Test.Folder_Create(testFolder);
+            Test_Config.Folder_Cleanup(testFolder);
+            Test_Config.Folder_Create(testFolder);
             _lamed.lib.IO.RW.File_Write(testFolder + "testFile.txt", "This is a test", true);
 
             #region time
@@ -229,7 +226,7 @@ namespace LamedalCore.Test.Tests.lib.IO
             var folder = _lamed.lib.IO.Parts._Format2Slash(info.DirectoryName);
             Assert.Equal(testFolder,folder);
 
-            IO_Folder_Test.Folder_Cleanup(testFolder);
+            Test_Config.Folder_Cleanup(testFolder);
         }
 
         [Fact]
@@ -238,7 +235,7 @@ namespace LamedalCore.Test.Tests.lib.IO
         {
             // Drive & FileInfo
             var appFolder = _lamed.lib.IO.Folder.Path_Application();
-            Assert.Equal(pcTest_Config.Test_Drive, _lamed.lib.IO.Parts.Drive(appFolder));
+            Assert.Equal(Test_Config.Test_Drive, _lamed.lib.IO.Parts.Drive(appFolder));
         }
 
         [Fact]

@@ -1,7 +1,7 @@
 using LamedalCore.domain.Attributes;
 using LamedalCore.domain.Enumerals;
 
-namespace LamedalCore.Test.Tests.lib.IO
+namespace LamdalCoreXunit_libIO
 {
     [BlueprintRule_Class(enBlueprint_ClassNetworkType.Node_Data)]
     public sealed class IO_StateInfo_Data

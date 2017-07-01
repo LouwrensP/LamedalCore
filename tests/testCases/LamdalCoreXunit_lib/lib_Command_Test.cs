@@ -7,17 +7,16 @@ using Xunit.Abstractions;
 
 namespace LamdalCoreXunit_lib
 {
-    [BlueprintRule_Class(enBlueprint_ClassNetworkType.XUnitTestMethods)]
-    public sealed class lib_Command_Test: pcTest
+    public partial class xLib // lib_Command_Test: pcTest
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
-        public lib_Command_Test(ITestOutputHelper debug = null) : base(debug) { }
+        // private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
+        // public lib_Command_Test(ITestOutputHelper debug = null) : base(debug) { }
         
         [Fact]
         [Test_Method("Execute_Notepad()")]
         public void Execute_Notepad_Test()
         {
-            string folderTest = pcTest_Config.TestFolder();
+            string folderTest = Test_Config.TestFolder();
             string folderApplication;
             string folderTestCases;
             pcTest_ConfigData config;
@@ -35,7 +34,7 @@ namespace LamdalCoreXunit_lib
             Assert.Equal(folderTest, folderTestCases);
             Assert.True(_lamed.lib.IO.File.Exists(configFile));
 
-            if (pcTest_Config.Test_ShowConfigFiles) _lamed.lib.Command.Execute_Notepad(configFile);   // Hide / show config files
+            if (Test_Config.Test_ShowConfigFiles) _lamed.lib.Command.Execute_Notepad(configFile);   // Hide / show config files
 
             // Todo
             // Test if notepad is running

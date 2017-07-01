@@ -3,17 +3,12 @@ using LamedalCore.domain.Attributes;
 using Xunit;
 
 namespace LamdalCoreXunit_lib
-{
-    /// <summary>
-    /// 
-    /// </summary>
-    public sealed class lib_Words_Test
+{ 
+    public partial class xLib // lib_Words_Test
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
-
-        [Theory]
+        [Fact]
+        [Test_Repeat(10)]
         [Test_Method("Prefixes_Remove()")]
-        [Test_Repeat(1)]
         public void Prefixes_Remove_Test()
         {
             #region Test1: bpTooltip_AsStr -> Tooltip_AsStr

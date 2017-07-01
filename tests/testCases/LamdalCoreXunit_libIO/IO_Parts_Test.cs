@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LamedalCore;
 using LamedalCore.domain.Attributes;
 using Xunit;
 
-namespace LamedalCore.Test.Tests.lib.IO
+namespace LamdalCoreXunit_libIO
 {
-    public sealed class IO_Parts_Test
+    public partial class xIO // IO_Parts_Test
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
+        // private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
 
         [Fact]
         [Test_Method("Folder()")]

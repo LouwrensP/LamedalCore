@@ -1,21 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
+using LamdalCoreXunit_libIO.data;
+using LamedalCore;
 using LamedalCore.domain.Attributes;
 using LamedalCore.lib.IO;
-using LamedalCore.Test.Tests.lib.IO.data;
-using LamedalCore.zPublicClass;
 using LamedalCore.zPublicClass.Test;
 using LamedalCore.zz;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace LamedalCore.Test.Tests.lib.IO
+namespace LamdalCoreXunit_libIO
 {
-    public sealed class IO_Json_Test : pcTest
+    public partial class xIO // IO_Json_Test  : pcTest
     {
-        private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
+        // private readonly LamedalCore_ _lamed = LamedalCore_.Instance;
+        // public IO_Json_Test(ITestOutputHelper debug = null) : base(debug) { }
+
         private readonly IO_Json _json = LamedalCore_.Instance.lib.IO.Json;
-        public IO_Json_Test(ITestOutputHelper debug = null) : base(debug) { } 
 
         [Fact]
         [Test_Method("Convert_FromObject()")]

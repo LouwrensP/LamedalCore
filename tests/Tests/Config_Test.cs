@@ -29,7 +29,7 @@ namespace LamedalCore.Test.Tests
         }
 
         [Theory]
-        [InlineData(0), InlineData(1)]
+        [InlineData(0,1)]
         [Trait("Ticket", "723")]
         [Trait("Category", "A")]
         public void Test_Sample(int ii)
@@ -68,7 +68,7 @@ namespace LamedalCore.Test.Tests
         [Test_Method("Execute_Explorer()")]
         public void ExploreToResult_Test()
         {
-            if (pcTest_Config.Test_ShowConfigFiles) _lamed.lib.Command.Execute_Explorer();  // Open the output folder
+            if (Test_Config.Test_ShowConfigFiles) _lamed.lib.Command.Execute_Explorer();  // Open the output folder
         }
     }
 }

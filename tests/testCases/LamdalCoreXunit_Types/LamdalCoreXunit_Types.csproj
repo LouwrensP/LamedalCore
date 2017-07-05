@@ -52,44 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\data\Class_Attributes_Data.cs" />
-    <Compile Include="Class\Class_Attributes_Test.cs" />
-    <Compile Include="Class\Class_Info_Test.cs" />
-    <Compile Include="Class\data\Class_StateInfo_Data.cs" />
-    <Compile Include="Class\Class_StateInfo_Test.cs" />
-    <Compile Include="Class\xTypes_Class.cs" />
-    <Compile Include="Class\data\Class_Info_Data.cs" />
-    <Compile Include="List\data\List_Find_Data.cs" />
-    <Compile Include="List\xTypes_List.cs" />
-    <Compile Include="other\data\TestData_Json.cs" />
-    <Compile Include="other\data\Types_Convert_Data.cs" />
-    <Compile Include="List\List_Action_Test.cs" />
-    <Compile Include="List\data\List_Convert_Data.cs" />
-    <Compile Include="List\List_Convert_Test.cs" />
-    <Compile Include="List\List_Enum_Test.cs" />
-    <Compile Include="List\List_Find_Test.cs" />
-    <Compile Include="List\List_Level_Test.cs" />
-    <Compile Include="List\List_QueueAndStack_Test.cs" />
-    <Compile Include="List\List_String_Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="other\Types_Convert_Test.cs" />
-    <Compile Include="other\Types_DateTimeSpan_Test.cs" />
-    <Compile Include="other\Types_DateTime_Test.cs" />
-    <Compile Include="other\Types_Dictionary_Test.cs" />
-    <Compile Include="other\data\Types_Enum_Data.cs" />
-    <Compile Include="other\Types_Enum_Test.cs" />
-    <Compile Include="other\data\Types_Is_Test_StructSimple.cs" />
-    <Compile Include="other\Types_Number_Test.cs" />
-    <Compile Include="other\Types_Object_Test.cs" />
-    <Compile Include="other\Types_Test.cs" />
-    <Compile Include="other\xTypes_Other.cs" />
-    <Compile Include="String\String_Edit_Test.cs" />
-    <Compile Include="String\String_Regex_Test.cs" />
-    <Compile Include="String\String_Search_Test.cs" />
-    <Compile Include="String\String_Setup_Test.cs" />
-    <Compile Include="String\String_SpecialChar_Test.cs" />
-    <Compile Include="String\String_Word_Test.cs" />
-    <Compile Include="String\xTypes_String.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\src\LamedalCore.csproj">

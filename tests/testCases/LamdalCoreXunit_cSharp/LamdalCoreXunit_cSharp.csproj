@@ -52,14 +52,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClassNT\ClassNTAttributeBlueprint_Test.cs" />
-    <Compile Include="ClassNT\ClassNTAttribute_Test.cs" />
-    <Compile Include="ClassNT\ClassNTHeader_Test.cs" />
-    <Compile Include="ClassNT\ClassNTMethodStats_Test.cs" />
-    <Compile Include="ClassNT\ClassNTMethod_Test.cs" />
-    <Compile Include="ClassNT\ClassNTProperty_Test.cs" />
-    <Compile Include="ClassNT\ClassNT_Test.cs" />
-    <Compile Include="ClassNT\Xunit_cSharp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ClassNT\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

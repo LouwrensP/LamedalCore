@@ -3,18 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LamdalCoreXunit_domain", "LamdalCoreXunit_domain\LamdalCoreXunit_domain.csproj", "{538D4CF4-51CA-4E9D-963C-0AB973583388}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LamdalCoreXunit_lib", "LamdalCoreXunit_lib\LamdalCoreXunit_lib.csproj", "{11F6EFEC-13DB-4549-8D9B-CF99CCC09DCF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LamdalCoreXunit_libIO", "LamdalCoreXunit_libIO\LamdalCoreXunit_libIO.csproj", "{9C37E3D0-4E67-402A-9802-F70BFF6314F4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LamdalCoreXunit_cSharp", "LamdalCoreXunit_cSharp\LamdalCoreXunit_cSharp.csproj", "{41D2DC16-FD7A-412A-A6B2-B48429ADC182}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LamdalCoreXunit_Types", "LamdalCoreXunit_Types\LamdalCoreXunit_Types.csproj", "{85CA1DCC-ADAE-4036-930D-786D89EF1920}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LamdalCoreXunit_zPublicClass", "LamdalCoreXunit_zPublicClass\LamdalCoreXunit_zPublicClass.csproj", "{E6EC126E-0481-479A-BB8E-4E357B3114E5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LamedalCore.Test", "..\LamedalCore.Test.csproj", "{66311AA8-6427-4B6A-840A-0E8C6D0A2B05}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LamedalCore", "..\..\src\LamedalCore.csproj", "{0BF0A80C-18BC-4321-BC71-09890FFCFF46}"
@@ -25,30 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{538D4CF4-51CA-4E9D-963C-0AB973583388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{538D4CF4-51CA-4E9D-963C-0AB973583388}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{538D4CF4-51CA-4E9D-963C-0AB973583388}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{538D4CF4-51CA-4E9D-963C-0AB973583388}.Release|Any CPU.Build.0 = Release|Any CPU
-		{11F6EFEC-13DB-4549-8D9B-CF99CCC09DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{11F6EFEC-13DB-4549-8D9B-CF99CCC09DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{11F6EFEC-13DB-4549-8D9B-CF99CCC09DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{11F6EFEC-13DB-4549-8D9B-CF99CCC09DCF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9C37E3D0-4E67-402A-9802-F70BFF6314F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9C37E3D0-4E67-402A-9802-F70BFF6314F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9C37E3D0-4E67-402A-9802-F70BFF6314F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9C37E3D0-4E67-402A-9802-F70BFF6314F4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{41D2DC16-FD7A-412A-A6B2-B48429ADC182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{41D2DC16-FD7A-412A-A6B2-B48429ADC182}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{41D2DC16-FD7A-412A-A6B2-B48429ADC182}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{41D2DC16-FD7A-412A-A6B2-B48429ADC182}.Release|Any CPU.Build.0 = Release|Any CPU
-		{85CA1DCC-ADAE-4036-930D-786D89EF1920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{85CA1DCC-ADAE-4036-930D-786D89EF1920}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{85CA1DCC-ADAE-4036-930D-786D89EF1920}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{85CA1DCC-ADAE-4036-930D-786D89EF1920}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E6EC126E-0481-479A-BB8E-4E357B3114E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E6EC126E-0481-479A-BB8E-4E357B3114E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E6EC126E-0481-479A-BB8E-4E357B3114E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E6EC126E-0481-479A-BB8E-4E357B3114E5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{66311AA8-6427-4B6A-840A-0E8C6D0A2B05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{66311AA8-6427-4B6A-840A-0E8C6D0A2B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66311AA8-6427-4B6A-840A-0E8C6D0A2B05}.Release|Any CPU.ActiveCfg = Release|Any CPU

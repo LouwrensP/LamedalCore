@@ -52,17 +52,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="lib_Command_Test.cs" />
-    <Compile Include="lib_Console_IO_Test.cs" />
-    <Compile Include="lib_Words_Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="xLib.cs" />
-    <Compile Include="XML\pcMindMap.cs" />
-    <Compile Include="XML\XML_MindmapList_Test.cs" />
-    <Compile Include="XML\XML_Mindmap_Test.cs" />
-    <Compile Include="XML\XML_Setup_Test.cs" />
-    <Compile Include="XML\XML_xDoc_Test.cs" />
-    <Compile Include="XML\xLibXML.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\src\LamedalCore.csproj">

@@ -136,19 +136,80 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Tests\cSharp_Test.cs" />
-    <Compile Include="Tests\domain_Test.cs" />
-    <Compile Include="Tests\lib\libIO_Test.cs" />
-    <Compile Include="Tests\lib\libXML_Test.cs" />
+    <Compile Include="LamedalCore_Test.cs" />
+    <Compile Include="Tests\cSharp\ClassNTAttributeBlueprint_Test.cs" />
+    <Compile Include="Tests\cSharp\ClassNTAttribute_Test.cs" />
+    <Compile Include="Tests\cSharp\ClassNTHeader_Test.cs" />
+    <Compile Include="Tests\cSharp\ClassNTMethodStats_Test.cs" />
+    <Compile Include="Tests\cSharp\ClassNTMethod_Test.cs" />
+    <Compile Include="Tests\cSharp\ClassNTProperty_Test.cs" />
+    <Compile Include="Tests\cSharp\ClassNT_Test.cs" />
+    <Compile Include="Tests\cSharp\xUnit_cSharp.cs" />
+    <Compile Include="Tests\data\Class_Attributes_Data.cs" />
+    <Compile Include="Tests\data\Class_Info_Data.cs" />
+    <Compile Include="Tests\data\TestData_Json.cs" />
+    <Compile Include="Tests\domain\domain_AttributesBlueprint_Test.cs" />
+    <Compile Include="Tests\domain\domain_Exceptions_Test.cs" />
+    <Compile Include="Tests\domain\xDomain.cs" />
+    <Compile Include="Tests\libIO\IO_File_Test.cs" />
+    <Compile Include="Tests\libIO\IO_Folder_Test.cs" />
+    <Compile Include="Tests\libIO\IO_Json_Test.cs" />
+    <Compile Include="Tests\libIO\IO_Parts_Test.cs" />
+    <Compile Include="Tests\libIO\IO_StateInfo_Data.cs" />
+    <Compile Include="Tests\libIO\IO_StateInfo_Test.cs" />
+    <Compile Include="Tests\libIO\xLibIO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tests\lib\lib_Test.cs" />
-    <Compile Include="Tests\TypesList_Test.cs" />
-    <Compile Include="Tests\TypesOther_Test.cs" />
-    <Compile Include="Tests\TypesString_Test.cs" />
-    <Compile Include="Tests\zPublicClass_Test.cs" />
-    <Compile Include="Tests\Config_Test.cs" />
-    <Compile Include="Tests\TypesClass_Test.cs" />
+    <Compile Include="Tests\lib\lib_Command_Test.cs" />
+    <Compile Include="Tests\lib\lib_Console_IO_Test.cs" />
+    <Compile Include="Tests\lib\lib_Words_Test.cs" />
+    <Compile Include="Tests\lib\xLib.cs" />
+    <Compile Include="Tests\lib\XML\pcMindMap.cs" />
+    <Compile Include="Tests\lib\XML\xLibXML.cs" />
+    <Compile Include="Tests\lib\XML\XML_MindmapList_Test.cs" />
+    <Compile Include="Tests\lib\XML\XML_Mindmap_Test.cs" />
+    <Compile Include="Tests\lib\XML\XML_Setup_Test.cs" />
+    <Compile Include="Tests\lib\XML\XML_xDoc_Test.cs" />
+    <Compile Include="Tests\types\Class\Class_Attributes_Test.cs" />
+    <Compile Include="Tests\types\Class\Class_Info_Test.cs" />
+    <Compile Include="Tests\types\Class\Class_StateInfo_Test.cs" />
+    <Compile Include="Tests\types\Class\data\Class_Attributes_Data.cs" />
+    <Compile Include="Tests\types\Class\data\Class_Info_Data.cs" />
+    <Compile Include="Tests\types\Class\data\Class_StateInfo_Data.cs" />
+    <Compile Include="Tests\types\Class\xTypes_Class.cs" />
+    <Compile Include="Tests\types\List\data\List_Convert_Data.cs" />
+    <Compile Include="Tests\types\List\data\List_Find_Data.cs" />
+    <Compile Include="Tests\types\List\List_Action_Test.cs" />
+    <Compile Include="Tests\types\List\List_Convert_Test.cs" />
+    <Compile Include="Tests\types\List\List_Enum_Test.cs" />
+    <Compile Include="Tests\types\List\List_Find_Test.cs" />
+    <Compile Include="Tests\types\List\List_Level_Test.cs" />
+    <Compile Include="Tests\types\List\List_QueueAndStack_Test.cs" />
+    <Compile Include="Tests\types\List\List_String_Test.cs" />
+    <Compile Include="Tests\types\List\xTypes_List.cs" />
+    <Compile Include="Tests\types\other\data\TestData_Json.cs" />
+    <Compile Include="Tests\types\other\data\Types_Convert_Data.cs" />
+    <Compile Include="Tests\types\other\data\Types_Enum_Data.cs" />
+    <Compile Include="Tests\types\other\data\Types_Is_Test_StructSimple.cs" />
+    <Compile Include="Tests\types\other\Types_Convert_Test.cs" />
+    <Compile Include="Tests\types\other\Types_DateTimeSpan_Test.cs" />
+    <Compile Include="Tests\types\other\Types_DateTime_Test.cs" />
+    <Compile Include="Tests\types\other\Types_Dictionary_Test.cs" />
+    <Compile Include="Tests\types\other\Types_Enum_Test.cs" />
+    <Compile Include="Tests\types\other\Types_Number_Test.cs" />
+    <Compile Include="Tests\types\other\Types_Object_Test.cs" />
+    <Compile Include="Tests\types\other\Types_Test.cs" />
+    <Compile Include="Tests\types\other\xTypes_Other.cs" />
+    <Compile Include="Tests\types\String\String_Edit_Test.cs" />
+    <Compile Include="Tests\types\String\String_Regex_Test.cs" />
+    <Compile Include="Tests\types\String\String_Search_Test.cs" />
+    <Compile Include="Tests\types\String\String_Setup_Test.cs" />
+    <Compile Include="Tests\types\String\String_SpecialChar_Test.cs" />
+    <Compile Include="Tests\types\String\String_Word_Test.cs" />
+    <Compile Include="Tests\types\String\xTypes_String.cs" />
+    <Compile Include="Tests\zPublicClass\PublicClass_GridBlock.cs" />
+    <Compile Include="Tests\zPublicClass\xPublicClass.cs" />
+    <Compile Include="Config_Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -167,30 +228,6 @@
     <ProjectReference Include="..\src\LamedalCore.csproj">
       <Project>{cce0b77c-74ca-4e22-bebf-6a69cfa5442e}</Project>
       <Name>LamedalCore</Name>
-    </ProjectReference>
-    <ProjectReference Include="testCases\LamdalCoreXunit_cSharp\LamdalCoreXunit_cSharp.csproj">
-      <Project>{41d2dc16-fd7a-412a-a6b2-b48429adc182}</Project>
-      <Name>LamdalCoreXunit_cSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="testCases\LamdalCoreXunit_domain\LamdalCoreXunit_domain.csproj">
-      <Project>{538D4CF4-51CA-4E9D-963C-0AB973583388}</Project>
-      <Name>LamdalCoreXunit_domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="testCases\LamdalCoreXunit_libIO\LamdalCoreXunit_libIO.csproj">
-      <Project>{9c37e3d0-4e67-402a-9802-f70bff6314f4}</Project>
-      <Name>LamdalCoreXunit_libIO</Name>
-    </ProjectReference>
-    <ProjectReference Include="testCases\LamdalCoreXunit_lib\LamdalCoreXunit_lib.csproj">
-      <Project>{11f6efec-13db-4549-8d9b-cf99ccc09dcf}</Project>
-      <Name>LamdalCoreXunit_lib</Name>
-    </ProjectReference>
-    <ProjectReference Include="testCases\LamdalCoreXunit_Types\LamdalCoreXunit_Types.csproj">
-      <Project>{85ca1dcc-adae-4036-930d-786d89ef1920}</Project>
-      <Name>LamdalCoreXunit_Types</Name>
-    </ProjectReference>
-    <ProjectReference Include="testCases\LamdalCoreXunit_zPublicClass\LamdalCoreXunit_zPublicClass.csproj">
-      <Project>{e6ec126e-0481-479a-bb8e-4e357b3114e5}</Project>
-      <Name>LamdalCoreXunit_zPublicClass</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

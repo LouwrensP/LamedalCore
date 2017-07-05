@@ -55,16 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="data\Class_Info_Data.cs" />
-    <Compile Include="data\TestData_Json.cs" />
-    <Compile Include="IO_File_Test.cs" />
-    <Compile Include="IO_Folder_Test.cs" />
-    <Compile Include="IO_Json_Test.cs" />
-    <Compile Include="IO_Parts_Test.cs" />
-    <Compile Include="IO_StateInfo_Data.cs" />
-    <Compile Include="IO_StateInfo_Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="xIO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -74,6 +65,9 @@
       <Project>{dc5b8cba-fb32-4950-95ea-c7c88b54a2d3}</Project>
       <Name>LamedalCore</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
